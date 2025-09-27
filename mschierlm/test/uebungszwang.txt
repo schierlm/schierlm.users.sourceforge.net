@@ -1,0 +1,222 @@
+Warum ein Zwang, eine bestimmte Zahl an Übungspunkten zu erlangen, um
+zur Klausur zugelassen zu werden, kontraproduktiv ist.
+=====================================================================
+
+(c) 2003 Michael Schierl <schierlm@gmx.de>
+
+Dieser Text darf unter den Bestimmungen der GNU Free Documentation
+Licence verwendet und weitergegeben werden.
+
+Dieser Text stellt meine persönliche Meinung dar.
+
+
+0. Für wen ist dieser Text?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Primär ist dieser Text für Übungsleiter oder andere Leute bestimmt,
+die darüber entscheiden können, ob ein "Übungszwang" verwendet werden
+soll. Sekundär ist der Text sicher auch für Studenten interessant,
+damit diese sehen, dass sie mit ihere Meinung nicht alleine dastehen
+bzw. dass es noch andere Meinungen als ihre gibt.
+
+1. Wozu dienen Übungsblätter?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Übungsblätter sind ein "Service" der Tutoren/Assistenten, der den
+Studenten die Möglichkeit gibt, ihren eigenen Kenntnisstand in einem
+Fach festzustellen. Zusätzlich zeigen sie auf, was genau die
+individuellen Schwächen des Studenten sind.
+
+Dazu ist es notwendig, dass es Leute gibt, die die Übungsblätter
+korrigieren (auf ähnliche Weise, wie später die Klausur korrigiert
+wird; eher strenger als lockerer) und somit den Studenten diese
+Informationen bringen können.
+
+2. Wozu dienen Übungsblätter nicht?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Übungsblätter dienen nicht dazu, "faule" Studenten schon vor der
+Klausur auszusondern. In der Regel wird dies auf die Weise versucht,
+dass man auf die Aufgaben Punkte bekommt (was eine gute Idee ist) und
+davon einen bestimmten Teil (im folgenden 50% genannt) erreichen muss
+(was keine so gute Idee ist). 
+
+Dieses Ziel ließe sich nämlich nur erreichen,
+wenn man bei Punkt 1 Abstriche macht.
+
+Als Begründung für dieses Vorgehen wird oft genannt, dass die
+Studenten durch diesen Zwang in den Klausuren "besser" abschneiden
+würden. Meiner bescheidenen Erfahrung nach ist dies aber nicht der
+Fall. 
+
+3. Was passiert, wenn die Übungsblätter "erzwungen" werden?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Die guten Studenten, die ohnehin jedes Übungsblatt gemacht hätten,
+werden es genauso machen wie bisher. (Typ A)
+
+Gute Studenten, die nicht alle Übungsblätter gemacht hätten (oder
+solche, die die Vorlesung schon gehört haben), werden zu 
+"überflüssiger" Arbeit gezwungen. Diese Studenten könnten die Zeit
+viel besser damit nutzen, Übungsblätter für Veranstaltungen zu lösen,
+wo sie schlechter sind. So wird aufgrund der Prioritäten (die auch ein
+Student setzen muss) öfter mal das nichterzwungenen Übungsblatt
+darunter leiden, wenn der Student nicht die Lösung eines Kommilitonen
+von Typ A abgibt. (Typ B)
+
+Schlechte Studenten, die ohnehin jedes Übungsblatt gemacht hätten,
+sind diejenigen, die bei diesem System am meisten Nachteile
+haben. Diese werden wohl am Anfang unter der "magischen" 50%-Marke
+bleiben, was dazu führt, dass sie die Aufgaben zwar noch zu bearbeiten
+versuchen, aber nicht abgeben. Stattdessen werden sie nach ein paar
+Frustrationen dazu übergehen, die Lösungen von "besseren" Kommilitonen
+abzugeben, die ihnen dann zwar zur Klausur verhelfen, aber mangels
+Übungseffekt (bzw. weil ihnen ihre individuellen Schwächen nicht
+bekannt sind) wird ihnen die Klausur umso schwerer fallen. (Typ C)
+
+Schlechte Studenten, die manchmal ihre Übungsblätter nicht machen,
+werden, da sie mit wenigen Blättern eh keine Chance haben, dazu
+übergehen, gute Lösungen abzugeben. Damit ist ihre Motivation, selbst
+etwas zu machen, noch mehr hinüber (es wird ja nicht korrigiert, warum
+soll ich dann üben?), wodurch sie in der Klausur schlecht abschneiden
+werden.
+
+Schlechte Studenten, die nie ihre Übungsblätter machen, werden so
+*immer* fremde Lösungen abgeben (seit dem ersten Übungsblatt). Dass
+diese in der Regel in der Klausur durchfallen, ändert sich nicht
+daran, dass sie gar nicht erst mitschreiben dürfen. Und auch das
+Argument, dass man damit weniger Klausuren korrigieren muss, ist
+schwach. Wie viel Aufwand ist die Korrektur einer Klausur im Vergleich
+zur Korrektur aller vorhergehenden Übungsblätter? (Zum
+"Gruppenabgabezwang" siehe weiter unten.)
+
+Fazit: Gerade diejenigen, die die Übungsblätter am dringenden brauchen
+würden (C, D), werden durch dieses System benachteiligt. Faule werden
+so oder so eine Lösung finden, um das System zu umgehen und damit
+effektiv noch mehr Arbeit zu erzeugen als sie einsparen.
+
+4. Welche Tricks versuchen die Übungsleiter, um obige Probleme zu umgehen?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4.1. Die Übungsblätter werden "lockerer" korrigiert
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
+Dieser Ansatz macht es schlechteren Studenten leichter, vom System zu
+profitieren - andererseits führt er aber auch dazu, dass bessere
+Studenten sich überschätzen bzw. im Nachhinein meinen, dass die
+Klausur (die ja nicht so locker korrigiert wird) "unfair" korrigiert
+worden wäre. Damit sind die Tutoren bei der Klausur in einer
+Erklärungsnot, in der sie nicht sein wollen. Deshalb wird dieser
+Ansatz so gut wie nie verfolgt.
+
+4.2. Jedes aufgedeckte "Plagiat" wird für alle Beteiligten mit 0
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+     Punkten bewertet
+°°°°°°°°°°°°°°°°°°°°°
+
+Dieser Ansatz hat den grundsätzlichen Makel, dass man soziale
+Probleme mit technischen Mitteln nicht vernünftig lösen kann. Im
+Einzelnen wird das dazu führen, dass die "abgeschriebenen" Texte nicht
+mehr 1:1, sondern verändert abgegeben werden. Damit bauen die
+Veränderer wohl auch Fehler ein, was ihnen die Möglichkeit, doch mal
+"ehrlich" abzugeben, verbaut.
+
+4.3. Gruppenzwang
+°°°°°°°°°°°°°°°°°
+
+Dies soll eher gegen das Problem der vielen zu korrigierenden
+Übungsblätter helfen. Dagegen hilft es auch recht effektiv, nur läuft
+das meiner Erfahrung nach *immer* darauf hinaus, dass es
+Gruppenteilnehmer gibt, die nur mitgezogen werden wollen. Kollegial
+wie Studenten nun mal sind, haben die nichts dagegen; und damit ist
+das "Plagiate abgeben" sogar noch "korrekt" geworden, obwohl man doch
+eigentlich will, dass keine Plagiate abgegeben werden. Da es (gerade
+in der Mathematik und Informatik) viele "Einzelkämpfer" gibt, stellt
+es so nicht gerade ein Problem da, den 50%-Ansatz "ad absurdum" zu
+führen. 
+
+Gerade Übungsleiter die dieses System propagieren, sollten sich mal
+überlegen, was für einen B*llsh*t sie da eigentlich so fabrizieren...
+
+4.4 Die "Quote" wird herabgesetzt
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
+Dies passiert in der Regel erst dann, wenn die Mehrheit unter der
+alten Quote ist. Also haben auch die Guten das Problem, die Schwelle
+zu erreichen und damit viel mehr Schlechte schon zum "rettenden Anker"
+des Abschreibens gegriffen. Wenn man nun die Quote senkt, dient das
+nur dazu, um keine Probleme mit den Studenten bzw. der Fachschaft zu
+bekommen, weil fast keiner zur Klausur zugelassen wird. Das
+eigentliche Kind ist damit aber schon in den Brunnen gefallen.
+
+4.5. Der "Übungszwang" wird nachträglich aufgehoben
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
+Dies passiert leider viel zu selten. Einmal habe ich es bisher erlebt,
+allerdings auch erst gegen Ende des Semesters bekannt gemacht. Diese
+Lösung ist besser als alle anderen vorher genannten, nur - warum nicht
+gleich so?
+
+5. Wie sollten Übungsblätter also sein?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Frei; nicht im Sinne von Freibier (jeder bekommt alle Punkte
+nachgeschmissen), sondern im Sinne von Freiheit - jeder darf selbst
+entscheiden, ob er den Service der Übungsblattkorrektur in Anspruch
+nehmen will. Wer es will, sollte sich wegen seiner Schwächen (die er
+ja noch verringern kann) auch keine Sorgen auf Probleme in der Klausur
+machen müssen. Studenten sind (in der Regel) erwachsene Leute, die
+selber wissen sollten, wann sie Hilfe (Übungsblattkorrekturen)
+brauchen und wann nicht.
+
+6. Aber wir bekommen mit dem System bessere Quoten?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ja, das habe ich nicht bestritten. Allerdings wird, obwohl die Quote
+der Besteher unter den Klausurteilnehmern besser ist, die Quote der
+Besteher unter den Übungsteilnehmern dies nicht unbedingt
+sein. Andererseits kann ein Übungszwang, der nur in wenigen Fächern
+besteht, dazu führen, dass die Ergebnisse der anderen Fächer (wegen
+"zwangshafter" Beschäftigung mit ersteren Fächern) schlechter werden,
+ohne dass die Ergebnisse in den ersteren Fächern besser
+werden. Effektiv hat der Student dadurch also Nachteile.
+
+
+7. Wer hat diesen Text geschrieben?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Du bist aber neugierig...
+
+Ich bin ein Student der Universität Augsburg, der das Studium der
+Angewandten Informatik im WS 2001/02 aufgenommen hat.
+
+Im ersten Jahr waren die Anzahl der Fächer mit "Übungszwang" recht
+gering, und ich genoss den Service, auch mal einen "non mainstream"
+Ansatz in Beweisen o. ä. ausprobieren zu können, ohne durch den
+dadurch entstehenden Punktabzug (ich *wusste*, dass der Beweis einen
+Haken haben musste (kann doch nicht so einfach sein...), konnte ihn
+aber nicht finden) benachteiligt zu werden.
+
+In den folgenden Semestern wurde dies immer mehr zu einer
+Seltenheit. So langsam übernahmen alle Lehrstühle das System mit
+Übungszwang.
+
+Seit WS03/04 bin ich in Hauptstudium und musste mit Freuden
+feststellen, dass das Stefans-Duo (Stefan Fischer & Stefan Holland)
+bei der Datenbankvorlesung von diesem Zwang absieht. Aber auch im
+Hauptstudium scheint dieser Zwang noch den ein- oder anderen
+Befürworter zu haben...
+
+8. Das ist doch alles Quatsch, was du da schreibst!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Das ist keine Frage. Natürlich kann meine Meinung Quatsch sein. Wenn
+du meinst, dass du gute Gegenargumente oder -vorschläge hast, schreib
+mir ne Mail an <mailto:schierlm@gmx.de>, ich
+werde das ganze dann kommentiert an diesen Text unten hinbazen. Wenn
+du allerdings nur schreibst "Das hat der Prof uns aufoktroyiert", dann
+sage ich "Schön, mag so sein, dass du nicht aus kannst; warum lässt du
+den Text nicht mal nen Prof lesen?".
+
+
+zuletzt aktualisiert am 27.11.2003

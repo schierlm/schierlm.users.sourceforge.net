@@ -1,0 +1,4653 @@
+
+
+-- 
+Wenn Du ein Schiff bauen willst, dann rufe nicht die Menschen zusammen,
+um Holz zu sammeln, Aufgaben zu verteilen und die Arbeit einzuteilen,
+sondern lehre sie die Sehnsucht nach dem großen, weiten Meer.
+		-- Antoine de Saint-Exupéry
+-- 
+Standart ist die Art wie ein Stehgreif steht.
+		-- Renata Kussack in <1ifeb0z.1tz9qjj3aiqjbN%r.kussack1@snafu.de>
+
+-- 
+Schmerz ist der evolutionäre Tribut an das Großhirn [in der Immunulogie] damit
+man den Finger aus der Reißzwecke rauszieht
+			--Dozent in einer Medizin-Vorlesung für Nebenfächler
+-- 
+Like most computer techie people, I'll happily spend 6 hours trying figure out
+how to do a 3 hour job in 10 minutes.                  -- Rev. James Cort, asr
+-- 
+Sein Blick ist vom Vorübergehn der Websites so müd' geworden, daß er nichts mehr hält.
+Ihm ist, als ob es tausend Websites gäbe, und hinter tausend Websites keine Welt.
+		-- Rainer M. 'Netscape' Rilke, Der Surfher.
+-- 
+Elfen Lied ist gewaltverherrlichend. Vor allem, was da so alles brutalst
+niedergemetzelt, grausamst in Stücke gerissen und bei lebendigem Leibe
+zerschnitten, zersägt, zerhackt wird... es wäre nicht übertrieben, zu
+sagen: "Boldly splitting German composites that no man had split before"
+-- 
+>> [IKEA-Pager] Vielleicht mochten die Eltern den Pager lieber als das Kind. 
+> Pager haben halt einen enormane Vorteil: Man kann sie ausschalten. 
+
+Kinder auch. Bloß wieder an ist knifflig.                (Erik Meltzer in daful)
+-- 
+Kräht der Bauer auf dem Dach, liegt der Hahn vor Lachen flach.
+-- 
+Und aus dem Chaos sprach eine Stimme zu mir:
+Sei froh und lächle, denn es könnte schlimmer kommen!
+Und ich lächelte und war froh und es kam schlimmer....
+-- 
+<@fisch> Aber mal ehrlich: Netzwerkgrundlagen anhand Windows lernen zu 
+wollen ist doch wie seine ersten sexuellen Erfahrungen mit einer 
+Prostituierten zu sammlen: Die Leidenschaft fehlt, das wirklich 
+Wichtige lernt man dabei nicht, und die Chance sich einen 
+Schadling einzufangen ist hoch.
+-- 
+Ich frage mich, welchen Wert ein Leben hat, in welchem ich nicht sagen
+kann, was ich denke, in dem ich nicht der sein kann, der ich bin. Wie
+befriedigend mag das wohl sein?
+        -- Thorsten Reinicke in <1h6ncc4.1477qlv1s8aitcN%tr@iworld.de>
+-- 
+Windowsnutzer ja.  Es gibt ja auch keinen Emacs außerhalb von CVS, auf
+dem preview-latex liefe, oder Tooltips, Toolbars etc...  Ich vergesse
+halt leicht die Nischenbetriebssysteme.
+        -- David Kastrup, <x5zmxs7rk9.fsf@lola.goethe.zz>
+-- 
+eBay - Artikel nicht erworben:
+Outdoor Messer ( Hunter ) sehr Scharf !!!!
+Ähnliche Artikel:
+FRUCHTGUMMI MIT PEPERONIEGESCHMACK SEHR SCHARF
+-- 
+So I have an announcement to make: if you are a programmer working in 2003 and 
+you don't know the basics of characters, character sets, encodings, and 
+Unicode, and I catch you, I'm going to punish you by making you peel onions 
+for 6 months in a submarine. I swear I will.
+        -- http://www.joelonsoftware.com/articles/Unicode.html
+-- 
+Crawling on the planets face,
+Some insects
+Called the human race.
+        -- Aus einer Sig von Marco Bakera --
+-- 
+RMS machte dann noch ein paar Witze über diesen Unterschied, in dem er betonte, 
+es gebe ja auch keine Probleme mit der Energieversorgung von if- und while 
+Statements, das if-Statement könne keine Frequenzstörungen verursachen und der 
+Programmierer sei auch nicht verpflichtet, Ersatz-if-Statements bereitzuhalten, 
+falls beim Anwender mal eines kaputt gehe.
+        -- <cj9hrh$udf$1@news.rhein-zeitung.de>, über Softwarepatente
+-- 
+...deshalb mag ich Binärtechnik. Da gibt es nur drei Zustände: High, Low und
+Kaputt.
+         -- Wau Holland in <slrn7uid1j.t1m.wau@minos.trend.jena.thur.de>
+-- 
+Die Wahl des passenden Newsreaders hat doch Parallelen zur Partnerwahl; 
+womit man zufrieden ist, wird bis auf weiteres beibehalten.
+Es gibt bedauernswerte Menschen, die in einer Art Outlook-Beziehung 
+hängen bleiben.         -- Heiner Blett <2s0kl5F1faafnU1@uni-berlin.de>
+-- 
+Personalfuehrung ist die Kunst, den Mitarbeiter so schnell ueber den Tisch zu
+ziehen, dass er die dabei entstehende Reibungshitze als Nestwaerme empfindet.
+	-- meine Frau (hmm...) [Patrick Schaaf]
+-- 
+Microsoft := Most Intelligent Customers Realise Our Software Only Fools 
+             Teenagers
+-- 
+This is all very perplexing. The biggest economy in Europe has the worst 
+internet access in Western Europe... [...] Anyway, everyone add Germany to 
+your list of Countries Not To Emigrate To. ;)          -- Matthew Toseland 
+über Flatrate-Zwangstrennungen <20040624161924.GC21275@amphibian.dyndns.org>
+-- 
+Sie wollen die rechte Maustaste sperren, damit die Leute draußen den
+HTML-Text nicht klauen können? Guter Mann, wenn Sie Frontpage verwenden,
+dann brauchen Sie die Maustaste nicht sperren. Das HTML wird keiner
+klauen _wollen_!           -- Matthias Esken in <c9o6mu.1t8.1@usenet.esken.de>
+-- 
+[1] Btw: Was sagt ein italienischer Kammerjäger, wenn er die letzte
+Kakerlake vernichtet hat?   --  Schabe fertig.  :) (c)Harald Schmidt
+-- 
+You know, the thing I love about forward progress is that you often start off
+with a huge, cluttered toolbox full of all sorts of tools and fasteners.  
+Forward progress means that over time, you throw your tools and fasteners out
+one by one until all you have left is a hammer and a nail.     -- Wes Hardaker
+-- 
+-- "I am Pentium of Borg. You will be approximated."
+-- 
+Job/Money, sleep/hygiene, food, side projects, social life: Choose any 3
+-- 
+auch unter kleinen steppdecken kann ein großer depp stecken
+-- 
+"Eine gebräuchliche Methode:
+Man wählt den Mittelpunkt so, daß die Summe der Quadrate der Differenzen
+der Abstände zu den Randpunkten minimal ist."
+[Michael Kauffmann in de.sci.physik]
+-- 
+Bilder dauern
+Viren lauern
+alles Nepp
+blödes web.
+-- 
+Du kriegst die Leitung trotzdem dicht. Wenn man dir 20000 Ziegelsteine
+pro Stunde zum Fenster reinwirft, ist dein Luftraum irgendwann voll,
+egal ob du die Steine isst, zurückwirfst oder dem Fenster den Rücken
+zudrehst und rufst: "Ich bin nicht da." [Chris H. zu ICMP-Floods in dcsf]
+-- 
+Wenn ich Perl will, dann nehme ich es und baue es nicht nach. Wer Perl
+nachmacht oder verfaelscht oder nachgemachtes oder verfaelschtes Perl sich
+verschafft, um es in Benutzung zu bringen, wird mit Visual Basic nicht unter
+300 KLOC bestraft. [über PHP, <news:slrnbntive.1pu.als@thangorodrim.de>]
+-- 
+In Germany you need a "C" for a fish.
+-- 
+Es gibt in Afrika einen Stamm, die stehen auf einem Bein. Das ist
+deren Standart. Und weil sie immer so stehen, ist deren Standart bei
+denen Standard.
+(Steffen Schmidt in de.comm.infosystems.www.pages.misc)
+-- 
+W.I.N.D.O.W.S.:
+ Wireless Intelligent Neohuman Designed for Observation and Worldwide Sabotage
+        -- http://www.brunching.com/toys/toy-cyborger.html
+--- 
+[...] der Gärtner ist ein Rechenschieber.
+        -- Daniel Werner in 
+           <srml105776514310002211111874@ich.dreh.noch.dur.ch>
+-- 
+Wenn ihr Administratoren so gemein zu den Leuten seid, dann wandern 
+immer mehr Personen in die Hackerszene ab, und letztlich wird es auch 
+mehr Terrorismus geben, aber das ist euch vermutlich egal.
+ -- Jasper Riedel in <99297025.0306270737.76760311@posting.google.com>
+-- 
+"Nicht mit dem übriggebliebenen Auge in den Laser gucken!" (Laborschild)
+-- 
+The use of COBOL cripples the mind; its teaching should, therefore, be
+regarded as a criminal offense.
+   -- Edsger Wybe Dijkstra
+-- 
+Boah Mann, ich hab's anne Augen, ey. Im Schwimmbad war dat Wasser
+wieder Folklore.
+-- 
+»Wenn das Gehirn so einfach waere, dass wir es verstehen könnten,
+ dann wären wir so dumm, dass wir es doch nicht verstehen würden.«
+
+                                    Jostein Gaarder (Sofies Welt)
+-- 
+> Der Asterix (*) bringt hier natürlich nichts.
+Wuerde ein Obelix (/\) mehr bringen?
+(Marko Kovacic in de.comm.infosystems.suchmaschinen)
+-- 
+Wenn du im Recht bist, kannst du dir leisten, die Ruhe zu bewahren; und
+wenn du im Unrecht bist, kannst du dir nicht leisten, sie zu verlieren.
+[Mahatma Gandhi]
+-- 
+He who laughs last thinks slowest.
+-- 
+Wenn man den Duschkopf abhebt und darauf das Freizeichen ertönt, 
+hat der Handwerker nicht richtig gearbeitet.
+-- 
+KUNDE == Kann Ungestraft Noergeln, Da Einnahmequelle.
+        -- Alexander Schreiber in  <slrnbdsjfj.s81.als@thangorodrim.de>
+-- 
+"Windows" is not the answer. "Windows" is the question and the answer
+ is "no". - StickyBit auf heise.de
+-- 
+cat /dev/zero > /dev/null
+So kommt mir das Usenet auch manchmal vor. (T.T.)
+-- 
+This post is double ROT13'd for extra security
+-- 
+Doing linear scans over an associative array is like trying to club
+someone to death with a loaded Uzi.
+        -- Larry Wall (lwall@netlabs.com)
+-- 
+Descartes sagt: "Ich denke, also bin ich". Warum gibt es dann 
+meinen Nachbarn?               [J. Becker in "Mitternachtsspitzen"]
+-- 
+[Wie erreiche ich, dass $Sysadmin nicht auf die Daten zugreifen kann?]
+Dateien alle im Word-Format ablegen. Dann besteht eine emotionelle 
+Blockade für den Linux-Admin. diese zu öffnen (Frank Hemmerling und 
+Heinrich Moser in dcsm)
+-- 
+Chan: "The bad news is, the Y2K bug will make all of our computers
+thinks it's the year 1900. The good news is, that gives us
+an extra 100 years to fix the problem!"
+                -- ?
+-- 
+Es ist zwar traurig, aber es gibt Menschen, denen es großen Spaß macht,
+Schwachstellen in Systemen aufzuspüren.
+                -- Micro$oft in einem seiner Antilinux-"Weißpapiere"
+-- 
+> Es gibt Leute, die sich Stoff besorgen und zur Nadel greifen. 
+> Solcherlei Tätigkeit nennt sich "nähen"
+Und ich dachte das nennt man "fixen". Naja, so kann man sich irren.
+        -- Marcel Kilgus in dasr <b6iqif$5n13r$1@ID-52496.news.dfncis.de>
+-- 
+Es ist schon komisch, dachte Leto, wie sie es allein mit 
+ihrer Stimme fertigbringt, in Kursivschrift zu reden. 
+(Frank Herbert)
+-- 
+Was ist ein Polarbär?
+Ein rechteckiger Bär nach einer Koordinatentransformation.
+-- 
+To be or not to be.     * Shakespeare
+To do is to be.         * Nietzsche
+To be is to do.         * Sartre
+Do be do be do.         * Sinatra
+-- 
+ In:  DATA
+ Out: 554 Error: no valid recipients
+ In:  Received: from unknown (190.106.166.70)       -- SMTP-Dialog,
+ Out: 221 Error: I can break rules, too. Goodbye.      found in d.a.n.m
+-- 
+Q: Was ist der Unterschied zwischen einem Europäer und einem Amerikaner?
+A: Ein Europäer glaubt, 100km sind eine weite Strecke. Ein Amerikaner
+    glaubt, 100 Jahre sind eine lange Zeit...
+-- 
+Will ein Hund dich an der Kehle fassen,
+mußt du ihn Kartoffel schälen lassen.
+Du weiß ja, wie der Volksmund spricht:
+Hunde, die pellen, beißen nicht.
+
+(Hans-Georg Stengel)
+-- 
+This is site is best viewed with your monitor turned on.
+-- 
+Fast alles hat irgendwie mit C zu tun. Wenn es kein C geben wuerde, muessten
+wir wohl in BASI, Pasal oder OBOL programmieren.
+  -- Kurt Watzka in de.comp.lang.c
+-- 
+"Das ist wie mit einer Sonnenbrille in eine dunkle Bar zu gehen. Sieht
+mächtig cool aus, aber man bekommt kaum noch was mit und fliegt
+regelmäßig auf den Schnabel. Je dunkler die Brille, desto Rums."
+[Benedict Mangelsdorff in dnq über exzessives Scoring]
+-- 
+~~~~~~ Volker Gringmuth ~~~~~~~~~~~ http://einklich.net/ ~~~~~~~~~~~~~~~~~~~~~~~
+"Wo bleibt die GEMA-Abgabe für Kämme, Gießkannen und Staubsaugerschläuche?
+Man könnte ja theoretisch urheberrechtlich geschützte Lieder darauf blasen."
+                                    (Benedict Mangelsdorff in de.alt.talk.unmut)
+-- 
+Jaja, früher hat man die Tauben vergiftet. Heutzutage
+gibt es Hörgeräte.
+		-- Roger Schwentker in dasr
+		   <b46m55$n94$2@silvana.westfalen.de>
+-- 
+Das Preisverhältnis zwischen neuen und gebrauchten PCs ist am ehesten 
+mit dem von neuen und gebrauchten Tempotaschentüchern vergleichbar.
+(K. Wilhelm in dchm)
+-- 
+.-------------------------------------------------------.
+|WWWWWWWWWWWWWWWWWWWWWWWW| breit sind diese Zeilen?     |
+|iiiiiiiiiiiiiiiiiiiiiiii| Wenn alle gleich breit sind, |
+|eeeeeeeeeeeeeeeeeeeeeeee| ist es in Ordnung.           |
+|------------------------'                              |
+|und wenn diese Zeile auch so breit ist, 		|
+|dann hast du 8er-Tabs.					|
+'-------------------------------------------------------'
+-- 
+Text mag ein sehr ergiebiges Medium sein, aber auf dem Monitor sieht er lang-
+weilig aus. Er blinkert nicht und hüpft nicht herum, folglich mußte er Dingen 
+den Weg frei machen, die es taten.
+                         Douglas Noel Adams im Nachwort zu Raumschiff Titanic
+-- 
+Ich denke, also bin ich hier falsch.
+-- 
+Millionen von Irren können nicht fliegen.
+-- 
+> Wer ist eigentlich der grössere Troll, der Troll oder der Troll, der den
+> Troll füttert? :->
+Du.
+*plonk*                                              [FvL in <3df4bcb7@fefe.de>]
+-- 
+"We should let the Africans solve their own problems."
+(George W. Bush, when asked on CNN about
+ his administration's policies for Kosovo)
+-- 
+01000111 01101111 01110100 00100000 01100001 00100000
+01110101 01110011 01100101 01100110 01110101 01101100
+01101100 00100000 01110011 01101001 01100111 00101100
+00100000 01100100 01110101 01100100 01100101 00111111
+-- 
+Programmieren heißt: aus den gegebenen Möglichkeiten das Beste machen.
+Wenn deine Anforderungen heißen, daß das Programm ohne Zusatzhardware
+die eingelegten CD-ROMs grün anmalen soll, dann sind sie nicht sinnvoll.
+                 -- Felix von Leitner in dasr (<3dff0fe8@fefe.de>)
+-- 
+> Ausrufezeichen sind Satzeichen.
+                      ^^^^^^^^^^
+Ist das eine besondere Baumart?
+[Lars Feyerabend zu Marc Brockschmidt in de.alt.fan.stefan-raab]
+--
+Usenet est omnis divisa in partes tres, quarum unam incolunt
+Trolli, aliam useri regulari, tertiam, qui ipsorum lingua dei,
+nostra admini appellantur.                 Oliver Wellinghoff
+-- 
+Papi, was ist eigentlich ein Vakuum?
+Hmmm .. ich hab's zwar im Kopf, aber ich komm' grad nicht drauf.
+-- 
+"Üben Sie das Einlegen und Entfernen der Diskette einige Minuten,
+ bis Sie sich sicher fühlen."      - Handbuch Schneider PC, 1986
+-- 
+Ein Student setzt sich in der Uni zum Prof an den Tisch.
+Prof: "Seit wann ißt der Adler mit dem Schwein?"
+Student: "OK. dann flieg ich mal weiter"
+-- 
+sub the($){+shift} sub answer (){ord q
+        [* It is always 42! *]       }
+           print the answer
+# André Malo # http://www.perlig.de/ #
+-- 
+"Ein Vorschlag zur Fortsetzung einer Diskussion in da0 ist also der ironische
+Hinweis des Posters darauf, dass er der Diskussion außer der durch die dadurch
+am Prozessor entstehende Verlustleistung freiwerdenden Wärme nichts mehr
+abgewinnen kann. ;-)"	                -Volker Gringmuth in dnq
+-- 
+If (2.0 == 1.999999963) printf('Pentium inside!\n');
+-- 
+"A philosopher," said the theologian, "is like a blind man in a darkened 
+room looking for a black cat that isn't there." "That's right," the 
+philosopher replied, "and if he were a theologian, he'd find it." 
+                -- Anonymous
+-- 
+Dieses Posting ist geeignet, Kinder und Jugendliche sozialethisch 
+zu desorientieren und in ihrer Anschauung über grundlegende 
+sozialethische Normen und Werte zu beeinträchtigen.
+-- 
+Ja, das _ist_ paranoid.  Computersicherheit ist angewandte Paranoia.
+                -- Rolf Krahl in de.admin.news.misc
+                   (<news:a8h2uu$278$1@rotkraut.de>)
+-- 
+"Programming is similar to sex. If you make a mistake, you have to
+support it for the rest of your life."
+-- 
+Eine Schraube ohne Nagel ist ein Gewinde.
+-- 
+INTEGRAL VON BOCK IN DEN GRENZEN VON MONTAG BIS FREITAG GLEICH NULL!
+-- 
+Sicherheitsabstand: Der Abstand, bei dem sicher einer nach links
+zieht.
+-- 
+If you want to mail me directly:
+- Use Rot13 on my adress
+- Enter "abfcnz" after the "@"
+- Use Rot13 again and delete the "nospam"
+-- 
+------------------------------------------------------------------------------
+Ron Rosson                                    ... and a UNIX user said ...
+The InSaNe One                                        rm -rf *
+insane@oneinsane.net                        and all was /dev/null and *void()
+------------------------------------------------------------------------------
+-- 
+"There are three kinds of lies: lies, damned lies, and statistics"
+Benjamin Disraeli (quoted by Mark Twain)
+-- 
+> Was heißt effektives Multitasking bei Windows?
+Man kann mehrere Programe gleichzeitig abstürzen lassen.
+-- 
+"Viele unserer Importe stammen aus dem Ausland"
+                         
+                                    G. W. Bush
+-- 
+Die besten Maustreiber sind immer noch die Katzen.
+-- 
+I still think Gamestar.de are the lowest form of sub-amoebic life on the
+planet."
+- Christian 'Xian' Antkow of id Software
+-- 
+"Jetzt fang bitte nicht noch mit Logik an, das muss wirklich nicht sein."
+                                          (Thomas G. Liesner in hamster.de.talk)
+-- 
+"The power of the Web is in its universality. Access by everyone
+regardless of disability is an essential aspect." - Tim Berners-Lee,
+W3C Director and inventor of the World Wide Web
+-- 
+I believe my pig whistles.
+-- 
+Wer im Liegen Sterben geht, sitzt echt in der Patsche. (Jygn in dag°)
+-- 
+There are only 10 types of people in this world..
+those who understand binary, and those who don't.
+-- 
+»Herr Schaffner, wie lange hält denn dieser Zug?«
+»Naja, bei guter Pflege ca. 30 Jahre...«
+-- 
+Have you seen the latest Japanese camera?  Apparently it is so fast it can
+photograph an American with his mouth shut!
+-- 
+ueber den grenzen muss die freiheit wohl wolkenlos sein
+-- 
+My computer may be old, but I like the warm glow of tubes.
+-- 
+"We have both editors:  Emacs _and_ XEmacs."
+          -- with apologies to "The Blues Brothers"
+-- 
+Theoretisch hat sowas natuerlich sofortige Konsequenzen. Aber der
+Unterschied zwischen Theorie und Praxis ist bekanntlich, dass es
+theoretisch keinen gibt.
+-- 
+5. 99 percent of lawyers give the rest a bad name.
+-- 
+Die Stosstange ist aller Laster Anfang.
+-- 
+Erst wenn die letzte Ölplattform versenkt,
+die letzte Shell-Tankstelle geschlossen ist,
+dann werdet ihr merken, dass GREENPEACE nachts
+kein Bier verkauft.
+-- 
+Signaturbereich! Zutritt nur für Unbefugte! 
+Kelten haften für ihre Inder!
+-- 
+We have joy, we have fun, we have Emacs in the sun...
+-- 
+Why did the hacker cross the road? To get to the other side.
+Why did the cracker cross the road? To get what was on the other side.
+The difference is small, but important.
+        -- Gandalf Parker
+-- 
+"Warum heisst die Telekom nicht Gelekom? Weil dann keiner die
+ Geschäftstellen finden würde!"
+(Ingo R. Homann [de.comp.lang.java])
+-- 
+Das Leben ist wie zeichnen ohne Radiergummi.
+(Markus Bock)
+-- 
+Windows XP ist das beste OS der Welt.
+Die Programmierer waren:
+Tinky Winky, Dipsy, Lala und Po
+-- 
+Wenn ich eine Windows CD an einen Politiker binde und ihm Geld dafür
+gebe, dass er einmal um den Block rennt und dabei grunzt, dann läuft
+Windows endlich ohne unerklärliche Abstürze.
+-- 
+Was ist der Unterschied zwischen einem Programmierer und einer 
+Waschmaschine ? Die Waschmaschine arbeitet, kommt erst gegen Ende
+des Programmes ins schleudern und was herauskommt ist total sauber
+-- 
+"Ich weiß viel, aber ich möchte alles weißen" (Unbekannter Anstreicher)
+-- 
+Personal Firewalls bieten genau so viel Schutz gegen Trojaner wie dich eine 
+Banana im Ohr gegen Raubüberfälle schützt.  
+Klar kann es sein, daß sich ein Angreifer totlacht, wenn er dich sieht, oder 
+dich für mental unstabil hält und daher einen Bogen um dich macht. [Fefe]
+-- 
+90% der Jugendlichen in Deutschland sehen Postiv in die Zukunft -
+die restlichen 10% koennen sich keine Drogen leisten.
+
+-- 
+"Entweder Sie weisen sich aus, oder wir weisen Sie aus."
+				-- Thomas Ogrisegg in dasr
+-- 
+"LyX ist was fuer Leute mit einem DaX-Schaden"
+                               -- Quelle: unbekannt.
+-- 
+Quitting vi is the most important command of that editor, and
+should be bound to something easy to type and available in all
+modes, for example the space bar.            -- Per Abrahamsen
+-- 
+Gib einem Hungrigen einen Fisch, und er ist fuer einen Tag satt. Zeig
+ihm, wie man angelt, und er poebelt Dich an, dass er besseres zu tun
+haette, als Schnuere ins Wasser haengen zu lassen.
+                                       -- David Kastrup in dctt
+-- 
+Eine PF als Schutz einzusetzen ist wie Windows als Betriebssystem zu
+misbrauchen. Es gibt Leute, die glauben, es funktioniert.
+        -- Bodo Eggert
+-- 
+who | grep -i blonde | talk; cd ~; wine; talk; touch; unzip; 
+touch; strip; gasp; finger; gasp; mount; fsck; more; yes; 
+gasp; umount; make clean; sleep  -- Stefan Schumacher in d.c.o.u.bsd
+-- 
+"If privacy is outlawed, only outlaws will have privacy."
+Phil Zimmerman, http://www.pgpi.org/doc/whypgp/en/
+-- 
+> Schlafen ist lediglich die idle task
+Und wie schaltet man den nervigen Bildschirmschoner ab?
+                             [Jueregen Nieveler zu Andi Kübler in dasr]
+-- 
+"There are 10 types of people in the world. Those who understand binary
+and those who don't."
+-- 
+"Viele unserer Importe stammen aus dem Ausland"
+                         
+                                   G. W. Bush
+-- 
+: chmod a+x /bin/laden
+[Heinrich Moser in dtj]
+-- 
+Windows ist das erste Betriebssystem was nachweisbar immmer terminiert.
+        -- 2nd im Heise-Forum
+-- 
+P.S.: Webstuhl: ist das nun ein Professoren-Lehrsitz für HTML-Design
+oder eine vornehme Ausdrucksweise für die Sch****e, die Frontpage oder
+GoLive auswerfen?
+	--Holger Veit in <slrnaccpca.p5a.veit@borneo.gmd.de>
+-- 
+The UNIX Guru's View of Sex:
+unzip; strip; touch; finger; mount; fsck; more; yes; umount; sleep
+-- 
+Ich habe vor kurzem den Status des DAU verlassen und mir eine Norton
+Personal Firewall zugelegt.
+                         [Fredl Haimer in de.comp.security.firewall]
+-- 
+A NT based server can be run by an idiot and usually is.
+-- 
+"Computer games don't affect kids. If Pacman would have affected us as
+children, we would now run around in darkened rooms, munching pills and
+listening to repetetive music."
+-- 
+"Linux ist ein Krebsgeschwür, das in Bezug auf geistiges Eigentum alles
+befällt, was es berührt." - Microsoft-CEO Steve Ballmer 
+-- 
+MCSE: Minesweeper Consultant and Solitair Expert? :)
+-- 
+What are you doing?!? The message is over,GO AWAY!
+-- 
+*WINDOWS*: Fuer die einen ist es ein Betriebssystem, fuer die anderen
+die längste, fehlerhafteste und mit Abstand langsamste Batchdatei der Welt.
+-- 
+                 Der Schrauber schafft, der Hebel waechst,
+                 es steigt die Kraft, die Schraube aechzt.
+                 Zu spaet merkt erst die Grosshirnrinde -
+                 die Schraube trug ein Linksgewinde.
+-- 
+Bill Gates und Linus Torvalds treffen sich:
+Bill: "... der Leichtsinn unbedarfter Anwender im Umgang mit Mailanhängen
+ist bei Vireninfektionen häufig die Mutter allen Übels."
+Darauf Linus grinsend: "Und Outlook ist der Vater!"
+-- 
+Die "Quadratur der Ellipse" wird erreicht, indem man dem Ergebnis der "Quadratur
+des Kreises" einen leichten Schlag mit der flachen Hand angedeihen läßt.
+-Werner Mitsch 
+-- 
+                Where do you think you're going today?
+-- 
+Alles ist eins - ausser der Null.
+-> Wau Holland erklaert den "Binaerbuddhismus"
+-- 
+Lieber einen von innen verstellbaren Aussenspiegel,
+als einen von aussen verstellbaren Innenspiegel.
+-- 
+> Macht es Sinn Beleidigungen wie ".. wiederliches Arschloch ..."
+> per Mail erhalten, zu verfolgen?
+Kann man denn inzwischen die Duden-Redaktion als Auftragskiller
+anheuern? [Hanno Mueller in <a94mte$ac90$2@news.hansenet.net>]
+-- 
+"Das interessanteste am Usenet sind Organization:, Message-ID:
+und User-Agent:. Wer liest schon noch Bodys?"
+                      --- Christoph Garbers in germanynet.talk
+-- 
+I am Ohm of Borg. Resistance is Voltage divided by Current.
+-- 
+<quote source="M$">
+Linux isn´t ready yet for the desktop.
+</quote>
+Thinking of the lusers, I hope it never will be. [Bernd Jürgens]
+-- 
+Was ist eine Jungfrau? -- Etwas sehr Schönes, vorausgesetzt, sie bleibt
+es nicht.
+                                                   [Joachim Ringelnatz]
+-- 
+Leute, die mehr als ein xterm offen haben, kann man ja wohl sowieso
+nicht ernst nehmen.      (Felix von Leitner in dcoul-tng@socha.net)
+-- 
+Programmieren ist ein Wettbewerb zwischen dem Programmierer, die Software
+idiotensicher zu machen und dem Universum, das versucht, größere Idioten 
+zu produzieren. Bis jetzt gewinnt das Universum.
+-- 
+Wenn das Schiff vom Kurs abgekommen ist und auf die Felsen zuläuft,
+dann fixiert man das Steuer, damit man nur ja die Felsen trifft?
+Aha.
+                            Christian Pree in de.admin.news.misc
+-- 
+"I sense much NT in you. NT leads to Blue Screen, Blue Screen leads to
+downtime, downtime leads to suffering. NT is the path to the Dark Side."
+                                               -- Ellsworth, one small voice
+-- 
+4 yers ago I cudnt spel vise prezidant; now I are won!"
+-- 
+I am Deutsche Bahn AG of BORG.
+Your time will be wasted. Fahrpläne are futile.
+-- 
+I hate people who take drugs, people like customs officers.
+	--Jack Dee
+-- 
+"Was willst Du mit der Leertaste, sprich?"
+"Plenken , mein Freund , oder siehst Du das nicht ?"
+-- 
+nach uns der synflood.
+-- 
+Und am 8. Tag sagte Gott: Okay Murphy, Du kannst jetzt übernehmen!
+-- 
+Teamwork ist, wenn fünf Leute für etwas bezahlt werden,
+was vier billiger tun können,
+wenn sie nur zu dritt wären
+und zwei davon verhindert. (Charles Saunders)
+-- 
+Der grösste Feind des Tauchers ist der Tauchsieder.
+-- 
+Usenet est omnis divisa in partes tres, quarum unam incolunt Trolli,
+aliam useri regulari, tertiam, qui ipsorum lingua dei, nostra admini
+appellantur.
+-- 
+Wie spaltet man ein Atom?
+
+Gib es einer Frau in die Hand und sag sie soll es nicht kaputt machen!
+-- 
+Es gibt einen großen Unterschied zwischen den Spice Girls und einem Pornofilm.
+Ein Pornofilm hat die bessere Musik.
+(Phil Spector, brit. Musikproduzent)
+-- 
+Bill Gates stört im Auftrag von Außerirdischen den technologischen
+Fortschritt der Menscheit
+-- 
+No trees were killed in the sending of this message. 
+However a large number of electrons were terribly inconvenienced.
+-- 
+> Es gibt ja noch andere Dinge als ständig vor dem PC zu hocken.
+Das habe ich auch festgestellt. Der Ergonomie wegen habe ich mir
+dann auch einen Stuhl geleistet und sitze jetzt vor dem Computer,
+das ist wirklich angenehmer.     (F. Schütze  und Jens Kaufman in dctd)
+-- 
+      Where prejudice exists it always discolors our thoughts.
+(o_         When in doubt tell the truth.     Mark Twain       (o|
+//\  (o_. '    In order to verify the truth use GnuPG.    (o<  //\
+V_/_ //\c{} _O)   Key-ID: 4EA52583  Regards, Martin   (*_ //\  V_/,
+-- 
+[...]
+checking for intelligent life... not found
+[...]
+[aus 'configure' von GIMP-1.2.2]
+
+-- 
+"Da sich der Fußgänger nicht entscheiden konnte, nach welcher Seite er rennen
+ sollte, fuhr ich oben drüber."
+                                                     aus Versicherungsakten #10
+-- 
+> "You're locked in a room with Adolph Hitler, Bill Gates and Eric
+> Allman. You have a gun with one bullet.  What do you do?"
+I give Allman the gun and let him cut a deal with Gates while I use
+the mummified corpse of Hitler to break down the door. -- Peter da Silva
+-- 
+Und bevor Du ein Optionsfeld anhackst, solltest Du es erst mal pflügen.
+                                <a84m1a$p5fa4$1@ID-66082.news.dfncis.de>
+-- 
+Die Kuh - im Gegensatz zum Elch - macht vorne Muh, und hinten Melch.
+-- 
+What is the difference between Scientology and Microsoft? One is an 
+evil cult bent on world domination and the other was begun by L. Ron
+Hubbard.                                   (anonym von slashdot.org)
+-- 
+One Editor to rule them all, one Editor to C-x C-f them,
+One Editor to bring them all and to their keymaps bind them
+In the land of Emacs where the Sexprs lie.
+-- 
+Alexander Stielau in dcoulm:
+Dies ist eine technische Newsgroup. Wenn Du über schlechte Übersetzungen
+von kaputter Software diskutieren willst, dann gehe in eine Philosophie-
+Gruppe oder nagel Dir eine Frikadelle ans Knie und dreh dran.
+-- 
+"Plötzliche Regenfälle können zum Betreten einer Buchhandlung zwingen."
+(Loriot)
+-- 
+Young's Gesetz der Telekinese:
+  Alle unbeseelten Gegenstände können sich gerade so weit
+  bewegen, daß sie einem im Weg sind.
+-- 
+Q: How does a spoilt rich girl change a light bulb?
+A: She says, "Daddy, I want a new apartment."
+-- 
+:>>Affen machen alles nach...
+:> Woher weißt du das?
+:Ich versuche gerade, mit einem zu kummunizieren.
+[Fabian Kupferschmid zu Marco Trallerala in dag°]
+-- 
+Sie: Ist dieser Platz neben Dir frei?
+Er: Ja; und dieser auch, wenn Du Dich setzt!
+-- 
+"yip yip yip yip yap yap yip *BANG* --- NO TERRIER"
+        --- Hanno Foest in de.alt.sysadmin.recovery
+-- 
+Merkst Du Troll eigentlich nicht, dass Du der einzige bist, der ein 
+solch ausgepraegtes Merkens und Enezian Syndrom hat und meint, Usenet 
+waere seine Neurosen-Couch?
+(*Tönnes über Andere in <a703ri$be4$1@newsreader2.netcologne.de>)
+-- 
+> Was ist ein ET ? [Tuvok]
+"Ein Tuvok". Das ist eine Einheit zur Messung des Informationsgehalts. Ein
+Artikel von Dir hat genau 1 Tuvok, eine Rolle gebluemtes Klopapier 500 Tuvok,
+und ein Exemplar der Bildzeitung vom 23.8.1957 3,4x10^7 Tuvok. [M.Wischerath]
+-- 
+Computer. Unendliche Rechenpower. Wir schreiben das Jahr 1997. Dies sind die 
+Abenteuer des Raumschiffs Usenet, das mit seiner gegen unendlich strebenden 
+Besatzung unterwegs ist, neuen Blödsinn zu verbreiten, rumzuflamen und News-
+reader zu vermurksen. Das Usenet dringt dabei in Galaxien vor, die nie ein 
+Mensch zuvor gesehen hat. - (Thomas Köhler in de.alt.arnooo)
+-- 
+Anstatt deinen Python-Interpreter mit langen Integers zu quälen
+solltest du in Zukunft grundsätzlich mit der konstanten M-ID 
+<Denis_Jedig_is_the_greatest@syneticon.de> posten. Das schmeichelt 
+deinem Ego und hat auch sonst nur positive Auswirkungen. [Werner Jakobi]
+-- 
+HERR DOKTOR, BITTE NOCHMAL EIN EKG, DAS LETZTE IST MIR SO GUT
+BEKOMMEN.
+-- 
+"Ich hasse es, alt zu werden,
+ man wird weder weiser, noch sonst irgendetwas!"      (Cher)
+-- 
+$_=(qw($_=0;s[0]((qw($_))[0]);print"$_\n";))[0];s[0]((qw($_))[0]);print"$_\n";
+-- 
+I can see an opening for the Four Lusers Of The Apocalypse... "I
+didn't change anything", "My e-mail doesn't work", "I can't print"
+and "Is the network broken?".
+			-- Paul Mc Auley <pmcauley@iol.ie> in ASR
+-- 
+#"Nein, BAUD ist die Abkuerzung f|r Beauford, also die Windgeschwindigkeit in
+# der Datenleitung. 3200 Baud waeren ca. 54000 km/h. Drum pfeifts auch immer 
+# so..." -- Alexander Aulbach
+-- 
+All parts should go together without forcing. You must remember that 
+the parts you are reassembling were disassembled by you. Therefore, if 
+you can't get them together again, there must be a reason. By all 
+means, don not use a hammer. -- IBM maintenance manual, 1925
+-- 
+"Was willst Du mit der Leertaste, sprich!"
+" Plenken , mein Freund , siehst Du das nicht ? "
+-- 
+>>> test
+>> test!
+>teeest!!!!
+plooooonk! (Lutz Feustel zu Markus Schiele in drtm)
+-- 
+Prof:    So the American government went to IBM to come up with a data
+	 encryption standard and they came up with ...
+Student: EBCDIC!"
+-- 
+Töte keine Vögel -
+
+Du vögelst auch keine Toten.
+-- 
+Ich habe das Herz eines kleinen Jungen...
+Es steht auf meinem Schreibtisch - in Spiritus.
+-- 
+ungleichmäßige binärzahlige Spenderleitung
+                           (Friedrich Stern übersetzt ADSL in dang)
+-- 
+Nutzloses Wissen, #251:
+20% aller Autounfaelle in Schweden werden durch Elche verursacht.
+-- 
+PGP or GnuPG encrypted Mail preferred.       See Headers for public key.
+: Wenn Emacs ein Schlüsselanhänger wäre, hätte er nicht nur eine
+: eingebaute Lampe und ein Mobiltelefon, sondern auch einen Kühlschrank,
+: eine Autogarage und ein Flugleitsystem.           [C. Päper in dciwam]
+-- 
+This is LINUX land, in silent nights you can hear the Windows machines 
+rebooting
+-- 
+><g> Du hast meinen Tag gerettet :-)). 
+Zu einem Wirklich Geretteten Tag[tm] fehlt ein </g>
+                     [Gabriele Neukam und Christian Holpert in dan-am
+                       (<6csj8u4bln4o39f5qbs0hu5duuan3tnkoo@4ax.com>)]
+-- 
+Napoleon trug immer Rot, damit seine Soldaten nicht sahen,
+wenn er verwundet wurde.
+Die Nazis trugen braune Hosen,...
+-- 
+Wenn du einem Dummkopf begegnest, bedaure ihn. Begegnest du vielen
+Dummköpfen, bedaure dich.
+-- 
+Books for children that didn't make it:
+"Why can't Mr. Fork and Mrs. Electrical Outlet be friends?"
+-- 
+>"Wer die Welt erleuchten will, muss Licht ins Dunkel bringen."
+...sprach Prometheus. Woraufhin er von Göttervater Gateus an einen Felsen im 
+Kaukasus geschmiedet wurde, wo ihm eine sprechende Büroklammer täglich die 
+Leber aus dem Leib frisst, die jedesmal wieder nachwächst.
+-- 
+"Weltsprache No. 1 dürfte weder amerikanisches noch britisches, sondern
+schlechtes Englisch sein."           (Ralf Callenberg in de.etc.sprache.deutsch)
+-- 
+"Ziel des Spieles ist es, Länder zu überfallen, Kontinente und die Welt zu
+erobern, sowie Gegner zu schlagen."  - Risiko 1976
+"Ziel des Spieles ist es, Länder und Kontinente von Besatzungsarmeen zu
+befreien und in die Unabhängigkeit zu führen."  - Risiko 1990
+-- 
+> > kannst du mir das *Plonk* mal erklären!
+> Da kommt ein _?_ hin!
+> > Habt ihr mich jetzt ausgeschlossen oder Was????
+> Da kommt _ein_ ? hin! [joes_Brother&Marcus Baeumer in dafs-r]
+-- 
+> Think of a raunchy variation on the name of a character in LoTR.
+Frodo NT?  Gandalf Express? (Matt Roberds vs. Shmuel in asr)
+-- 
+"Bitte mit den Sprühdosen _nicht_ ans Regal sprühen. 
+Farbton entspricht der Deckelfarbe!"
+(Schild in einem thüringer Baumarkt)
+-- 
+"Dann druecken Sie jetzt die ENTER-Taste und sagen mir, was auf dem 
+Monitor steht"
+ "Auf dem Monitor steht SAMSUNG"
+-- 
+Ein Mensch, der sich etwas auf seine Intelligenz einbildet,
+ist wie ein Sträfling, der mit seiner großen Zelle prahlt.         (Simone Weil)
+-- 
+"Webmaster dürfen alles, deswegen sind sie "Master". Die Leute am anderen Ende
+der Leitung sind doch nur die Webslaves."               (Uwe Schröder in dciwam)
+-- 
+Laut Statistik ist die Ehe, die Hauptursache aller Scheidungen.
+-- 
+"Sex is like documentation. When it's good, it's very very good. When
+ it's bad, it's better than nothing."
+-- 
+>the requested URL was not found on this server the link you followed is either
+>outdated, inaccurate, or the server has been instructed not to let you have it
+-- 
+Mein Name ist Natur, Sig Natur
+-- 
+Nasebohren ist bei manchen das einzige Zeichen von In-sich-gehen.
+-- 
+Software ist wie Sex. Früher hat man eine Diskette reingeschoben und
+losgelegt, heutzutage muss man vor dem Loslegen erst stundenlang
+installieren (Alexander Bär)
+-- 
+"Es gibt vier Millionen Analphabeten in Deutschland. Also nach Definition Leute,
+die entweder gar nicht schreiben und lesen können oder nur so schlecht, dass
+zumutbarer Schriftverkehr mit ihnen nicht möglich ist. Nur - was wollen die alle
+im Usenet, im mittleren Management und im Webdesign?" --- J. E. Guenther,d.a.s.r
+-- 
+> ..., aber ich suche wirklich einen *Bildschirm*schoner, ...
+Hast Du niemanden, der Dir ein hübsches, passendes Deckchen häkelt?
+    <wpaul@hamburg.de> in dcsm.misc
+-- 
+Spam-Mails löschen ist das Staubwischen des 21. Jahrhunderts.
+[Hans-Christoph Wirth in dafa]
+-- 
+"Ganz ehrlich, abgesehen davon, dass es häufiger crasht und mein System in
+den Abgrund reisst, finde ich den OE nicht schlecht."
+Christian Geyer in dchlb
+-- 
+»Perl - the only language that looks the same
+ before and after RSA encryption.«           -- Keith Bostic
+-- 
+"Gib einem Mann Feuer, und er hat es eine Nacht lang warm.
+Steck ihn in Brand, und er hat es warm für den Rest seines Lebens."
+- Fliegende Fetzen, Terry Pratchett
+-- 
+Fast alle Kinder sind Genies. - Nur die "Hochbegabten" sind
+schon als Kinder Fachidioten.
+-- 
+BOFH #354:
+Chewing gum on /dev/sd3c
+-- 
+UNIX? Ist das nicht diese Scheiße, wo ich tippen können muß?
+-- 
+Painting, n.:
+	The art of protecting flat surfaces from the weather, and
+	exposing them to the critic.
+		-- Ambrose Bierce
+-- 
+
+Diese Signatur ist international leer.
+-- 
+Wer kriecht so spät durch Kraut und Rüben?
+Der Ossi ist's, Er will nach drüben.
+Erreicht den Zaun mit Müh und Not,
+Strom war drauf, nu isser tot.
+-- 
+Wir sind über' n Berg - es geht bergab.
+-- 
+> Du weiss ja: Sowas wie Linux steht und fällt mit dem Admin. Windows ist da
+> deutlich weiter, das steht und fällt ein paarmal pro Woche von allein.
+                             [Joergen Hau in ch.comp]
+-- 
+"Hallihallohallöle, ich bin Verona von Borg. Zuwiderstand ist wecklos.
+Wir werden euch assi... amsi... hihihi, lustiges Wort!"
+-- 
+Nun ja, Webwasher erachtet es ja als seine Aufgabe, u.a. überflüssiges
+Zeug zu filtern. Da dürfte beim Aufruf von ComputerBild eigentlich nur
+eine leere Seite auftauchen...
+(Steffen Schmidt in opera.deutsch)
+-- 
+Soll der Lurker etwas lernen,
+  mußt Du beim Plonken heftig lärmen.	  		        (Collin Blinn)
+-- 
+"Warum sollen wir die Fallgrube zuschütten?    | Oliver Seidel 
+Da fallen doch andauernd Leute rein,           | oliver@die-seidels.de 
+also wird sie doch einwandfrei genutzt."       | http://www.die-seidels.de
+-- 
+> Ich hab' in den Kernelsourcen mal nachgesehen: Es müßte das Modul
+> 3c59x sein.
+wie und wo sieht man in den KernÖl-Sossen nach?
+-- 
+"Power tends to corrupt and absolute power corrupts absolutely"
+    --- Lord Acton
+-- 
+Geh zur Armee und triff interessante Leute!
+Am besten in den Kopf.
+-- 
+<<On the other hand, you have different fingers>>
+-- 
+Wie jagt man einen Elefanten - Teil 2:
+C- Programmierer bestimmen zuerst mit sizeof() die nötige Speichermenge
+für einen Elefanten, versuchen diese zu allozieren, vergessen dabei das
+Ergebnis abzuprüfen und schießen dann mit wilden Pointern auf den Elefanten.
+-- 
+Diese Nachricht wurde ca. 2000 Jahre nach dem Tag erstellt, an dem ein
+Mann an einen Baumstamm festgenagelt wurde, weil er gesagt hatte, wie
+phantastisch es doch wäre, wenn zur Abwechselung die Leute mal nett 
+zueinander wären. (frei nach D.Adams)
+-- 
+"Computers are like air conditioners.
+They stop working properly if you open windows."
+-- 
+> Ich habe Zone Alarm in Hintergrund mitlaufen, das ist fuer mich
+> Pflicht.
+ich habe eine Schüssel Weihwasser neben der Tastatur stehen. Das
+hilft genauso. [Jürgen Schmadlak in <u67uq9.uin.ln@news.schmadlak.net> ]
+-- 
+BSOD = Blue Screen Of Death. Selbstaufrufendes M$-SpielProgram, das 
+       nicht installiert werden muß, die Fähigkeit des Benutzers zur 
+       Interpretation hexadezimaler Gedichte trainiert und einen Kanal 
+       der GraphikKarte (blau) testet.   [Herwig Huener in ger.ct]
+-- 
+How to keep Windows running stable[tm]:
+Reboot after 5 minutes in use.
+-- 
+Was ist der Unterschied zwischen einem Politiker und einem Telefonhörer?
+
+Den Telefonhörer kann man aufhängen, wenn man sich verwählt hat... 
+-- 
+Titanic 12 - Hiroshima 45 - Tschernobyl 86 - Windows 95
+-- 
+"Walfische bestehen zu achtzig Prozent aus Lippenstift."
+-- 
+Diplom: mühsam erworbene Urkunde, für die sich niemand interessiert. 
+Drucksache: portopflichtige Briefkastenverstopfung. 
+Ehe: eine Institution zur Lähmung des Geschlechtstriebes. (Gottfried Benn)
+-- 
+Reality is an illusion that occurs due to the lack of alcohol.
+-- 
+Reality is what refuses to go away when I stop believing in it.
+-- 
+"Hypothesen sind Wiegenlieder, womit der Lehrer seine Schüler
+ einlullt." (Goethe, Sprüche der Prosa)
+-- 
+> Es ist ohne Probleme moeglich .doc Files mit 10MB zu haben, die als
+> pdf gerade mal laecherliche 70kb belegen.
+Das hat einen ganz einfachen Grund. *.doc füllt die weißen Texthintergrund
+natürlich mit weißen Pixeln aus. (Peter H. Jordan zu Timm Reinisch in defbm)
+-- 
+To iterate is human, to recurse, divine.
+-- 
+Arrogant ist, wer recht hat und es weiss. Ignorant ist, wer unrecht
+hat und es nicht wahrhaben will. (bei UVK geklaut) 
+-- 
+Mein Kommentar: Klarinett it!
+
+Oups, das ist zu klein!
+
+etwas größeres muß her, ... also, ... Oboe it!
+
+Ach nee, auch nicht! Das ist jetzt wieder zu groß.
+
+Irgend etwas, das größer als eine Klarinette, aber kleiner als eine
+Oboe ist. 
+
+Ah, richtig, ... Fagott it! :-))))
+-- 
+"Lt. Worf, scannen Sie das Schiff!"
+"300dpi, Sir?"
+-- 
+Automation ist der Versuch des Mannes, die Arbeit so zu gestalten, daß die
+Frau sie tun kann. 
+-- 
+Was kommt dabei heraus, wenn man eine Krake mit einer Frau kreuzt?
+Tja, das weiß keiner so genau, aber es kann bestimmt gut putzen.
+-- 
+Unvorsichtige Elektriker werden schnell zu leitenden Angestellten. 
+-- 
+Jedenfalls ist es besser, ein eckiges Etwas zu sein als ein rundes Nichts. 
+(Friedrich Hebbel)
+-- 
+Wie spaltet man ein Atom?
+
+Gib es einer Frau in die Hand und sag sie soll es nicht kaputt machen!
+-- 
+Umgangsformen sind Formen, die zunehmend umgangen werden. 
+(Oliver Hassencamp, dt. Schriftsteller)
+-- 
+Overflow on /dev/null, please empty the bit bucket.
+-- 
+"'Object Link Embedding' bedeutet, dass Sie Ihre Objekte jetzt mit
+ links beerdigen können."		-unbekannt
+-- 
+Das Rezept beginnt - wie alle meine Rezepte - so: Man nehme eine gute
+Flasche Wein und schütte den Inhalt in den Koch. Dann nehme man... 
+-- 
+>Eine UDP gegen Remailer schadet nur, sie hilft dem Problem nicht.
+Wir wollen Problemen auch nicht helfen.
+        -- Lars Friedrich in de.admin.net-abuse.news
+-- 
+Gibt es intelligentes Leben auf der Erde? Ja, aber ich bin nur zu Besuch
+hier!
+-- 
+"Und das Niveau ging in den Keller, sprang ins Klo und zog leise
+schluchzend die Spülung." 
+        -- MsgID <3B139024.C7733504@radiol.med.uni-giessen.de>:
+-- 
+Ich schiebe meine eigenen Artikel immer durchs Killfile, aber noch
+ist keiner drin stecken geblieben.
+-- 
+Die letzten Worte eines Junkies: Das Zeug ist astrein! 
+-- 
+Andreas Petzhold
+**********
+Was ist Onanie?
+.. Liebe an und für sich.
+-- 
+Titanic 12 - Hiroshima 45 - Tschernobyl 86 - Windows 95
+-- 
+---          http://www.coling.uni-freiburg.de/~schauer/            ---
+"Die unnütze Verwendung von `cat' ist übrigens ganz schlecht für das
+ Karma, da wird man leicht als Hund wiedergeboren."
+                  -- Jochem Huhmann in de.comp.os.unix.linux.misc
+-- 
+Nicole Simon · nisi@gnak.de · http://home.pages.de/~nisi/
+"This is User of Dau. Resistance is futile, you will be clicked!"
+ by Kristian Koehntopp
+-- 
+... und so bleibt Angesichts der letzten Entwicklungen der Gentechnologie
+nur noch die Frage: IST INTELLIGENZ AUF DEN MENSCHEN UEBERTRAGBAR ? 
+-- 
+ich bin der meinung, dass überflüssiger oder sinnloser inhalt einer signatur
+nichts anderes als eine unnötige bandbreitenverschwendung darstellt. somit
+habe ich mich nach nur kurzer überlegung dazu entschlossen, dem rechnung zu
+tragen und an dieser stelle keine signatur oben genannter art anzuhängen.
+-- 
+Schwarzlicht macht helle Räume dunkel.
+-- 
+Das Leben ist eine durch Geschlechtsverkehr übertragene, mit Sicherheit
+tödlich verlaufende Krankheit.
+-- 
+Diskutiere niemals mit jemandem, der drei Liter Vorsprung hat.
+-- 
+Aufkleber auf einem Auto: Wenn Sie das lesen können, habe ich meinen
+Wohnwagen verloren. 
+--
+1969 it took 64KB to fly to the moon
+2000 it takes 64MB to boot Windoze
+--> Damals war die NASA auch noch in der Lage Meilen und Kilometer
+auseinanderzuhalten
+-- 
+>>Hat der nicht schon längst 'ne Merkbefreiung bekommen?
+> Schon. Er hat's nur noch nicht gemerkt.
+Wird umgehend gesiggt! 
+[<a26kc3$c54$2@news.cs.tu-berlin.de>]
+-- 
+Selig sind die Bekloppten,
+denn sie brauchen keinen Hammer
+-- 
+'Morgens' ist, wenn die Sonne bootet bis ungefähr
+wenn sie runlevel 3 erreicht.. Martin Lange, d.a.a
+-- 
+Die Kuh macht 'Muh' - viele Kuehe machen Muehe.
+--
+"Somehow what you suggest is like suggesting to add drills \ jan.w@lzer.net
+to cars so you can drill for oil when you run out of fuel.  \
+Sure you could do it, but it might not be the most practical >          Jan
+solution." [Thorsten Froehlich in p.u.p]                    /        Walzer
+-- 
+"Es besteht die Möglichkeit, daß Computer einmal weniger
+als 1,5 Tonnen wiegen werden."
+                               "Popular Mechanics", 1949
+-- 
+Leben ist eine Erbkrankheit
+-- 
+  Siamesische Zwillinge sind auch nur eine Form von Redundanz!
+                                                               (Sven Schoradt)
+-- 
+Man muß die Rechtschreibreform nicht schlechtmachen.
+Sie ist schon schlecht gemacht.
+-- 
+Echte Hacker benutzen Aexte. (Thomas Walter in de.org.ccc)
+-- 
+Ein Betriebssystem sie zu knechten, sie alle zu finden, ins Dunkle zu
+treiben und ewig zu binden, im Lande Microsoft, wo die Schatten drohen.
+--- (Bill Gates - Herr der Rechner)
+-- 
+Weiner's Gesetz der Bibliotheken:
+Es gibt keine Antworten, nur Querverweise.
+-- 
+Es gibt einen großen Unterschied zwischen den Spice Girls und einem Pornofilm.
+Ein Pornofilm hat die bessere Musik.
+(Phil Spector, brit. Musikproduzent)
+-- 
+"Trockene Birkenrinde brennt auch in tropfnassem Zustand."
+                                                       (Jens in de.rec.outdoors)
+-- 
+Filter uff, Troll rinn, fertig. Wenn danach immer noch Rauschen in der
+Gruppe zu finden ist, den Filter weiter und weiter justieren. Bemerkst
+Du dann irgendwann, dass Du alleine in der Gruppe bist, habt ihr in der
+Gruppe ein Konsens-Problem. (Torsten Gallus in dan-an)
+-- 
+Frauen sind wie Autos: Man hegt sie, man pflegt sie, und irgendwann 
+bummst ein anderer in sie rein...
+-- 
+Suche Buch 'Friedliches Verhalten in Stresssituationen', Tausch gegen
+Kettensäge erwünscht.
+-- 
+Die Komplexität eines Programmes steigt so
+lange, bis die Fähigkeiten des Programmieres 
+nicht mehr ausreichen es zu warten. 
+                       MURPHYS COMPUTERGESETZE
+-- 
+Die letzten Worte der Prostituierten: Ist der aber niedlich... 
+-- 
+Neulich wurde eine Speise entdeckt, die bei Frauen eine ganz ungewöhnliche
+Wirkung hat: Sie verlieren praktisch jede Lust am Sex und werden
+geschwätzig und streitlustig. Man nennt sie übrigens Hochzeitstorte.
+-- 
+Schlaf am Arbeitsplatz ist positiv! - Denn: Wer schläft macht nichts
+falsch.
+-- 
+Wenn sich Männer mit ihrem Kopf beschäftigen, dann nennt man das Denken.
+Wenn sich Frauen mit ihrem Kopf beschäftigen, dann nennt man das
+Frisieren.
+-- 
+Was haben Frauen und Magnetfelder gemeinsam?
+Beide lenken ab und verrichten keine Arbeit.
+-- 
+Fahrschullehrer zum Schueler:
+F: Warauf muessen Sie beim Schild Baustelle besonders achten?
+A: Auf Strassenbauarbeiter nicht unter 1.2 Promille"
+-- 
+Der Beweis sei dem Leser als Hausaufgabe empfohlen.
+-- 
+"The obvious mathematical breakthrough would be development of an easy way
+to factor large prime numbers."     (Bill Gates from The Road Ahead, p265)
+-- 
+> Wie heisst es [SPAM] eigentlich in der Mehrzahl?
+Spam ist Mehrzahl, wär's Einzahl, wär's kein Spam.
+                                                   [Harald Effenberg in dnq]
+--
+dass das das für das dass genommen wird, das kann nicht sein -
+oder umgekehrt?
+-- 
+Vorhandene Rechtschreibfehler und sonstige grammatikalische
+Verfehlungen sind ganzheitlich geplant und dienen ausschließlich
+zur Erheiterung der geschätzten Mitleserinnen und Mitleser.
+-- 
+> Why does anyone celebrate fucking christmas?
+That's a very valid question, provided that anyone actually fucks 
+Christmas and celebrates that act.
+[Joaquim Gândara to drsquare in <a0l9dc$lktf5$1@ID-102694.news.dfncis.de>]
+-- 
+                              *** Werbung ***
+"Klebriger, klumpiger Reis? Das muss nicht sein! Denn jetzt gibt es
+Uncle Ben's klebrige, klumpige Nudeln!"
+                              *** Werbung ***
+-- 
+Ferrero und Microsoft sind das perfekte Gegenteil: Ferrero macht schlechte
+Werbung aber gute Produkte, bei Microsoft ist es genau andersrum!!
+-- 
+Sehr hübsch ist auch immer wieder die Klage, man müsse sein
+System neu aufsetzen, wobei es vielleicht manchmal geschickter
+sein kann, es in stabiler Seitenlage zu belassen.
+Astrid P. in d.c.s.m.s
+-- 
+Er war Mathematiker und sie war unberechenbar.
+-- 
+Die Symptome der Liebe sind sehr ernst zu nehmen - die Erkrankten müssen
+sofort ins Bett.
+-- 
+Es ist schwierig, Menschen hinters Licht
+zu führen, sobald es ihnen aufgegangen ist.
+-- 
+Adam sitzt im Paradies. Eines Tages sagt er zum lieben Gott: "Kannst du
+mir jemanden machen, der nett, schön und intelligent, und zum Liebhaben
+ist?" Antwort:" Ja klar, dafür brauche ich allerdings deinen rechten Arm
+und dein linkes Bein!" Adam:" Was kriege ich denn für eine Rippe?"
+-- 
+Trinkst Du Becks auf Segelschiffen,
+Darfst Du nicht auf die Segel schiffen!
+-- 
+Wer im Steinhaus sitzt, sollte nicht mit Gläsern werfen.
+-- 
+There's a door
+Where does it go?
+It stays where it is, I think.
+(Terry Pratchett, Eric)
+-- 
+"Windows löschen" fällt m.E. unter die bestimmungsgemässe Nutzung der
+Software. Also zulässig.
+-- 
+"Mit Befremden sehe ich, wie Leute, die Windows einsetzen,
+taeglich abstuerzen, sich Viren einfangen oder ihr System
+neu installieren muessen."  -- Gefunden bei heise.de/newsticker 
+-- 
+Murphy's Gesetz ist nicht umkehrbar. Das Auto zu waschen, damit es regnet,
+funktioniert nicht.
+-- 
+Und am achten Tage gab er dem Menschen das score-file 
+-- 
+Das ist wie mit einer Sonnenbrille in eine dunkle Bar zu gehen. Sieht
+mächtig cool aus, aber man bekommt kaum noch was mit und fliegt
+regelmäßig auf den Schnabel. Je dunkler die Brille, desto Rums.
+      [Benedict Mangelsdorff in dnq über exzessives Scoring]
+-- 
+Vor allem ältere Netzwerkspiele bedienen sich Novells IPX/SPX-
+Protokoll, zum Beispiel das in Deutschland indizierte und daher
+völlig unbekannte Doom.                             (c't 24/01)
+-- 
+Wie meinen? Gnus, tin und slrn laufen auf einem Betriebssystem, der
+Agent auf einer überdimensionalen Spielekonsole, deren Textverarbeitung
+mit einer schwulen Büroklammer daherkommt.
+                         Stefanie Teufel in de.comm.software.mailreader
+-- 
+God grant me the Serenity to accept the things I Cannot change…
+Courage to change the things I can
+And Wisdom to know the difference…
+--
+Frage an Radio Eriwan: Kann ein Troll schwimmen?
+Antwort: Im Prinzip ja, er ist ja hohl. Trotzdem wird er
+untergehen, weil er nicht ganz dicht ist.
+-- 
+Bundesbuerger essen mehr Haie als umgekehrt. (Daniela Nicklas)
+-- 
+Schwarzlicht macht helle Räume dunkel.
+
+-- 
+Machine Always Crashes, If Not, The Operating System Hangs (MACINTOSH)
+        -- Topic on #Linux
+
+-- 
+================================================================================
+-- 
+public class Pi{public static void main(String[]s){String z="000";int a[]=new
+int[52514],b,c=52514,d=0,e,f=10000,g,h=0;for(;(b=c-=14)!=0;h=e+d/f){System.out.
+print(z.substring(Integer.toString(h).length()-1)+h);for(e=d%=f;(g=--b*2)!=0;d
+/=g){d=d*b+f*(h!=0?a[b]:f/5);a[b]=d%--g;}}}}// aus <news:3D4EB0A1.20207@sds.de>
+-- 
+#!/usr/bin/perl -I' # tekscribble.pl - start in an xterm and scribble with mouse
+$|=1;$g="\35";sub g{getc}sub p{print@_}system"stty -icanon";p"\233?38h";for(;;){
+p"$g\33\32";$_=g;$x=g;$X=g;$y=g;$Y=g;last if/q/;$k=$y.chr((ord$Y)+64).$x.chr((
+ord$X)+32);p"\33\14"if/c/;p$g.(/ì/?$l:$k).$k;$l=$k;}p"\33\3";system"stty icanon"
+-- 
+Melchior FRANZ wrote:
+[Unsinn]
+	-- Melchior Franz in suse-linux
+-- 
+Ein Betriebssystem sie zu knechten, sie alle zu finden,
+ins Dunkle zu treiben und ewig zu binden,
+im Lande Microsoft, wo die Schatten drohen.
+		--- (Bill Gates - Herr der Rechner)
+-- 
+SHIFT HAPPENS
+-- 
+Der Kluegere kippt nach - Saufen bis der Notarzt kommt
+-- 
+{brigens> Ein Kezboard/Treiber ist v;llig [berfl[ssig!
+-- 
+Der Rechner von heute stuerzt ja schon ab, bevor man ihn ueberhaupt
+eingeschaltet hat.
+Das ist dann energiesparend und deshalb kein Bug sondern ein Feature.
+-- 
+Frei herumlaufende Uhren koennen sich und andere gefaehrden.
+(Anja M. Girards)
+-- 
+char *ptr = malloc (strlen(source));      /*  Immo 'FaUl' Wehrenberg  */
+if (!ptr) exit (EXIT_FAILURE);            /* in de.comp.security.misc */
+strcpy (ptr,source);     /* ptr ist 1 Byte zu klein!!!1 ^^^^^^^^      */
+/*     Wer das nicht kann, sollte IMHO gar nicht C programmieren.     */
+-- 
+Diese Mitteilung wurde unter Mithilfe von 3 Fingern erstellt und ist deshalb 
+auch ohne Signatur gültig!
+-- 
+Die europäischen Finanzminister haben beschlossen,
+das Eurosymbol durch das Viagra-Markenzeichen zu ersetzen.
+Dies soll eine harte Währung symbolisieren...
+-- 
+Der Mensch hat die Atombombe erfunden. Keine Maus der Welt
+käme auf die Idee, eine Mausefalle zu konstruieren.
+  Werner Mitsch
+-- 
+Nicht die Quantität, sondern die Qualität des Mülls ist entscheidend.
+                                                          [Daddy in dtm]
+-- 
+You tried.
+You failed.
+Try again.
+Fail better!  ;-)
+-- 
+Tragetaschen haben alle eine Größe: Gerade etwas zu klein!
+-- 
+Bildschirm löschen? "del con" oder was?
+-- 
+Wer sich ans Kreuz stellt, darf nicht jammern, 
+  wenn auf einmal jemand mit Hammer und Nagel kommt!            (Collin Blinn)
+-- 
+PEOPLE'S WHOLE LIVES DO PASS IN FRONT OF THEIR EYES BEFORE THEY DIE.
+THE PROCESS IS CALLED 'LIVING'.
+-- 
+"Filme"? Ist das dieses neumodisches Zeugs, das wie Internet ohne
+klicken funktioniert? (Sven Tuerpe in de.alt.arnooo)
+-- 
+Je mehr Käse, desto mehr Löcher. Je mehr Löcher, desto weniger Käse.
+Daraus folgt: Je mehr Käse, desto weniger Käse!
+-- 
+Die Basis jeder gesunden Ordnung ist ein großer Papierkorb. 
+-- 
+Wer die Langsamkeit digitaler Medien erforschen möchte,
+  findet in der d-Box ein ideales Studienobjekt.          (Stiftung Warentest)
+-- 
+Mein Beileid - das IBM-Deutsch ist irgendwie sehr eigenwillig, frei nach
+dem Motto: "verdeutsch Dich, oder ich pruegel Dich ins Dudenformat".
+(Alexander Schreiber in <slrn9v0a43.k96.als@thangorodrim.de>)
+-- 
+ungleichmäßige binärzahlige Spenderleitung
+                           (Friedrich Stern übersetzt ADSL in dang)
+-- 
+Quantenphysikalischer Hinweis: Gewissen Theorien zufolge könnte dieses
+Produkt, sofern vom Verbraucher nicht unmittelbar beobachtet, jederzeit zu
+sein aufhören oder nur mehr in einem vagen und unbestimmten Zustand
+weiterexistieren.
+-- 
+"Wer sagt: Schulen ans Netz, der muss auch sagen: Schueler auf den Sportplatz 
+oder in die Halle oder ins Schwimmbad. Das Klicken mit der Maustaste staerkt 
+vielleicht die Muskulatur des rechten Zeigefingers, wird aber in absehbarar 
+Zeit keine olympische Disziplin werden."   [Bundespraesident J. Rau im kicker]
+-- 
+Ich habe mal miterlebt, wie ein Hubschrauber mit 4 Japanern
+in das Matterhorn gerast ist.  Das hat dem Matterhorn über-
+haupt nichts ausgemacht.                   [Harald Schmidt]
+-- 
+[Stichwort "Autorennamen"] - "Ich habe tatsächlich sekundenlang überlegt, ob es
+sich vielleicht um ein Stoßgebet von Michael Schumacher handelt."
+                                                           (Th. Gerlach in desd)
+-- 
+unzip;strip;touch;finger;mount;fsck;more;yes;umount;sleep
+- the way how unix gurus have sex -
+-- 
+Gehen zwei Sozialpaedagogen durch die Strassen und finden einen völlig
+zusammengeschlagenen, zertretenen, am boden wimmernden Kerl. Sagt der Eine
+zu dem Anderen: "Der das getan hat braucht echt Hilfe".
+-- 
+Enttaeuscht vom Affen schuf Gott den Menschen. Danach verzichtete er 
+auf alle weiteren Experimente.                             [Mark Twain]
+Enttaeuscht vom Menschen schuf Gott den Behinderten. Als er sah, das es 
+gut wahr, machte er noch ein wenig mehr davon; ewtl. sogar Dich?   [me]
+-- 
+Es gibt drei Arten von Menschen:
+a.. solche die bis fuenf zaehlen koennen
+b.. solche die es nicht können
+-- 
+"Lebensgefährtin" ist ein Wort, das von Lebensgefahr abgeleitet ist.
+-- 
+Frage: Was bedeutet AFAIK?
+Antwort: Soweit ich weiß bedeutet es: "Aufgrund freier Annahmen intuitiv 
+konstruiert" (Zippo Zimmermann in de.newusers.questions)
+-- 
+Dies ist eine Erpressersignatur. Überweisen sie sofort 500$ auf mein
+Schweizer Nummernkonto oder Ihr E-Mail Programm wird zerstört.
+-- 
+Brain 1.0, sollte eigentlich bei jedem Humanoiden dabeisein - jedoch zeigt die
+Praxis, das oft bei der auslieferung geschlampt wird und viele mit einer 
+pre-release von Brain ausgeliefert werden. (oder ganz ohne)
+[Juergen P. Meier in dcsf]
+-- 
+if u feel sig - go to the doctor
+-- 
+"ORBS"... das klingt eher wie ein herzhafter, gleichgültiger Rülpser
+eines geplagten Admins als Antwort auf die neueste Drohung dieses
+Vereins...
+-- Christian Appenzeller in <3881de3e.9333503@news.cis.dfn.de>
+-- 
+Q:  Do you know what the death rate around here is?
+A:  One per person.
+-- 
+PCMCIA?
+People Can't Memorize Computer Industry Acronyms?
+Message-ID: <3A2BF156.91B2A24@gmx.net>
+-- 
+"Der Urknall ist kein ruhestörender Lärm."
+(Artikel 1 Abs. 3 des Galaktischen Grundgesetzes)
+http://www.urania-dresden.de/terrasse/ggg.htm
+-- 
+Was bedeutet WINDOWS?
+- Will Install Needless Data On Whole System
+-- 
+ "Isn't it disgusting seeing all these Muslims buying TV's and playing music!
+  Well *I'm* certainly not coming out of this burkha!"
+
+ "Neither am I, Osama!"
+-- 
+> > kannst du mir das *Plonk* mal erklären!
+> Da kommt ein _?_ hin!
+> > Habt ihr mich jetzt ausgeschlossen oder Was????
+> Da kommt _ein_ ? hin! [joes_Brother&Marcus Baeumer in dafs-r]
+-- 
+"'Object Link Embedding' bedeutet, dass Sie Ihre Objekte jetzt mit
+ links beerdigen können."
+-- 
+"Ich moechte Windows kaufen."
+"Sind Sie verrueckt?"
+"Gehoert das zu den Lizenzbedingungen?"
+-- 
+Letzte Worte eines Patienten: Ist diese Spritze auch ungefährlich.??
+-- 
+One ping to rule them all,
+One ping to find them,
+One ping to bring them all.
+And in the darkness bind them.
+-- 
+Unvorsichtige Elektriker werden schnell zu leitenden Angestellten. 
+-- 
+Der Hamster, das einzig wahre Nutztier neben der Maus
+(Daniel Zimmermann in hamster.de.talk)
+-- 
+>BTW stehen in meinen Logs immer so Sachen wie: "Mozilla/4.0 
+>(compatible; MSIE ...)".
+Jedenfalls ist Mozilla nicht anzulasten, dass MS unter 
+Minderwertigkeitskomplexen leidet.          [pi zu Holger Kunsdt in dang]
+-- 
+75 Things you don't want to hear from your Sys Admin.
+40. Hmm, maybe if I do this...
+-- 
+Letzte Worte eines PC-Users: Interessant, da steht <Allgemeine
+Schutzverletzung>!
+-- 
+Mike Tyson virus: Quits after one byte.
+-- 
+>The requested URL could not be retrieved:
+>http://wpxx02.toxi.uni-wuerzborg.de/~dcoulmod/
+                             ^^^^
+We are Würz-Borg of Pepper. You will be spiced. Resistance is Salad.
+-- 
+            (o-     This is Linux Country.      -o)  
+            //\     On a quiet night, you       /\\  
+            V_/_    can hear Windows reboot.   _\_V 
+--  
+> The program does not crash; it just doesn't print.
+Not all manufacturers still include 16-bit support in their drivers, or perhaps 
+Microsoft didn't feel like testing Lose2K much with 16-bit apps, since that's 
+not where they want you to go today.        ["Nuke Me Xemu" in ms.p.vb.bugs]
+-- 
+Das schlimmste, was man tun kann, ist,
+sich selbst für normal zu halten und
+dann zu wollen, dass alle normal sind.
+-- 
+Eine bescheuerte Signatur ist immer noch besser als gar keine.
+(So kann man wenigstens demonstrieren, dass man einen
+gescheiten Newsreader einsetzt :-)
+-- 
+<Angel`Eye> installations anleitung für intelx86 richtig ?
+<Salz> Angel`Eye: Kommt auf deinen Rechner an. Wenn du die Antwort nicht weiß,
+       ist sie ja.
+                                        -- #debian.de
+-- 
+<wenz> quit
+<wenz> ~/quit
+-!- wenz [~hoshi@pD900E60C.dip.t-dialin.net] has quit [ircII2.8.2-EPIC3.004 ---
+          Bloatware at its finest.]                   -- #debian.de
+-- 
+Treffen sich zwei Geraden. Sagt die eine: 
+"Beim nächsten Mal gibst du einen aus!" 
+-- 
+> Aber was Mailinglisten sind, weiss Du schon? Ich z.B. schreie auf
+> solchen recht viel.
+HAST DU DIE SCHWERHOERIGEN-ML ABONNIERT?
+		-- Walle zu 'pi' in dcsn
+-- 
+Pinky: "What are we going to do tonight, Brain?"
+Brain: "The same thing we do every night, Pinky:
+        try to install Windows 95!"
+-- 
+"Drachen fesseln? Was für ein neumodisches Zeug. Zu meiner Zeit hat man
+Drachen einfach erschlagen. Allerdings hatte man dann ständig Jungfrauen
+am Hals. Aber eigentlich könnte man die ja fesseln ... " (G. Fix, d.a.n.g)
+-- 
+In case of emergency, break glass. Scream. Bleed to death
+-- 
+"There are some micro-organisms that exhibit characteristics of both plants 
+and animals.  When exposed to light they undergo photosynthesis; and when 
+the lights go out, they turn into animals.  But then again, don't we all?"
+-- 
+Enttäuscht vom Affen, schuf Gott den Menschen.
+Danach verzichtete er auf weitere Experimente.
+                                  (Mark Twain) 
+-- 
+Der Utopist sieht das Paradies, der Realist das Paradies plus Schlange.
+-- 
+Der Newsreaderteil von Opera bringt garantierten Brechreiz als
+wichtigstes Feature mit. Sven Hartge in <a44.3b23b8bb.7@ds9.argh.org>
+-- 
+Erstes Postulat des Iso-Murphysmus:
+Dinge,die nichts anderem gleichen, sind einander gleich.
+-- 
+We are Bill Gates of Borg. You will be assimilated...
+...as soon as we can fix the bugs... - damn program!
+The Penguin say:
+"Good evening Mr. Gates, I'll be your server today!"
+-- 
+NACK. Sanktionen der zuständigen staatlichen Orange sind eine
+Sache, [...]
+                                             ^^^^^^
+                 Uwe Tetzlaff in dang <9u5dac$296$2@kalkleiste.nomic.de>
+-- 
+Documentation is like sex: when it is good, it is very, very good;
+and when it is bad, it is better than nothing.   - Dick Brandon
+-- 
+"Geschmackssache", sagte der Affe und biss in die Seife.
+--
+/sps  .|.  The 33% of mortal crashes implicates somebody that has drunk.
+     (+.+) The 67% left implicates somebody that hasn't drunk...  So the
+       ~   safest way to drive is to be drunk as fuck.
+-- 
+Fliegende Teppiche kamen aus der Mode, weil man nichts darunterkehren
+kann.
+-- 
+"Wir hier in Zentraleuropa lesen meistens von Oben nach Unten, nicht von
+Unten nach Oben und dann in die Mitte und dann wieder zurueck." - 
+O.G. Schwenk in d.n.q über korrektes Quoten
+-- 
+> (was bitte ist die Steigerung von "Größter anzunehmender Unfall"?).
+Windows
+                           Wilfried Wurch und Birger Bremle in dcsms
+-- 
+"Leute, raucht mehr Zigaretten! Ohne die Tabakindustrie koennen wir
+unsere Volkswirtschaft gleich einmotten. Ohne die fuer die Zigaretten
+entwickelten Automaten gaebe es keinen Fortschritt im
+Fahrkartenverkauf im ÖPNV"       [Thomas Schlueter in de.rec.fahrrad]
+-- 
+: "Pi ist gleich drei, für genügend kleine Pi und große 3."
+-- 
+Warum haben Enten so grosse Fuesse?
+Um die ganzen Waldbraende auszutreten.
+Und warum haben Elefanten so grosse Fuesse?
+Um die ganzen brennenden Enten...
+-- 
+Linux: Life beyond the Bluescreen
+-- 
+DIE FINNISCHE REGIERUNG BITTET:  ALTE LAPPEN NICHT WEGWERFEN!
+-- 
+I heard that the Chinese are shipping huge loads of viagra to Florida,
+since they heard people there have 'problems with elections'.
+-- 
+Wer ohne Rechtschreibfehler ist, der werfe den ersten Kugelschreiber.
+-- 
+Wie meinen? Gnus, tin und slrn laufen auf einem Betriebssystem, der
+Agent auf einer überdimensionalen Spielekonsole, deren Textverarbeitung
+mit einer schwulen Büroklammer daherkommt.
+                         Stefanie Teufel in de.comm.software.mailreader
+-- 
+...Jetzt haben wir ein Programm -
+machen wir Software d'raus! 
+-- 
+Unter welche Familienrubik fällt ein abgetriebenes Kind? Unter "Entfernte
+Verwandenten"
+-- 
+Tja, das schlimme am Älter werden ist nicht das viele Neue,
+das man ständig dazulernen muß; sondern die vielen veralteten
+Sachen zu vergessen, die man perfekt beherrscht, aber völlig
+nutzlos geworden sind. Thomas Rehm.
+-- 
+Manta-Fahrer im Gespräch:
+- "Ich hab mir gestern ein Lexikon gekauft!"
+- "Und, hastes schon eingebaut?"
+-- 
+Ach?  Und ich hatte bisher immer gedacht, dass die Fraunsleut
+diejenigen waeren, deren Koerper die sagenumwobene Bildungs-
+luecke aufweist; und die Mannsbilder besaessen den passenden
+Bildungsstopfen dazu.                       Peter G. Bouillon
+-- 
+Ich hab gerade Zeit, wo gibt's nichts zu tun?
+-- 
+Ein Freund ist ein Mensch, vor dem man laut denken kann.
+(Ralph Waldo Emerson)
+-- 
+                        My name is Annie Key,
+                         please don't hit me!      
+                                 /
+                          _____
+                         ,  ___))
+                        /  | 6 6
+                       (___( _e
+                      ____/ /_
+                     / \ o\_/ \
+                    / /\' _  _)\
+                   /_<  )____/\_\ 
+               ___oo'  ,ooooo,|_/
+             -//,-(   /      |=/
+                      |    \  \
+                       \       \
+                        )_______\
+                       /  )   / )
+                      /  /   (  |
+                      | /     \ |
+            _________ |/_______\|________.
+                      =         =
+                     /(         )\  b'ger
+                    /,/        7 \\_
+:)
+joris
+-- 
+<DeVries> Wann kommt Debian3.0? Jemand n ungefähres oder genaues Datum parat?
+<@Alfie> DeVries: Wenn es fertig ist.
+<@Falky> dwVries wenn es fertig ist
+<@weasel> DeVries: ziemlich genau dann, wenn es fertig ist.    -- #debian.de
+-- 
+:    `$.    .$$ ,gSP^Yg. .$7' _   :                                           :
+:     $$g.,y$$P $$' _,d' dP"'`    :             Life's not fair.              :
+:    ,$`Y$$7'$' $$P"`  , $$b.     :       But the root password helps.        :
+: ,ss7'  `'  $s.`Y$yy$7'  `Y$y$P' :                                           :
+-- 
+Ich haette da gern mal ein Problem.
+(Mario Stiffel, de.newusers.questions, 23.5.1999)
+-- 
+We are Bill Gates of Borg. You will be assimilated...
+...as soon as we can fix the bugs... - damn program!
+-- 
+>> Wer ist jetzt wie eingestellt? Was hast Du eigentlich gegen OE?
+Ein Scorefile.
+                             [Andreas Kohlbach in de.comm.software.newsreader]
+-- 
+Männer fallen häufiger aus dem Bett als Frauen.
+
+                       aus: Handbuch des nutzlosen Wissens <isbn:3-423-20111-8>
+-- 
+q: If you were young again, would you start writing TeX again or would
+   you use Microsoft Word, or another word processor?
+a: I hope to die before I *have* to use Microsoft Word.
+  -- Harald Koenig <koenig@tat.physik.uni-tuebingen.de> asking Donald E. Knuth
+-- 
+Die Erde ist ein gebildeter Stern mit sehr viel Wasserspülung.
+-- 
+Die meisten Hühner werden schon als Eier in die Pfanne gehauen
+-- 
+"They say when you play that Microsoft CD backward you can hear satanic 
+messages." -- "That's nothing. If you play it forward it will install Windows."
+       Henry Leyh in news:alt.guitar
+-- 
+> [Alkohol zur Problemlösung]
+Ja. Alkohol ist ein Lösungsmittel. Es löst Probleme. Nur dumm, daß die
+wieder auskristalliesieren, wenn das Lösungsmittel verdampft ist.
+[Inquisitor.Christopherus in z-netz.alt.rollenspiele.dsa]
+-- 
+  Text tiles make very poor textiles.
+-- 
+Ich geb dir natürlich irgendwie recht. Ein Realname im de.*-Usenet ist,
+ebenso wie eine Badehose im städtischen Hallenbad, absolut überflüssig.
+Durch ein entsprechendes Outfit wird die Benutzung beider Einrichtungen
+aber wesentlich vereinfacht. (Werner Jakobi in de.newusers.questions)
+-- 
+TB or not TB, that is the infection.
+-- 
+Zucker ist ein weißer Stoff, der dem Kaffee einen schlechten
+Geschmack gibt, wenn man vergißt, ihn reinzutun.
+-- 
+Das Leben ist ein schlechter Witz, und wenn ich rausfinde,
+wer ihn erzählt, würg ich ihn...
+-- 
+Give a man a fish and he will eat for a day.
+Teach a man to fish and he will sit in a boat all day and drink beer.
+-- 
+jjooiinn  tthhee  SSaavvee  LLooccaall  EEcchhoo  CCaammppaaiiggnn!!
+-- 
+"Wie dreht ein Mann einene Glühbirne ein?""Gar nicht.... lass die Schlampe
+doch im Dunkeln kochen..."
+-- 
+Bedenkzeit sind die Tage, die man verstreichen läßt,
+bevor man bei seiner Meinung bleibt.
+-- 
+Ich halte einen Stein in der Hand. Ich lasse ihn los. Er fällt nach
+unten. Zufall. Denn die Thermodynamik erlaubt auch, daß er nach oben
+fliegt.
+-- 
+What's 10 inches long and hangs in front of an asshole?
+A politician's tie.
+-- 
+24 Stunden pro Tag, 24 Flaschen Bier pro Kasten. Zufall? 
+8 Bit sind ein Byte oder ein Rausch! 
+-- 
+Der Bohrer, den du gerade brauchst, wird genau der sein, 
+der im Werkzeugkasten fehlt.
+
+(Murphy's Gesetz)
+-- 
+Unabhängig vom Aufwand an Zeit und Mühe zur Ermittlung einer günstigen
+Einkaufsquelle wird ein Gegenstand, nachdem man ihn gekauft hat, im Nachbarladen
+billiger angeboten.                   [Lewis's Regel zur Preisermittlung]
+-- 
+Kräht der Bauer auf dem Mist, weiß man, daß er besoffen ist.
+-- 
+[E = mc² ± 2dB]
+-- 
+> Zu  anderen kann ich Dir versichern, dass es auch
+> noch sowas wie ethnische Geschäftsmodelle gibt. 
+Das ist bekannt. Indianische, spanische, franzoesische, walisische und
+laeppische - um nur einige zu nennen. [Henning Sponbiel zu B. Wyss in dan-am]
+-- 
+"Do not dangle the mouse by its cable or throw the mouse at
+co-workers."
+        -- From a manual for an SGI computer.
+-- 
+"Lebensgefährtin" ist ein Wort, das von Lebensgefahr abgeleitet ist.
+-- 
+Wo hängt in England die Wäsche zum Trocknen? on-line!
+-- 
+Look Ma, this man can twist his fingers as if they were made of rubber,
+isn't that amazing? -- Not really, he's been using Emacs for years...!
+-- 
+"Linkverkapselung"
+Red Hat Linux, ca. 2000
+-- 
+"Pfeife zerbrochen", "Gefahr einer Systemverklemmung"?
+SINIX ca. 1988.
+-- 
+Bei Deiner alten SuSE war so ein rechteckiges Ding aus totem Baum
+dabei. Man nennt es Handbuch.
+-- 
+Ihre Kontinentalfestplatte ist fragmentiert. Möchten Sie
+den Assistenten zur Driftbeschleunigung starten?
+[Ja]         [Ja klar]           [Holmirmaneflaschebier] 
+             (Andreas Meier in de.alt.sysadmin.recovery)
+-- 
+'In der c't stand, dass bei dieser Pinbelegung
+nichts passieren kann.'
+-> H.P. ueber seinen stinkenden & rauchenden Prozessor gebeugt.
+-- 
+Es besteht die Moeglichkeit, dass Computer einmal weniger
+als 1,5 Tonnen wiegen werden. -> Popular Mechanics, 1949
+-- 
+Lieber echtes Bier brauen, als falsche Augenbrauen
+-- 
+Ahhh, deswegen wollte mein Mozilla auf einmal soviel CPU und RAM.
+Scheinbar hat er im Hintergrund sauber ins /dev/null gekotzt und musst
+erst einmal aufwischen.
+            Sven Hartge in dan-am zu "HTML fernab jeglicher Spezifikationen"
+-- 
+[1] Kontinuierliche Zufuhr von Flüssigkeit, die in kleinen Quanten
+abgegeben, durch Gravitationseinwirkung zum Erdmittelpunkt hin
+beschleunigt wird um schließlich auf der Oberfläche eines geologischen
+Fundstücks aufzutreffen, erzeugt durch permanente Auswaschung kleinster
+Materialteilchen auf Dauer eine sich immer mehr vertiefende Mulde in dem
+Objekt.
+.
+.
+.
+"Steter Tropfen höhlt den Stein" von Hans-Peter Popowski in dan-am
+-- 
+while (!asleep)
+  ++sheep;
+-- 
+'Es ist sinnlos, dass die Schafe die allgemeine Einfuehrung
+einer vegetarischen Lebensweise beschliessen,
+solange die Woelfe anderer Meinung sind.'
+-> William Ralph Inge D. D. 1860-1954
+-- 
+In diesen vier   |			    http://home.pages.de/~beethoven/
+Zeilen ist       | 
+eine Signatur	 | 
+versteckt.     	 |
+-- 
+Dieses Posting enthält Ironie. Bitte entwerten;-)
+-- 
+To email, remove the nospam.                        \|/
+-                                                  (o o)
++----------------------------------------------ooO--(_)--Ooo--+
+| There is no emotion, there is peace. There is no ignorance, |
+| there is knowlege. There is no passion, there is serenity.  |
+| There is no death, there is the force.    -- Jedi Code      |
++-------------------------------------------------------------+
+-- 
+It's 10 o'clock. Do you know where your child processes are?
+--
+Der vierte große Witz der Computergeschichte:
+"Mein Source Code guckt eh niemand an."
+-- 
+Netzmeister... Sind das die Leute die besonders gute Fischernetze 
+knüpfen können? Manchmal kommt mir das so vor... ;-)
+-- 
+>Für 0,0 Promille auf dt. Straßen
+DAFÜR! Denn Allohol gehört nicht auf die Straße,
+sondern in den Hals.
+--- gefunden in de.alt.netdigest
+-- 
+Moore's Law:
+"The speed of hardware doubles every 18 months."
+Gates's Law:
+"The speed of software halves every 18 months."
+-- 
+Aber jetzt - jetzt haltet doch einfach mal die Plapperfinger von der
+Tastatur fern. Es lassen sich auch noch viele andere wirklich schöne
+Dinge damit anstellen.                               [hajo. in dag°]
+-- 
+"2. AFAIK kann man auch fremdcanceln (welch wunderbares Wort), oder?" -
+"Man kann auch mit dem Schraubenzieher in einer Steckdose herumstochern,
+wenn man eine gewischt bekommen möchte ..." - H. Spyra, A. Loch, d.c.s.f-a
+-- 
+"There are three kinds of lies: Lies, Damn Lies and Statistics"
+	                               -Disraeli-
+-- 
+Nachts ist es kälter als draussen weil die Strassenbahn schneller ist,
+als auf den Schienen?
+-- 
+> Aber Melanie empfindet [..] selbst die Bücher von Janosch als frauenfeindlich.
+Ist das der mit der sexistischen, gestreiften Porno-Ente?
+
+    -- André Schneider in <Xns9135530B5931Epapierkorb@schneider-gitarren.de> --
+-- 
+Linux ist wie ein Pinguin im Wasser. Elegant, geschmeidig und für manch
+andere Spezies durchaus gefährlich.
+-- 
+               I believe the technical term is "Oops!"
+-- 
+You might have mail
+-- 
+"Sobald dieser Vergleich seinen Gips wieder runterbekommt, muß er
+ mindestens noch zwei Monate in eine Reha-Klinik. Was danach folgt,
+ wäre mit "hinken" nur äußerst untertrieben geschildert. ;-)"
+(?? über einen Vergleich von Usenet-Regeln mit Ampeln [???])
+-- 
+| If you are using an Macintosh e-mail program that is not from
+| Microsoft, we recommend checking with that particular company. But
+| most likely other e-mail programs like Eudora are not designed to
+| enable virus replication.
+-- 
+* Linux Viruscan.....
+  Windows 95 found.  Remove it? (y/n)
+-- 
+Kurz und knapp: Du empfiehlst diese Scheiße doch nur, weil ich Dich
+nicht direkt für ihren Einsatz in die Haftung nehmen kann, nicht, weil
+es keine überlegenen Alternativen gibt. Selbst eine Milzbrandinfektion
+ist eine attraktive Alternative zu Outlook (Express). (Robin S. Socha zum OE)
+-- 
+                           Reboot America.
+-- 
+Given infinite time, 100 monkeys could type out the
+complete works of Shakespeare.
+Win 98 source code? Eight monkeys, five minutes.      (Quelle unbekannt)
+-- 
+Mitten im mathematischen Vortrag erhebt einer der Anwesenden die Hand
+und sagt: "Ich habe zu dem, was Sie hier erzählen, ein Gegenbeispiel!"
+Darauf der Vortragende: "Egal, ich habe zwei Beweise!"
+(Quelle unbekannt)
+-- 
+"Es gibt keine bedeutenden Fehler in unseren Programmen, die eine
+nennenswerte Anzahl von Benutzern behoben haben möchte."
+                                      Bill Gates im "Focus" 43/95
+-- 
+Wußten Sie, daß 85% aller Statistiken falsch sind?
+-- 
+Unter Verzicht verstehen Frauen die kurze Pause zwischen zwei
+Wünschen.
+
+(Mario Adorf)
+-- 
+Wenn Microschitt so weitermacht, muss ich mit meinem ISP doch noch
+sonderkonditionen fuer Windows-Wuermer-Traffic aushandeln...
+Juergen P. Meier in news:de.comp.security.misc
+-- 
+"Die großgeschriebenen Substantive sind die Leuchttürme über dem Satz,
+und der Satz kann sie brauchen - um so dringender, je schlimmer er
+verschachtelt ist." (Wolf Schneider)
+-- 
+ich brauche keine behlerung über das posten da ich so poste wie ich es 
+für richtig halte und bis jetzt gab es damit auch noch nie probleme.
+Martin Kurth in d.r.f.h.
+-- 
+Hitler war Führer der deutschen Nazion.
+[Ralf Linnemann in <3BC2DB71.510AD6A7@gmd.de>]
+-- 
+Q. What's happening when you hear "Woof... splat...
+   meow... splat?"
+A. It's raining cats and dogs.
+-- 
+"Multiple exclamation marks," he went on, shaking his head,
+"are a sure sign of a diseased mind."  (Terry Pratchett, "Eric")
+-- 
+Wenn ein Produkt 80% Marktanteil hat und sich nicht
+an einen Standard hält, was muss dann geändert 
+werden, der Standard oder das Produkt?
+-- 
+Ein Jäger schießt auf eine Ente. Erst schießt er links vorbei,
+dann ebensoweit rechts. Statistisch gesehen ist die Ente tot.
+-- 
+"Don't worry.No matter how fast your processor is,
+software engineers/game's writer's are working as 
+we speak to slow it down;-)"
+-- 
+Real Men don't make backups. They upload it via ftp and let the world mirror it.
+        -- Linus Torvalds
+-- 
+ Usenet ist das Medium bei dem 
+ man sich innerhalb von Sekunden
+ weltweit blamieren kann.
+-- 
+Why use Windows when you can have air conditioning?
+Why use Windows, when you can leave through the door?
+        -- Konrad Blum
+-- 
+Nun.. wenn ich also keine Go-Gruppe brauche und dennoch
+glücklich bin, so soll auch sonst niemand eine Go-Gruppe haben.
+So einfach ist das.
+-- 
+Q: How does a Unix guru have sex?
+A: unzip;strip;touch;finger;mount;fsck;more;yes;umount;sleep
+-- 
+Hit any user to continue.
+-- 
+Die letzten Worte eines Fensterputzers: Man kann ja auch freihändig auf
+eine Leiter steigen...
+-- 
+Win95 is not a virus; a virus does something.
+-- 
+Erwerbsregel #219: Besitz ist elf Zehntel des Rechtes.
+-- 
+Disclaimer: Any resemblance between the above views and those of my
+employer, my terminal, or the view out my window are purely
+coincidental.  Any resemblance between the above and my own views is
+non-deterministic.  The question of the existence of views in the
+absence of anyone to hold them is left as an exercise for the reader.
+The question of the existence of the reader is left as an exercise for
+the second god coefficient.  (A discussion of non-orthogonal,
+non-integral polytheism is beyond the scope of this article.) 
+-- 
+"Ich kenne das auch, bin ja selbst Deutscher. Ich bin kleinkariert,
+ bürokratisch, humorlos, obrigkeitsgläubig... Ich würde die Liste gerne
+ fortführen, aber ich muß erstmal meinen Gartenzwerg geraderücken, der hat
+ sich eben zur Seite geneigt."   -- Sebastian Koppehel in dsn.umgansformen
+-- 
+(Bitte wenden)
+-- 
+5 von 4 Leuten haben Probleme mit Mathematik.
+-- 
+Die letzten Worte eines Baggerfahrers: Was ist das da unten denn für ein
+Metallzylinder? Mal nachsehen...
+-- 
+                                                                                
+                                                                                
+                                                                                
+                                <=Dies sind 272 korrekt abgetrennte Leerzeichen.
+-- 
+The voice said: "smile, it could be worse!" --- I smiled.
+And it became worse.
+-- 
+Wohlstand ist, wenn die Menschen mehr Uhren haben, als Zeit.
+-- 
+Error reading FAT record. Try the SKINNY one [Y/N] ?
+-- 
+2 + 2 = 5 for very large values of 2.
+-- 
+> Gleiches gilt für meine ISDN Karte, die mag Linux auch nicht...
+Mein Internet ist kaputt. [TM]
+-- 
+Traue nie einer Computerzeitschrift mit schoenen Frauen auf dem Cover.
+                            (Besim Karadeniz in de.comm.internet.misc)
+-- 
+Es sterben mehr Leute an BMW als an BSE. (rompel in news:de.rec.mampf)
+-- 
+"Sport war ein Hassfach fuer mich. Wegen mir dauerten die
+ Bundesjugendspiele immer drei Stunden laenger." 
+ 				   -- Bastian Pastewka
+-- 
+Ausnahmen sind nicht immer Bestätigung der alten Regel:
+Sie können auch die Vorboten einer neuen Regel sein.
+(Marie Freifrau von Ebner-Eschenbach)
+-- 
+Once you pull the pin, Mr. Grenade is no longer your friend.
+-- 
+[Ein offenes Relay erlaubt...] 
+> also das Weiterverschicken von Mehl. Und das ist böse [tm].
+                                 ^^^^   
+Stimmt! Das könnte nämlich mit Anthrax verwechselt werden. :-)
+-- 
+Das Haustier ist immer auf der falschen Seite der Türe.
+
+(Murphy's Gesetz)
+-- 
+Alle Buchstaben dieses Beitrages wurden durch Recycling aus
+verschiedenen Newsgroup-Beiträgen gewonnen. Es wurden keine
+freilebenden Buchstaben für dieses Posting gequält oder getötet.
+-- 
+Schwein oder Nichtschwein, das ist hier die Frage
+-- 
+Wie wir von der Evolution wissen selektiert die Natur das Schwache 
+gnadenlos aus. Deshalb seh ich die Morgenröte am Horizont weil du deine 
+schwach(sinnigen) Gene gottseidank nicht mehr weitergeben wirst. Die 
+Natur wird das schon regeln. ("Gepetto"<3bd301ea_1@news.datacomm.ch>)
+-- 
+"Morgenstund hat Colt im Mund..."
+-- 
+"Regular ist rekursiv.
+Ein User ist ein Regular,
+wenn er von den Regulars als Regular angesehen wird."
+  -Sebastian Posner in de.alt.folklore.usenet
+-- 
+Lieber mit einem Kätzchen schlafen als mit einem Kater aufstehen. 
+-- 
+>  Na, was soll denn sein, Tod duch perl oder Tod durch Lisp? :-)
+Lieber Perl, denn Dollarzeichen sind angenehmer als Klammern. Erstere
+pieksen, letztere quetschen mir die Nase zu.
+-- 
+Steuerzahlender Windoof-Loser gruesst Bafoeg-gefoerderte Linux-Profis
+(Volker Auster in de.comp.hardware.cd-brenner)
+-- 
+> Das Wort schreibt man "Märtyrer", auch nach der Rechtschreibreform... ;-)
+Mein Autohersteller besteht darauf, dass es "Mehrtuerer" heissen muss.
+(Andreas Galinski und Arne Heizmann in news:de.rec.sf.startrek.voyager)
+-- 
+Mitten im mathematischen Vortrag erhebt einer der Anwesenden die Hand
+und sagt: "Ich habe zu dem, was Sie hier erzählen, ein Gegenbeispiel!"
+Darauf der Vortragende: "Egal, ich habe zwei Beweise!"
+(Quelle unbekannt)
+-- 
+Ich kennen einen Heinz, der heisst zufällig auch Heinz.
+-- 
+Aleph-null bottles of beer on the wall,
+Aleph-null bottles of beer,
+        You take one down, and pass it around,
+Aleph-null bottles of beer on the wall.
+-- 
+"Ich dachte immer, UNIX ist was für Leute, denen es gefällt, auf einen
+Bildschirm zu starren, auf dem es aussieht, als hätte sich gerade ein
+Gürteltier auf der Tastatur gewälzt." [Stefan Schneider]
+-- 
+Kierkegaard's Beobachtung:
+Man versteht das Leben nur rückwärts,
+aber leben muss man es vorwärts.
+-- 
+Wer A sagt, muß nicht B sagen. Er kann auch erkennen, daß A falsch war.
+(B.Brecht) 
+-- 
+F: Was ist ein Mathematiker?
+A: Ein Gerät das Kaffee in Behauptungen umwandelt.
+-- 
+1) Customers cause problems.
+2) Marketing is trying to create more customers.
+Therefore:
+3) Marketing is evil.
+-- 
+Warum hat Gott von Adam eine Rippe geklaut und daraus eine Frau gemacht?
+Er wollte zeigen, daß bei einem Diebstahl nichts vernünftiges rauskommt!
+-- 
+"Ziel des Spieles ist es, Laender zu ueberfallen, Kontinente und die
+Welt zu erobern, sowie Gegner zu schlagen." -- Risiko 1976
+"Ziel des Spieles ist es, Laender und Kontinente von Besatzungsarmeen
+zu befreien und in die Unabhaengigkeit zu fuehren." -- Risiko 1990
+-- 
+Sollten Sie jedoch grundsätzlich auf einer sofortigen Stellungnahme
+zu Ihrem Problem beharren, geben Sie bitte in Ihrem voicefähigen 
+Fernsprechnetzwerkbrowser den URL <phoneto://0815-4711> ein.
+					    Frei nach T-Online-Team
+-- 
+....Christian.Garbs.....................................http://www.cgarbs.de
+Q:  How many surrealists does it take to change a light bulb?
+A:  Two.  One to hold the giraffe and the other to fill the bathtub
+    with brightly colored machine tools.
+-- 
+Eine Schraube ohne Nagel ist ein Gewinde.
+-- 
+"Hat jemals jemand bewiesen, dass Beweis und Gegenbeweis nicht gleich-
+ zeitig existieren können, oder ist dies ein Axiom?" (Quelle unbekannt)
+-- 
+Wer HTML postet oder gepostetes HTML quotet oder sich gepostetes oder
+gequotetes HTML beschafft, um es in Verkehr zu bringen, wird geplonkt.
+-- 
+Je höher, desto plumps!
+-- 
+Sig
+--
+oder nicht Sig,
+das ist die Frage.
+-- 
+Was denn für Fehlfunktionen? Ich kann alle Umlaute lesen und schreiben, seit 
+Jahren habe ich damit keine Probleme, niemand hat sich bisher beschwert. 
+Wenn irgendwer mit einem Exoten-Programm damit Schwierigkeiten hat, kann er 
+doch auch den OE benutzen, den gibt's sogar für lau! [Paul Geron in dard]
+-- 
+... Amiga - Why use Windows, since there is a door ...
+-- 
+Die meisten Menschen pflegen im Kindesalter vom Zeigen auf Gegenstände
+(Mausbewegung) und "ga" sagen (Mausklick) abzukommen, zugunsten eines
+mächtigeren und langwierig zu erlernenden Tools (Sprache).
+                              Achim Linder in de.comp.os.unix.linux.misc
+-- 
+.------------------------------------------------------------------------.
+| 1: Ich bin die Netiquette. Du sollsten keinen Unfug treiben neben mir. |
+| 2: Du sollst deinen - und nur deinen - Namen ehrlich führen, denn das  |
+|    Killfile wird den nicht ungestraft lassen, der Pseudonyme           |
+|    missbraucht.                                                        |
+| 3: Du sollst auf den Inhalt und das Neue und die Lesbarkeit achten.    |
+| 4: Du sollst deine Mitmenschen respektieren, auf dass dir's wohlgehe   |
+|    und du lange schreibest im Usenet.                                  |
+| 5: Du sollst nicht trollen und flamen.                                 |
+| 6: Du sollst nicht Off Topic-Müll, Kommerzielles, Binaries oder HTML   |
+|    posten.                                                             |
+| 7: Du sollst nicht stehlen deines Nächsten Nerven.                     |
+| 8: Du sollst nicht falsches Quoting fabrizieren wider die Lesbarkeit.  |
+| 9: Du sollst nicht begehren Microsofts Outlook Express.                |
+|10: Du sollst nicht begehren deines Nächsten Zeit, Geduld, Geld,        |
+|    Freundlichkeit oder alles, was sein ist.                            |
+`------------------------------------------------------------------------´
+-- 
+Die Signatur hat Urlaub. Ich bin nur die Vertretung.
+-- 
+Micro$oft Windows 98, n. - a belated upgrade to a 32 bit hack of a
+16-bit shell for an 8-bit operating system designed for a 4-bit
+processor by a 2-bit company that's not worth one bit of attention.
+-- 
+"Received:-Header sind heilige Kühe, die schlachtet man nicht¹ und die malt man
+auch nicht lila an². Man stellt höchstens noch eine Kuh vorn dazu. Ansonsten
+kreist das LART." --- Matthias Andree in de.comm.software.mailserver
+¹ man wirft sie nicht weg - ² man verändert sie nicht, kein Masquerading, nichts
+-- 
+>Und jemand, der "NT" nutzt, ist kein Sysadmin, sondern ein Reboot-Sklave.
+Und wenn er einen MCSE hat, dann ist er zertifizierter Bootmanager.
+
+-- Juergen Ernst Guenther und Ralph Angenendt in dasr über NT-"Admins"
+-- 
+Was wird, wenn man Windows CE, Windows Me und Windows NT mixt?
+Windows CEMeNT
+-- 
+Für die Werbung unsererseits möchten wir uns bei Ihnen
+entschuldigen. Wir erhalten leider auch täglich solche Werbe-e-
+mails und sind so auf die Idee gekommen, dies auch einmal zu
+versuchen.  
+-- 
+LATIN LESSON:
+I hear,            Audio,
+ I see,     --->    Video,
+  I learn!           Disco!    [Robin Koch in de.talk.jokes, translated]
+-- 
+"Wer glaubt, ein Christ zu sein, weil er die Kirche besucht, irrt sich. Man 
+wird ja auch kein Auto, wenn man in einer Garage steht." - Albert Schweitzer
+-- 
+Programming today is a race between software engineers
+striving to build bigger and better idiot-proof programs
+and the universe trying to produce bigger and better idiots.
+So far, the universe is winning.                [Richard Cook]
+-- 
+Kindermund
+Wir gingen mit unserer Lehrerin im Park spazieren. Gegenüber vom Park war ein
+Haus, wo Mütter ihre Kinder gebären. Eine Gebärmutter schaute aus dem Fenster
+und winkte uns zu.
+-- 
+> hat?  Btw: Viele meiner Freunde haben auch Fax, das ist heutzutage
+> nicht mehr so selten wie ein eigener Atommailer im Keller.
+                                      ^^^^^^^^^^^^
+das Programm will ich auch haben :-) 
+Das gibt dem Thema mailbomben eine ganz pikante neue Seite.
+-- 
+Soll auch der Lurker etwas lernen,
+  muß man beim Plonken ziemlich lärmen.	  		        (Collin Blinn)
+-- 
+Keine Parallelwelt gleicht der Nächsten. Schwerkraft, Atmosphäre, Licht ...
+  Nichts worauf man sich verlassen kann. Aber überall gibt es Bier. 
+    Die einzige universelle Konstante.                                 (Stone)
+-- 
+Immerhin sind die Scharniere der Aschenbecher das Wichtigste am ganzen 
+  Waggon. Man stelle sich vor, der ganze Waggon müßte auf den Kopf gestellt
+    werden, um die Aschenbecher auszuleeren.                (Roger Schwentker)
+-- 
+[1] Naja, es gibt auch einen Cpt. James T. Kirk und einen Cpt.
+Jean-Luc Picard, aber das sind wohl nur Spaßeinträge - oder teilen
+sich die beiden 'ne Wohnung in Göttingen? *g*
+-- 
+Life's too short to read boring signatures
+-- 
+***  a sig isn't spam, but an accepted way of blah blah  ***
+***                - aus uk.rec.sailing -                ***
+-- 
+"Whereas Windows is a GUI shell indeed, as well as a 32 bit extension for
+a 16 bit patch to an 8 bit operating system originally coded for a 4 bit
+microprocessor, written by a 2 bit company that can't stand 1 bit of
+competition, but I digress..."           M.Wiehl frei nach Charles Sebold
+-- 
+Isn't vi that editor with two modes?
+One that beeps and one that corrupts your files? 
+-- 
+Und wenn "X-Newsreader: Microsoft Outlook Express 5.00.2919.6700"
+ein Newsreader sein soll, dann kann man einen Kuhfladen auch als
+"Pizza Spinaci" bezeichnen. (Farbe und Form kommen schließlich
+annähernd hin)"          --- Joerg Moeller in t-online.talk.usenet 
+-- 
+Ja. Aber ich nenne mich lieber LaTeX oder Tux. Oder vielleicht auch Kernel...
+Sind alles Namen grosser Hacker.
+       [Fabian Kupferschmid in dag° <9pv2u3$lk181$7@ID-74478.news.dfncis.de>]
+-- 
+is OS/2 only half an operating system?
+-- 
+"Ist die Schraube noch so klein.
+mein starker Hammer haut sie rein"
+-- 
+Who the fuck is 'General Failure'? And why is he reading my harddisk?
+-- 
+"Frauen sind wie Zähne, wenn man sie kriegt tut es weh,
+wenn man sie hat verursachen sie hin und wieder Beschwerden
+und wenn sie gehen hinterlassen sie eine Lücke" >;->
+-- 
+The Roman Rule
+        The one who says it cannot be done should never interrupt the
+        one who is doing it.
+-- 
+Die Entfernung eines Gegenstandes von dem Ort, an dem man ihn sucht,
+ist direkt proportional zu der Dringlichkeit, mit der man ihn braucht.
+-- 
+Mailer-daemon is busy burning your message in hell.
+-- 
+Segmentation fault: Caffeine underflow.
+Brain dumped.
+-- 
+To the optimist, the glass is half full.
+To the pessimist, the glass is half empty.
+To the engineer, the glass is twice as big as it needs to be.
+-- 
+Letzte Worte eines Elektrikers: Gegen Wiedereinschalten sichern? Wieso?
+Ich bin doch allein!   
+-- 
+Google.
+Jagen und Sammeln konnten schon die Steinzeitmenschen.
+Tobias Wolter in <news:9inurf.3vuotdt.1@wolter.myfqdn.de>
+-- 
+Persons attempting to find a motive in this narrative will be prosecut-
+ed; persons attempting to find a moral in it will be banished; persons
+attempting to find a plot in it will be shot. By order of the author.
+--The Adventures of Huckleberry Finn, by Mark Twain
+-- 
+- Diese Aussage ist sinnlos, da "oft" keine wissenschaftliche Aussage 
+  beinhaltet. (FvL in de.comp.os.unix.discussion)
+  Deshalb schrieb ich "meistens". (FvL in de.comp.os.unix.discussion)
+-- 
+If you wish to live wisely, ignore sayings -- including this one.
+-- 
+Wer animierte Grafiken zu banal, klassisches Design zu langweilig und
+Flash zu teuer findet, für den ist Javascript das Tor zum Homepage-
+Paradies.
+  (1&1-Werbezeitschrift)
+-- 
+DIN 58993 : Diese Norm gilt für Kondome aus Naturkautschuklatex,
+die für die einmalige Anwendung beim vaginalen Geschlechtsverkehr
+(im folgenden "bestimmungsgemäße Anwendung" genannt) bestimmt sind.
+-- 
+"Linux ist ein Krebsgeschwür, das in Bezug auf geistiges Eigentum alles
+befällt, was es berührt." - Microsoft-CEO Steve Ballmer 
+-- 
+Wir müssen Ihnen zu unserem großen Bedauern mitteilen, dass heute für einige 
+Zeit das Usenet ausgefallen ist. Grund für diese Unannehmlichkeiten waren zu 
+große Mengen an Binary- und TOFU-Postings, die sich aufgrund ihrer Größe in 
+den engen Lichtwellenleitern verklemmt haben. (Matthias Esken in dcpu)
+-- 
+"Tach, Usenet-Polizei. Die Kollegen von der UCE-Stelle haben uns
+vorgeschickt, weil wir die schickeren Baseballschlaeger haben"
+-- 
+Anrufer: Ich bin im DOS-Modus. Wie komme ich da wieder raus?
+Hotline: Mit der Maus auf Exit klicken.
+-- 
+Diese Message wurde erstellt mit freundlicher Unterstützung eines frei-
+laufenden Pinguins aus artgerechter Freilandhaltung.  Er ist garantiert
+frei von Micro$oft'schen Viren.          (#97922 http://counter.li.org)
+Was, Sie wissen nicht, wo Kaufbach ist? :  N 51.05082°, E 13.56889° ;-)
+-- 
+Durch ein Fenster kann man die ganze Welt sehen, während der Pinguin
+auf dem Eis sitzt und sich die Eier abfriert.
+-- 
+Ich halte eher das FIDO-Gate für den Übeltäter. Bei solchen Gateways
+gehen nämlich bevorzugt Sonderzeichen den Weg alles binären. Allerdings
+kenne ich solche Gates (woran erinnert mich das jetzt ...) nicht
+persönlich; ich folgere nur aufgrund der Wirkungen. [Wilfried Kramer, dcsn]
+-- 
+Microsoft has been doing a really bad job on their OS.
+                              Linus Torvalds
+-- 
+Hat man erstmal rausbekommen, wie die Software funktioniert, versteht
+man auch das Handbuch!
+-- 
+Der Kurs "Flirten für Informatiker" wurde inzwischen zusammen mit
+"Freeclimbing für Epileptiker" aus allen VHS-Programmen entfernt.
+                     [Jochen Lillich in de.alt.sysadmin.recovery]
+-- 
+On the other hand....you have different fingers.
+-- 
+Seinen echten Namen nicht schreiben zu können, 
+legitimiert nicht zu Kammquotings...
+-- 
+Unter www.microsoft.com kannst du Outlook Express
+runterladen und dazu bekommst du noch den Internet Explorer. Gratis. Komm,
+ich führ dich ins Licht.
+("Gepetto" in <3bbcc9e6$1_1@news.datacomm.ch>)
+--
+Okay, Scotty, wir haben alle gelacht.
+Jetzt beam' auch die Klamotten 'runter
+-- 
+"Du bist noch eine Erläuterung schuldig, warum 'Onestep' mit einem p 
+ neugeschrieben wird, 'Twostepp' aber mit deren zwei. Darf ich daraus
+ schließen, daß man einen Tanz zu drei Schritten 'Threesteppp' 
+ schreiben müßte?" Martin Gerdes in de.etc.sprache.deutsch
+-- 
+Wenn Baumeister Gebäude bauten, so wie Programmierer Programme machen,
+dann würde der erste Specht, der vorbeikommt, die Zivilisation
+zerstören.
+-- 
+Ich mag deine Postings. Darf ich dir das Plonk anbieten?
+(Dieter Tikowsky)
+-- 
+//  eMail-Antworten mit "!" im Betreff werden  automatisch  geloescht.
+int i=0<<23;char *s="NdH*!Abl!Djjjn!Qbis_l,";int main(){for(i=-2;(i=i+
+2)<((0x17C3||666)?21:23-2);putchar(s[i--]+2))putchar(s[i++]-1<<1>>1);}
+-- 
+"Niemand hoert einen Unterschied zwischen Mono und Stereo.
+Bei der Stereofonie handelt es sich um eine Modeerscheinung,
+die sich nie breit durchsetzen wird."(1963 in einer Kommission,
+zur Einführung der Stereofonie beim Schweizer Hörfunk)
+-- 
+Lieber 'ne ausgekochte Intrige, als 'n lauwarmes Gerücht...
+-- 
+GUI => Girls use it
+-- 
+Letzte Worte eines Elektrikers: Auf dem Draht ist kein Strom.
+-- 
+Diätischer Hinweis: dieses Produkt enthält das Energieäquivalent von drei
+Millionen Tonnen Trinitrotuluol (TNT) je Gramm i.d. Nettomasse.
+-- 
+Dieser Artikel ist ungelesen haltbar bis (s. Rückseite).
+-- 
+a: Ich habe gerade etwas rundes erfunden und es "Rad" genannt.
+b: Echt? Was kann man damit tun? Läuft es auch unter Windows?
+-- 
+Do you know what the difference is between Bill Gates and Batman?
+- - -
+When Batman fought the Penguin, he won! :-)
+-- 
+> man _kann_ sich natuerlich auch ein loch ins knie bohren, und honig
+> reinschuetten.
+... oder auch sich einen Knopf an die Backe naehen und ein Klavier
+dranhaengen. Dann weiss man, wie schwer Musik ist.
+-- 
+Letzte Worte eines Polizisten: Hände hoch, oder ich schieße...
+-- 
+Es gibt Leute, bei denen man im Killfile sein sollte, oder man hat
+etwas flashc gemacht. (Henning Sponbiel in de.org.ccc)
+-- 
+ "I think there is a world market
+for maybe five computers."
+
+Thomas Watson, chairman of IBM, 1943.
+-- 
+Die Loveparade ist vorbei, die Raver hinterliessen sage und schreibe
+220 Tonnen Müll, die Musik noch nicht mitgerechnet. (NDR2-Nachrichten)
+-- 
+Der Computer ist die logische Weiterentwicklung
+des Menschen: Intelligenz ohne Moral
+-- 
+Es gibt Leute, die wiedersprechen gerne einmal Aussagen, die niemand
+geschrieben hat. Prophylaktisch, sozusagen ;-)
+[Henry Habernickel in de.soc.netzkultur.umgangsformen]
+-- 
+Holzpfloecke und Userverbrennungen helfen auch gegen Windows-Programme.
+[Juergen Ernst Guenther in de.alt.sysadmin.recovery]
+-- 
+Jygn, ich kann DIESE HIRNLOSE SCHEISSE nicht mehr
+ertragen. ES KOTZT MICH AN... Der dümmste Bauer ist
+witziger als Deine Textbausteine...
+(Klaus Ketelaer/D.A.U. (DAU) in <9p7b4h$thh$07$1@news.t-online.com>)
+-- 
+I run Linux, no bloody RedHat, Debian, Slackware, or Corel, just Linux.
+Linux accepted my new hardware without any effort on my part.
+Windows took one look at my new hardware and committed suicide.
+-- 
+AmigaShell.1> delete Terrorism:#? all force quiet
+-- 
+> Ich wollte neulich mal mit dem News-Client von Opera 5.12 posten.
+Schlechte Idee. Operas Newsreader-Teil steckt noch in Fußbekleidungen,
+die man nicht mal als Kinderschuhe bezeichnen kann.
+                                      ['Monika' und Oliver Ding in dnq]
+-- 
+"The truth is, I like this world. You've got dog race, 
+ Manchester United and you've got people. Billions of 
+ people, walking around like Happy Meals with legs."
+                                (Spike, Becoming, Pt2)
+-- 
+Letzte Worte eines Software-Entwicklers: Natürlich habe ich ein intaktes
+Backup!
+-- 
+Letzte Worte eines Fallschirmspringers: Scheiß Motten!
+-- 
+Letzte Worte zweier Löwenbändiger: Wie? - Ich dachte du hättest sie
+gefüttert...
+-- 
+Letzte Worte eines Fallschirmspringers: Welcher Notfallschirm?
+-- 
+> Wer böd genug ist, sich immer wieder unter dem gleichen und/oder eigenen
+> Namen anzumelden, dürfte kein größeres Problem für das Usenet sein. Der
+> bricht sich nämlich garantiert irgendwann beim Nasebohren das Genick.
+               [Stefanie Kruse in dang über news.cis.dfn.de und Trolle]
+-- 
+Das ist eine Signatur. Sie befindet sich am Ende eines Artikels, ist mit
+"-- " vom Rest des Artikels abgetrennt und liegt von der Funktion her
+irgendwo zwischen Visitenkarte und Autoaufkleber. Es gibt normalerweise
+keinen Zusammenhang zum Inhalt des Artikels. (Thomas Weinbrenner in dnq)
+-- 
+Letzte Worte eines Fahrlehrers: Nun versuchen Sie's alleine
+-- 
+Was sagt ein Sozialpaedagoge ohne Arbeit zu einem mit Arbeit?
+"Zum Bahnhof bitte"
+-- 
+>Ich bin immer wieder begeistert, wenn jemand auf Alternativfragen 
+>mit "ja" oder "nein" antwortet...
+Bei exklusiven oder-Fragen kannst du immerhin daraus schliessen, 
+dass der Antwortende dumm (unaufmerksam) oder Mathematiker ist ;)
+-- 
+Jeder Gebrauch dieses Produktes erhöht die Unordnung im Universum (Entro-
+piegesetz). Dieser Prozeß führt mit Sicherheit zum Wärmetod des
+Universums.
+-- 
+Glühlampen brennen heller, wenn man sie vor dem Einschrauben aus der
+Verpackung nimmt.
+-- 
+MÜNSTERLÄNDER
+HINSTERBENDER
+BENEBELTER
+ERLEBENDER
+-- 
+Letzte Worte eines Spielers: Alles auf rot.
+-- 
+"Heisenberg may have slept here"
+-- 
+Letzte Worte eines Gleisarbeiters: Nein, der Zug da fährt auf dem
+Nebengleis
+-- 
+Diesen Computer habe ich für meine Frau bekommen - Gott, war das ein guter
+Tausch!
+-- 
+>Unrecoverable Error #666: Armegeddon in 30..29..28..27..
+-- 
+Im Herbst werden die Bäume kahl und leer, an jedem hängt ein Aktionär. 
+Harald Schmidt
+-- 
+Ein Usenet, in dem nur Fragen, aber keine Antworten zu finden sind,
+ist uninteressant. :-( (Rainer Zocholl in de.admin.net-abuse.mail)
+-- 
+2. Gesetz der Themendynamik: Zwei Themen koennen nicht gleichzeitig
+denselben Raum einnehmen. Versuchen sie es, so ist dem aelteren Thema
+der Sitzplatz anzubieten. (Horst Hoffmann in de.talk.jokes.d)
+-- 
+"Ich dachte immer, UNIX ist was für Leute, denen es gefällt,
+auf einen Bildschirm zu starren, auf dem es aussieht, als hätte
+sich gerade ein Gürteltier auf der Tastatur gewälzt."
+                                               Stefan Schneider
+-- 
+Mustaches are illegal if the bearer has a tendency to habitually 
+kiss other humans. (Indiana state law)
+-- 
+>root, god... What is difference?
+God is more forgiving.    [Dave Aronson in a.s.r.]
+-- 
+Abstimmung ist das falsche Verfahren zur Wahrheitsfindung.
+(Claus Schoenleber in de.org.ccc)
+-- 
+Die Afghanen sind ein sehr gebirgiges Volk.
+
+  (Johann Galletti)
+-- 
+Abort this operation?   [OK]  [Cancel]
+-- 
+Behauptet man, dass sich in der Milchstrasse eine Milliarde Sterne
+befinden, glauben die Leute einem. Haengt jedoch irgendwo ein Schild
+"Frisch gestrichen", muessen sie sich unbedingt persoenlich mit einem
+vorsichtigen Drauftippen vergewissern.
+-- 
+> Ich hatte sogar mal ein Programm, mit dem man kleine gelbe Zettelchen
+> auf den Bildschirm pappen konnte.
+Das kenn ich, es heißt Tesafilm.
+        -- Wolfgang Tittel zu Anja vom Stein in d.a.t.u.
+-- 
+Wenn der Schutzmann die Arme gespreizt hat, will er damit verkünden, dass
+er keinen fahren lässt, weder von vorne, noch von hinten.
+-- 
+"Die Welt ist numal schlecht und wo gehobelt wird..." - "...da
+sterben Schwäne?" (Dirk Moebius und Felix Deutsch in de.alt.arnooo)
+-- 
+Time estimation rule:
+time=2x(estimated time)+3   ... independent of time units.
+-- 
+[1] Schulli, connte nicht resistieren
+-- 
+#!/usr/bin/perl -- -*     Nie wieder Nachtschicht!     *- -- lrep\nib\rsu\!#
+use Inline C=>'void C(){int m,u,e=0;float l,_,I;for(;1840-e;putchar((++e>907
+ &&942>e?61-m:u)["\n)moc.isc@rezneumb(rezneuM drahnreB"]))for(u=_=l=0;79-(m
+  =e%80)&&I*l+_*_<6&&26-++u;_=2*l*_+e/80*.09-1,l=I)I=l*l-_*_-2+m/27.;}';&C
+-- 
+  "Bitte verstehen Sie mich nicht zu schnell"   (André Gide)
+-- 
+"Auch ich bestehe darauf, alles mit Mausklicken erledigen zu können. Erinnert so
+wohlig an längst vergangene Zeiten, als ich [...] da und dort mit dem Finger
+hinzeigte und ein beherztes "Ga!" hervorstieß."      (Klaus Moedinger in dcs.nr)
+-- 
+Es ging um Geheimfragen für vergessene Passwörter:
+"Q: "Wie lautet mein anderes Passwort?"
+A: "sdlf3ß9rhdl.ö ncgpg0" "
+Claus Färber in d.c.s.m
+-- 
+Der Begriff "Pessimismus" wird von Optimisten verwendet, um jene Leute zu
+diskreditieren, die die Welt so sehen, wie sie wirklich ist.
+                                                      [Luton in Discworld Noir]
+-- 
+- Proponenten führen sich (z.T.) auf, wie die Borg nach einer Nacht in
+  Schlumpfhausen.
+
+[Kai Bojens in de.alt.admin .. Letzter Punkt zur Erklärung seines Protestes]
+-- 
+"Wir haben einen vorläufigen Erschießungsbefehl gegen Sie."
+-- 
+"Schön, aber wozu ist das Ding gut?"
+Kommentar eines Ingenieurs der Forschungsabteilung Advanced 
+Computing Systems Division von IBM zu einem Mikrochip (1968)
+-- 
+##################################################################
+est modus matulae - dt. es gibt auch ein Maß für den Nachttopf
+Viel Spaß beim Interpretieren...
+-- 
+Wenn ich auch nur aus jedem 1000. Bug in einem M$ Produkt|Juergen Ilse
+einen Tag trauern wollte, also da muesste ich 300 Jahre  |Internet POP Hannover
+alt werden und wuerde mehrere Dutzend schwarze Anzuege   |Vahrenwalder Str. 205
+aufbrauchen. (Detlef Bosau in dcoulm)                    |30165 Hannover
+-- 
+Die Netiquette ist die Antwortenliste auf die zentrale Frage: "Warum nennen
+mich alle PLONK"?                                    - Oliver Gassner in dsnu
+-- 
+>dass dies gar nicht *Ihr* Impressum sondern das eines von Ihnen
+>verschiedenen Anschlussinhabers wäre?
+Ja, wie ist das, wenn mein Anschlußinhaber verschieden ist, erbe ich
+dann seine Flatrate? <lechz>   (Martin Reeber in t-otu)
+-- 
+Think of the children! Think of the children!
+Oh, won't somebody *PLEASE* think of the children?
+-- 
+"Ganz ehrlich, abgesehen davon, dass es häufiger crasht und mein System in
+den Abgrund reisst, finde ich den OE nicht schlecht."
+Christian Geyer in dchlb
+-- 
+Curiosity *may* have killed Schrödinger's cat.
+-- 
+Die Kunst, oder vielmehr der Trick
+zu fliegen besteht darin, sich auf
+den Boden zu werfen, aber daneben.
+-- 
+sorry, aber was ist 'plenken' ? (ernste frage)
+(gesehen in dcoulm)
+-- 
+Zufriedene OjE User sind wie Leute, die meinen, dass man
+nur gelegentlich duschen braucht und sich dann wundern,
+wenn andere die Nase rümpfen.  - Frederik Page in dcsn
+-- 
+Siehe Deckelboden: Nach Ablauf der Haltbarkeit dieses Produkts können die
+Primärpartikel selbst dieses Frischeproduktes auf Grund einer möglicher-
+weise zutreffenden Feldtheorie innerhalb der kommenden vier Millionen
+Jahre zu Nichts zerfallen.
+-- 
+"ORBS"... das klingt eher wie ein herzhafter, gleichgültiger Rülpser
+eines geplagten Admins als Antwort auf die neueste Drohung dieses
+Vereins...
+-- Christian Appenzeller in <3881de3e.9333503@news.cis.dfn.de>
+-- 
+>Und jemand, der "NT" nutzt, ist kein Sysadmin, sondern ein Reboot-Sklave.
+Und wenn er einen MCSE hat, dann ist er zertifizierter Bootmanager.
+
+-- Juergen Ernst Guenther und Ralph Angenendt in dasr über NT-"Admins"
+-- 
+[...], die Tasten rechts von denen mit den Buchstaben, wo die Pfeile
+drauf sind, warnen nicht "Indianer!", sondern mit ihnen kann man den
+Cursor im Text bewegen.
+                                  Weregoose in de.newusers.questions
+-- 
+Letzte Worte eines Fahrradfahrers: Guck' mal, ich kann freihändig fahren.
+-- 
+Trotz aller Fehler ist dieser Newsreader Standard, womit die Fehler dann
+keine Fehler mehr sind, sondern Standards....
+(Klaus Ketelaer/D.A.U. über OE in <9oaoi8$tt5$04$1@news.t-online.com>)
+-- 
+tausend: [...] Nur d. germ. u. slaw. Spr. stimmen überein, während
+Griechen, Römer u. alle idg. Völker andere Bez. haben, woraus man
+schließt, daß d. Idg. vor ihrer Trennung nicht bis ~ zählen konnten
+(od. nicht wollten).  (Wasserzieher)
+-- 
+Q:  Why do mountain climbers rope themselves together?
+A:  To prevent the sensible ones from going home.
+-- 
+Das Produkt, das du gekauft hast, 
+schneidet im Testbericht am schlechtesten ab.
+
+(Murphy's Gesetz)
+-- 
+Sag mir wo die Männer sind, wo sind sie geblieben?
+Sag mir wo die Männer sind, was ist geschehen?
+Sag mir wo die Männer sind, zogen fort, der Krieg beginnt.
+Wann wird man je verstehen, wann wird man je verstehen?
+-- 
+Eine falsch abgetrennte Signatur ist keine Signatur und braucht deshalb
+nicht richtig abgetrennt zu sein.
+
+Andreas Kneib in de.comp.os.unix.linux.misc
+-- 
+Vier zeiliger, korrekt abgetrender 'Sig' zu vermieten.
+-- 
+Der Virus 'Nimda' ist sogar fähig DDTS (Distribuier Dental of
+Service)-Attacken gegen Server auszuüben.      (Lokalzeitung)
+-- 
+Batterie leer. Bin laden.
+-- 
+Letzte Worte eines Fahrlehrers: Die Ampel ist rot!
+-- 
+Letzte Worte eines Computer-Freaks: Hätte ich vorher ein Backup machen
+sollen?
+-- 
+---> rm -Rf /bin/laden
+-- 
+Echt frustrierend, wenn man so vor seiner Hardware
+sitzt und den minütlichen Preisverfall verfolgt...
+(John Gawe in de.comp misc)
+-- 
+.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.
+ASCII art?? I thought it was a regular expression!
+        -- seen on /.
+-- 
+Es gibt gar keine »freien Usenet Server«, höchstens versehentlich
+entlaufene. Wird so ein entlaufener Newsserver erstmal entdeckt, wird
+er meist schnell von Schaulustigen totgetrampelt oder vom Halter
+schnell wieder eingesperrt und der Käfig verstärkt. [Mario Link]
+-- 
+"Der Kluegere gibt nach - Eine traurige Wahrheit: Sie begruendet die
+ Weltherrschaft der Dummen" (von Ebner-Eschenbach)
+-- 
+"Ein Computer arbeitet deshalb so schnell, weil er nicht denkt."
+-- 
+Gut, Altsprachler können "mal" mit "böse" herleiten, aber was soll 
+bitte "böse Software" sein?  Mir fällt spontan nur Windows ein.  
+Und nach Windows muß man nicht scannen, das erkennt man am 
+lauten Gefluche des Users. --- Felix von Leitner d.s.r.d.
+-- 
+Der Dativ ist dem Genitiv sein Tod. 
+-- 
+Programmer: The device for converting coffee into software.
+-- 
+Lieber lange Beine als Langeweile
+-- 
+-------------------------------
+ keep cool but don't freeze
+-------------------------------
+-- 
+Multitasking /adj./ 3 PCs and a chair with wheels!
+-- 
+"Da haben wir also Kurven. Ich möchte hier auch nur endlich viele zeichnen."
+
+Prof. Pommerenke, Funktionentheorie
+-- 
+<Disclaimer> Das Posting da oben wurde gar nicht von mir geschrieben. Deshalb
+lehne ich prophylaktisch und kategorisch jedwede Verantwortung ab. Das
+schliesst auch etwaige Links bzw. Inhalte dieser Seiten ein. </>
+-- 
+ungleichmäßige binärzahlige Spenderleitung
+                           (Friedrich Stern übersetzt ADSL in dang)
+-- 
+Billige Sofas setzen sich mehr und mehr durch.
+-- 
+2. Gesetz der Themendynamik: Zwei Themen koennen nicht gleichzeitig
+denselben Raum einnehmen. Versuchen sie es, so ist dem aelteren Thema
+der Sitzplatz anzubieten. (Horst Hoffmann in de.talk.jokes.d)
+-- 
+Treffer. Alle Zaehne mit Zusatzzahn. (Dieter Tikowsky)
+-- 
+SCNR (= Schulljunk, connte nicht rückhalten)
+-- 
+"War does not determine who is right - only who is left."
+--- Bertrand Russell
+-- 
+Moore's Law:
+"The speed of hardware doubles every 18 months."
+Gates's Law:
+"The speed of software halves every 18 months."
+-- 
+Es ist alles so verflucht wahr...
+...bis auf die Stellen, die gelogen sind.
+--- Douglas Adams
+-- 
+       Sqrt(234)=? , 0.9p=1! , die letzte Kuh macht das Gatter zu ...
+-- 
+"Es ist verboten nach Gold zu graben, denn man findet ausschließlich
+Geröll"
+-- 
+If you are using AOL and can't get through, try using an external browser
+like IE or Netscape and turn off your proxies. If that doesn't work, or
+you don't understand, please shoot yourself, and do not email us about it
+because we don't care. - The Management [http://www.baiting.org/]
+-- 
+  Was hat es für den Papst bedeutet, als Luther kam?
+                        (Harald Schmidt über die Konkurrenz durch Stefan Raab)
+-- 
+> Man kann wirklich _alles_ in seine Signatur schreiben. 
+Ich glaube nicht, daß das in 4 Zeilen passt.
+                         Nils Ketelsen in de.alt.arnooo zu Nico Hoffmann
+                              <74v8on$95a$1@pinguin.milliways.shnet.org>
+-- 
+Life's too short to read boring signatures
+-- 
+>Ich bin immer wieder begeistert, wenn jemand auf Alternativfragen 
+>mit "ja" oder "nein" antwortet...
+Bei exklusiven oder-Fragen kannst du immerhin daraus schliessen, 
+dass der Antwortende dumm (unaufmerksam) oder Mathematiker ist ;)
+-- 
+mv /mnt/c/windows/win.com /dev/null
+mv: /dev/null: data refused
+-- 
+"Was ist der Sinn einer Sig.?" - "Tja. Das kann ich Dir jetzt auch
+gerade nicht sagen. Aber eine Gute Frage. Darf ich die als Signatur
+verwenden?" (Joachim Jäger und Nils Ketelsen in de.newusers.questions)
+-- 
+In Linux werden mehr Sicherheitslücken gefunden.
+In Windows sind mehr Sicherheitslücken drin.
+(Lutz Donnerhacke in de.org.ccc)
+-- 
+> > Gibt es jetzt schon weibliche Netcops?
+> Aber natürlich! Wie sollen die sich sonst vermehren?
+Sie vermehren sich nicht, sie werden ernannt. Von sich selbst.
+Gruss..  Michael [Enezian]
+Btw: Päpste vermehren sich auch nicht, trotzdem gibts immer
+wieder neue.
+-- 
+Gestern noch zu blöd, den Computer einzuschalten, 
+heute schon die eigene Homepage.
+-- 
+Saufst stirbst, saufst net, stirbst a. Also saufst. 
+-- 
+A bus station is where a bus stops.
+A train station is where a train stops.
+On my desk I have a workstation...
+-- 
+"Auch Milliardäre haben einmal als ganz normale Millionäre angefangen."
+-- 
+X-no-Sig: yes
+-- 
+"Wo bleibt die GEMA-Abgabe für Kämme, Gießkannen und Staubsaugerschläuche?
+Man könnte ja theoretisch urheberrechtlich geschützte Lieder darauf blasen."
+                                    (Benedict Mangelsdorff in de.alt.talk.unmut)
+-- 
+Ein Merkens gaenzlich ungefuettert,
+lebt alleine und verbittert...
+[Joachim Kromm in dsnu]
+-- 
+My sister opened a computer store in Hawaii.  She sells C shells down 
+by the seashore.
+-- 
+"Heisenberg may have slept here"
+-- 
+Der Automat ist nicht krank. Er ist ungluecklich. Ihm fehlt
+blaues Licht. Blaues Licht macht gluecklich.
+-> Ralph Angenendt in de.org.ccc zum Thema Bluescreen
+-- 
+[...], die Tasten rechts von denen mit den Buchstaben, wo die Pfeile
+drauf sind, warnen nicht "Indianer!", sondern mit ihnen kann man den
+Cursor im Text bewegen.
+                                  Weregoose in de.newusers.questions
+-- 
+Gib mir mal 'ne Zigarette, meine sind noch im Automaten
+-- 
+Ich bin klein, mein Herz ist rein, meine Phantasie ist schmutzig, ist das nicht putzig?
+-- 
+Very funny, Scotty. Now beam down my clothes!
+-- 
+Wer ohne Tippfehler ist, werfe die erste Tastatur.
+-- 
+Larkinson's Law:
+        All laws are basically false.
+-- 
+Ich kann vor lauter Trolle keine User mehr sehen.
+--
+Windows: gesehen, geaergert, gelacht, 'format' gemacht.
+-- 
+> Kleiner Tipp, lies die EULA :)
+Hm... Das Wort hab ich irgendwo schon mal gehört... Ist das dort, wo
+ich immer runter scrolle und dann auf "next" clicke?
+[Sven Heidrich und Carlo "Logical" Viscione in de.alt.games.quake]
+-- 
+Der moderne Mensch in seiner Grausamkeit
+hat ein elftes Gebot erfunden:
+Du darfst nicht alt aussehen.
+-- 
+Applaus: Rauschmittel, unter dessen Einwirkung Politiker sich zu den 
+seltsamsten Erklärungen verleiten lassen. (Ron Kritzfeld)
+-- 
+Wer in Gegenwart anderer furzt, ist immer noch höflicher, als einer, der in
+Gegenwart anderer raucht. Stinken tut zwar beides, aber die Gase eines Furzes
+sind wenigstens nicht krebserregend.  (Peter Becker, http://www.peter-becker.de)
+-- 
+Ein halbleeres Glas Wein ist zugleich ein halbvolles,
+aber eine halbe Lüge mit nichten die halbe Wahrheit.
+					Jean Cocteau
+-- 
+----------------------
+We're sorry.  Your message was undeliverable due to the following
+reason:
+
+The user(s) account is temporarily over quota.
+
+<postmaster@excite.com>
+
+Please reply to Postmaster@excite.com
+if you feel you are receiving this message in error.
+----------------------
+-- 
+"Um einen Zufall herbeizuführen, bedarf es vieler Vorbereitung. Um eine
+gute improvisierte Drei-Minuten-Rede zu halten, benötige ich
+beispielsweise drei Tage." Mark Twain
+-- 
+Die Amerikaner erfanden das Internet,
+die Deutschen regulieren es.
+Jeder macht das, was er am besten kann.
+Paul C. Paules
+-- 
+I want to tank the guys and the girls (like Tanja) that helped
+me. - Ich wünsche zum Behälter die Halteseile und die Mädchen
+(wie Tanja) die mir halfen. (Riccardo Geraci und Babelfish in
+dnq)
+-- 
+Abbildungen von menschlichen Wesen, die mit der Reproduktion ihrer Art 
+beschäftigt sind, gibt es in den Weiten des Internet häufiger...
+             [Jo real in dsrd über Sicherheitskontrollen von Sexseiten]
+-- 
+Es gibt zwei Grundsaetze fuer Erfolg und Glueck:
+1. Erzaehle anderen nicht alles was du weisst.
+-- 
+Man beachte den unsichtbaren Smiley. (Marcel Kilgus in de.talk.jugend)
+-- 
+Remember Darwin; building a better mousetrap merely results in smarter mice.
+-- 
+Hier wird kein Wissen vermittelt, hier ist der Schrottplatz am Ende
+des Universums, die letzte Tanke vor dem Abgrund, die Höhle der
+Finsternis, hier ist die Gruft. (Axel Woelke in und über dag°)
+-- 
+:-) ;-) :-) ;-) :-) ;-) :-):-) ;-) :-):-) ;-) :-)
+Bitte nach Belieben verteilen.
+-- 
+> Code, der zum Verständnis Dokumentation braucht, ist meistens Käse.
+Na ja, sowas kann man wenigstens noch essen. In Verbindung mit
+Spaghetti-Code ist das doch was Feines. 
+Wirklich unschön wäre Maschinenkot.              [W.Jakobi und W.Krueger]
+-- 
+Bad command or file name.  Go stand in the corner.
+-- 
+Jemand hat ein Glas Milch neben der Tastatur vergessen, #29:
+Assembler-Programmierer: Nein Danke, ich trinke lieber direkt vom Euter.
+-- 
+> Weiß jemand, wie das langfristige Nahverkehrs-Konzept der DB aussieht?
+ja aber natürlich !!! "Bei uns läuft alles - bald laufen auch Sie" :-)
+(Jan Marco Funke und Jens Hohlfeld in news:de.etc.bahn.eisenbahn)
+-- 
+"SPAM ist Mehrzahl - wär's Einzahl, wär's kein SPAM."
+                                                       (Harald Effenberg in dnq)
+-- 
+Wenn das Gehirn so einfach waere, dass wir es verstehen koennten,
+dann waeren wir so dumm, dass wir es doch nicht verstehen wuerden.
+Jostein Gaarder in 'Sofies Welt' 
+-- 
+Math problems?  Call 1-800-[(10x)(13i)^2]-[sin(xy)/2.362x].
+-- 
+[|X-Newsreader: KNode 0.1.13 schrieb:]
+>>> Das zeigt mal wieder die Intelligenz einem Windows Users!!!!!!
+>> <rotfl>
+>> Muuß Mann für dem Saz Linuks benutsen?
+>Nejn KDE raicht.
+Uhm tiese nagriecht su ändschlüsseln muzt ich OjE mit WinME unten
+VMWARE unten KDE2 uff SoSE Lihnuks mit anjhluz üper tädäsel machn ;-)
+-- 
+Die Bandbreite steigt in Gasblasen aus der Sargassosee und wird von
+dort in Ethernetkabel gefüllt. (Dirk Moebius in de.alt.ufo)
+-- 
+Zwischen Wahnsinn und Verstand ist oft nur eine dünne Wand.
+-- 
+Ein dreieckiges Rad ist gegenueber dem viereckigen Rad ein Fortschritt,
+da es pro Umdrehung einen Hopser weniger gibt. 
+-- 
+Frauen sind wie Autos: Man hegt sie, man pflegt sie, und irgendwann 
+bummst ein anderer in sie rein...
+-- 
+>Was ist der Unterschied zwischen einem langen und einem kurzen Rock?
+>Die Zugriffszeit!
+Was nützt dir kurze Zugriffszeit,
+wenn es heisst: Access denied!
+-- 
+The light at the end of the Tunnel...
+... is allways the headlamp of an oncoming train! 
+Murphy
+-- 
+Wer fragt, ist ein Narr für fünf Minuten.
+Wer nicht fragt, bleibt es für immer. (chinesisches Sprichwort)
+-- 
+Ewig währt am längsten.
+-- 
+swim nude, sharks hate to unpeel their food
+-- 
+Männer können trinken, ohne Durst zu haben,
+Frauen können reden, ohne ein Thema zu haben.
+-- 
+A real programmer should process the following tasks in their life:
+1. Implement a tree
+2. Build a house from own sources.
+3. Spawn a child
+-- 
+>Ich bin anscheinend nicht so geschmacklos, ich habe meine Frau in
+>de.talk.romance kennengelernt...
+Man sagt "aus de.talk.romance gedownloaded". (K. Koehntopp in d.a.f.u)
+-- 
+BOFH excuse #323:
+
+Your processor has processed too many intructions. 
+Turn it off emideately, do not type any commands!!
+-- 
+ Nietzsche: Gott ist tot!
+ Gott: Nietzsche auch.
+-- 
+Wer anderen das Wasser reichen will, muß Kellner werden. 
+-- 
+Die letzten Worte von Scotty: Wissen Sie, Captain, was wir da gerade
+hochbeamen? 
+-- 
+| Der weit überwiegende Teil der Fragen in dieser NG resultiert aus
+| Dummheit, Faulheit, Dummheit, Desinteresse, Dummheit, und asozialem
+| Verhalten. Sowie Dummheit.
+(Robin S. Socha <deathsquad.877kyz5ifc.fsf@socha.net>)
+-- 
+Ich habe eine Diät gemacht und fettem Essen und Alkohol abgeschworen - in
+zwei Wochen verlor ich 14 Tage.
+-- 
+Wo hängt in England die Wäsche zum Trocknen? on-line! 
+-- 
+Hoch lebe die Arbeit, aber so, daß keiner rankommt!!! 
+-- 
+Das Weib hat andere natuerliche Interessen; es strebt vor allem danach, 
+Gehilfin des Mannes zu werden. 
+(Prof.  Dr. med.  Louis Thomas *1838)
+-- 
+Fachbegriffe der Informatik:
+   131: MSCE
+          Führerschein für die Maus. (Thore Tams)
+-- 
+Hacken ist, wenn man seine Suppe mit der Kaffemaschine kochen kann
+
+- Wau Holland - In memoriam perpetuam
+-- 
+Letzte Worte eines A-Klasse-Fahrers: Ups, ein Elch
+-- 
+Solange mein Chef so tut, als würde er mich richtig bezahlen, solange tue
+ich so, als würde ich richtig arbeiten! 
+-- 
+Letzte Worte eines Fallschirmspringers: Das Ding wird schon aufgehen.
+-- 
+Fachbegriffe der Informatik - Einfach erklärt
+267: Giga
+       Teletubbies fuer Skriptkinder. (Joerg-Olaf Schaefers)
+-- 
+Ein Admin ist wie ein Tierpfleger, er muss mit eNTen Pinguinen und Daemonen 
+(ähm habe ich irgendwie noch in keinem Zoo gesehen) umgehen können, eNTen sind 
+aber besonders gefährlich und unberechenbar, beim Putzen sollte man da schon 
+aufpassen das man sich keinen Wurm einfäng[........] (Daniel Aubry in dasr)
+-- 
+Linux is like a wigwam: no Windows, no Gates, Apache inside
+-- 
+I would say what i think of your post, 
+but i fear you would use it for a signature line." 
+-- 
+>>IF PRACTICE MAKES PERFECT, AND NOBODY'S PERFECT, THEN WHY PRACTICE <<
+
+-- 
+Q: What have american beer and sex in a canoe in common?
+A: Both are fucking close to water.
+-- 
+"Herr Schaffner, wie lange hält der Zug?"
+"Bei guter Pflege 30 Jahre!"
+-- 
+"No-one tried to 'swallow' Apple since I've been here.
+I think they're afraid of how we'd taste."
+- Steve Jobs
+-- 
+Fanatische Christen sind nicht schlimm, weil sie Christen sind,
+sondern weil sie fanatisch sind.
+(Frank Lachmann, de.alt.fan.konsumterror, 6.6.1999)
+-- 
+batlh blHeghjaj.
+Moegest Du gut sterben.
+-- 
+Wer die Menschen ruinieren will, braucht ihnen nur alles zu erlauben.
+(Napoléon I. Bonaparte)
+-- 
+Message-ID: <57679zi@babylon.pfm-mainz.de>
+Ssh! Don't confuse the net.cops with facts.
+-- 
+[Abenteuerurlaub in Interlaken]
+Interlaken? Abenteuer?
+Wozu das denn, wenn ich das Inter*net* habe und auch hier Aben*d*teuer
+haben kann? ;-)
+-- 
+>Malte der durchaus weiß wie man sich Ärger vom Hals schaffen kann.
+Deine Methode, zu warten bis das Vieh schön gar ist und dann die Leute, 
+die dir den Stall angezündet haben, zur Grillparty einzuladen, ist IMHO 
+nicht sonderlich sinnvoll. (Werner Jakobi zu Malte Tanner in dan-an)
+-- 
+ "Perl ist der geglückte Versuch, einen braindump direkt ausführbar zu
+  machen."
+                                                          (Lutz Donnerhacke)
+-- 
+Es ist ein Beweis für außerirdische Intelligenz, 
+dass die Außerirdischen uns noch nicht besucht haben.
+-- 
+Ausserdem ist Emacs besser als Linux
+                    gesehen im Heise Newsticker.
+-- 
+"> Ich lach mich tot!
+ 
+ Eine begrüßenswerte Initiative."
+Andreas Hirschberg zu Jan Ritzerfeld in totu
+-- 
+Erziehung ist die organisierte Verteidigung
+der Erwachsenen gegen die Jugend. (Mark Twain)
+-- 
+"RTFM" ist zwar schön und gut, doch wenn T M F ist, hilft auch R nicht.
+From: Florian Schaeffer in dcsf
+
+-- 
+> Ein vernünftig installiertes NT-System mit NTFS lässt sich auch nicht
+> durch unbedarfte DAU-Aktionen kaputtmachen (...)
+Stimmt. Da müssen Profis her. Ich habe etwa eine halbe Stunde gebraucht,
+dann war es kaputt.                Stefan Ring & Robin S. Socha
+-- 
+Der Tag ist 24 Std. lang, aber unterschiedlich breit (W. Neuss)
+-- 
+Support your local Search and Rescue unit -- get lost.
+-- 
+> rm ist *kein* Packer.
+Doch. Aber verlustbehaftete Komprimierung.
+[Jens Müller in de.talk.jugend]
+-- 
+OjE ist das Usenet-Äquivalent zu einem Auto, das keine Bremsen hat und
+nur nach links steuern kann. Es ist sinnvoller, auf ein richtiges Auto
+umzusteigen, anstatt eine Strecke zu suchen, die keine Hindernisse und
+keine Rechtskurven hat. (Antonio Navarro Perez in z-netz.frd)
+-- 
+Du weisst, dass du einsam bist, wenn..
+  ..du ungeduldig auf die nächste Spammail wartest.
+-- 
+Ist denn schon mal der Versuch gemacht worden, die OE- 
+Programmierer sachlich, ohne Flame davon zu überzeugen, daß diese  
+Käfer da nicht reingehören und ständig für böses Blut sorgen?  
+Denn da liegt ja der Kern des Problems: No OE, no cry. :-)
+-- 
+Die Summe der Intelligenz auf dem Planeten ist eine Konstante - die
+Bevölkerung wächst. (Murphy)
+-- 
+Seriennummer des Datenträgers 0815-FADE
+Ein weiteres Internet formatieren (J/N)? J 
+-- 
+Was schlaegt meine Rechtschreibpruefung fuer "Winmodem" vor?
+"Windigem", Recht hat sie!!
+-- 
+Solltest du Rechtschreibfehler gefunden haben, behalte sie. Ich habe 
+genug davon.
+-- 
+So was ähnliches ist mir vor Jahren bei der Umstellung Analog -> ISDN
+passiert. Die haben umgestellt bevor mein ISDN-Telefon da war. Auf
+Nachfrage dann die Antwort: "Wir rufen sie dann an wenn ihr neues
+Telefon da ist!". :)
+-- 	
+> Wenn ich sowas lese, könnte ich kotzen!  :-(
+Tu es doch. Aber bitte nicht hier, das ist hier off-topic.
+-- 
+Gibt es eigentlich in der Outlook-API eine Funktion, mit sich ein Virus
+automatisch an alle Einträge im Adressbuch verschickt? Sonst müsste ja jeder
+Virenprogrammierer das Rad neu erfinden. Das wäre ja...
+(Christian Garbs in de.talk.jokes)
+-- 
+Windows [win dous]: indianisches Sprichwort:
+Weisse (r) Frau (Mann) starren wartend auf Sanduhr
+-- 
+[MLM:]
+|Hiermit differenzieren sich die Autoren dieser Seite von jeglichem MISSBRAUCH der
+         ^^^^^^^^^^^^^^
+|angebotenen Informationen.
+-- 
+P.S.: und wo finde ich learn.to/sign? learn.to/flame,
+learn.to/machmichwichtig,
+learn.to/attackdieeinzigendiehiersinnvollessagenundnichtblödrumlabern?
+(Nina Dürig in alt.hacker.org-gcf)
+-- 
+Die letzten Worte eines Biologen: Die Schlange kenn ich, die ist nicht
+giftig.
+-- 
+"geh streben" ("Karl Napp" legastheniert in dnq)
+-- 
+: I used to drive a Heisenbergmobile, but every time I looked at the
+: speedometer, I got lost.
+-- 
+"Ein Fahrer eines weißen Kleintransporters mit einem rosa Buchstaben drauf be-
+hauptete allen Ernstes, die Straßenbahn würde nicht durch sein Fahrzeug behin-
+dert, da sie über das zweite Gleis ausweichen könne."     (Tobias Nicht in debs)
+-- 
+: the problem with troubleshooting is
+: that sometimes the trouble shoots back.
+-- 
+Webmaster dürfen alles, deswegen sind sie "Master". Die Leute am anderen Ende
+der Leitung sind doch nur die Webslaves."               (Uwe Schröder in dciwam)
+-- 
+Heute kann man ja kaum noch eine AOL-CD aus dem Fenster werfen, ohne
+jemanden zu treffen, der einen SuSE-Karton unter dem Arm trägt.
+                           - Jochem Huhmann, de.comp.os.unix.discussion
+-- 
+Die letzten Worte eines Abteilungsleiters: Hicks... Du Arschloch siehst
+wirklich aus wie mein Chef... 
+-- 
+/* no comment */
+-- 
+Naturwissenschaftler haben endlich die Frage geklärt, warum Pinguine nicht 
+fliegen können. Die Antwort ist denkbar einfach: "Was nicht fliegt, kann 
+auch nicht abstürzen!"
+-- 
+Second Law of Thermodenial:
+            In any closed mind the quantity of ignorance 
+            remains constant or increases.
+-- 
+Quote of the da#*;^..847bc *bzzt* *crackle* THIS-SIGNATURE-SPACE-HAS-BEEN-
+ASSIMILATED-BY-THE-CODE-BORG-SIGNATURE-WORM - PUNY-HUMANS-YOU-ARE-TO-COPY-
+THIS-TEXT-INTO-YOUR-DESIGNATED-SIGNATURE-SPACE-AT-ONCE-AND-PROPAGATE-IT -
+-- 
+Mr. Cole's Axiom:
+    The sum of intelligence on the planet is a constant; 
+    the population is growing.  
+-- 
+"Ein Spammer schreibt so vielen Müll,
+den doch gar keiner mehr lesen will!
+Fühlt sich missverstanden und ungelesen,
+ist schon immer ne Unperson gewesen.
+Aber eigentlich ist er nur ein armer Wicht,
+beachtet ihn doch einfach nicht!"
+-- 
+"Please enter a 45-digit prime number to activate your copy of Windows XP"
+-- 
+Failure ist not an option. It comes bundled with your Microsoft Product."
+-- 
+>kann mir mal einer sagen, wie groß cs standalone is?  
+ca 10 cm 
+wie jede andere cd auch...
+            [pots]obermufti & [pots]nighthawk
+-- 
+Widerlich, adj. - Eigenart fremder Meinungen
+
+     Ambrose Bierce, Des Teufels Woerterbuch
+--
+Computers are like air conditioners - both doesn`t work if you open
+Windows!!!
+-- 
+"Ich trinke kein Wasser - darin ficken Fische." (W.C. Fields)
+-- 
+> § 4: Jedes Jahr wird in de.alt.kotzbrocken ein Moderator gewählt, der
+> allerdings kein Moderator im eigentlichen Sinn ist. Den Titel Moderator hat
+> er aus traditionellen Gründen.
+Dann nenn ihn Moderbrocken.             Rolf Zweifel in de.alt.admin zum Elch
+-- 
+Richter: "Wo waren Sie in der fraglichen Nacht zwischen 1 Uhr und 4 Uhr?" 
+Angeklagter: "Im Bett." 
+Richter: "Zeugen?" 
+Angeklagter: "Ich hab's versucht." 
+-- 
+Manche Menschen wuerden eher sterben als nachzudenken.
+Und sie tun es auch.       Bertrand Russel (1872-1970)
+-- 
+,Wenn wir uns um die Zukunft sorgen, ist das so, als versuchten wir,
+das Loch in einem Gebäckkringel zu essen. Wir kauen auf etwas herum,
+das nicht da ist." (Barry Neil Kaufman)
+-- 
+Gib einem Idioten eine Funktion, und er erfindet ersteinmal ein neues
+Formular.
+-- 
+                           Reboot America.
+-- 
+Diese  Signatur wurde  fuer den Opera-Browser v32.13  mit aktiviertem
+Flash 18.0 und Java 12.6 bei einer Bildschirmaufloesung von 3840x3072
+und 64 bit Farben optimiert.  Es werden im PC mind. eine 4,2 Ghz CPU,
+9 GB Ram und eine 6 TB Harddisc vorrausgesetzt. Bitte jetzt upgraden!
+-- 
+"Die großgeschriebenen Substantive sind die Leuchttürme über dem Satz,
+und der Satz kann sie brauchen - um so dringender, je schlimmer er
+verschachtelt ist." (Wolf Schneider)
+-- 
+Der Unterschied zwischen Archäologen und Kosmetikern
+besteht darin, daß die einen Altertümer ausgraben
+und die anderen sie zuschütten.
+                                        Alec Guinnes
+-- 
+Die Menschen klagten über das Schlechte auf der Welt.
+Also schuf Gott den Teufel, damit Gott nicht alles Schlechte Selber
+verantworten musste.
+Und der Teufel schuf die Anwälte damit er nicht alles selber....
+-- 
+Error in module crystal ball detected.
+--
+=============================================================================
+"Ist kein guter Tag heute", murmelt der  Zugführer, "Erst schneide ich
+mich beim Rasieren, dann reißt der Schnürsenkel, und jetzt kommt mir auch
+noch der Intercity auf meinem Gleis entgegen..."
+-- 
+Auch ein Polizist braucht manchmal was zum Abführen.
+-- 
+Deflorieren heißt nicht der Freundin die Blumen wieder wegzunehmen.
+-- 
+Chello: Sie haben sich mit Code Red infiziert, installieren Sie den
+Microsoft-Patch, sonst ...
+Kunde: Kann gar nicht sein, auf dem Rechner läuft Linux.
+Chello: Installieren Sie trotzdem den Microsoft-Patch.
+-- 
+Lutz Donnerhacke zu plonken ist in etwa damit zu vergleichen, in der
+Kirche dem Pfarrer zu sagen, dass er bitte im Gottesdienst das Maul zu
+halten hat. [Marc Haber und Holger Köpke in de.comp.security.firewall]
+-- 
+We do what we do, because of who we are.
+If we did otherwise, we would not be ourselves.
+-- 
+Wenn man bedenkt, dass die Leute vor 150 Jahren ihre E-Mails noch
+bei Kerzenlicht geschrieben haben...
+[Marianne Kestler, de.admin.net-abuse.mail, 6.5.2000]
+-- 
+Hack The Planet,aber passt auf,dass ihr nicht ins eigene Fleisch hackt :-)
+-- 
+Mathematiker sterben nicht, sie verlieren nur einige ihrer Funktionen.
+-- 
+Begruende nichts mit Geisteskrankheiten, was sich auch mit einer
+defekten Tastatur erklaeren laesst. (Noses in de.talk.liebesakt)
+-- 
+Was soll man mit einem Betriebssystem anfangen,
+dessen Verfallsdatum im Namen enthalten ist?
+-- 
+>G.W. Bush will endgültig in die Geschichte eingehen:
+
+Er möge *an* der Geschichte eingehen.
+-- 
+"...Fehlermeldung: Schwerer Ausnahmefehler OE (das heißt wohl Outlook
+Express, deswegen schreibe ich hier...)"
+Aus: microsoft.public.de.german.inetexplorer.ie5.outlookexpress
+-- 
+Die letzten Worte des PC's: Starting Windows95...
+-- 
+"2. AFAIK kann man auch fremdcanceln (welch wunderbares Wort), oder?" -
+"Man kann auch mit dem Schraubenzieher in einer Steckdose herumstochern,
+wenn man eine gewischt bekommen möchte ..." - H. Spyra, A. Loch, d.c.s.f-a
+-- 
+Black holes are where God divided by zero.
+-- 
+A common mistake that people make when trying to design something completely
+foolproof is to underestimate the ingenuity of complete fools.
+
+Douglas Adams, Mostly Harmless, Chapter 12
+-- 
+Erstes Gesetz der soziologischen Vererbungslehre:
+Zölibat ist nicht erblich.
+-- 
+5 von 4 Leuten haben Probleme mit Mathematik.
+-- 
+93 Prozent der Amerikaner wissen, dass Rauchen Lungenkrebs verursacht,
+aber nur 48 Prozent wissen, dass es ein Jahr dauert, bis die Erde
+einmal um die Sonne gekreist ist. (Quelle: HSIA-Preprint)
+-- 
+Why slrn?
+Gnus is much too easy...
+
+to pronounce.
+-- 
+Aus dem neuesten Microsoft White Paper:
+"Open Source" heisst, jeder Anwender erhaelt eine Kopie des Quellcodes.
+Dabei stossen Entwickler, die mit Linux arbeiten, haeufig auf
+Sicherheitsluecken. Auf Microsoft Windows trifft dies nicht zu.
+-- 
+1. Der Tritt ins Gesäß der unterstellten Mitarbeiterin gehört auch dann 
+nicht zur "betrieblichen Tätigkeit" einer Vorgesetzten, wenn er mit der 
+Absicht der Leistungsförderung oder Disziplinierung geschieht.
+-- LAG Düsseldorf
+-- 
+115 Gründe, warum Bier Frauen vorzuziehen ist:
+73. Ein Bier schreit nicht herum.
+-- 
+Wenn zwei Menschen immer wieder die gleichen Ansichten haben,
+ist einer von ihnen überflüssig. ( Sir Winston S. Churchill)
+-- 
+Wenn Sie "MLM"-Spam versenden, werden Sie intelligent, berühmt, und attraktiv 
+für das andere Geschlecht!
+
+(Sie glauben das nicht? Warum glauben Sie dann, daß Sie 100 000 DM verdienen?)
+-- 
+(Es ging um Webdesigner)
+Wenn man sich so die 'professionellen' Hochglanz Websites ansieht,
+scheinen das alles fortschrittliche Menschen zu sein[1].
+[1] Sie setzen immer den neuesten Schwachsinn ein - (Gerhard Schromm in dasr)
+-- 
+Spiegel Spiegel an der Wand,
+wer hat die schönste BILD zur Hand?
+-- 
+"From" aktiv. PM's werden gelesen, Spammer gevierteilt.
+-- 
+warum suchen, wenn finden doch so einfach ist
+-- 
+Es gibt eine Theorie, die besagt, wenn jemals irgendwer genau
+rausfindet, wozu das Universum da ist und warum es da ist, dann
+verschwindet es auf der Stelle und wird durch etwas noch Bizarreres
+und Unbegreiflicheres ersetzt. Es gibt eine andere Theorie, nach der
+das schon passiert ist. (Douglas Adams)
+-- 
+Ein Jäger schießt auf eine Ente. Erst schießt er links vorbei,
+dann ebensoweit rechts. Statistisch gesehen ist die Ente tot.
+-- 
+And on the seventh day, He exited from append mode.
+-- 
+Letzte Worte eines Fallschirmspringers: So, dieses kleine Wölkchen nehme
+ich auch noch mit. (Als er in den Bodennebel eintauchte)
+-- 
+142 Reasons, Why You Can't Find Your System Administrator
+25. Booted to DOS and is playing doom across the network.
+-- 
+Kaum wird das Wetter schlechter und die Tage kürzer, fallen die
+Newbies über das Netz her wie die Blätter von den Bäumen.
+(Ulf Schaefer in de.talk.jokes)
+-- 
+"Ich bin dafür. Ja, sogar dagegen" (Lech Walesa)
+-- 
+Das Universum entstand, als Gott durch Null dividierte.
+-- 
+Alles läßt sich solange verbessern, bis es endlich nicht mehr
+funktioniert.
+-- 
+Sie haben soeben die Position Ihres Mauszeigers auf dem Monitor verändert.
+Bitte starten sie Windows neu damit die Veränderungen wirksam werden.
+-- 
+"Herr Anwalt, was kostet es, Ihnen 2 Fragen zu stellen?"
+"350 DEM. Und Ihre 2. Frage lautet?" (Lars Gebauer in dsrm+u)
+-- 
+ToFu: Text oben Fullquote unten. Nicht machen.
+Antworten gehören unter die Fragen und nicht darüber.
+Zitate bitte kürzen. Der Leser wird es Dir danken.
+Wer diesen Text zitiert, zeigt, dass er nichts verstanden hat.
+-- 
+Robotic tape changer mistook operator's tie for a backup tape.
+--
+Akte Gates - Die unheimlichen Fälle verzweifelter Windows User
+-- 
+                   Press every key to continue.
+-- 
+            Give a man a fish and you feed him for a day;
+     teach him to use the Net and he won't bother you for weeks.
+-- 
+> [1] In my humble opinion - In meiner humpelnden Pinie. 
+       
+Welche Sprache ist "in mai humbelo pinion" denn? Interlingua? Esperanto?
+-- 
+Zivi ist nicht heilbar, aber man kann es überleben
+Boernout S. in der Realität[tm], 26.7.2000
+-- 
+Hey, gibt's als Gegenbewegung zur RNF (RealNamen-Fraktion) - deren
+Existenz ich hier als stellvertretender Sprecher noch einmal
+ausdrücklich dementiere - jetzt die GIMPEL (Gruppe Inkompetenter
+Mailfälscher, Pseudos und Ewige Luser)? -Matthias Esken in dsnu-
+--
+das ist keine sig
+-- 
+Auf der Packung stand "Windows 95 oder besser".
+Mit Linux lief es nicht.
+Was ist jetzt besser?
+-- 
+"Der Horizont vieler Menschen ist ein Kreis mit Radius Null -
+und das nennen sie ihren Standpunkt."
+
+- A. Einstein
+-- 
+Hans-Hasso Stamer in de.comp.sys.mac.soc:
+
+F'ups sind die kränkeste Erfindung seit Einführung des
+Telegraphen-Winkalphabets duch die französische Post...
+-- 
+> Wenn kaum jemand Deiner Argumentation folgen mag, liegt daß nicht
+> unbedingt daran, daß Du so schlau bist und alle anderen so doof!
+Wolfgang Krietsch in dafa
+-- 
+Was soll bitte
+"böse Software" sein?  Mir fällt spontan nur Windows ein.  Und nach
+Windows muß man nicht scannen, das erkennt man am lauten Gefluche des
+Users.
+-- 
+Things are more like they are today than they ever were before.
+                                                   [Dwight Eisenhower]
+-- 
+The Day Microsoft makes something that does not suck is probably
+the day they start making vacuum cleaners.
+-- 
+2.4.5 in kernel/signal.c(733):
+  Let a parent know about a status change of a child.
+-- 
+Famous last words des
+Fussgaengers:         Ich geh immer bei Rot ueber die Strasse!
+-- 
+> > Hinweis-Signaturen sind kontraproduktiv, da agressiv !
+> Wieso das denn?
+Weil sie belehren. Ratschläge sind Schläge, Schläge sind
+aggressiv. Michael Enezian in <3A4A6267.987E4B87@webshuttle.ch>
+-- 
+> Wer Dich noch nicht im Killfile hat ist selber Schuld.
+
+Wer seinen Kopf nicht in den Sand steckt ist selber schuld?
+(sagte der Vogel Stauss zu seinen Küken)
+-- 
+I hope I didn't brain my damage.
+					   Simpson, Homer J. in Episode 3F24
+-- 
+Weil Denken die schwerste Arbeit ist, die es gibt, 
+beschäftigen sich auch nur wenige damit. (Henry Ford) 
+-- 
+Ich bin Mitglied der No-To-Fu-Sekte. Wir wollen durch einfache
+Regeln Netizien vor dem ewigen Flame-War und dem LARTzebub
+retten. Mehr dazu unter: <http://learn.to/quote>
+-- 
+Der Gebrauch von OE+HTML+Script konkurriert mit der Gnade Gottes.
+(... sie ist hoeher denn jede Vernunft)
+--
+Ich habe schon einige Leute erlebt, die mit dem Mac unglücklich
+geworden sind (zuwenig Probleme, zuviel Freizeit...)
+-- 
+[Konvertieren...]
+sag jetzt nicht "WAV in MIDI" - das geht prinzipiell nicht sondern wäre so,
+als ob Du aus einer Gulaschsuppe wieder einen Ochsen machen wolltest.
+-- 
+The main failure in computers is usually between keyboard and chair.
+-- 
+Opera ist ein Browser und kein kompiliertes Sicherheitsrisiko.
+(Stefan Einspender in opera.deutsch)
+-- 
+Aus dem WWW dringt niemand ein. Das internationale Datennetz heißt
+Internet. WWW ist der Teil, in dem es Fickbildchen gibt.
+  [Andreas Riedel in de.comp.os.unix.linux.misc]
+-- 
+Lange Passwörter sollen unsicher sein! Man vergisst sie zu leicht.
+(Soeren Todt in de.alt.arnooo)
+-- 
+- Undetected errors are handled as if no error occurred. (IBM) -
+-- 
+Science may be described as the art of 
+systematic oversimplification.
+ - Karl Popper
+-- 
+Was ist bei einem Flugzeugabsturz wichtiger als Geistesgegenwart? Körperliche Abwesenheit!
+-- 
+This e-mail is sent with 99.73% recyclable electrons
+-- 
+Ein Computerprogramm tut, was du schreibst, nicht was du
+willst. (Murphy)
+-- 
+>Er meint, das in dem Buch ein Hinweis wie
+>Copyright oder Nachdruck verboten fehlt.
+
+Auf 'nem VW Golf steht auch nicht "klauen verboten".
+-- 
+Erwerbsregel 271: Es gibt viele hochintelligente Männer, deren Gehirne
+                  nichts mit ihrem Geldbeutel gemein haben
+-- 
+> Das Programm `ls` verraet es dir.
+Äääääh, muß ich das erst installieren?
+                                  [Newbie in de.comp.os.unix.linux.misc]
+-- 
+"Microsoft ist durch Linux bedroht. Mac OS X wird durch Linux
+beflügelt"
+Mike Nolte in <1ektrjl.vrlkfptvat3fN@ID-42937.user.dfncis.de>
+-- 
+Warum heißt die Schlange Schlange? Weil sie lang ist! Wäre sie kurz, hieße sie Schlurze
+-- 
+Erwerbsregel 146: Verkaufe das Brutzeln, nicht das Steak
+-- 
+reality.sys not found! Reboot universe?
+--
+Erwerbsregel 43: Ein Ohr zu liebkosen ist oftmals erfolgversprechender,
+                 als eine Waffe zu zücken
+-- 
+speed up your windows: press <ALT>+<F4>
+-- 
+"Die Überschreitung der zulässigen Höchstgeschwindigkeit um 54 km/h 
+ist zur Rettung eines Wellensittichs nicht gerechtfertigt."
+OLG Düsseldorf v. 18.4.1990
+-- 
+Und kommt im März die Sommerzeit, ist's länger hell für Schwarzarbeit
+-- 
+"Get our new Windows XP. Now with eXtra Problems included."
+-- 
+"Dieb D stiehlt Eigentümer E das Pferd F"
+aus einer Sachenrechtsvorlesung
+-- 
+Was ist denn beim Softwarekauf ein "Gebrauchtkauf"?
+CD wurde schon einmal/mehrmals ausgelesen?
+Programm wurde schon einmal/mehrmals laufengelassen?
+(Haben sich die Programmzeilen dabei abgenutzt?)
+-- 
+SIGSIG -- signature too long (core dumped)
+-- 
+IcH fInDe AuCh, dAsS eS nIcHt So WiChTig IsT, eInEn TeXt In KoRrEcKtEr 
+gRoSs- Und KlEiNsChReIbUnG zU vErFaSsEn, Da DiEs DeR LeSbArKeIt KaUm 
+AbBrUcH tUt UnD zUdEm AuSdRuCk MeInEr InDiViDuAlItAeT iSt.
+(Joachim Kromm in dsnu).
+-- 
+[FollowUps]
+Ich setze mal wieder auf dsnm, nachdem da nun schon ein
+angeknabberter thread herumsteht.
+-- 
+Hier arbeiten noch immer 120 MHz, 32MB, ein Pinguin und ein Esel.
+-- 
+[Schreiben von Flames:]
+Jemand mit einem IQ im Bereich Kühlschranktemperatur ist zu 
+ersterem natürlich nicht in der Lage. 
+-- 
+Ich denke, also spinn' ich
+-- 
+"Was auch geschieht: Nie dürft Ihr so tief sinken, von dem Kakao, 
+durch den man euch zieht, auch noch zu trinken!"  [Erich Kästner]
+-- 
+>  Lies RFC1036...
+Ihre proprietären, überkommenen Regelwerke decken sich nicht mit dem
+aktuellen Stand der IT-Technik. Sich an sie zu halten kommt einem
+Rückschritt in die Steinzeit gleich.       ("Lesnar" in u.a. dsnu)
+-- 
+32. VIII Infolge der Geschwindigkeit dehnt sich die Zeit aus - es müßte längst
+Oktober sein, aber hier ist immer noch August. Im Fenster begann etwas zu 
+flimmern. Ich dachte schon die Milchstraße, aber es ist nur der Lack der
+absplittert.                                    Stanislaw Lem, 14. Reise, 1971
+-- 
+Bring Deine Kristallkugel mal zur Wartung, die wirft komische
+Ergebnisse aus.
+-- 
+"Manche Menschen meinen, Lechts und Rinks könne man nicht
+velwechsern. Werch ein Illtum." (E. Jandl)
+-- 
+Bagpiping is an outdoor sport!
+-- 
+Anstiftung zur Beihilfe und Beihilfe zur Anstiftung oder
+zur Beihilfe ist Beihilfe zur Haupttat. (BGH NStZ 96, 562)
+-- 
+"Kann mir mal jemand die rechtlichen Aspekte von Autos erklaeren?"
+Und da will ich auch nicht lange ueber die StVO referieren, nur um dann
+festzustellen, dass Du Dich eigentlich fuer die Restwertberechnung von
+Leasingfahrzeugen interessierst. (frei nach: Bernhard Muenzer in DSRM)
+-- 
+Man kann wohl sagen was man will, aber im Nicht-einbauen von nützlichen
+Features ist M$ ziemlich konsequent. ;-)
+-- 
+a² + b² = c² [Pythagoras]
+E = m*c² [Einstein]
+=> E = m*(a² + b²)
+-- 
+Don't forget that MS-Windows ist just a temporary workaround until you
+can switch to a GNU system ;-) 
+                                          [gnupg-w32-1.0.6 - Readme.w32]
+-- 
+Whenever you design a better fool-proof software,
+the genetic pool will always design a better fool.
+-- 
+Wie jagt man einen Elefanten - Teil 3:
+LISP-Programmierer bauen einen Irrgarten aus Klammern und hoffen,
+dass sich der Elefant darin verirrt...
+-- 
+Wie Programmierer Fahrräder bauen:
+11. LISP-Programmierer
+    (bauen Räder mit(Rädern mit(Rädern mit
+                               (Rädern mit(dem was LISP-Programmierer bauen)))))
+-- 
+Quatsch wird immer quätscher, bis er quietscht.
+-- 
+> nein - aber es wäre doch schön, wenn überlange Zeilen auf 72 umgebrochen
+> würden!
+BTW Text wird umbrochen, Zäune und Felder werden umgebrochen.
+-- 
+Ich funktioniere *immer*! [Jenni]
+-- 
+Menschen, die einem am Herzen liegen, erkennt man daran,
+dass sie einem nicht aus dem Kopf gehen !
+-- 
+Manche Leute nennen es Amboss. Ich nenne es Dimensionswandler.
+Er macht aus 3-dimensionalen Füßen 2-dimensionale.
+(Michael Hermes in detebe)
+-- 
+Ich habe vor Robin keinen Respekt. Wer derartige Kommunikationsdefizite 
+hat, mag vor seinem Hackerschirm sitzen, bis er schwarz wird.
+                -- Roger Templeton in dc.editoren über RSS
+                   <3e4ee00b$0$27743$9b622d9e@news.freenet.de>
+-- 
+[Eurozeichen vs "Dübel"]
+Die sind mitschuld. Aber warum müssen sich auch Windows-1252 und
+iso-8859-15 so stark unterscheiden, dass es dübelt?
+-- 
+Alle Wege führen an Redmond vorbei.
+-- 
+"Gut. btw: Schlecht." (Hendrik Brummermann)
+-- 
+May the source be with you!
+-- 
+Alkohol ist auch ein gutes Lösungsmittel...
+Für Probleme und so.
+-- 
+Denn wäre "Dies ist ein Perl-Programm" ein Perl-Programm, dann wäre es
+eines, das man lesen und verstehen kann. Und dann wäre es irgendwie
+wieder kein Perl-Programm.         (M.Aldenhövel in d.c.l.delphi.misc)
+                                              [ http://www.nobbi.com ]
+-- 
+
+-- 
+"Erklaer mir mal bitte, wer und aus welchem Grund man Endlosschleifen
+programmiert??!!" "Als Performancetest. Mein Rechner schafft die End-
+losschleife beispielsweise in unter zwei Minuten."
+aus d.c.l.p.m, news:8q90mt.3vuda7h.1@hadie403.hadiko.uni-karlsruhe.de
+-- 
+Wer Tippfehler findet, darf sie behalten.
+-- 
+Ente gut, Gans noch besser
+-- 
+Gna, schon wieder Seti ... Ihr ahnt ja kaum, auf wie vielen Maschinen
+im RZ ich das schon gefunden habe. Dabei ist es schon schwierig genug, 
+auf *diesem* Planeten intelligentes Leben zu finden.
+			 (Charly Kuehnast in de.alt.sysadmin.recovery)
+-- 
+Du weißt, daß Du zu lange im Netz hängst, wenn Du ROT13 fließend
+im Kopf decodieren kannst.
+--
+Wer nicht fragt, hat aufgehört zu denken. Wer nicht denkt, hat aufgehört zu
+leben.
+-- 
+Ich denke, also bin ich.
+Ich bin, also denke ich.
+"Ich bin also!", denke ich.
+Ich denke also "Bin ich?"
+-- 
+Human beings, who are almost unique in having the ability to learn from
+the experience of others, are also remarkable for their apparent
+disinclination to do so. (Douglas Adams)
+-- 
+I haven't lost my mind. It's backed up on disk somewhere.
+-- 
+Your password must be at least 18770 characters and cannot repeat any of
+your previous 30689 passwords. Please type a different password. Type a
+password that meets these requirements in both text boxes. [M$]
+(Fix: http://support.microsoft.com/support/kb/articles/q276/3/04.ASP)
+-- 
+> Du weißt, daß du zu lange im Netz bist, wenn du Freunden und
+> Verwandten Urlaubsgrüße aus E-Biza mailst.
+Du weisst, dass du zu lange im Netz bist, wenn deine Freunde alle
+E-rich, E-lmar oder E-rika heissen. (Thomas Nesges in d.a.arnooo)
+-- 
+Die Muttersprache heißt deshalb Muttersprache, weil die Väter
+nie zu Wort kommen.
+-- 
+> Was soll der Kaese, ohne Faktenwissen Behauptungen aufzustellen?
+Das nennt man in der Wissenschaft postulieren.
+Und ein Postulat gilt solange bis es Beweise gibt ob es richtig
+ist oder nicht.                 [Alois Fischer 2001-07-25 in dsnu]
+-- 
+>Hmm, ich frage mich, wann Morver ein eigenstndiger Newsreader wird
+Ich habe in dieser Richtung keinerlei Ambitionen.
+Ganz abgesehen davon ist eine Gummizelle nicht unbedingt die richtige 
+Grundlage, um daraus Insassen zu entwickeln.          [[[Werner Jakobi, dcs.nr]]]
+-- 
+"Wer seinen Rechner freiwillig dem Internet ausliefert, dem kann nicht mehr 
+ geholfen werden."               -- Hanno Wagner in de.admin.net-abuse.mail  
+-- 
+Signatur verschneit, bitte freischippen.
+-- 
+Aussage: Ich bin aus Bayern.
+Bedeutung: Ich gehöre dem privilegiertesten und elitärsten Teil der
+Menschheit an. Und das ist die reine Wahrheit.
+Sepp Neuper in de.rec.sf.misc
+-- 
+Nutzloses Wissen, #16:
+Aus China ist seit 875 der Gebrauch von Toilettenpapier belegt.
+-- 
+"Prinzipiell ist es nicht 'strafbar' im Usenet Werbung zu posten.
+Es ist lediglich ungut fuer den Netzzugang."
+(Oliver Gassner in <b3jabs0it228ugcq6ko9ta8uru6enns35a@4ax.com>)
+-- 
+Eigentlich sollte man das umdrehen. Sowas in der Art von "Diese Seiten
+sind fuer die Benutzung von JavaScript pessimiert. Bitte schalten Sie
+JavaScript ab."
+- Boris 'pi' Piwinger in de.alt.sysadmin.recovery
+-- 
+http://gigaschatten.de/
+"Liebe Teilnehmerinnen und Teilnehmer an den Tastinnen und Tasten der
+Computerinnen und Computer!"
+[Ralf K. Buschner in t-online.talk.allgemein]
+-- 
+"Kondom ist übrigens der kleinste Dom der Welt. Es kann nur einer drin
+stehen und die Glocken müssen auch draußen bleiben. :-)"
+				[Werner Neuhaus am 28.01.2001 in dtl]
+-- 
+IcH wEiSsE aUsDrUeCkLiCh aUf REcHtScHrEiB UnD zeIcHeNsAtZfEhLeR In
+dIeSeM TeXt hIn, AbEr iCh fInD DaS SiEhT EiNfAcH ScHoEnEr sO AuS.
+-- 
+Apple -- proudly going out of business since 1976
+-- 
+>Von dem Erlebnis beim Bund als ein Kommilitone einen 1017 vom vierten in den
+>ersten runtergeschaltet hat, will ich gar nicht mal anfangen. Schaltung ist
+>halt nicht DAU-sicher. Würde Computer-Bild Autos testen, gäb's für alle
+>handgeschalteten Autos Abwertungen.
+-- 
+"btw tipp ich laenger, als du alt bist und schneller, als du einen 
+hoch kriegst." [bbb.tyan in <9h1nec$e5e$01$1@news.t-online.com>]
+-- 
+"Im Multitasking ist Windows NT Linux um weiten vorraus, es kann 
+gleichzeitig booten und abstürzen" (Robin S. Socha)
+-- 
+"Wow, a real life robot! Or is that some kind of cheesy newyears costum?"
+"Bite my shiny metal ass!"
+"It doesn't look so shiny to me!"
+"Shinier than yours meetbag!"
+-- 
+ER IST ERSCHIENEN! DER MESSIAS IST DA!
+Öffnet eure Sig-Files, ladet die Woggnatur-Fänger, macht euch bereit,
+denn er, der Meister aller Trolle ist wiedergeboren.
+[Marc Brockschmidt über das wiederauftauchen von Wolfram Kopp in dag°]
+-- 
+Demokratien haben schon etwas für sich: die "Herrscher" sind normalerweise
+dermassen mit ihrer Selbstverwaltung beschäftigt, dass sie gar nicht genug
+Zeit und Möglichkeiten haben, ernsthaften Schaden anzurichten (oder sonst
+etwas zu bewirken) ;-).       [Sascha Kremers in de.alt.anime]
+-- 
+> "Mach was Du willst, aber mich nicht verantwortlich."
+Die EULA von Microsoft sagt etwas ganz ähnliches: "Du machst, was ich
+will, aber ich bin nicht verantwortlich."
+	                     [Sven Hartge in de.comp.os.unix.linux.misc]
+-- 
+2.4.5 in kernel/acct.c(25):
+  XTerms and EMACS are manifestations of pure evil.
+-- 
+Legt alle um. Gott wird sie sortieren.
+(alte christliche weisheit)
+                             [gefunden in dau°]
+-- 
+Stefan: Wie ist die Mehrzahl von Jens?
+Mounty: "Alptraum"
+                             [gefunden in zfrd]
+-- 
+Don't lie and steal, politicians hate competition.
+-- 
+> [Subjectänderung - "was:" vs "war:"]
+Make was not war!
+war was ?
+-- 
+Es heisst zwar immer: Never change a winning system (oder so ähnlich),
+aber dann werde ich mal testweise die Pferde im Galopp wechseln. :)
+-- 
+Kannst Du nur billig oder bist Du blöd?
+(Sebastian Niehaus zu Ronny Hick in dcsn)
+-- 
+Wie kommt eigentlich der Mageninhalt auf meine Tastatur?
+-- 
+| "Alles, was ein Computer macht, ist  |  Uwe Sinha                  |
+|  stupide. Es kann aber durchaus      |  TU Berlin, FB Informatik   |
+|  komplexe Stupidität sein. "         |  <uwesinha@cs.tu-berlin.de> |
+|            -- Thore Tams in d.s.n.u  |  <uwesinha@gmx.de>          |
+-- 
+> [Richter...]
+ Sie sind eben die Träger des Staates, einer träger als
+...
+-- 
+Am 7. Oktober 1950 fielen chinesische Soldaten in Tibet ein. Das Land
+ist bis heute chinesisch besetzt. 1951 fiel die Hauptstadt Tibets,
+Lhasa. Der Dalai Lama mußte ins Exil fliehen, wo er sich noch heute
+aufhält.
+-- 
+"Microsoft spelchekar vor sail, worgs grate!!!"
+(unknown)
+-- 
+P.S.: Spart euch irgendwelche Beleidigungen, bin nämlich
+phsychisch labiel.
+(Daniel Jeschke in alt.hacker.org-gcf)
+-- 
+Beim Standart höhrt nähmlich meine Tolleranz auf.
+-- 
+Es gibt Leute, die nichts anderes mehr tun, als vor dem Bildschirm zu 
+sitzen. Genau diese Leute sollten den Rechner mal ausknipsen und sich 
+mal draussen (dahin kommt man durch die sogenannte Haustuere, das ist 
+dort,wo der Mann vom Pizza-Service immer klingelt)umzuschauen. F.K.dag°
+-- 
+Solltest Du das anders sehen, vernehme mein Mitleid. 
+(Joern Weber in dang)
+-- 
+Ich denke, also spinn' ich
+-- 
+> Wo finde ich ein Archiv mit Hundefotos?
+http://www.hundefriedhof.de?
+
+Jörn G. Steinmann zu Gunther Schmidt in dcg
+-- 
+Life is complex. It has real and imaginary parts                    -- Anon.
+-- 
+[1]: Böse Zungen behaupten, Administration einer Usenethierarchie
+     bedeute "Wie kann man das Problem schnellsten in eine
+     Schlammschlacht mit hohem Popkornbedarf verwandeln".
+-- 
+Kinder unter 8 sind im deutschen Recht Naturkatastrophen in etwa
+gleichgestellt.
+-- 
+"Its not a virus! Its a worm!" - z3r0 c00l
+"Whats this one eat?" - l0rd n1k0n
+"th1s 0n3 34ts 11S s3rv3rs!" - ch4m3 l30n h4ck3rs
+-- 
+Was macht ein Counter Strike Spieler nach einem Clanwar ???
+Er baut sein Zelt ab.
+-- 
+Falls auf Ihrer Tastatur noch keine "any key"-Taste vorhanden sein sollte,
+können Sie die Funktion erreichen, indem Sie folgende Tasten gleichzeitig
+gedrückt halten: <Linke STRG> <ALT> <F1> <ESC> <ALTGR> <P> <I> <PAUSE>
+(aus der Spielanleitung für "Das Hexagon-Kartell")
+-- 
+>Hallo hallo
+
+Deine Hallo-Taste prellt. ;-)
+-- 
+Erfolg steigt nur dann zu Kopf, wenn dort der erforderliche Hohlraum vorhanden ist
+-- 
+Outlook Express is a fine news_reader_.
+Its only problem: It allows you to post.
+-- 
+..Nicht nur fuer Programmierer:
+"Unsere Fehler von heute sichern uns unser Brot von morgen."
+-- 
+Die GPL ist ein Krebsgeschwür und MS hat das Gegenmittel.
+Alles wird gut.   ;-))
+                                     [aus debian-user-de]
+-- 
+User detected ... System halted
+-- 
+Windows läuft eigentlich nur, weil sich die Fehler gegenseitig auflösen.
+Probleme bekommt man eigentlich nur, wenn das Gleichgewicht gestört wird!
+-- 
+Stefan: Wie ist die Mehrzahl von Jens?
+Mounty: "Alptraum"
+                             [gefunden in zfrd]
+-- 
+Ueberhaupt frueher, das waren wenigstens noch die Zeiten fuer echte
+Helden. Da brauchte man eine Platte nur mal scharf anschauen, und
+schon begann sie mit der spanabhebenden Datenverarbeitung.
+Michael Müller in d.t.j.
+-- 
+Alle Wege führen an Redmond vorbei.
+-- 
+Die Mir, der Stolz des russischen Volkes versank im Pazifik. Nach
+86.000 Umrundungen der Erde wurde die letzte Hoffnung aufgegeben,
+doch noch intelligentes Leben auf diesem Planeten zu finden.
+                              [geklaut von Axel Wille]
+-- 
+Moechten Sie Ihre Festplatte formatieren? [J]etzt nicht [N]atuerlich
+-- 
+Letzte Worte eines Mantafahrers: Da passe ich noch durch, ey
+-- 
+Es gibt immer Orte, wo das eine oder andere Netz nicht
+funktioniert. Bei Viag Interkom heißt dieser Ort zum Beispiel Deutschland.
+-- 
+> Wo finde ich ein Archiv mit Hundefotos?
+http://www.hundefriedhof.de?
+
+Jörn G. Steinamm zu Gunther Schmidt in dcg
+-- 
+The usage of the word fuck (from /.)
+"Where the fuck is all this water coming from?" - Captain of the Titanic
+-- 
+2.4.5 in Documentation/MAINTAINERS:
+  THE REST
+  P:      Linus Torvalds
+  S:      Buried alive in reporters
+-- 
+Wenn ich eine SuSE-CD an ein Schwein binde und dieses trete, laufen
+KDE & Co. auch ohne RAM recht schnell.
+
+               --Robin S. Socha in de.comp.os.unix.linux.newusers--
+-- 
+I like you. You remind me of when I was young and stupid.
+-- 
+http://gigaschatten.de/
+> ich bin für jeden tip dankbar
+Du solltest Dir schnellstmöglich eine Tastatur mit zuverlässig
+funktionierenden Shift-Tasten zulegen.  [Sven Gottwald in dcsn]
+-- 
+Von der religioesen Sprengkraft her rangieren Newsreader gleich hinter
+Texteditoren und dem Weltuntergang. (Buelent Caliskan in de.org.ccc)
+-- 
+Wenn Dich im Usenet einer einen Esel nennt, lach ihn aus. Wenn es
+viele tun, die  ansonsten  ganz vernünftige  Beiträge  schreiben,
+dann schau Dich  schon einmal nach  einer Wiese mit saftigem Gras
+um.                                       (Christian Pree in daa)
+-- 
+http://gigaschatten.de/
+Falschnamen verwenden üblicherweise Agenten, Verbrecher, Bigamisten
+und evt. (erfolglose) Künstler. [Michael Neuhaus in de.soc.netzkultur]
+-- 
+Der Regenwurm wird arg vermisst, weil er heut zum Angeln ist
+-- 
+"Im ersten Weltkrieg haben die Deutschen das Bild der Jungfrau Maria über die
+ französischen Schützengräben projiziert. Auf den Feind zu schießen ist man
+ immer bereit. Aber auf ein Zeichen Gottes?"
+[Colonel Mcqueen, Space: Above and Beyond]
+-- 
+Früher wuste ich nich wie man Inschinör schreibt. Jetz bin ich einen!
+-- 
+Sei bitte nachsichtig mit mir, ich bin keine Rechtschreibmaschine.
+-- 
+fortune: cpu time/usefulness ratio too high -- core dumped.
+-- 
+He Mario stell keine so blöden Antworten auf ernst gemeinte Fragen
+       [Tuvok.richie@teleweb.at am 03.05.2000 in de.rec.film.misc]
+-- 
+* Karl-LK wrote:
+>Dies ist eine mehrteilige Nachricht im MIME-Format.
+Dies ist eine einzeilige Nachricht im SAUER-Format.
++ Lutz D. in d.e.b.m. +
+-- 
+Bitte beachten Sie auch die Rückseite dieses Schreibens.
+-- 
+What do you get crossing an atheist with a Jehova's witness?
+Someone knocking on your door for no reason at all.
+-- 
+Immerhin hat die Rechenleistung von vier C64 gereicht, um auf den Mond
+zu gelangen.
+Heute werden ehemalige Tennisspieler schon bejubelt, wenn sie es mit
+einem P3 schaffen ins Internet zu kommen. Jens Dalitz in d.t.j.
+-- 
+Leider nicht, ich benutze Windows. Da ist der Zeitunterschied zwischen
+den Neuformatierungen zu kurz, als das Viren den Computer beschädigen 
+könnten ;)    Christian Potzinger in d.r.s.c.t
+-- 
+"Nehmt einem Christen die Furcht vor der Hölle,
+und ihr nehmt ihm seinen Glauben."
+                             [Denis Diderot]
+-- 
+"Merke: OjE hat keine Probleme mit dem Usenet, sondern das Usenet 
+weigert sich, sich an OjE anzupassen. Soweit die M$-Sicht der Dinge.
+Warum sollte man da am Verhalten von OjE etwas ändern?"
+Volker Gringmuth in dcsn
+-- 
+Legt alle um. Gott wird sie sortieren.
+(alte christliche weisheit)
+                             [gefunden in dau°]
+-- 
+Die Bundespost braucht bei der Auslieferung von Briefen
+etwa soviele Tage, wie das Internet Sekunden.
+soeren@princess.ms.sub.org-(Soeren-M-Soerries) 
+-- 
+Aller Unfug ist schwer. <-- Peter Frankenfeld
+-- 
+Es wird nichts so schnell gegessen, wie es gekotzt wird
+-- 
+Computer dienen uns zur Lösung von Problemen  
+die wir ohne sie nicht hätten.         
+-- 
+Windows: Gesehn, getestet, geärgert, geheult, gekotzt, gelöscht,
+gelacht, glücklich geworden...
+-- 
+Wir müssen schwach anfangen, dann aber stark nachlassen
+-- 
+"Erklaer mir mal bitte, wer und aus welchem Grund man Endlosschleifen
+programmiert??!!" "Als Performancetest. Mein Rechner schafft die End-
+losschleife beispielsweise in unter zwei Minuten."
+aus d.c.l.p.m, news:8q90mt.3vuda7h.1@hadie403.hadiko.uni-karlsruhe.de
+-- 
+mwand@Hex:~ > head -n 3 /mnt/dos8_aka_win00/src/mswind~1.h
+#define BUGCOUNT /*9500000*/ /*9800000*/ 200000000
+#define WINVERSION (BUGCOUNT / 100000)
+void InitUser(user *x) { x->get(money); x->disable(brain); }
+-- 
+In the beginning the Universe was created. This has made a lot of
+people very angry and been widely regarded as a bad move.
+	-- Douglas Adams
+-- 
+Es gibt drei Arten von Menschen:
+  a.. Solche, die bis drei zählen können
+  b.. Solche, die es nicht können
+-- 
+Da kam dann das Elfmeterschießen. Wir hatten alle die Hosen voll,
+aber bei mir lief's ganz flüssig.
+                                     Paul Breitner (Fußballprofi)
+-- 
+In the beginning was the word, and the word was content-type: text/plain
+-- 
+"ZWEI Mikrowellen!?"
+"Zum Überspielen!"
+-- 
+"Man koennte auch sagen: Unix ist fuer Echte Maenner (TM), Windows fuer
+Masochisten und MacOS fuer Maedchen."
+---Alexander Schreiber in d.c.s.f.---
+-- 
+> Seltsam, hier verschwinden Postings im Nirvana...
+> Also nochmal:
+Nein, hier verschwindet nichts. Dein Out-of-Luck Exzess baut, wie 
+ncht anders zu erwarten ist, Scheisse.
+-- 
+Erwerbsregel 93: Wer seinen Doktor zum Erben macht, ist ein Idiot
+-- 
+"Alle sind gleich. Manche sind gleicher."
+-- 
+Usenet über Web-Gate ist wie morgens die Zeitung auf Video aufnehmen 
+und abends übers Fernsehen zu lesen.
+-- 
+> News ueber ein Webinterface ist aehnlich komfortabel wie
+> Suppeessen mit der Gabel.
+
+Gesiggt! :-)
+-- 
+Volker Gringmuth             http://www.volker-gringmuth.de
+
+"...bin mal gespannt, wie du von einer E-Mail booten willst." ("Frank" in defbm
+auf die Bemerkung, Disketten seien durch E-Mail überflüssig geworden)
+-- 
++++ Bitte beachten Sie unsere AGB auf der Rückseite dieser Mail! +++
+-- 
+Eine Sig ist genauso überflüssig wie beim Einkaufen die Hose. In irgendeinem 
+abstrakten Sinne käme man natürlich ohne aus, wenn man sein Portemonnaie in die
+Jeansjacke steckt.  Aber es wäre mächtig kühl, und man hätte das unangenehme
+Gefühl, daß untenrum irgendwas Wichtiges fehlt.      Peter `g' Bouillon in dafu
+-- 
+Ein Teenager-GeldBeutel enthält, im UNIX-SprachGebrauch,
+einen symbolischen Link auf den GeldBeutel der Eltern.
+-- 
+Markieren Sie dieses Feld.
+Hab' ich getan. Und wie bekomme ich nun die Filzstift-Spuren
+vom Bildschirm? <g>
+Kam doch schon der Hinweis: vielleicht mit Tipp-Ex?
+-- 
+Bitte kein "TOFU" produzieren, das gilt im Usenet als eher schwer
+verDAUlich ...
+-- 
+|     I invented Ctrl-Alt-Delete, but Bill Gates made it famous.       |
+|                  -- David Bradley, original IBM PC design team       |
+-- 
+Irgendjemand von SuSE schrieb:
+"We will not offer a fully installable evaluation version of SuSE Linux,
+as too many people damaged their MS-windows partition with it."
+Quelle: http://www.linuxiso.org/news.html
+-- 
+"The social dynamics of the net are a direct consequence of the fact that 
+ nobody has yet developed a Remote Strangulation Protocol." -- Larry Wall
+-- 
+"Wer jemandem aus Rache einen Mühlstein schickt,
+ bestraft zunächst einmal den Postboten."[1]
+-- 
+(A)bort, (R)etry, (T)ake down entire network?
+-- 
+Die Härte der Butter ist proportional zur Weichheit des Brotes...
+-- 
+Ich geb dir natürlich irgendwie recht. Ein Realname im de.*-Usenet ist,
+ebenso wie eine Badehose im städtischen Hallenbad, absolut überflüssig.
+Durch ein entsprechendes Outfit wird die Benutzung beider Einrichtungen
+aber wesentlich vereinfacht. (Werner Jakobi in de.newusers.questions)
+-- 
+**********************************************************
+**     Nur tote Fische schwimmen mit dem Strom!         **
+**********************************************************
+-- 
+Mengenlehre:
+4 Personen in einem Bus.
+6 steigen aus.
+2 muessen rein, damit er wieder leer ist...
+-- 
+Volker Gringmuth             http://www.volker-gringmuth.de
+"Neinnein. Die Elektronen sind nur rosa, solange sie faul in der Gegend
+rumhängen (in Telekom-Hardware). Sobald sie sich bewegen (Strom),
+werden sie gelb."                          (Marco Bruchmann in daf.konsumterror)
+-- 
+               __________________________
+              |                          |
+              |                          |
+              |     V O R S I C H T      |
+              |     ===============      |
+              |                          |
+              |       Dauarbeiten        |
+              |                          |
+              |                   Die NV |
+              |__________________________|
+                          T T
+                          |.|
+        ____              | |
+       (____)             |.|
+         ||               | | 
+         ||               |.|
+         ||               | |          ° °
+         ||               |.|         ° O °
+         ||               | |          °|°
+         ||               |.|        \ \|/          |
+        _||_              |.|         \ | /         |
+HSp\|/|  ° |\T/     \Y/  | |          \|/         \|/  
+~~°~w~|_°_~|~w~(^)~~~w~~/~~~\~~~°~~~~°~w~~~~M~~~~~~w~~~
+
+-- 
+Naja, und zumindest Wirtschaftsinformatiker werden ja immer wieder gerne 
+mit Enten verglichen - können nicht richtig fliegen und nicht richtig 
+schwimmen... ;)
+-- 
+You want to read the manifesto from the next Prime Minister and see the
+phrase "Me and my m8s r gonna make u vote 4 us - we r kewl ! We roooolz !"
+That's our next generation there, spelling like illiterate idiots. They are
+the people who will be running the country when we get old. - Rachael Nex
+--
+    *Star Trek ist nicht nur Unterhaltung, sondern erfüllt auch einen*
+    *`ernsten` Zweck: Sie erweitert die menschliche Vorstellungskraft.*
+------------------ (Stephen Hawking, Wissenschaftler) -------------------
+-- 
+Jesus Christus spricht: "Kommt her zu mir alle, die ihr
+mühselig und beladen seid; ich  will euch erquicken." (Mt 11,28)
+-- 
+> Motorsport muß wieder Breitensport werden! --> http://www.rtge.de
+
+Sind die Anhänger dieser Sportart nicht schon breit genug?
+-- 
+"In der Diktatur darf man nicht sagen, was man will.
+In der Demokratie darf man, aber keiner hört zu." (unbek.)
+-- 
+Japanisches Sprichwort: " Man kann auch den Kopf einer toten Sardine anbeten,
+wenn es einem hilft, ist es gut." 
+-- 
+> >"...Definition der Stromstärke I (von "Intensität" des Stromflusses) ..."
+> Quatsch, des kommt von Impere, dem Mann der zum ersten Mal Bernstein
+> an einem Wolltuch gerieben hat ;-)
+War das damals erlaubt, Dirigenten (und Komponisten) an einem Wolltuch zu 
+reiben? ;-)
+-- 
+Lorenz (at) Borsche (de)      http://www.borsche.de
+---------------------------------------------------
+If you want to split hairs, don't use a blunt knife.
+-- 
+> Jetzt führst du die Jungs aber an der Nase herum. 
+
+Ich dachte eigenlich, ein anderes Koerperteil erwischt zu haben.
+Hauptsache, es ist schmerzfrei und ich fuehre in die richtige Richtung.
+-- 
+Es gibt zwei Dinge, die unendlich sind:              
+Das Universum und die menschliche Dummheit,          
+aber beim Universum bin ich mir noch nicht sicher.   
+(A. Einstein)
+-- 
+"From the cruise ship you can see bears on the shore. Bears are about
+the size of a pencil eraser, at least the ones I saw. They
+might look bigger up close."
+-- Dilbert Newsletter 31, November 2000
+-- 
+Wer Tippfehler findet, darf sie behalten.
+-- 
+Es ist nicht der Fluss, der fliesst, sondern das Wasser.
+Es ist nicht die Zeit, die vergeht, sondern wir.
+-- 
+>Webseiten beduerfen einer staendigen Pflege.
+
+Wieso, gehen die nach einiger Zeit kaputt?
+-- 
+> Der Hammel bezahlt nicht.
+
+Pferde + Esel bezahlen auch fast nie. :
+-- 
+Der Arm des Gesetzes ist lang, mein Arm reicht mir ein lebenlang.
+-- 
+Erfolg steigt nur dann zu Kopf, wenn dort der erforderliche Hohlraum vorhanden ist
+-- 
+>Könnt Ihr sowas auch normal schreiben ? Mit diesen ständigen Multiple
+>Choice Antworten geht Ihr mir auf den Sack !
+[X]Ja
+(Florian Lorenz in dag°)
+-- 
+> Ein Bug ?
+
+Meist sitzt der Fehler 50cm vor dem Monitor... ;-)
+-- 
+The usage of the word fuck (from /.)
+"What the fuck was that?" - Mayor of Hiroshima
+-- 
+Eine Raucherecke im Restaurant ist wie eine Pinklerecke im Schwimmbad.
+-- 
+Bitte entschuldigt, wenn ich etwas spaet antworte. Das dauert bei mir
+momentan, denn ich moechte zuerst lesen, _worauf_ ich antworte.
+-- 
+Weisheit wird mit Loeffeln gefressen.
+Manche Leute benutzen eine Gabel ...
+-- 
+Die Rechtschriebfehler in diesem Posting sind saemtlich bewusst erstellt.
+Sie drueckem meinem persoenlichen Protest gegen die Raechtschraibraefoam aus.
+-- 
+Signatur, ca. 4 Monate alt, kaum gebraucht
+http://www.ebay.de/static/auction/41/4100/410001/41000133.html
+
+-- 
+http://gigaschatten.de/
+Warp 10 ist zwar unwahrscheinlich schnell, aber dass es unendlich
+unwahrscheinlich ist halte ich für unwahrscheinlich. Leider kann ich
+nicht abschätzen _wie_ unwahrscheinlich. [Stefan Rueping in drss.10v]
+-- 
+Wer seinen Realnamen nicht angibt, hat per se keine Argumente.
+Wie soll jemand zu seinen Aussagen stehen, wenn er noch nicht
+einmal zu sich selbst steht.  (Peter Wenz  in de.soc.recht.misc)
+-- 
+"Mittels eines Semesterwochenstundenerlasses wurde die Studierbarkeit
+ des Studiums sichergestellt." Ministerium für Wissenschaft, Forschung 
+                               und Kunst Baden-Württemberg
+Quelle: http://www.mwk-bw.de/Hochschulen/3-Stufen_Hochschulreform.html
+-- 
+Yesterday, All those backups seemed a waste of pay.
+Now my database has gone away. Oh I believe in yesterday.
+Suddenly, there's not half the files there used to be. And there's 
+a deadline hanging over me. The system crashed so suddenly.
+-- 
+swim nude, sharks hate to unpeel their food
+-- 
+"Mom, there is a spider in the bathroom!" 
+"Are you sure?" - "Yes!" 
+"How many legs has it got?" 
+"I can't tell - but they are all dangling from a thread!"  (c): RL
+-- 
+[Strg = "String"]
+Die erste Taste der Welt, die gezupft und nicht gedrückt wird :-)
+        aljen  (dcsmm)
+-- 
+Linux - und nie mehr blaue Bildschirme
+[FAQ] Hybris und 'merkwürdige Mails': http://www.th-h.de/faq/hybris.html
+Let me a little about me tell. I had 10 years long einprofitables
+enterprise. (Aus einem "englischen" Spam)
+-- 
+das macht nichts. tot bist du erst wenn du tot bist. bis dahin bist du
+nicht tot und kannst tun was auch immer.
+Peter Gruendler in de.rec.sf.startrek.technologie
+-- 
+Der Computer kann alles, aber sonst nichts
+-- 
+If only women came with pull-down menus & online help.
+-- 
+Never argue with an idiot. He will lower you to his level and then
+beat you with experience.
+-- 
+Dein Quoting saugt Hamster durch Strohhalme.
+L.D. in dcsf
+-- 
+Bei offensichtlichem Mangel im obigen Beitrag sind selbständig einzufügen: 
+IMHO, AFAIK, IIRC.
+Danke für Ihre Mitarbeit.
+-- 
+[Es ging um den halbwegs funktionierenden OjE für Mac]
+Klar, da Mac-User nicht MS-hörig sind, kann man sie wohl nur mit
+funktionierender Software überzeugen.
+Gerhard Schromm in dsnu, <87wvb6qjn1.fsf@hades.mathematik.uni-ulm.de>
+-- 
+"Verkehrsberuhigte Bereiche" sind für Sport und Spiel vorgesehen.
+Dazu gehört selbstverständlich auch der Motorsport ;-)
+
+-- 
+Der Hauptunterschied zwischen etwas, was möglicherweise kaputtgehen könnte und etwas, was 
+unmöglich kaputtgehen kann, besteht darin, daß sich bei allem, was unmöglich kaputtgehen
+kann, falls es doch kaputtgeht, normalerweise herausstellt, daß es unmöglich zerlegt 
+oder repariert werden kann. - Douglas Adams (britischer Schriftsteller 1952-2001)
+-- 
+Q: Nach Installation der neuen Version von vim muß ich jetzt immer 2x
+[ESC] drücken? Warum?
+A: Tastatur säubern.
+-- 
+Prognosen sind eine riskante Sache, vor allem, wenn sie die Zukunft 
+betreffen.
+-- 
+Lass Dir kein X für ein U vormachen...
+sei auf der Hxt!
+-- 
+"Die meisten der Jugendlichen können sich halt mit mir infizieren..."
+[Zlatko vor der Grand-Prix-Vorausscheidung]
+ 
+Witzige Freewarespiele: http://www.byteria.de/
+-- 
+> Ich wünschte mein Provider hätte UUCP.
+
+Bist Du auf diesen festgenagelt, oder kannst Du auch wechseln? 
+(Achtung, rhethorische Frage mit Zaunpfahlwinkautomatik)
+-- 
+Diese  Signatur wurde  fuer den Opera-Browser v32.13  mit aktiviertem
+Flash 18.0 und Java 12.6 bei einer Bildschirmaufloesung von 3840x3072
+und 64 bit Farben optimiert.  Es werden im PC mind. eine 4,2 Ghz CPU,
+9 GB Ram und eine 6 TB Harddisc vorrausgesetzt. Bitte jetzt upgraden!
+-- 
+Der letzte macht das Netz aus.
+-- 
+> Man du hast ja einen IQ!
+
+Richtig. Gut geraten.
+Was hast Du?
+-- 
+Es ist erstaunlich, wie lange es dauert, etwas zu erledigen, woran man
+nicht arbeitet. (Murphy)
+--
+Erwerbsregel 281: Blut ist dicker als Wasser, aber schwerer zu verkaufen
+-- 
+>>> Beispiel fuer Oxymoron: "military intelligence" [Helmut Hullen]
+>> oder "homo sapiens" [Georg Wilckens]
+> Oder "Microsoft Works". [Jochen Striepe] (Aus der LUG-BS-Mailingliste)
+Beispiel für Tautologie: "Windows 95 kaputt" (Zettel an Rechner in
+einem CIP-Cluster der Uni Oldenburg)
+-- 
+Letzte Worte eines Mantafahrers: Da passe ich noch durch, ey
+-- 
+Note: this Return Receipt only acknowledges that the message was
+displayed on the recipient's machine. There is no guarantee that the
+content has been read or understood.
+                              (Empfangsbestaetigung von Netscape :-))
+-- 
+Ist allerdings widerspruchsfrei, da man sie in zwei Sätze zusammenfassen kann:
+1. Der User hat keine Rechte.
+2. All rights reserved by Microsoft.
+[Rudolf Polzer zur WIN-Eula, dcs.nr <b38uf9.mdb.ln@durchnull.de>]
+-- 
+Leute kalt machen ist mit Napalm einfach eine heiße Sache.
+					Raimund Hoevelmann in detebe
+-- 
+Alle meine Antworten, Feststellungen, Behauptungen sind mit AFAIK und IMHO
+zu lesen und nicht in der Luft- und Raumfahrt oder Atomindustrie zu verwenden.
+                -- Paul Ebermann in einer "Signatur" in dclj
+                   (<news:ajgq6q.3vvgce3.1@epaul.my-fqdn.de>)
+-- 
+Zahn wech ... künstlicher Zahn :-) Hand wech ... künstliche Hand  :-(
+Bein wech ... künstliches Bein :-((
+Wofür zum Teufel ist künstliche Intelligenz?
+Wolfgang Allinger in dsrm
+-- 
+Der Apfel Sprach-Kunde hat sich geöffnet während der Stapel noch
+ungebunden war. 
+AppleTalk clients open while stack is unbound.
+-- 
+>Hallo zusammen.
+Hal lo auseinander! ;-)
+-- 
+Alle Kinder gehen zum Friedhof, nur nicht Hagen, der wird getragen.
+-- 
+aibohphobia (ay' bo fo beeya): n. The fear of palindromes.
+-- 
+"Die Tastatur finden Sie, indem Sie das Kabel verfolgen, das mit einem 
+5poligen DIN-Stecker an der Rückseite Ihres Rechners angebracht ist."
+					aus der CrossPoint Hilfe
+-- 
+If your company is not involved in something called "ISO 9000" you probably
+have no idea what it is.  If your company _is_ involved in ISO 9000 then you
+definitely have no idea what it is.
+-- Scott Adams, The Dilbert Principle
+--
+Was ist braun und fliegt durch die Luft?
+!!!!!!! leztinhcS setreuetsegnref niE (rückwärts versteht sich)
+-- 
+ Human error - hit user to reset!
+-- 
+Um Rekursion zu verstehen, muss man erst mal Rekursion verstehen.
+-- 
+Talente finden Lösungen, Genies entdecken Probleme.
+-- 
+Lehrer sind wie Wolken: Wenn sie sich verziehen, kommt schönes Wetter und gute
+Stimmung auf...
+-- 
+Wer will, dass die Welt so bleibt, wie sie ist, der will nicht, dass sie bleibt.
+(Erich Fried) 
+-- 
+Die letzten Worte des PC's: Starting Windows95...
+-- 
+Nett:
+
+            o
+           dYb
+          dP Yb
+         dP   Yb
+        dP     Yb 
+       dP   8   Yb
+      dP    8    Yb
+     dP     8     Yb
+    dP             Yb
+   dP       O       Yb
+  dP                 Yb
+ d888888888888888888888b
+  |"""""""""""""""""""|
+  |      Achtung,     |
+  | spielende Kinder! |
+  |___________________|
+           | |
+           | |
+           | |
+           | |
+           | |
+
+Weniger nett:
+
+  .ooooooooooooooooooooo.
+  8                     8
+  8         d b         8
+  8        .8 8.        8
+  8        d8 8b        8
+  8 -ooo-----------ooo- 8
+  8  888  d88 88b  888  8
+  8      .888 888.      8
+  8      d888 888b      8
+  8     .8888 8888.     8
+  8                     8
+  "ooooooooooooooooooooo"
+  |"""""""""""""""""""""|
+  |       Achtung,      |
+  | Spiel-Ende, Kinder! |
+  |_____________________|
+-- 
+Lieber 'ne Fliege im Porzellanladen als 'n Elefant in der Suppe
+-- 
+Niemand soll hungern ohne zu frieren
+-- 
+[Zusammenfassung der MS-EULA]
+> 1. Der User hat keine Rechte.
+> 2. All rights reserved by Microsoft.
+				[Rudolf Polzer]
+-- 
+Jan Schaumann <http://www.netmeister.org>
+
+We are Microsoft.  Unix is irrelevant.  Openness is futile.  Prepare
+to be assimilated.
+
+-- 
+                   Press every key to continue.
+-- 
+*PLONK* ist das Geräusch, daß entsteht wenn der durchschnittliche
+Windows-User mit offenem Mund vor der Tastatur mit der Stirn auf
+die Tischplatte schlägt.
+*PLATSCH* ist der automatische Wecker von Radio Gates. (earlydream)
+-- <ROT13>
+Meinen Glueckwunsch!
+Du hast herausgefunden, dass ich diese Signatur mit
+ROT dreizehn kodiert habe.
+-- 
+Volker Gringmuth             http://www.volker-gringmuth.de
+
+Im Vatikan gibt es zwei Päpste pro Quadratkilometer.
+-- 
+> Es tut mir leid daß ich aggressiv und beleidigend wurde.  |Klaus Rupp  &   )
+Macht doch nix. Such Dir einen anneren Provider und gut is. Oder schieb Dir'ne
+Schrotflinte in'n Ar*** und drück ab, der Unnerschied is marginal. Solltest Du
+letztere Methode bevorzugen, bestell vorher'ne Putzelse. |Youss. in d.c.p.t-o)
+--
+Learn from the mistakes of others.
+You can't live long enough to
+make them all yourself.
+-- 
+"The only problem with Microsoft is they just have no taste; 
+they have absolutely no taste. I have a problem with the fact 
+they make really third rate products." 
+(Steve Jobs, on 'Triumph of the Nerds')
+-- 
+>>> Beispiel fuer Oxymoron: "military intelligence" [Helmut Hullen]
+>> oder "homo sapiens" [Georg Wilckens]
+> Oder "Microsoft Works". [Jochen Striepe] (Aus der LUG-BS-Mailingliste)
+-- 
+Gib einem Mann Feuer, und er hat es eine Nacht lang warm.
+Steck ihn in Brand, und er hat es warm für den Rest seines Lebens.
+-- 
+PC-User: Geht nicht sofort - macht nichts, muß ich suchen bis es geht.
+Linux-User: Geht nicht gibts nicht, schreibe ich das eben mal neu.
+Mac-User: Geht einfach, oder man braucht die Funktion sowieso nicht.
+Carsten <ceilers@gmx.de> am 05.11.00 in de.comp.sys.mac.soc
+-- 
+ns.: alle wissen alles, wenige vorher, die meisten hinterher ...
+-- 
+Eines der ältesten Usenet-Gesetze (http://www.bruhaha.de/laws.html), 
+Godwin's law besagt:
+|Je länger eine Usenet-Diskussion andauert, desto höher ist die 
+|Wahrscheinlichkeit, daß jemand mit einem unpassenden Nazi-Vergleich 
+|auftritt. Normalerweise wird dann die Diskussion für beendet erklärt 
+|und der Betreffende steckt tonnenweise *plonk*s ein. 
+-- 
+>> Gruss aus Knutwil (CH)
+>                     ^^
+> Auch zu faul zum Schreiben?
+Wenn du es unbedingt möchtest, kann ich es auch ausschreiben:
+Confederatio Helveticae.
+-- 
+Achtung, eine Verkehrsdurchsage: Auf der A 61 kommt Ihnen eine
+Geisterfahrer entgegen.
+Was heißt hier *ein* Geisterfahrer? Hunderte!
+_Frei nach Thomas Spott in dtt_
+-- 
+Volker Gringmuth             http://www.volker-gringmuth.de
+
+"Trockene Birkenrinde brennt auch in tropfnassem Zustand."
+                                                       (Jens in de.rec.outdoors)
+-- 
+Meine Meinung ist Public Domain.
+Jeder darf sie sich zu eigen machen.
+-- 
+Microsoft is a cross between The Borg and the Ferengi.  Unfortunately
+they use Borg to do their marketing and Ferengi to do their programming. 
+                          -- Simon Slavin, in the Monastery.
+-- 
+Es war mal ein Kradler aus Schwoben
+der überfuhr stets Pädagogen.
+Nach dem Grunde gefragt,
+hat er dann gesagt:
+"Die Lehrer ham' mich schlecht erzogen..."(H.Wicht in drm; über wen wohl?)
+-- 
+Programmieren  ist  wie  Romanschreiben. Erst denkt man sich  ein paar
+Typen  aus, und dann muss man sehen, wie man mit ihnen zurechtkommt..
+-- 
+Qba'g lbh unir nalguvat orggre gb qb jvgu lbhe gvzr?
+    -->
+<ROT13>Don't you have anything better to do with your time?</ROT13>
+-- 
+Es gibt zwei Arten von Narren:
+Der eine sagt:   "Dies ist alt und deshalb gut",
+der andere sagt: "Dies ist neu und deshalb besser".
+John Brunner, der Schockwellenreiter
+-- 
+Politics:  Poli=Many, Tics=Blood sucking parasites.
+-- 
+Du hast keine Spracherkennung installiert?           | Juergen Ilse
+Doch Komma aber Mai Stenz Macht Sie den um Gang      |Internet POP Hannover GmbH
+mit dem Juice nett auch nicht leichter.              |Vahrenwalder Str. 205
+     (Adrian Suter und Matthias Esken in dsnu)       |30165 Hannover
+-- 
+Ich [...], hatte aber bisher den Eindruck, daß trotz aller inzwischen 
+angesammelten Mängel [...]  der Nutzen noch überwiegt. Siehst Du das 
+anders?             -- Thomas Hochstein über seinen Checkbot
+                       <dcsn.030302222100.52716@dragon.akallabeth.de>
+-- 
+Give a man a computer program and you give him a headache,
+but teach him to program computers and you give him the power
+to create headaches for others for the rest of his life...
+-- R. B. Forest
+-- 
+> I'm an idiot.. At least this [bug] took about 5 minutes to find..
+Surely, Linus is talking about the kind of idiocy that others aspire to :-).
+-- Bruce Perens in response to Linus Torvalds's mailing about a kernel bug.
+-- 
+The easiest way to kill a Linux system:
+www42:~ # rm /dev/null
+Also possible:
+www42:~ # chmod 000 /dev/null
+-- 
+Having trouble in Wxxx? Reboot!
+Having trouble in Unix? Be root!
+-- 
+absence of evidence is no evidence of absence
+-- 
+#!/usr/bin/perl
+y&aph by Michael Schierl <schierlm@gmx.de> no qrstuvkjw&Yrome
+#Otto arbeitet Dachdecken inert um Perl hackehe&&&print for(q.a...q.z.)
+-- 
+ISO 9001: Eine Firma beschäftigt 9001 Mitarbeiter.
+Einer arbeitet, die anderen verwalten die Regeln.
+(Martin Halemeyer in einer internen Besprechung)
+-- 
+Bitte entschuldigt, wenn ich etwas spät antworte. Das dauert bei mir
+momentan, denn ich möchte zuerst lesen, _worauf_ ich antworte.
+-- 
+Failure is not an option. It comes bundled with your Microsoft product.
+-- 
+Weisheit wird mit Löffeln gefressen.
+Manche Leute benutzen eine Gabel ...
+-- 
+"The PROPER way to handle HTML postings is to cancel the article,
+then hire a hitman to kill the poster, his wife and kids, and fuck 
+his dog and smash his computer into little bits. Anything more is 
+just extremism." - Paul Tomblin
+-- 
+  "Stehen zwei Lemminge am Abgrund"
+-- 
+Ceterum censeo Microsoft esse delendam
+-- 
+-- 
+> Wie war das noch?
+> 
+>  P      10
+> --- à -----
+>  A     100
+> 
+> 
+> A sous P à cent sous cis => A souper à Sans Souci
+
+Na, fast:
+
+P    6
+- à ---
+A   100    
+
+...cent sous six.
+
+Ja
+
+J grand a petit (J'ai grand appetite)
+-- 
+Viereckige Räder sind suboptimal, da sie hoppeln. Besser sind 
+dreieckige Räder, denn sie hoppeln pro Umdrehung einmal weniger.
+-- 
+Macs are for those who don't want to know why their computer works.
+Linux is for those who want to know why their computer works.
+DOS is for those who want to know why their computer doesn't work.
+Windows is for those who don't want to know why their computer doesn't work.
+-- 
+  Want a new monitor?   ---> [x] <--- Nail here!
+-- 
+Wenn Word für Längeres geeignet wäre, würde es nicht Word,
+sondern Sentence, Page oder Article heißen.
+-- 
+Es ist IMHO mehr als bedauerlich, daß sich dieses merkwürdige Vorurteil 
+die Fachhochschulen seien soetwas wie "Unis für Leute, die es an 'ner 
+richtigen Uni nicht schaffen oder nicht geschafft haben." immer noch in 
+den Köpfen der Leute hält und daß soetwas ggf. die Studienentscheidung 
+mancher Leute prägt. Fachhochschulen sind keineswegs "zweitrangig", sie 
+sind IMHO andersartig und gleichwertig.
+-- 
+Anekdote aus dem ersten Semester Medieninformatik:
+
+Professor erzählt was über ein Java-Programm (etwa vergleichbar mit
+"Hello World") und legt dazu verschiedene Folien mit dem Quelltext und
+Erläuterungen auf. Am Ende der Vorlesung wird er von einer Studentin
+angesprochen: Er habe jetzt so viel von einem Programm geredet, aber auf
+seinen Folien war doch nur Text, ob er das Programm nicht mal zeigen
+könne ...
+-- 
+F: Wie bereite ich mich am besten auf ein Informatik-Studium vor?
+A: Überwiegende Meinung in des Newsgruppe: mit einem ordentlichen Urlaub, 
+   Belletristik und viel Erholung, da für sowas hinterher die Zeit nicht 
+   mehr reicht. Wiederholen von Schulmathematik ist i.A. überflüssig, da 
+   dieser nicht weitreichend genug ist und die Mathematik ohnehin nochmal 
+   neu aufgerollt wird.
+-- 
+Get busy living, or get busy dying.
+-- 
+EOF

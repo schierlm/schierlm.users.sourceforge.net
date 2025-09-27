@@ -1,0 +1,112 @@
+=====================================================================
+
+BETATESTBOGEN
+=============
+
+Bitte füllen Sie diesen Testbogen aus und senden ihn per E-Mail an
+mich (sm-soft@gmx.de) zurück.
+Wenn Sie mehrere Programme bewerten wollen, schicken Sie mir den
+Testbogen einfach mehrmals (Teil A müssen Sie selbstverständlich nur
+einmal ausfüllen)
+
+Eckige Klemmern:      Zutreffendes bitte ankreuzen [X]
+Geschweifte Klammern: Bitte Text eintragen
+---------------------------------------------------------------------
+
+A) Allgemeines
+~~~~~~~~~~~~~~
+
+1. Wie nutzen Sie Ihren PC hauptsächlich?
+   [ ] privat  [ ] beruflich  [ ] beides
+
+2. Wie häufig nutzen Sie SMsoft-Produkte?
+   [ ] sehr häufig  [ ] häufig    [ ] weniger häufig
+   [ ] selten       [ ] fast nie  [ ] gar nicht mehr
+   [ ] Sonstiges: {                                                 }
+
+3. Welches SMsoft-Produkt ist für Sie das beste/wichtigste/
+   brauchbarste?
+   {                                                                }
+
+4. Wie haben Sie von SMsoft erfahren?
+   [ ] Suchmaschine: {                                              }
+   [ ] Shareware-Verzeichnis: {                                     }
+   [ ] andere Homepage: {                                           }
+   [ ] Bekannte
+   [ ] PC-Zeitschrift
+   [ ] sonstiges: {                                                 }
+
+5. Nutzen Sie Shareware-Verzeichnisse?
+   [ ] Nein
+   [ ] Ja, welche?
+       [ ] Softer.de (Download-Tipp.de)
+       [ ] softarea.ru
+       [ ] TuCows
+       [ ] ZDNet
+       [ ] Sonstige:
+           {                                                        }
+
+6. Welche ist Ihre Lieblingssuchmaschine?
+   {                                                                }
+
+7. Welche Internet-Dienste nutzen Sie?
+   [ ] besitze kein Internet
+   [ ] WWW, FTP
+   [ ] E-Mail
+   [ ] Napster etc.
+   [ ] IRC
+   [ ] Instant Messanger, welche? {                                 }
+   [ ] andere: {                                                    }
+
+8. Wie beurteilen Sie (Schulnoten 1 bis 6)
+   {   } Altes Layout der SMsoft-Homepage, falls bekannt
+   {   } Neues Layout der SMsoft-Homepage, falls bekannt
+         (vom 17.04.2001)
+   {   } SMsoft-Newsletter, falls bekannt
+
+9. Haben Sie noch Anregungen für SMsoft allgemein?
+   {
+
+                                                                    }
+
+---------------------------------------------------------------------
+
+B) Programm
+~~~~~~~~~~~
+
+Programmname und Versionsnummer:
+{                                                                   }
+
+1. Wie beurteilen Sie  ( Schulnoten 1 bis 6)
+
+   a) {   } Funktionalität (Kann das Programm das, was Sie erwartet
+                            haben?)
+            Fehlende Funktionen:
+            {
+                                                                    }
+   b) {   } Intuitivität  (Konnten Sie das Programm ohne Probleme
+                           bedienen?)
+   c) {   } Produktivität (haben Sie schnell erreicht, was Sie
+                           wollten?)
+   d) {   } Ressourcenverbrauch
+   e) {   } Geschwindigkeit
+
+   => {   } Gesamteindruck
+
+2. Wären Sie bereit, für das Programm zu bezahlen?
+   [ ] Nein
+   [ ] Ja, wieviel? {       DM }
+
+3. Anregungen:
+   {
+                                                                    }
+
+4. Gefundene Fehler:
+   {
+                                                                    }
+
+---------------------------------------------------------------------
+
+Vielen Dank für Ihre Auskunft! Sie haben mir sehr geholfen!
+
+=====================================================================

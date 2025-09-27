@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/mihi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://schierlm.users.sourceforge.net
+  * I am mihi (https://keybase.io/mihi) on keybase.
+  * I have a public key with fingerprint 9776 9E80 B1A9 1F3C F05E  5D95 5347 C3C0 A194 E9AD
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "97769e80b1a91f3cf05e5d955347c3c0a194e9ad",
+            "host": "keybase.io",
+            "key_id": "5347c3c0a194e9ad",
+            "kid": "01010b9206c576e4d8ff910653b7a628e20b2ebbb9748e2de1d44c94e8e3bc67bc040a",
+            "uid": "31bc8fde8eba55641132b5231860f819",
+            "username": "mihi"
+        },
+        "service": {
+            "hostname": "schierlm.users.sourceforge.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1424201681,
+    "expire_in": 157680000,
+    "prev": "263149d41cc8ce405479addd7c86329008b3a4f811a536b30c3461e104402d2a",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.22 (MingW32)
+
+owFtkn9QVFUUx3dXwMSpdZwBZY3Qp0kG0fu9721oSjFIIBUSOE6wvR/3sc+Ffdu+
+B4LEJAGpg0TkaoxTTaQoFNAOGBQJKD/SpGJGpiR+KElE4IjGIDFSTfcx9l/3/nHn
+nPM9n3PPmfPuw8sMJuPuuO4L1d6pBmPfFG9IGX9/sQDhFTEfsRUgTrD0SLIrE3jc
+HtmlITaEtVppFjAoj3EsJhGChFKAElmKIkirQAgoh7EkYDkRiUQciqpnQAzPqSBK
+VqAPGnZZhN7/0TuXAigGL8/iKC1QVhqQIiNJLIbSFMFbORpnAI7yOOB5nrWS0BAB
+JpKkACEMIHiBtvICSqIcxOUs4QiMFxhJhFGeoyiaxDAC5ymcwBgalRiM1YUq8Li4
+bADV2bJDRgojEejJlQWgt6938SCqCg4ZeLKyo/QMNUpVcjwCkBRPJohyAQ2S3B5F
+UwQlC2odmua26Sgt363n7ge8/QHVzssuEQ4VJuRCjqy4EBsGlYIm62UwEidxFKMZ
+LBIBeW7ZA+yyroDTYFB49DIgFyJxmsBIViQxQWAEQKIUaYWDFEWrwNAEzqIowxMc
+CZvEOIqgeQIVCJLGAIaSJIqLuD4jFbzuUhAbCb/JZZr1FuVMF6fleABSGHjE9Kif
+wWgyBPib9MUwBK5Y9d+2dKWY/9kwfWhixR/pim2o6YlS+9q6We7LRbr7jWE+zP3d
+lvLN6unxre8Nd9wbC3u23dr7WuhXKfaPwxvtVTEnDzepGelHu3q/Tuxbae7kLZ3q
+mdllp1y1k+bmnev9Ym79rhT53/U/5/vM11MRUJtU9udofdLc2uu3vR8IOdGD3wyG
+yBlexPh46SNrNKnyenXHAWbP8tb7QbdLkvJSWyKe3hkxFBjfZl6Ibl3Y+Lnj0/p1
+eecXcYuz6oShv7wn8m5I9C9167KO57cdG3jSN/tC4rUDlTV/JzsXfqgyVtMXi8uw
+n0JvKHXPBJ++edNyrWVoY9zJxZHtRPBHRydNtZHdY8sLkLeeGr0/GN7aUrv3+caX
+5vtTjTdmTKfeiYjdHrrtwmJXmK1y02511TFsQ3Nz4cF6V0d8ry/N715Q3q0X2142
+/Zrirf0ircgJhlcOjF7pKGzy3gnXQhyXV3dVzGSUvjKB2kvTChdS3VT15ZBL4927
+RpRGbV+lN2FHwmFLbFzD3Jud+86mPzTVnnBxb1/Qqz/umXSQiaoxcC43tc1Sph7B
+Rzal/zbkHCu+Ots/UdxYEv/zuV1/bT7+fdGhE8l3Urdue64mZr/PGFIy/3ZHw3Ry
+rMVtbtfOzPd8y/aeTboizZSf/2RgtTzs21Hz2NUKe5B0KbFn0rnlwxFxTYnf9Prg
+UWezFFQTOejXMLdwMOBf
+=QFAa
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mihi
+
+==================================================================

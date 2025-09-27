@@ -1,0 +1,57 @@
+<html><head><title>JBN 2.1.4mihi1</title></head>
+<body><center><h1>JBN2.1.4mihi1</h1></center>
+Here you can get my modified version of Jack B. Nymble. <p><a
+href="http://www.bigfoot.com/~potatoware/jbn2/index.html">The Original
+version is available here.</a><br>
+Actually, you need it, as my version is no complete version - just the
+changed files and the source. To install it, install JBN first and
+then follow the instructions in the readme file.<p>
+The following things are changed (for a list where the source exactly
+was changed, look into mdlMihi.bas):
+<ul>
+<li><b>Internationalisation problems</b><br>
+In the original version, there were some string compares that actually
+compared a string to a boolean value. As boolean values are internally
+represented by numbers and numbers aren't nice for users, converting
+them to a string means to change them into words depending of the
+default language in your system. As JBN was programmed in the USA,
+there a boolean is compared to "False" - actually, on a French System
+it will have the value "Faux" and on a German System, it has the value
+"Falsch". I fope that i found all those things. If not, drop me a
+message by <a href="mailto:schierlm@gmx.de">mail</a> (<i>only once,
+please!</i> There is no need for 20 or more duplicates. Thank you).
+<li><b>Problems with keyboard usage</b><br>
+Actually no problems; it is simply not ergonomic to use it with
+keyboard. Dialogs usually do not have Default and Cancel buttons and
+the focus is jumping around like a devil. I tried to change that
+behaviour a bit (as long as it did not require a larger rewrite) -
+it's not optimal now, but better than before.<br>
+For those who don't know that: <font color="#ff0000">In a dialog with a default button, you can add newlines to multiline texboxes with CTRL+RETURN.</font>
+<li><b>Folder usage</b><br>
+It seems that JBN was designed to be used only in a directory in the
+root of a drive. If that's not so, the complete directory directly
+below the root dir, but above the JBN dir, is scanned <b>completely
+and recursively</b> for subfolders! If that is a "Program Files"
+directory, this may even make your computer crash. I tried to reduce
+that scanning a bit - for only scanning the "shortest path" to the JBN
+dir. So it should work outside of C:\JBN2 now - but I myself would not dare
+to switch to a directory outside the JBN root!<br>
+If I have time, I'll try to rewrite that part so that directories are
+loaded on demand. But now I don't have any more.
+<li><b>New features</b><br>
+There are none. And I do not plan to add any at the moment. There is
+much to rewrite in JBN source (e. g. the folder handling and those
+awful focus jumps) so I do not want to add any new features at the
+moment.
+</ul><font size=+1 color="#FF0000">THERE IS NO WARRANTY FOR THIS SOFTWARE! IF
+IT DESTROYS YOUR COMPUTER, IT'S ENTIRELY YOUR FAULT.</font><p>
+Okay, enough text. <a href="jbnmihi.zip">You can download it here
+(including source)</a> <font color="#FF0000">(1030 KB)</font></a><br>
+You will need an unzipper like WinZip to extract it.
+
+<hr><center>
+<font size="-1">Michael Schierl, Ignaz-Baldauf-Str. 5, D-86551
+Aichach, Germany, <a
+href="mailto:schierlm@gmx.de">schierlm@gmx.de</a>, <a
+href="../mschierlm.asc">PGP Key</a>
+</body></html>

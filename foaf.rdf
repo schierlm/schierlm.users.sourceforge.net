@@ -1,0 +1,37 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:rsa="http://www.w3.org/ns/auth/rsa#"
+      xmlns:cert="http://www.w3.org/ns/auth/cert#"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+    <foaf:maker rdf:resource="#me"/>
+    <foaf:primaryTopic rdf:resource="#me"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+    <foaf:nick>mihi</foaf:nick>
+    <foaf:firstName>Michael</foaf:firstName>
+    <foaf:givenname>Schierl</foaf:givenname>
+    <foaf:depiction rdf:resource="http://home.arcor.de/mschierlm/michaelneu.jpg"/>
+    <foaf:homepage rdf:resource="http://schierlm.users.sourceforge.net/"/>
+    <foaf:openid rdf:resource="http://schierlm.users.sourceforge.net/"/>
+    <foaf:holdsAccount rdf:resource="icq#31020687"/>
+    <foaf:holdsAccount rdf:resource="jabber:schierlm@jabber.ccc.de"/>
+    <foaf:interest rdf:resource="hacking"/>
+    <foaf:interest rdf:resource="computers"/>
+	<!--
+    <foaf:knows>
+        <foaf:Person rdf:ID="friend0">
+            <foaf:name>name1</foaf:name>
+            <rdfs:seeAlso rdf:resource="url1"/>
+        </foaf:Person>
+    </foaf:knows>
+    <foaf:knows>
+        <foaf:Person rdf:ID="friend1">
+            <foaf:name>name2</foaf:name>
+            <rdfs:seeAlso rdf:resource="url2"/>
+        </foaf:Person>
+    </foaf:knows>
+	-->
+</foaf:Person>
+</rdf:RDF>

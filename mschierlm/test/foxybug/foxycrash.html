@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+function g() {
+setTimeout("X();",100);
+setTimeout("P();",200);
+}
+function X() {
+document.getElementById("S").innerHTML="";
+}
+function P() {
+try{
+document.getElementById("E").Play();
+}catch(Z){}
+}
+</script>
+</head>
+<body id="x" onload="g();">
+<object id="E" data="b.wav" width="0" height="0"></object>
+<div id="S"><embed src="b.mid" autostart="true" loop="true" hidden="true"></div>
+</body>
+</html>

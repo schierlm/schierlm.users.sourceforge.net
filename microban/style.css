@@ -1,0 +1,15 @@
+body {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 10pt;
+}
+body {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 10pt;
+}
+table.levellist {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+table.levellist th, table.levellist td {
+	border: 1px solid gray;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<head>
+<title>jQuery Shards demo</title>
+<style>
+* {
+  margin: 0px;
+  padding: 0; 
+}
+body {
+  background: #333;
+  height: 100vh;
+}
+.dragbox {
+  position: absolute;
+  background-color: white;
+  border: 2px solid black;
+  width: 400px;
+  left: 1em;
+  top: 1em;
+}
+.boxtitle {
+  cursor:move;
+  background-color: black;
+  padding: 5px;
+  color: white;
+}
+.boxbody { padding: 5px; }
+.val { margin-left: 1em; }
+dt {font-weight: bold; float:left; clear:left; width: 6em;}
+dd {margin-left: 6em; margin-bottom: 2px;}
+
+</style>
+</head>
+<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/vonKristoff/Shards@234a4bb27f5a9a031059939e0c08638df42c883a/shards.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinyColorPicker/1.1.1/jqColorPicker.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<body>
+	<div class="dragbox">
+		<div class="boxtitle">Configure Shards</div>
+		<div class="boxbody">
+			<input style="float:right" type="button" name="refresh" value="Refresh" onclick="refreshShards()">
+			<dl>
+			<dt>C1: <dd><input type="text" class="color" name="col1" value="rgba(10,35,180,.15)">
+			<dt>C2: <dd><input type="text" class="color" name="col2" value="rgba(255,20,220,.25)">
+			<dt>Shade: <dd><input type="text" class="color" name="scol" value="rgba(0,0,0,.25)">
+			<dt>Shards: <dd><input type="range" name="shards" value="20" min="1" max="100"><span class="val whole">20</span>
+			<dt>Complexity: <dd><input type="range" name="complexity" value="58" min="0" max="100"><span class="val">0.58</span>
+			<dt>Lightness: <dd><input type="range" name="lightness" value="2" min="0" max="3"><span class="val whole">2</span>
+			<dt>Alpha: <dd><input type="range" name="alpha" value="80" min="0" max="100"><span class="val">0.8</span>
+			</dl>
+			<textarea style="width: 100%; height: 100px; background-color: lightgray" readonly="readonly">background: xxx;</textarea>
+		</div>
+	</div>
+<script>
+
+function extractColor(name) {
+	var parts = $("input[name='"+name+"']")[0].style.backgroundColor.replace(/[^0-9,.]+/g,'').split(",").map((x) => +x);;
+	if (parts.length == 3) {
+		parts.push(1);
+	}
+	return parts;
+}
+function refreshShards() {
+  $('body').shards(extractColor('col1'),extractColor('col2'),extractColor('scol'),
+	+$("input[name='shards']").val(), $("input[name='complexity']").val() / 100,
+	+$("input[name='lightness']").val(), $("input[name='alpha']").val() / 100, false);  
+  var result = document.body.style.backgroundImage.replace(/-[a-z]+-linear-gradient/g, 'linear-gradient');
+  document.body.style.backgroundImage = result;
+  $("textarea").text("background-image: "+result);
+}
+
+(function($) {
+
+  $("input[type='range']").on('input change', function() {
+	var next = this.nextElementSibling;
+	if (next.classList.contains("whole")) {
+		$(next).text($(this).val());
+	} else {
+		$(next).text($(this).val()/100);
+	}
+  })
+  $(".dragbox").draggable({handle: ".boxtitle"});
+  $('.color').colorPicker();
+  refreshShards();
+})(jQuery);
+</script>
+</body>
+</html>

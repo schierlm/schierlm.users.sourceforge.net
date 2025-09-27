@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Play Music using JavaScript</title>
+<script type="text/javascript" src="soundmanager.js"></script>
+<style type="text/css">
+body {
+ font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#debugContainer {
+ font:small "Terminal","Lucida Console","System";
+}
+</style>
+<!-- features:
+     live update
+     edit in middle
+     flats
+     keyboard input
+-->
+</head>
+<body>
+<map name="keyboard" id="keyboard">
+  <area shape="rect" href="#x" onclick="play(14,1)" coords="250,0,267,18" alt="" />
+  <area shape="rect" href="#x" onclick="play(14,2)" coords="250,19,267,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(14,3)" coords="250,35,267,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(14,4)" onmouseover="test(14)" coords="250,51,267,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(16,4)" onmouseover="test(16)" coords="282,51,299,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(16,3)" coords="282,35,299,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(16,2)" coords="282,19,299,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(16,1)" coords="282,0,299,18" alt="" />
+  <area shape="poly" href="#x" onclick="play(15,1)" coords="260,88,287,88,287,74,282,74,280,68,270,68,268,74,260,74" alt="" />
+  <area shape="rect" href="#x" onclick="play(15,4)" onmouseover="test(15)" coords="260,120,286,141" alt="" />
+  <area shape="rect" href="#x" onclick="play(15,3)" coords="260,104,286,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(15,2)" coords="260,88,286,103" alt="" />
+  <area shape="rect" href="#x" onclick="play(13,4)" onmouseover="test(13)" coords="228,121,254,142" alt="" />
+  <area shape="rect" href="#x" onclick="play(13,3)" coords="228,105,254,120" alt="" />
+  <area shape="rect" href="#x" onclick="play(13,2)" coords="228,89,254,104" alt="" />
+  <area shape="poly" href="#x" onclick="play(13,1)" coords="228,89,255,89,255,75,250,75,248,69,238,69,236,75,228,75" alt="" />
+  <area shape="rect" href="#x" onclick="play(17,4)" onmouseover="test(17)" coords="292,120,318,141" alt="" />
+  <area shape="rect" href="#x" onclick="play(17,3)" coords="292,104,318,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(17,2)" coords="292,88,318,103" alt="" />
+  <area shape="poly" href="#x" onclick="play(17,1)" coords="292,88,319,88,319,74,314,74,312,68,302,68,300,74,292,74" alt="" />
+  <area shape="poly" href="#x" onclick="play(22,1)" coords="388,88,415,88,415,74,410,74,408,68,398,68,396,74,388,74" alt="" />
+  <area shape="rect" href="#x" onclick="play(22,2)" coords="388,88,414,103" alt="" />
+  <area shape="rect" href="#x" onclick="play(22,3)" coords="388,104,414,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(22,4)" onmouseover="test(22)" coords="388,120,414,141" alt="" />
+  <area shape="poly" href="#x" onclick="play(18,1)" coords="324,89,351,89,351,75,346,75,344,69,334,69,332,75,324,75" alt="" />
+  <area shape="rect" href="#x" onclick="play(18,2)" coords="324,89,350,104" alt="" />
+  <area shape="rect" href="#x" onclick="play(18,3)" coords="324,105,350,120" alt="" />
+  <area shape="rect" href="#x" onclick="play(18,4)" onmouseover="test(18)" coords="324,121,350,142" alt="" />
+  <area shape="rect" href="#x" onclick="play(20,2)" coords="356,88,382,103" alt="" />
+  <area shape="rect" href="#x" onclick="play(20,3)" coords="356,104,382,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(20,4)" onmouseover="test(20)" coords="356,120,382,141" alt="" />
+  <area shape="poly" href="#x" onclick="play(20,1)" coords="356,88,383,88,383,74,378,74,376,68,366,68,364,74,356,74" alt="" />
+  <area shape="rect" href="#x" onclick="play(21,1)" coords="378,0,395,18" alt="" />
+  <area shape="rect" href="#x" onclick="play(21,2)" coords="378,19,395,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(21,3)" coords="378,35,395,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(21,4)" onmouseover="test(21)" coords="378,51,395,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(19,4)" onmouseover="test(19)" coords="346,51,363,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(19,3)" coords="346,35,363,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(19,2)" coords="346,19,363,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(19,1)" coords="346,0,363,18" alt="" />
+  <area shape="rect" href="#x" onclick="play(23,4)" onmouseover="test(23)" coords="410,51,427,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(23,3)" coords="410,35,427,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(23,2)" coords="410,19,427,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(23,1)" coords="410,0,427,18" alt="" />
+  <area shape="rect" href="#x" onclick="play(24,4)" onmouseover="test(24)" coords="420,120,446,141" alt="" />
+  <area shape="rect" href="#x" onclick="play(24,3)" coords="420,104,446,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(24,2)" coords="420,88,446,103" alt="" />
+  <area shape="poly" href="#x" onclick="play(24,1)" coords="420,88,447,88,447,74,442,74,440,68,430,68,428,74,420,74" alt="" />
+  <area shape="poly" href="#x" onclick="play(12,1)" coords="196,88,223,88,223,74,218,74,216,68,206,68,204,74,196,74" alt="" />
+  <area shape="rect" href="#x" onclick="play(12,2)" coords="196,88,222,103" alt="" />
+  <area shape="rect" href="#x" onclick="play(12,3)" coords="196,104,222,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(12,4)" onmouseover="test(12)" coords="196,120,222,141" alt="" />
+  <area shape="rect" href="#x" onclick="play(11,1)" coords="186,0,203,18" alt="" />
+  <area shape="rect" href="#x" onclick="play(11,2)" coords="186,19,203,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(11,3)" coords="186,35,203,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(11,4)" onmouseover="test(11)" coords="186,51,203,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(7,1)" coords="122,0,139,18" alt="" />
+  <area shape="rect" href="#x" onclick="play(7,2)" coords="122,19,139,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(7,3)" coords="122,35,139,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(7,4)" onmouseover="test(7)" coords="122,51,139,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(9,4)" onmouseover="test(9)" coords="154,51,171,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(9,3)" coords="154,35,171,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(9,2)" coords="154,19,171,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(9,1)" coords="154,0,171,18" alt="" />
+  <area shape="poly" href="#x" onclick="play(8,1)" coords="132,88,159,88,159,74,154,74,152,68,142,68,140,74,132,74" alt="" />
+  <area shape="rect" href="#x" onclick="play(8,4)" onmouseover="test(8)" coords="132,120,158,141" alt="" />
+  <area shape="rect" href="#x" onclick="play(8,3)" coords="132,104,158,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(8,2)" coords="132,88,158,103" alt="" />
+  <area shape="rect" href="#x" onclick="play(6,4)" onmouseover="test(6)" coords="100,121,126,142" alt="" />
+  <area shape="rect" href="#x" onclick="play(6,3)" coords="100,105,126,120" alt="" />
+  <area shape="rect" href="#x" onclick="play(6,2)" coords="100,89,126,104" alt="" />
+  <area shape="poly" href="#x" onclick="play(6,1)" coords="100,89,127,89,127,75,122,75,120,69,110,69,108,75,100,75" alt="" />
+  <area shape="rect" href="#x" onclick="play(10,4)" onmouseover="test(10)" coords="164,120,190,141" alt="" />
+  <area shape="rect" href="#x" onclick="play(10,3)" coords="164,104,190,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(10,2)" coords="164,88,190,103" alt="" />
+  <area shape="poly" href="#x" onclick="play(10,1)" coords="164,88,191,88,191,74,186,74,184,68,174,68,172,74,164,74" alt="" />
+  <area shape="poly" href="#x" onclick="play(5,1)" coords="68,88,95,88,95,74,90,74,88,68,78,68,76,74,68,74" alt="" />
+  <area shape="rect" href="#x" onclick="play(5,2)" coords="68,88,94,103" alt="" />
+  <area shape="rect" href="#x" onclick="play(5,3)" coords="68,104,94,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(5,4)" onmouseover="test(5)" coords="68,120,94,141" alt="" />
+  <area shape="poly" href="#x" onclick="play(1,1)" coords="4,89,31,89,31,75,26,75,24,69,14,69,12,75,4,75" alt="" />
+  <area shape="rect" href="#x" onclick="play(1,2)" coords="4,89,30,104" alt="" />
+  <area shape="rect" href="#x" onclick="play(1,3)" coords="4,105,30,120" alt="" />
+  <area shape="rect" href="#x" onclick="play(1,4)" onmouseover="test(1)" coords="4,121,30,142" alt="" />
+  <area shape="rect" href="#x" onclick="play(3,2)" coords="36,88,62,103" alt="" />
+  <area shape="rect" href="#x" onclick="play(3,3)" coords="36,104,62,119" alt="" />
+  <area shape="rect" href="#x" onclick="play(3,4)" onmouseover="test(3)" coords="36,120,62,141" alt="" />
+  <area shape="poly" href="#x" onclick="play(3,1)" coords="36,88,63,88,63,74,58,74,56,68,46,68,44,74,36,74" alt="" />
+  <area shape="rect" href="#x" onclick="play(4,1)" coords="58,0,75,18" alt="" />
+  <area shape="rect" href="#x" onclick="play(4,2)" coords="58,19,75,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(4,3)" coords="58,35,75,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(4,4)" onmouseover="test(4)" coords="58,51,75,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(2,4)" onmouseover="test(2)" coords="26,51,43,71" alt="" />
+  <area shape="rect" href="#x" onclick="play(2,3)" coords="26,35,43,50" alt="" />
+  <area shape="rect" href="#x" onclick="play(2,2)" coords="26,19,43,34" alt="" />
+  <area shape="rect" href="#x" onclick="play(2,1)" coords="26,0,43,18" alt="" />
+  <area shape="rect" href="#x" onclick="play(0,2)" coords="485,2,499,26" alt="" />
+  <area shape="rect" href="#x" onclick="play(0,1)" coords="485,27,499,47" alt="" />
+  <area shape="rect" href="#x" onclick="play(0,6)" coords="485,48,499,68" alt="" />
+</map>
+<div>&nbsp;</div>
+<h1>Play Music</h1>
+
+<h2>Play with mouse</h2>
+<img src="keyb.gif" usemap="#keyboard" border="0" width="500"
+     height="146" alt="" />
+
+<table border="0">
+<tr>
+<td><img src="note/L_1.gif" onclick="setLength(1)" alt="eighth note" /></td>
+<td><img src="note/L_2.gif" onclick="setLength(2)" alt="quarter note" /></td>
+<td><img src="note/L_3.gif" onclick="setLength(3)" alt="dotted quarter note" /></td>
+<td><img src="note/L_4.gif" onclick="setLength(4)" alt="half note" /></td>
+<td><img src="note/L_5.gif" onclick="setLength(5)" alt="32nd note" /></td>
+<td><img src="note/L_6.gif" onclick="setLength(6)" alt="16th note" /></td>
+<td><img src="note/L_7.gif" onclick="setLength(7)" alt="dotted eighth note"/></td>
+<td><img src="note/L_8.gif" onclick="setLength(8)" alt="dotted half note"/></td>
+<td><img src="note/L_9.gif" onclick="setLength(9)" alt="whole note"/></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td>
+<td align="center">7</td>
+<td align="center">8</td>
+<td align="center">9</td>
+</tr>
+</table>
+
+<h2>Current music</h2>
+
+<p id="current"></p>
+<p><input type="button" value="Delete note" onclick="deleteNote()" />
+    ["x" key] 
+    <input id="flats" type="checkbox" name="flats" onclick="setFlats()" />
+    <label for="flats">Use flat signs instead of sharp signs</label>
+</p>
+<p><input type="text" id="music" name="music" value="" size="64" onblur="parse()" />
+<input type="button" value="Play" onclick="playAll()" />
+<input type="button" value="Search in musipedia" onclick="musipedia()" /></p>
+
+
+<h2>Play with keyboard</h2>
+
+<p>Keyboard layout: <span id="kbdlayout"></span>
+<input type="button" id="real" value="Click and type here to add notes."
+       style="background-color:#fff;"
+       onfocus="this.style.backgroundColor ='#afa';"
+       onblur="this.style.backgroundColor='#fff';"/>
+<input type="button" id="test" value="Click and type here to test notes."
+       style="background-color:#fff;"
+       onfocus="this.style.backgroundColor ='#afa';"
+       onblur="this.style.backgroundColor='#fff';"/></p>
+
+<p>Press the keys on your keyboard's main row (a,s,d,f on US
+keyboards) for playing notes. Shift keys increases tone by one
+octave. Use the space bar to make the last note longer (i. e. press
+the space bar for every quarter note this note is longer than a
+quarter note, or use it as a "metronome"), or digits 1-9
+to change last note length. Use 0 to insert a rest. Cursor keys move
+cursor or change pitch of last note.</p>
+
+<p><a href="playmusic.zip">Download source code</a></p>
+
+<script charset="iso-8859-1" type="text/javascript" src="playmusic.js">
+</script>
+</body>
+</html>

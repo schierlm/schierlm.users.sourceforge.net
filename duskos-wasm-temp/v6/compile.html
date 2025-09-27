@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AssemblyScript Compiler</title>
+<script src="https://cdn.jsdelivr.net/npm/assemblyscript@v0.27.9/dist/web.js"></script>
+<script type="module">
+    import asc from "assemblyscript/asc";
+
+    const inputfile = document.getElementById("inputfile");
+    inputfile.onchange = function () {
+        const text = inputfile.files[0].text().then(txt => {
+            return asc.compileString({ [inputfile.files[0].name]: txt }, { optimize: 2 });
+        }).then(result => {
+            const { binary, stdout, stderr } = result;
+            if (binary != null) {
+                const blob = new Blob([binary], { type: "application/octet-stream" });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = inputfile.files[0].name.replace(".ts", "") + ".wasm";
+                a.style.display = "none";
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            }
+            document.getElementById("output").innerHTML = '<h2>Errors</h2><pre id="stderr"></pre><h2>Output</h2><pre id="stdout"></pre>';
+            document.getElementById("stdout").innerText = stdout.toString();
+            document.getElementById("stderr").innerText = stderr.toString();
+        });
+    };
+</script>
+</head>
+<body>
+<h1>Compile</h1>
+<input type="file" accept=".ts" id="inputfile">
+<div id="output">[Compiler output appears here]</div>
+</body>
+</html>

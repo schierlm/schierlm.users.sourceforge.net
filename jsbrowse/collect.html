@@ -1,0 +1,144 @@
+<html>
+<head>
+<script type="text/javascript" language="JavaScript">
+<!--
+
+function jsbrowse_internal_collect() {
+	document.title="Please wait...";
+	var __allobjects = [{}];
+	var __allnames = ["__"];
+	var __data = [navigator.appName+" "+navigator.appVersion];
+	var __todo = [];
+	var __arrayprep = function(__array) {}
+
+	/**********************************************************
+	 * Compatibility code for older browsers...               *
+	 **********************************************************/
+	if (__allobjects.push == window.undefined) {
+		var __arrayprep = function(__array) {
+			// old IE does not support push and shift
+			__array.push = function(__v) {
+				this[this.length] = __v;
+			}
+		}
+		__arrayprep(__allobjects);
+		__arrayprep(__allnames);
+		__arrayprep(__todo);
+		__arrayprep(__data);
+	}
+	if (__todo.shift == window.undefined) {
+		__todo.shift = function() {
+			var ___t = __todo;
+			__todo=__todo.slice(1);
+			__todo.push = ___t.push;
+			__todo.shift = ___t.shift;
+			return ___t[0];
+		}
+	}		
+	if (__allobjects.indexOf == window.undefined) {
+		// IE does not support indexOf
+		__allobjects.indexOf = function(__value) {
+			var __pos = -1;
+			for (var __i=0; __i < __allobjects.length; __i++) {
+				if  (__allobjects[__i] == __value) {
+					__pos=__i;
+					break;
+				}	
+			}
+			return __pos;
+		}		
+	}
+	/**********************************************************
+	 * End compatibility code for older browsers.             *
+	 **********************************************************/
+
+	document.getElementById("summary").innerHTML="Please wait...";
+	document.forms.main.data.value = "";
+	__todo.push([0, "", window]);
+
+	while(__todo.length > 0) {
+		document.title = __todo.length + " in queue / " + __data.length + " processed";
+		var __todoentry = __todo.shift();
+		var __parentid = __todoentry[0];
+		var __parentname = __todoentry[1];
+		var __object = __todoentry[2];
+		var __names = [];
+		__arrayprep(__names);
+		try {
+			for(var __name in __object) {
+				var __found = false;
+				for(var __i=0; __i < __names.length; __i++) {
+					if (__names[__i] == __name) {
+						__found = true;
+						break;
+					}
+				}
+				if (!__found)
+					__names.push(__name);
+			}
+		} catch (e) {
+			__names=[];
+			__data.push(__parentid+" :exception: :exception: "+escape("["+e+" ("+e.number+", "+e.description+", "+e.name+", "+e.message+")]"));
+		}
+		for (var __idx = 0; __idx < __names.length; __idx++) {
+			var __name, __value, __valuestr;
+			try {
+				__name = "" + __names[__idx];
+				if (__name.substring(0,2) == "__") alert(__name);
+				try {
+					__value = __object[__name];
+				} catch (e) {
+					__value="[Error: "+e+" ("+e.number+", "+e.description+", "+e.name+", "+e.message+")]";
+				}
+				__valuestr = "" + __value;
+			} catch (e) {
+				__name=":anon" + __idx + ":";
+				__value = "["+e+" ("+e.number+", "+e.description+", "+e.name+", "+e.message+")]";
+				__valuestr = __value;
+			}
+			var __type = typeof(__value);
+			if (__type == "object") {
+				if (__value == null) {
+					__valuestr = "(null)";
+				} else {
+					var __pos = __allobjects.indexOf(__value);
+					if (__pos != -1) {
+						__type=":objref:";
+						__valuestr = __allnames[__pos];
+					}
+				}
+			} else if (__type == "function") {
+				if (__valuestr.indexOf("[nat" + "ive code]") != -1) {
+					__valuestr = "(native)";
+				}
+			}
+			__data.push(__parentid+" "+__name+" "+__type+" "+escape(__valuestr));
+			if (__type == "object") {				
+				if (__parentname != "") {
+					__name = __parentname + "." + __name;
+				}
+				__allnames.push(__name);
+				__allobjects.push(__value);
+				__todo.push([__data.length - 1, __name, __value]);
+			}
+		}
+	}
+	document.title="Postprocessing...";
+        var __raw = __data.join("\n");
+	document.getElementById("summary").innerHTML=__data.length + " objects (" + 
+		__raw.length + " bytes) collected.";
+	document.forms.main.data.value = __raw;
+	document.forms.main.submitbutton.style.display="inline";
+	document.title="";
+}
+// -->
+</script>
+</head>
+<body onload="jsbrowse_internal_collect()">
+<div id="summary">Please enable JavaScript!</div>
+<form name="main" action="collect.php" method="post">
+<input type="hidden" name="data" value="">
+<input type="submit" name="submitbutton" style="display:none">
+</form>
+</body>
+</html>

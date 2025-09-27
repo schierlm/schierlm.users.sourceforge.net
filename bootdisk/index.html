@@ -1,0 +1,184 @@
+<html>
+<head><title>The All In One Boot Floppy</title>
+<style>body {font-family: Verdana, Arial, Helvetica, sans-serif}</style>
+</head>
+<body>
+<center>
+<h1>The All In One Boot Floppy</h1>
+<i>&ldquo;The Only Boot Floppy You Ever Need&rdquo;</i>
+</center>
+
+<a href="#download">Jump to downloads.</a>
+
+<h2>Why yet another boot floppy?</h2>
+
+There are several reasons why I created this floppy:<p>
+
+<ul><li> Floppies are dying -- the PC I created this floppy on does
+not even have a floppy drive. Soon most of the PCs will not have any
+floppy drives any more.  So development of floppy based software
+somehow stalled - one would cut off users that do not have a floppy
+drive. Today most bootable software is shipped on CDROM.
+</li><li> On the other hand, when helping people to "fix their PC",
+there are quite a lot of PCs in use whose BIOS does not support
+booting from CDROMs (Most pre-Pentium BIOSes do not support CDROM
+boot).  However, these PCs are still fast enough for web browsing or
+being used as X terminals or network routers.  So it should at least
+be possible to boot from this floppy and "chainload" a usual IDE
+cdrom.  A floppy containing only this would be enough for PCs like this.
+</li><li> Another quite new booting "method" is booting via
+network. Since many BIOSes support this, usual Linux live CDs tend to
+support a "terminal server" mode where one CD can boot lots of PCs via
+network. Older BIOSes (or, to be more precise, most BIOSes that are
+used today) do not support booting from network. So it would be great
+if you could boot from network with this floppy as well.  However,
+booting from PCMCIA network cards is impossible as far as I know, and
+booting PCI cards depends on its chipset. So I won't make promises
+here.
+</li><li> And last but not least, there are lots of "small floppies"
+flying around in my floppy box, containing stuff like CmosPWD (to
+decode BIOS passwords), Memtest (to test your PCs RAM) or a FreeDOS
+boot floppy with CDROM drivers (for accessing a DOS virus scanner
+stored on a CD).  And of course, a GRUB floppy to boot a Linux based
+system from hard disk when MBR and/or boot sectors are hosed (as long
+as you know where your kernel and initrd is stored). Of course, you
+could put all this onto a CDROM as well, but then you'd have to insert
+two disks (one floppy and one CDROM) to boot from it.
+</li></ul>
+
+<h2>What will never be on this floppy</h2>
+
+There will never be a "linux live system"
+like <a href="http://www.toms.net/rb/">tomsrtbt</a> on it. Those
+floppies all have a fundamental flaw: there is too much software
+needed to fit on a single floppy. Either there is no command
+completion, or no NTFS/SMB/ReiserFS/putyourfavouritefilesystemhere
+support, or there is no network driver for the PC you have to save
+your data from, ad infinitum. When you need a linux live system, use a
+CDROM based one like <a href="http://www.knoppix.org/">Knoppix</a>
+or <a href="http://www.grml.org/">grml</a>, and use this floppy to
+boot from your CDROM if your BIOS does not support it.<p>
+
+There will be no commercial software on this floppy (like MSCDEX.EXE
+from Microsoft) since putting it on would make distribution of the
+disk much harder, if not impossible. If you need those, customize the
+disk yourself (it uses a FAT12 filesystem that can be read by
+virtually every operating system). Proprietary freeware tools are no
+problem though.<p>
+
+<h2 id="download">Where can I download this floppy</h2>
+
+<a href="allinone.img">Download the floppy image</a> (1440 KB).<p>
+
+<a href="grub.patch.gz">Download grub patch</a> (1 KB) and
+<a href="lstfiles.tar.gz">all config files</a> (11 KB, kind of source code).<p>
+
+<a href="indexold.html">Download the previous version</a><p>
+
+On Windows,
+use <a
+href="http://uranus.it.swin.edu.au/~jn/linux/rawwrite.htm">RawWriteWin</a>
+to write it to a floppy. Linux users will know themselves how to use
+dd <tt>:-)</tt><p>
+
+<h2>What is new in Version 1.0?</h2>
+
+<p>The following programs were removed:</p>
+<ul>
+<li>Etherboot 5.4.1 (replaced by gPXE)</li>
+<li>Testdisk 6.2 (the latest version did no longer fit onto
+  this floppy; you will find testdisk on almost every rescue Linux
+  distribution)</li>
+</ul>
+<p>The following programs were added:</p>
+<ul>
+<li>GRUB2 1.96</li>
+<li>gPXE 0.9.3</li>
+<li>GRUB Invaders 1.0.0</li>
+<li>Sysinternals NtfsDos 3.02R</li>
+<li>FreeDOS Fdisk 1.2.1</li>
+</ul>
+<p>The following programs were updated:</p>
+<ul>
+<li>Cmospwd was upgraded from 4.8 to 5.0
+<li>Memtest86 was upgraded from 3.2 to 3.4
+<li>memtest86+ was upgraded from 1.65 to 2.01
+<li>Some patches for Smart Boot Manager 3.7.1 (From the SourceForge
+  Patches tracker from 2007-01-21) have been applied.
+</li>
+</ul>
+
+<h2>What does the floppy currently contain?</h2>
+
+The current version (Version 1.0) contains the following:
+
+<ul><li>
+<a href="http://www.gnu.org/software/grub/">GRUB boot loader</a> (the first you will see) with keyboard layouts
+for German, Spanish and French (English is supported by your BIOS anyway)
+and some boot templates; in addition a command line version of GRUB2.
+</li><li>
+<a href="http://sf.net/projects/btmgr/">Smart Boot Manager</a> to boot from CDROM drives
+</li><li>
+Memory testers: <a href="http://www.memtest86.com/">Memtest86</a> and <a href="http://www.memtest.org/">Memtest86+</a>
+</li><li>
+<a href="http://www.etherboot.org/">gPXE</a> to boot via network
+</li><li>
+<a href="http://erikyyy.de/invaders/">GRUB-Invaders</a>, a sample game
+that is its own operating system (which needs only 3K of space)
+</li><li>
+A <a href="http://www.freedos.org/">FreeDOS</a> kernel with IDE CDROM support, and the following DOS utilities:
+<ul><li>
+<a href="http://www.drivesnapshot.de/freedos/mkeyb.htm">mKeyb</a> -- a very small international keyboard driver
+</li><li>
+<a href="http://www.sysinternals.com/">Sysinternals NtfsDos</a> -- read
+  NTFS drives
+</li><li>
+FreeDOS Fdisk -- just in case you need to remove all partitions from a
+disk when it does not want to boot
+</li><li>
+<a href="http://www.cgsecurity.org/cmospwd.html">CmosPwd</a> -- decode BIOS passwords
+</li><li>
+<a href="http://www.11a.nu/">!BIOS 3.20</a> -- another BIOS password decoder
+</li><li>
+<a href="http://www.nu2.nu/utils/#pciscan">pciscan</a> -- detect PCI network cards (to know which etherboot module to load)
+</li><li>
+<a href="http://petertodd.ca/tech/lucifer/">lucifer</a> (download: <a href="ftp://ftp.simtel.net/pub/simtelnet/msdos/sysutl/lucifer.zip">DOS</a>/<a href="http://unix.freshmeat.net/redir/lucifer/6038/url_tgz/lucifer-1.0.tar.gz">UNIX</a>)-- simple CPU burn-in test
+</li><li>
+</li></ul>
+</li></ul>
+
+<h2>How was this floppy created?</h2>
+
+For creating floppies like this, it is very useful to have an I386
+emulator like <a href="http://www.virtualbox.org/">VirtualBox</a> handy.  This enables you to build floppy images on
+hard disk and test them without having to write them to slow floppies
+(and without having to reboot a lot).<p>
+
+If you don't have a physical floppy drive and are on a Windows system,
+having <a href="http://chitchat.at.infoseek.co.jp/vmware/vfd.html">VFD</a> is very useful since it allows you to create a virtual
+floppy drive that stores its data either in an image file.<p>
+
+For patching GRUB you will need a GNU/Linux or similar system, however
+if you don't need the eye candy on the splash screen, it should work
+with an unpatched GRUB as well.<p>
+
+Let's start with <a href="indexold.html">the 0.9 version</a> of the floppy, and copy the latest version of the tools mentioned above to it. Everything except Smart Boot Manager and GRUB2 is available in precompiled form (for gPXE look at <a href="http://rom-o-matic.net">Rom-o-matic</a>).<p>
+
+Download the sourcecode of Smart Boot Manager and the four patches from jhess in SourceForge's Patches forum and apply them. Also download apply my patch from the same location (numbered 5). For compilation on a Debian system you will need nasm and libucl-dev. When it is compiled, insert any scratch floppy (where there is nothing on it you still need) into the (virtual) floppy drive and run:<br>
+<tt>release/sbminst -l -f sbootmgr.lkr</tt><p>
+
+You can discard the installed SBM on the floppy, just use the generated <tt>sbootmgr.lkr</tt> file.<p>
+
+Download Grub2 1.96 and compile it (<tt>./configure && make && make install</tt>, you know the drill. Note that make install will only install the helper binaries, not the boot loader). Then run:<br>
+<tt>grub-mkimage -p /boot/grub2 -o core.img biosdisk fat</tt></p>
+Now just copy all the files in </tt>$PREFIX/lib/grub/i386-pc</tt> and <tt>core.img</tt> to /boot/grub2 on the floppy and add an entry to GRUB for loading GRUB2.<p>
+
+That's it for this version of the all in one boot floppy!
+
+<h2>Contact me</h2>
+Send Feedback to <a href="mailto:schierlm@gmx.de">schierlm@gmx.de</a>.
+<hr>
+<center><font size=-1>Michael Schierl, Ignaz-Baldauf-Str. 5, D-86551
+Aichach, Germany</font></center>
+</body>
+</html>

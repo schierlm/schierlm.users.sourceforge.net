@@ -1,0 +1,1732 @@
+Script started on Tue 18 Sep 2007 09:23:22 PM CEST   
+root@grml /build # cd test
+root@grml /build/test # ls -la
+total 8
+drwxr-xr-x 2 root root 4096 2007-09-18 21:22 ./
+drwxr-xr-x 9 root root 4096 2007-09-18 21:23 ../
+root@grml /build/test # wget 'http://git.etherboot.org/?p=gpxe.git;a=snapshot'
+--21:30:13--  http://git.etherboot.org/?p=gpxe.git;a=snapshot
+           => `index.html?p=gpxe.git;a=snapshot'
+Resolving git.etherboot.org... 140.211.167.171
+Connecting to git.etherboot.org|140.211.167.171|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+
+    [<=>                                  ] 0             --.--K/s                 [ <=>                                 ] 4,118        877.29B/s                 [  <=>                                ] 11,378         2.20K/s                 [   <=>                               ] 12,830         1.27K/s                 [    <=>                              ] 21,542         2.09K/s                 [     <=>                             ] 27,350         1.79K/s                 [      <=>                            ] 43,322         2.80K/s                 [       <=>                           ] 49,130         2.41K/s                 [        <=>                          ] 86,882         4.15K/s                 [         <=>                         ] 92,690         3.59K/s                 [          <=>                        ] 114,470        4.38K/s                 [           <=>                       ] 118,826        3.83K/s                 [            <=>                      ] 172,550        5.42K/s                 [             <=>                     ] 179,810        4.90K/s                 [              <=>                    ] 204,494        5.52K/s                 [               <=>                   ] 217,562        5.84K/s                 [                <=>                  ] 229,178        6.90K/s                 [                 <=>                 ] 245,150        7.20K/s                 [                  <=>                ] 258,218        7.36K/s                 [                   <=>               ] 275,642        7.75K/s                 [                    <=>              ] 281,450        7.36K/s                 [                     <=>             ] 295,970        7.63K/s                 [                      <=>            ] 316,298        7.14K/s                 [                       <=>           ] 325,010        7.23K/s                 [                        <=>          ] 351,146        7.34K/s                 [                         <=>         ] 359,858        7.47K/s                 [                          <=>        ] 388,898        6.79K/s                 [                           <=>       ] 397,610        7.04K/s                 [                            <=>      ] 419,390        8.08K/s                 [                             <=>     ] 435,362        8.44K/s                 [                              <=>    ] 442,622        7.19K/s                 [                               <=>   ] 460,046        7.27K/s                 [                                <=>  ] 471,662        7.30K/s                 [                                 <=> ] 486,182        7.11K/s                 [                                  <=>] 500,702        7.10K/s                 [                                 <=> ] 515,222        7.40K/s                 [                                <=>  ] 526,838        8.43K/s                 [                               <=>   ] 541,358        8.31K/s                 [                              <=>    ] 557,330        8.76K/s                 [                             <=>     ] 571,850       10.81K/s                 [                            <=>      ] 580,562        8.40K/s                 [                           <=>       ] 587,822        8.36K/s                 [                          <=>        ] 629,930        8.47K/s                 [                         <=>         ] 637,190        6.88K/s                 [                        <=>          ] 669,134        7.34K/s                 [                       <=>           ] 677,846        7.31K/s                 [                      <=>            ] 698,174        7.22K/s                 [                     <=>             ] 708,338        6.95K/s                 [                    <=>              ] 727,214        7.07K/s                 [                   <=>               ] 738,830        5.87K/s                 [                  <=>                ] 753,350        7.07K/s                 [                 <=>                 ] 759,158        5.60K/s                 [                <=>                  ] 786,746        5.82K/s                 [               <=>                   ] 817,238        8.37K/s                 [              <=>                    ] 828,854        6.41K/s                 [             <=>                     ] 849,182        7.82K/s                 [            <=>                      ] 859,346        6.11K/s                 [           <=>                       ] 875,318        6.49K/s                 [          <=>                        ] 886,934        7.73K/s                 [         <=>                         ] 898,550        6.32K/s                 [        <=>                          ] 918,878        7.77K/s                 [       <=>                           ] 929,042        6.07K/s                 [      <=>                            ] 950,822        7.34K/s                 [     <=>                             ] 959,534        6.38K/s                 [    <=>                              ] 976,958        7.99K/s                 [   <=>                               ] 988,574        6.57K/s                 [  <=>                                ] 1,005,998      6.86K/s                 [ <=>                                 ] 1,017,614      5.53K/s                 [<=>                                  ] 1,032,134      5.86K/s                 [ <=>                                 ] 1,046,654      6.81K/s                 [  <=>                                ] 1,064,078      6.74K/s                 [   <=>                               ] 1,077,146      8.02K/s                 [    <=>                              ] 1,087,310      6.73K/s                 [     <=>                             ] 1,100,378      6.85K/s                 [      <=>                            ] 1,114,898      7.02K/s                 [       <=>                           ] 1,129,418      8.44K/s                 [        <=>                          ] 1,141,034      6.95K/s                 [         <=>                         ] 1,157,006      7.16K/s                 [          <=>                        ] 1,170,074      8.76K/s                 [           <=>                       ] 1,186,046      8.59K/s                 [            <=>                      ] 1,200,566     10.61K/s                 [             <=>                     ] 1,209,278      9.85K/s                 [              <=>                    ] 1,217,990      7.85K/s                 [               <=>                   ] 1,254,290      9.95K/s                 [                <=>                  ] 1,263,002      8.17K/s                 [                 <=>                 ] 1,281,878      8.47K/s                 [                  <=>                ] 1,296,398      8.51K/s                 [                   <=>               ] 1,309,466      8.56K/s                 [                    <=>              ] 1,322,534     10.42K/s                 [                     <=>             ] 1,337,054     10.09K/s                 [                      <=>            ] 1,342,862      7.80K/s                 [                       <=>           ] 1,371,902     10.26K/s                 [                        <=>          ] 1,389,326     10.40K/s                 [                         <=>         ] 1,406,750     10.76K/s                 [                          <=>        ] 1,418,366     10.74K/s                 [                           <=>       ] 1,426,976     10.63K/s
+
+21:30:58 (7.54 KB/s) - `index.html?p=gpxe.git;a=snapshot' saved [1426976]
+
+root@grml /build/test # mv index.html\?p=gpxe.git\;a=snapshot gpxe.tar.gz
+root@grml /build/test # tar xfvz gpxe.tar.gz
+gpxe.git/
+gpxe.git/COPYING
+gpxe.git/Copyrights
+gpxe.git/INSTALL
+gpxe.git/LOG
+gpxe.git/RELNOTES
+gpxe.git/VERSION
+gpxe.git/contrib/
+gpxe.git/contrib/3c90xutil/
+gpxe.git/contrib/3c90xutil/Makefile
+gpxe.git/contrib/3c90xutil/README
+gpxe.git/contrib/3c90xutil/bromutil.c
+gpxe.git/contrib/3c90xutil/cromutil.c
+gpxe.git/contrib/3c90xutil/romutil.txt
+gpxe.git/contrib/Diskless-From-NT/
+gpxe.git/contrib/Diskless-From-NT/Config.txt
+gpxe.git/contrib/Diskless-From-NT/Diskless-From-NT.txt
+gpxe.git/contrib/Diskless-From-NT/furtmayr.html
+gpxe.git/contrib/auto-default/
+gpxe.git/contrib/auto-default/mail
+gpxe.git/contrib/auto-default/main.c.patch
+gpxe.git/contrib/award_plugin_roms/
+gpxe.git/contrib/award_plugin_roms/README
+gpxe.git/contrib/award_plugin_roms/award_plugin_roms.pl
+gpxe.git/contrib/baremetal/
+gpxe.git/contrib/baremetal/Makefile
+gpxe.git/contrib/baremetal/main.c
+gpxe.git/contrib/baremetal/marini.txt
+gpxe.git/contrib/baremetal/misc.c
+gpxe.git/contrib/baremetal/startmpcc.S
+gpxe.git/contrib/bin2intelhex/
+gpxe.git/contrib/bin2intelhex/Makefile
+gpxe.git/contrib/bin2intelhex/bin2intelhex.c
+gpxe.git/contrib/bin2intelhex/bin2intelhex.c.simple
+gpxe.git/contrib/bochs/
+gpxe.git/contrib/bochs/.gitignore
+gpxe.git/contrib/bochs/Makefile
+gpxe.git/contrib/bochs/README
+gpxe.git/contrib/bochs/README.qemu
+gpxe.git/contrib/bochs/README.windows-ris
+gpxe.git/contrib/bochs/bochsrc.txt
+gpxe.git/contrib/bochs/qemu-patch
+gpxe.git/contrib/bochs/serial-console
+gpxe.git/contrib/bochs/serial-console.1
+gpxe.git/contrib/bochs/tunctl.c
+gpxe.git/contrib/bootptodhcp/
+gpxe.git/contrib/bootptodhcp/bootptodhcp.pl
+gpxe.git/contrib/compressor/
+gpxe.git/contrib/compressor/COPYING
+gpxe.git/contrib/compressor/algorithm.doc
+gpxe.git/contrib/compressor/loader.h
+gpxe.git/contrib/compressor/lzhuf.c
+gpxe.git/contrib/dhcpdconfeg/
+gpxe.git/contrib/dhcpdconfeg/dhcpd.conf
+gpxe.git/contrib/dhcpdconfeg/vendorclassid.txt
+gpxe.git/contrib/dhcpid/
+gpxe.git/contrib/dhcpid/dhcpid.txt
+gpxe.git/contrib/eepro100notes/
+gpxe.git/contrib/eepro100notes/flash-1.txt
+gpxe.git/contrib/eepro100notes/flash-2.txt
+gpxe.git/contrib/eepro100notes/flash-3.txt
+gpxe.git/contrib/flashimg/
+gpxe.git/contrib/flashimg/Makefile
+gpxe.git/contrib/flashimg/flashimg.asm
+gpxe.git/contrib/flashimg/flashimg.img
+gpxe.git/contrib/hdload/
+gpxe.git/contrib/hdload/Makefile
+gpxe.git/contrib/hdload/hdload.S
+gpxe.git/contrib/hdload/petr.msg
+gpxe.git/contrib/initrd/
+gpxe.git/contrib/initrd/ChangeLog
+gpxe.git/contrib/initrd/Makefile
+gpxe.git/contrib/initrd/Manifest
+gpxe.git/contrib/initrd/README
+gpxe.git/contrib/initrd/dhcpd.conf.etherboot.include
+gpxe.git/contrib/initrd/include-modules
+gpxe.git/contrib/initrd/linux-wlan.cfg
+gpxe.git/contrib/initrd/linuxrc
+gpxe.git/contrib/initrd/mkinitrd-net
+gpxe.git/contrib/initrd/mkinitrd-net.spec
+gpxe.git/contrib/initrd/mknbi-set
+gpxe.git/contrib/initrd/mknbi-set.conf
+gpxe.git/contrib/initrd/script.c.patch
+gpxe.git/contrib/initrd/udhcpc-post
+gpxe.git/contrib/linux-2.0-transname.lsm
+gpxe.git/contrib/linux-3c503-patch/
+gpxe.git/contrib/linux-3c503-patch/3c503.patch
+gpxe.git/contrib/linux-3c503-patch/README
+gpxe.git/contrib/mini-slamd/
+gpxe.git/contrib/mini-slamd/COPYING
+gpxe.git/contrib/mini-slamd/Makefile
+gpxe.git/contrib/mini-slamd/mini-slamd.c
+gpxe.git/contrib/mkQNXnbi/
+gpxe.git/contrib/mkQNXnbi/Makefile
+gpxe.git/contrib/mkQNXnbi/README
+gpxe.git/contrib/mkQNXnbi/examples/
+gpxe.git/contrib/mkQNXnbi/examples/bootptab
+gpxe.git/contrib/mkQNXnbi/examples/ws.etherboot
+gpxe.git/contrib/mkQNXnbi/examples/ws.etherboot.on-the-fly
+gpxe.git/contrib/mkQNXnbi/mkQNXnbi.c
+gpxe.git/contrib/mkffwnb/
+gpxe.git/contrib/mkffwnb/2.0.10/
+gpxe.git/contrib/mkffwnb/2.0.10/linuxrc
+gpxe.git/contrib/mkffwnb/Extendinitrd.pm
+gpxe.git/contrib/mkffwnb/README
+gpxe.git/contrib/mkffwnb/mkffwnb.pl
+gpxe.git/contrib/mklrpnb/
+gpxe.git/contrib/mklrpnb/README.txt
+gpxe.git/contrib/mklrpnb/extractdach.pl
+gpxe.git/contrib/mklrpnb/mklrpnb
+gpxe.git/contrib/mntnbi/
+gpxe.git/contrib/mntnbi/mntnbi.pl
+gpxe.git/contrib/nfs-swap/
+gpxe.git/contrib/nfs-swap/README
+gpxe.git/contrib/p910nd-0.8/
+gpxe.git/contrib/p910nd-0.8/Makefile
+gpxe.git/contrib/p910nd-0.8/banner.pl
+gpxe.git/contrib/p910nd-0.8/client.pl
+gpxe.git/contrib/p910nd-0.8/p910nd.8
+gpxe.git/contrib/p910nd-0.8/p910nd.c
+gpxe.git/contrib/p910nd-0.8/p910nd.sh
+gpxe.git/contrib/ppmtoansi/
+gpxe.git/contrib/ppmtoansi/Makefile
+gpxe.git/contrib/ppmtoansi/demo/
+gpxe.git/contrib/ppmtoansi/demo/dos.ansi
+gpxe.git/contrib/ppmtoansi/demo/dos.ppm
+gpxe.git/contrib/ppmtoansi/demo/dos.xpm
+gpxe.git/contrib/ppmtoansi/demo/etherboot.ansi
+gpxe.git/contrib/ppmtoansi/demo/etherboot.ppm
+gpxe.git/contrib/ppmtoansi/demo/etherboot.xpm
+gpxe.git/contrib/ppmtoansi/demo/flash.ansi
+gpxe.git/contrib/ppmtoansi/demo/flash.ppm
+gpxe.git/contrib/ppmtoansi/demo/flash.xpm
+gpxe.git/contrib/ppmtoansi/demo/floppy.ansi
+gpxe.git/contrib/ppmtoansi/demo/floppy.ppm
+gpxe.git/contrib/ppmtoansi/demo/floppy.xpm
+gpxe.git/contrib/ppmtoansi/demo/hd.ansi
+gpxe.git/contrib/ppmtoansi/demo/hd.ppm
+gpxe.git/contrib/ppmtoansi/demo/hd.xpm
+gpxe.git/contrib/ppmtoansi/demo/ibmmap.ppm
+gpxe.git/contrib/ppmtoansi/demo/ibmmap.xpm
+gpxe.git/contrib/ppmtoansi/demo/linux-logo.ansi
+gpxe.git/contrib/ppmtoansi/demo/linux-logo.ppm
+gpxe.git/contrib/ppmtoansi/demo/linux-logo.xpm
+gpxe.git/contrib/ppmtoansi/demo/make-ansi.sh
+gpxe.git/contrib/ppmtoansi/demo/text.ansi
+gpxe.git/contrib/ppmtoansi/demo/text.ppm
+gpxe.git/contrib/ppmtoansi/demo/text.xpm
+gpxe.git/contrib/ppmtoansi/demo/x.ansi
+gpxe.git/contrib/ppmtoansi/demo/x.ppm
+gpxe.git/contrib/ppmtoansi/demo/x.xpm
+gpxe.git/contrib/ppmtoansi/ppmtoansi.c
+gpxe.git/contrib/ppmtoansi/ppmtoansi.man
+gpxe.git/contrib/rom-scan/
+gpxe.git/contrib/rom-scan/Makefile
+gpxe.git/contrib/rom-scan/rom-scan.c
+gpxe.git/contrib/romid/
+gpxe.git/contrib/romid/pktdrv.bat
+gpxe.git/contrib/romid/readme
+gpxe.git/contrib/romid/romid.c
+gpxe.git/contrib/romid/setenvs.c
+gpxe.git/contrib/smc9462tx-flash/
+gpxe.git/contrib/smc9462tx-flash/Makefile
+gpxe.git/contrib/smc9462tx-flash/README
+gpxe.git/contrib/smc9462tx-flash/dp83820_write.c
+gpxe.git/contrib/smc9462tx-flash/dp83820flash.c
+gpxe.git/contrib/t2hproxy/
+gpxe.git/contrib/t2hproxy/README
+gpxe.git/contrib/t2hproxy/T2hproxy.java
+gpxe.git/contrib/t2hproxy/build.xml
+gpxe.git/contrib/t2hproxy/runT2proxy.sh
+gpxe.git/contrib/t2hproxy/t2hproxy.pl
+gpxe.git/contrib/t2hproxy/t2hproxy.xinetd
+gpxe.git/contrib/tftp/
+gpxe.git/contrib/tftp/Makefile
+gpxe.git/contrib/tftp/README
+gpxe.git/contrib/tftp/arpa/
+gpxe.git/contrib/tftp/arpa/tftp.h
+gpxe.git/contrib/tftp/main.c
+gpxe.git/contrib/tftp/tftp.1
+gpxe.git/contrib/tftp/tftp.c
+gpxe.git/contrib/tftp/tftpd.8
+gpxe.git/contrib/tftp/tftpd.c
+gpxe.git/contrib/tftp/tftpsubs.c
+gpxe.git/contrib/tomsrtbt/
+gpxe.git/contrib/tomsrtbt/tomsrtbt-net.txt
+gpxe.git/contrib/wakeonlan/
+gpxe.git/contrib/wakeonlan/Makefile
+gpxe.git/contrib/wakeonlan/README
+gpxe.git/contrib/wakeonlan/maclist.txt
+gpxe.git/contrib/wakeonlan/mp-form.pl
+gpxe.git/contrib/wakeonlan/mp-form.txt
+gpxe.git/contrib/wakeonlan/mp-form1.pl
+gpxe.git/contrib/wakeonlan/readme.txt
+gpxe.git/contrib/wakeonlan/wake.pl
+gpxe.git/contrib/wakeonlan/wakeserver.patch
+gpxe.git/contrib/wakeonlan/wakeup.pl
+gpxe.git/contrib/wakeonlan/wakeup.txt
+gpxe.git/contrib/wakeonlan/wol.c
+gpxe.git/src/
+gpxe.git/src/.gitignore
+gpxe.git/src/Config
+gpxe.git/src/Makefile
+gpxe.git/src/Makefile.housekeeping
+gpxe.git/src/README.cvs
+gpxe.git/src/README.pixify
+gpxe.git/src/arch/
+gpxe.git/src/arch/i386/
+gpxe.git/src/arch/i386/Config
+gpxe.git/src/arch/i386/Makefile
+gpxe.git/src/arch/i386/README.i386
+gpxe.git/src/arch/i386/core/
+gpxe.git/src/arch/i386/core/aout_loader.c
+gpxe.git/src/arch/i386/core/basemem_packet.c
+gpxe.git/src/arch/i386/core/cpu.c
+gpxe.git/src/arch/i386/core/etherboot.prefix.lds
+gpxe.git/src/arch/i386/core/freebsd_loader.c
+gpxe.git/src/arch/i386/core/gdbsym.c
+gpxe.git/src/arch/i386/core/i386_string.c
+gpxe.git/src/arch/i386/core/i386_timer.c
+gpxe.git/src/arch/i386/core/nulltrap.c
+gpxe.git/src/arch/i386/core/pcibios.c
+gpxe.git/src/arch/i386/core/pcidirect.c
+gpxe.git/src/arch/i386/core/pic8259.c
+gpxe.git/src/arch/i386/core/prefixudata.lds
+gpxe.git/src/arch/i386/core/prefixzdata.lds
+gpxe.git/src/arch/i386/core/realmode.c
+gpxe.git/src/arch/i386/core/relocate.c
+gpxe.git/src/arch/i386/core/setjmp.S
+gpxe.git/src/arch/i386/core/stack.S
+gpxe.git/src/arch/i386/core/stack16.S
+gpxe.git/src/arch/i386/core/start16.lds
+gpxe.git/src/arch/i386/core/start16z.lds
+gpxe.git/src/arch/i386/core/start32.S
+gpxe.git/src/arch/i386/core/umalloc.c
+gpxe.git/src/arch/i386/core/video_subr.c
+gpxe.git/src/arch/i386/core/virtaddr.S
+gpxe.git/src/arch/i386/core/wince_loader.c
+gpxe.git/src/arch/i386/drivers/
+gpxe.git/src/arch/i386/drivers/net/
+gpxe.git/src/arch/i386/drivers/net/undi.c
+gpxe.git/src/arch/i386/drivers/net/undiisr.S
+gpxe.git/src/arch/i386/drivers/net/undiload.c
+gpxe.git/src/arch/i386/drivers/net/undinet.c
+gpxe.git/src/arch/i386/drivers/net/undionly.c
+gpxe.git/src/arch/i386/drivers/net/undipreload.c
+gpxe.git/src/arch/i386/drivers/net/undirom.c
+gpxe.git/src/arch/i386/firmware/
+gpxe.git/src/arch/i386/firmware/pcbios/
+gpxe.git/src/arch/i386/firmware/pcbios/basemem.c
+gpxe.git/src/arch/i386/firmware/pcbios/bios.c
+gpxe.git/src/arch/i386/firmware/pcbios/bios_console.c
+gpxe.git/src/arch/i386/firmware/pcbios/e820mangler.S
+gpxe.git/src/arch/i386/firmware/pcbios/gateA20.c
+gpxe.git/src/arch/i386/firmware/pcbios/hidemem.c
+gpxe.git/src/arch/i386/firmware/pcbios/memmap.c
+gpxe.git/src/arch/i386/firmware/pcbios/pnpbios.c
+gpxe.git/src/arch/i386/firmware/pcbios/smbios.c
+gpxe.git/src/arch/i386/image/
+gpxe.git/src/arch/i386/image/bootsector.c
+gpxe.git/src/arch/i386/image/bzimage.c
+gpxe.git/src/arch/i386/image/eltorito.c
+gpxe.git/src/arch/i386/image/multiboot.c
+gpxe.git/src/arch/i386/image/nbi.c
+gpxe.git/src/arch/i386/image/pxe_image.c
+gpxe.git/src/arch/i386/include/
+gpxe.git/src/arch/i386/include/basemem.h
+gpxe.git/src/arch/i386/include/basemem_packet.h
+gpxe.git/src/arch/i386/include/bios.h
+gpxe.git/src/arch/i386/include/bios_disks.h
+gpxe.git/src/arch/i386/include/biosint.h
+gpxe.git/src/arch/i386/include/bits/
+gpxe.git/src/arch/i386/include/bits/byteswap.h
+gpxe.git/src/arch/i386/include/bits/cpu.h
+gpxe.git/src/arch/i386/include/bits/elf.h
+gpxe.git/src/arch/i386/include/bits/elf_x.h
+gpxe.git/src/arch/i386/include/bits/eltorito.h
+gpxe.git/src/arch/i386/include/bits/endian.h
+gpxe.git/src/arch/i386/include/bits/errfile.h
+gpxe.git/src/arch/i386/include/bits/stdint.h
+gpxe.git/src/arch/i386/include/bits/string.h
+gpxe.git/src/arch/i386/include/bits/uaccess.h
+gpxe.git/src/arch/i386/include/bochs.h
+gpxe.git/src/arch/i386/include/bootsector.h
+gpxe.git/src/arch/i386/include/bzimage.h
+gpxe.git/src/arch/i386/include/callbacks_arch.h
+gpxe.git/src/arch/i386/include/gateA20.h
+gpxe.git/src/arch/i386/include/int13.h
+gpxe.git/src/arch/i386/include/io.h
+gpxe.git/src/arch/i386/include/kir.h
+gpxe.git/src/arch/i386/include/latch.h
+gpxe.git/src/arch/i386/include/libkir.h
+gpxe.git/src/arch/i386/include/librm.h
+gpxe.git/src/arch/i386/include/limits.h
+gpxe.git/src/arch/i386/include/memsizes.h
+gpxe.git/src/arch/i386/include/multiboot.h
+gpxe.git/src/arch/i386/include/pci_io.h
+gpxe.git/src/arch/i386/include/pcibios.h
+gpxe.git/src/arch/i386/include/pcidirect.h
+gpxe.git/src/arch/i386/include/pic8259.h
+gpxe.git/src/arch/i386/include/pnpbios.h
+gpxe.git/src/arch/i386/include/pxe_addr.h
+gpxe.git/src/arch/i386/include/pxe_call.h
+gpxe.git/src/arch/i386/include/realmode.h
+gpxe.git/src/arch/i386/include/registers.h
+gpxe.git/src/arch/i386/include/setjmp.h
+gpxe.git/src/arch/i386/include/smbios.h
+gpxe.git/src/arch/i386/include/stdarg.h
+gpxe.git/src/arch/i386/include/undi.h
+gpxe.git/src/arch/i386/include/undiload.h
+gpxe.git/src/arch/i386/include/undinet.h
+gpxe.git/src/arch/i386/include/undipreload.h
+gpxe.git/src/arch/i386/include/undirom.h
+gpxe.git/src/arch/i386/include/vga.h
+gpxe.git/src/arch/i386/include/virtaddr.h
+gpxe.git/src/arch/i386/interface/
+gpxe.git/src/arch/i386/interface/pcbios/
+gpxe.git/src/arch/i386/interface/pcbios/biosint.c
+gpxe.git/src/arch/i386/interface/pcbios/int13.c
+gpxe.git/src/arch/i386/interface/pxe/
+gpxe.git/src/arch/i386/interface/pxe/pxe_call.c
+gpxe.git/src/arch/i386/interface/pxe/pxe_entry.S
+gpxe.git/src/arch/i386/kir-Makefile
+gpxe.git/src/arch/i386/prefix/
+gpxe.git/src/arch/i386/prefix/bImageprefix.S
+gpxe.git/src/arch/i386/prefix/boot1a.s
+gpxe.git/src/arch/i386/prefix/bootpart.S
+gpxe.git/src/arch/i386/prefix/comprefix.S
+gpxe.git/src/arch/i386/prefix/dskprefix.S
+gpxe.git/src/arch/i386/prefix/elf_dprefix.S
+gpxe.git/src/arch/i386/prefix/elfprefix.S
+gpxe.git/src/arch/i386/prefix/exeprefix.S
+gpxe.git/src/arch/i386/prefix/hdprefix.S
+gpxe.git/src/arch/i386/prefix/kpxeprefix.S
+gpxe.git/src/arch/i386/prefix/libprefix.S
+gpxe.git/src/arch/i386/prefix/lkrnprefix.S
+gpxe.git/src/arch/i386/prefix/lmelf_dprefix.S
+gpxe.git/src/arch/i386/prefix/lmelf_prefix.S
+gpxe.git/src/arch/i386/prefix/mbr.S
+gpxe.git/src/arch/i386/prefix/nbiprefix.S
+gpxe.git/src/arch/i386/prefix/nullprefix.S
+gpxe.git/src/arch/i386/prefix/pxeprefix.S
+gpxe.git/src/arch/i386/prefix/romprefix.S
+gpxe.git/src/arch/i386/prefix/unnrv2b.S
+gpxe.git/src/arch/i386/prefix/usbdisk.S
+gpxe.git/src/arch/i386/scripts/
+gpxe.git/src/arch/i386/scripts/i386-kir.lds
+gpxe.git/src/arch/i386/scripts/i386.lds
+gpxe.git/src/arch/i386/transitions/
+gpxe.git/src/arch/i386/transitions/libkir.S
+gpxe.git/src/arch/i386/transitions/libpm.S
+gpxe.git/src/arch/i386/transitions/librm.S
+gpxe.git/src/arch/i386/transitions/librm_mgmt.c
+gpxe.git/src/bin/
+gpxe.git/src/bin/.gitignore
+gpxe.git/src/config.h
+gpxe.git/src/config/
+gpxe.git/src/config/.gitignore
+gpxe.git/src/core/
+gpxe.git/src/core/abft.c
+gpxe.git/src/core/acpi.c
+gpxe.git/src/core/ansiesc.c
+gpxe.git/src/core/asprintf.c
+gpxe.git/src/core/basename.c
+gpxe.git/src/core/btext.c
+gpxe.git/src/core/config.c
+gpxe.git/src/core/console.c
+gpxe.git/src/core/cpio.c
+gpxe.git/src/core/cwuri.c
+gpxe.git/src/core/debug.c
+gpxe.git/src/core/device.c
+gpxe.git/src/core/downloader.c
+gpxe.git/src/core/errno.c
+gpxe.git/src/core/exec.c
+gpxe.git/src/core/filter.c
+gpxe.git/src/core/getkey.c
+gpxe.git/src/core/getopt.c
+gpxe.git/src/core/hw.c
+gpxe.git/src/core/i82365.c
+gpxe.git/src/core/ibft.c
+gpxe.git/src/core/image.c
+gpxe.git/src/core/init.c
+gpxe.git/src/core/interface.c
+gpxe.git/src/core/iobuf.c
+gpxe.git/src/core/job.c
+gpxe.git/src/core/linebuf.c
+gpxe.git/src/core/main.c
+gpxe.git/src/core/malloc.c
+gpxe.git/src/core/misc.c
+gpxe.git/src/core/monojob.c
+gpxe.git/src/core/nvo.c
+gpxe.git/src/core/open.c
+gpxe.git/src/core/pc_kbd.c
+gpxe.git/src/core/pcmcia.c
+gpxe.git/src/core/posix_io.c
+gpxe.git/src/core/process.c
+gpxe.git/src/core/proto_eth_slow.c
+gpxe.git/src/core/random.c
+gpxe.git/src/core/refcnt.c
+gpxe.git/src/core/resolv.c
+gpxe.git/src/core/serial.c
+gpxe.git/src/core/settings.c
+gpxe.git/src/core/string.c
+gpxe.git/src/core/stringextra.c
+gpxe.git/src/core/timer.c
+gpxe.git/src/core/uri.c
+gpxe.git/src/core/vsprintf.c
+gpxe.git/src/core/xfer.c
+gpxe.git/src/crypto/
+gpxe.git/src/crypto/asn1.c
+gpxe.git/src/crypto/axtls/
+gpxe.git/src/crypto/axtls/aes.c
+gpxe.git/src/crypto/axtls/axtls_asn1.c
+gpxe.git/src/crypto/axtls/bigint.c
+gpxe.git/src/crypto/axtls/bigint.h
+gpxe.git/src/crypto/axtls/bigint_impl.h
+gpxe.git/src/crypto/axtls/crypto.h
+gpxe.git/src/crypto/axtls/os_port.h
+gpxe.git/src/crypto/axtls/rsa.c
+gpxe.git/src/crypto/axtls/sha1.c
+gpxe.git/src/crypto/axtls_aes.c
+gpxe.git/src/crypto/axtls_sha1.c
+gpxe.git/src/crypto/chap.c
+gpxe.git/src/crypto/cipher.c
+gpxe.git/src/crypto/cryptoLayer.h
+gpxe.git/src/crypto/crypto_null.c
+gpxe.git/src/crypto/framework.c
+gpxe.git/src/crypto/hmac.c
+gpxe.git/src/crypto/matrixssl/
+gpxe.git/src/crypto/matrixssl/mpi.h
+gpxe.git/src/crypto/matrixssl/pscrypto.h
+gpxe.git/src/crypto/md5.c
+gpxe.git/src/crypto/ssl.c
+gpxe.git/src/crypto/ssl.h
+gpxe.git/src/crypto/ssl_constructs.h
+gpxe.git/src/doc/
+gpxe.git/src/doc/build_sys.dox
+gpxe.git/src/doc/pxe_extensions
+gpxe.git/src/doxygen.cfg
+gpxe.git/src/drivers/
+gpxe.git/src/drivers/bitbash/
+gpxe.git/src/drivers/bitbash/bitbash.c
+gpxe.git/src/drivers/bitbash/i2c_bit.c
+gpxe.git/src/drivers/bitbash/spi_bit.c
+gpxe.git/src/drivers/block/
+gpxe.git/src/drivers/block/ata.c
+gpxe.git/src/drivers/block/ramdisk.c
+gpxe.git/src/drivers/block/scsi.c
+gpxe.git/src/drivers/bus/
+gpxe.git/src/drivers/bus/eisa.c
+gpxe.git/src/drivers/bus/isa.c
+gpxe.git/src/drivers/bus/isa_ids.c
+gpxe.git/src/drivers/bus/isapnp.c
+gpxe.git/src/drivers/bus/mca.c
+gpxe.git/src/drivers/bus/pci.c
+gpxe.git/src/drivers/bus/pciextra.c
+gpxe.git/src/drivers/net/
+gpxe.git/src/drivers/net/3c509-eisa.c
+gpxe.git/src/drivers/net/3c509.c
+gpxe.git/src/drivers/net/3c509.h
+gpxe.git/src/drivers/net/3c515.c
+gpxe.git/src/drivers/net/3c515.txt
+gpxe.git/src/drivers/net/3c529.c
+gpxe.git/src/drivers/net/3c595.c
+gpxe.git/src/drivers/net/3c595.h
+gpxe.git/src/drivers/net/3c5x9.c
+gpxe.git/src/drivers/net/3c90x.c
+gpxe.git/src/drivers/net/3c90x.txt
+gpxe.git/src/drivers/net/amd8111e.c
+gpxe.git/src/drivers/net/amd8111e.h
+gpxe.git/src/drivers/net/bnx2.c
+gpxe.git/src/drivers/net/bnx2.h
+gpxe.git/src/drivers/net/bnx2_fw.h
+gpxe.git/src/drivers/net/cs89x0.c
+gpxe.git/src/drivers/net/cs89x0.h
+gpxe.git/src/drivers/net/cs89x0.txt
+gpxe.git/src/drivers/net/davicom.c
+gpxe.git/src/drivers/net/depca.c
+gpxe.git/src/drivers/net/dmfe.c
+gpxe.git/src/drivers/net/e1000.c
+gpxe.git/src/drivers/net/e1000_hw.h
+gpxe.git/src/drivers/net/eepro.c
+gpxe.git/src/drivers/net/eepro100.c
+gpxe.git/src/drivers/net/epic100.c
+gpxe.git/src/drivers/net/epic100.h
+gpxe.git/src/drivers/net/etherfabric.c
+gpxe.git/src/drivers/net/etherfabric.h
+gpxe.git/src/drivers/net/forcedeth.c
+gpxe.git/src/drivers/net/hfa384x.h
+gpxe.git/src/drivers/net/legacy.c
+gpxe.git/src/drivers/net/mlx_ipoib/
+gpxe.git/src/drivers/net/mlx_ipoib/MT23108_PRM.h
+gpxe.git/src/drivers/net/mlx_ipoib/MT23108_PRM_append.h
+gpxe.git/src/drivers/net/mlx_ipoib/MT25218_PRM.h
+gpxe.git/src/drivers/net/mlx_ipoib/bit_ops.h
+gpxe.git/src/drivers/net/mlx_ipoib/cmdif.h
+gpxe.git/src/drivers/net/mlx_ipoib/cmdif_comm.c
+gpxe.git/src/drivers/net/mlx_ipoib/cmdif_comm.h
+gpxe.git/src/drivers/net/mlx_ipoib/cmdif_mt23108.c
+gpxe.git/src/drivers/net/mlx_ipoib/cmdif_mt25218.c
+gpxe.git/src/drivers/net/mlx_ipoib/cmdif_priv.h
+gpxe.git/src/drivers/net/mlx_ipoib/doc/
+gpxe.git/src/drivers/net/mlx_ipoib/doc/README.boot_over_ib
+gpxe.git/src/drivers/net/mlx_ipoib/ib_driver.c
+gpxe.git/src/drivers/net/mlx_ipoib/ib_driver.h
+gpxe.git/src/drivers/net/mlx_ipoib/ib_mad.c
+gpxe.git/src/drivers/net/mlx_ipoib/ib_mad.h
+gpxe.git/src/drivers/net/mlx_ipoib/ib_mt23108.c
+gpxe.git/src/drivers/net/mlx_ipoib/ib_mt25218.c
+gpxe.git/src/drivers/net/mlx_ipoib/ipoib.c
+gpxe.git/src/drivers/net/mlx_ipoib/ipoib.h
+gpxe.git/src/drivers/net/mlx_ipoib/mad_attrib.h
+gpxe.git/src/drivers/net/mlx_ipoib/mt23108.c
+gpxe.git/src/drivers/net/mlx_ipoib/mt23108.h
+gpxe.git/src/drivers/net/mlx_ipoib/mt23108_imp.c
+gpxe.git/src/drivers/net/mlx_ipoib/mt25218.c
+gpxe.git/src/drivers/net/mlx_ipoib/mt25218.h
+gpxe.git/src/drivers/net/mlx_ipoib/mt25218_imp.c
+gpxe.git/src/drivers/net/mlx_ipoib/mt_version.c
+gpxe.git/src/drivers/net/mlx_ipoib/patches/
+gpxe.git/src/drivers/net/mlx_ipoib/patches/dhcpd.patch
+gpxe.git/src/drivers/net/mlx_ipoib/samples/
+gpxe.git/src/drivers/net/mlx_ipoib/samples/dhcpd.conf
+gpxe.git/src/drivers/net/mtd80x.c
+gpxe.git/src/drivers/net/natsemi.c
+gpxe.git/src/drivers/net/natsemi.h
+gpxe.git/src/drivers/net/ns83820.c
+gpxe.git/src/drivers/net/ns8390.c
+gpxe.git/src/drivers/net/ns8390.h
+gpxe.git/src/drivers/net/p80211hdr.h
+gpxe.git/src/drivers/net/pcnet32.c
+gpxe.git/src/drivers/net/pnic.c
+gpxe.git/src/drivers/net/pnic_api.h
+gpxe.git/src/drivers/net/prism2.c
+gpxe.git/src/drivers/net/prism2_pci.c
+gpxe.git/src/drivers/net/prism2_plx.c
+gpxe.git/src/drivers/net/r8169.c
+gpxe.git/src/drivers/net/rtl8139.c
+gpxe.git/src/drivers/net/sis900.c
+gpxe.git/src/drivers/net/sis900.h
+gpxe.git/src/drivers/net/smc9000.c
+gpxe.git/src/drivers/net/smc9000.h
+gpxe.git/src/drivers/net/sundance.c
+gpxe.git/src/drivers/net/tg3.c
+gpxe.git/src/drivers/net/tg3.h
+gpxe.git/src/drivers/net/tlan.c
+gpxe.git/src/drivers/net/tlan.h
+gpxe.git/src/drivers/net/tulip.c
+gpxe.git/src/drivers/net/tulip.txt
+gpxe.git/src/drivers/net/via-rhine.c
+gpxe.git/src/drivers/net/via-velocity.c
+gpxe.git/src/drivers/net/via-velocity.h
+gpxe.git/src/drivers/net/w89c840.c
+gpxe.git/src/drivers/net/wlan_compat.h
+gpxe.git/src/drivers/nvs/
+gpxe.git/src/drivers/nvs/nvs.c
+gpxe.git/src/drivers/nvs/spi.c
+gpxe.git/src/drivers/nvs/threewire.c
+gpxe.git/src/hci/
+gpxe.git/src/hci/commands/
+gpxe.git/src/hci/commands/autoboot_cmd.c
+gpxe.git/src/hci/commands/config_cmd.c
+gpxe.git/src/hci/commands/dhcp_cmd.c
+gpxe.git/src/hci/commands/ifmgmt_cmd.c
+gpxe.git/src/hci/commands/image_cmd.c
+gpxe.git/src/hci/commands/nvo_cmd.c
+gpxe.git/src/hci/commands/route_cmd.c
+gpxe.git/src/hci/editstring.c
+gpxe.git/src/hci/mucurses/
+gpxe.git/src/hci/mucurses/alert.c
+gpxe.git/src/hci/mucurses/ansi_screen.c
+gpxe.git/src/hci/mucurses/clear.c
+gpxe.git/src/hci/mucurses/colour.c
+gpxe.git/src/hci/mucurses/cursor.h
+gpxe.git/src/hci/mucurses/edging.c
+gpxe.git/src/hci/mucurses/kb.c
+gpxe.git/src/hci/mucurses/mucurses.c
+gpxe.git/src/hci/mucurses/mucurses.h
+gpxe.git/src/hci/mucurses/print.c
+gpxe.git/src/hci/mucurses/print_nadv.c
+gpxe.git/src/hci/mucurses/slk.c
+gpxe.git/src/hci/mucurses/widgets/
+gpxe.git/src/hci/mucurses/widgets/editbox.c
+gpxe.git/src/hci/mucurses/winattrs.c
+gpxe.git/src/hci/mucurses/windows.c
+gpxe.git/src/hci/mucurses/wininit.c
+gpxe.git/src/hci/readline.c
+gpxe.git/src/hci/shell.c
+gpxe.git/src/hci/shell_banner.c
+gpxe.git/src/hci/strerror.c
+gpxe.git/src/hci/tui/
+gpxe.git/src/hci/tui/settings_ui.c
+gpxe.git/src/image/
+gpxe.git/src/image/elf.c
+gpxe.git/src/image/initrd.c
+gpxe.git/src/image/script.c
+gpxe.git/src/image/segment.c
+gpxe.git/src/include/
+gpxe.git/src/include/.gitignore
+gpxe.git/src/include/alloca.h
+gpxe.git/src/include/assert.h
+gpxe.git/src/include/big_bswap.h
+gpxe.git/src/include/bootp.h
+gpxe.git/src/include/btext.h
+gpxe.git/src/include/byteswap.h
+gpxe.git/src/include/cmdline.h
+gpxe.git/src/include/cmdlinelib.h
+gpxe.git/src/include/cmdlist.h
+gpxe.git/src/include/coff.h
+gpxe.git/src/include/compiler.h
+gpxe.git/src/include/console.h
+gpxe.git/src/include/cpu.h
+gpxe.git/src/include/ctype.h
+gpxe.git/src/include/curses.h
+gpxe.git/src/include/debug.h
+gpxe.git/src/include/dhcp.h
+gpxe.git/src/include/elf.h
+gpxe.git/src/include/endian.h
+gpxe.git/src/include/errno.h
+gpxe.git/src/include/etherboot.h
+gpxe.git/src/include/fs.h
+gpxe.git/src/include/getopt.h
+gpxe.git/src/include/gpxe/
+gpxe.git/src/include/gpxe/abft.h
+gpxe.git/src/include/gpxe/acpi.h
+gpxe.git/src/include/gpxe/aes.h
+gpxe.git/src/include/gpxe/ansiesc.h
+gpxe.git/src/include/gpxe/aoe.h
+gpxe.git/src/include/gpxe/arp.h
+gpxe.git/src/include/gpxe/asn1.h
+gpxe.git/src/include/gpxe/async.h
+gpxe.git/src/include/gpxe/ata.h
+gpxe.git/src/include/gpxe/bitbash.h
+gpxe.git/src/include/gpxe/bitops.h
+gpxe.git/src/include/gpxe/blockdev.h
+gpxe.git/src/include/gpxe/chap.h
+gpxe.git/src/include/gpxe/command.h
+gpxe.git/src/include/gpxe/cpio.h
+gpxe.git/src/include/gpxe/crypto.h
+gpxe.git/src/include/gpxe/device.h
+gpxe.git/src/include/gpxe/dhcp.h
+gpxe.git/src/include/gpxe/dns.h
+gpxe.git/src/include/gpxe/downloader.h
+gpxe.git/src/include/gpxe/editbox.h
+gpxe.git/src/include/gpxe/editstring.h
+gpxe.git/src/include/gpxe/eisa.h
+gpxe.git/src/include/gpxe/elf.h
+gpxe.git/src/include/gpxe/errfile.h
+gpxe.git/src/include/gpxe/errortab.h
+gpxe.git/src/include/gpxe/ethernet.h
+gpxe.git/src/include/gpxe/features.h
+gpxe.git/src/include/gpxe/filter.h
+gpxe.git/src/include/gpxe/ftp.h
+gpxe.git/src/include/gpxe/hidemem.h
+gpxe.git/src/include/gpxe/hmac.h
+gpxe.git/src/include/gpxe/http.h
+gpxe.git/src/include/gpxe/i2c.h
+gpxe.git/src/include/gpxe/ibft.h
+gpxe.git/src/include/gpxe/icmp6.h
+gpxe.git/src/include/gpxe/if_arp.h
+gpxe.git/src/include/gpxe/if_ether.h
+gpxe.git/src/include/gpxe/image.h
+gpxe.git/src/include/gpxe/in.h
+gpxe.git/src/include/gpxe/init.h
+gpxe.git/src/include/gpxe/initrd.h
+gpxe.git/src/include/gpxe/interface.h
+gpxe.git/src/include/gpxe/iobuf.h
+gpxe.git/src/include/gpxe/ip.h
+gpxe.git/src/include/gpxe/ip6.h
+gpxe.git/src/include/gpxe/isa.h
+gpxe.git/src/include/gpxe/isa_ids.h
+gpxe.git/src/include/gpxe/isapnp.h
+gpxe.git/src/include/gpxe/iscsi.h
+gpxe.git/src/include/gpxe/job.h
+gpxe.git/src/include/gpxe/keys.h
+gpxe.git/src/include/gpxe/linebuf.h
+gpxe.git/src/include/gpxe/linux_compat.h
+gpxe.git/src/include/gpxe/list.h
+gpxe.git/src/include/gpxe/malloc.h
+gpxe.git/src/include/gpxe/mca.h
+gpxe.git/src/include/gpxe/md5.h
+gpxe.git/src/include/gpxe/memmap.h
+gpxe.git/src/include/gpxe/monojob.h
+gpxe.git/src/include/gpxe/ndp.h
+gpxe.git/src/include/gpxe/netdevice.h
+gpxe.git/src/include/gpxe/nvo.h
+gpxe.git/src/include/gpxe/nvs.h
+gpxe.git/src/include/gpxe/open.h
+gpxe.git/src/include/gpxe/pci.h
+gpxe.git/src/include/gpxe/pci_ids.h
+gpxe.git/src/include/gpxe/posix_io.h
+gpxe.git/src/include/gpxe/process.h
+gpxe.git/src/include/gpxe/profile.h
+gpxe.git/src/include/gpxe/ramdisk.h
+gpxe.git/src/include/gpxe/rarp.h
+gpxe.git/src/include/gpxe/refcnt.h
+gpxe.git/src/include/gpxe/resolv.h
+gpxe.git/src/include/gpxe/retry.h
+gpxe.git/src/include/gpxe/rsa.h
+gpxe.git/src/include/gpxe/scsi.h
+gpxe.git/src/include/gpxe/segment.h
+gpxe.git/src/include/gpxe/settings.h
+gpxe.git/src/include/gpxe/settings_ui.h
+gpxe.git/src/include/gpxe/sha1.h
+gpxe.git/src/include/gpxe/shell.h
+gpxe.git/src/include/gpxe/shell_banner.h
+gpxe.git/src/include/gpxe/socket.h
+gpxe.git/src/include/gpxe/spi.h
+gpxe.git/src/include/gpxe/spi_bit.h
+gpxe.git/src/include/gpxe/tables.h
+gpxe.git/src/include/gpxe/tcp.h
+gpxe.git/src/include/gpxe/tcpip.h
+gpxe.git/src/include/gpxe/tftp.h
+gpxe.git/src/include/gpxe/threewire.h
+gpxe.git/src/include/gpxe/tls.h
+gpxe.git/src/include/gpxe/uaccess.h
+gpxe.git/src/include/gpxe/udp.h
+gpxe.git/src/include/gpxe/umalloc.h
+gpxe.git/src/include/gpxe/uri.h
+gpxe.git/src/include/gpxe/vsprintf.h
+gpxe.git/src/include/gpxe/xfer.h
+gpxe.git/src/include/i82365.h
+gpxe.git/src/include/igmp.h
+gpxe.git/src/include/ip.h
+gpxe.git/src/include/lib.h
+gpxe.git/src/include/libgen.h
+gpxe.git/src/include/little_bswap.h
+gpxe.git/src/include/mii.h
+gpxe.git/src/include/nfs.h
+gpxe.git/src/include/nic.h
+gpxe.git/src/include/nmb.h
+gpxe.git/src/include/old_tcp.h
+gpxe.git/src/include/pc_kbd.h
+gpxe.git/src/include/pcmcia-opts.h
+gpxe.git/src/include/pcmcia.h
+gpxe.git/src/include/pxe.h
+gpxe.git/src/include/pxe_api.h
+gpxe.git/src/include/pxe_types.h
+gpxe.git/src/include/readline/
+gpxe.git/src/include/readline/readline.h
+gpxe.git/src/include/stddef.h
+gpxe.git/src/include/stdint.h
+gpxe.git/src/include/stdio.h
+gpxe.git/src/include/stdlib.h
+gpxe.git/src/include/string.h
+gpxe.git/src/include/strings.h
+gpxe.git/src/include/sys/
+gpxe.git/src/include/sys/time.h
+gpxe.git/src/include/sys_info.h
+gpxe.git/src/include/time.h
+gpxe.git/src/include/timer.h
+gpxe.git/src/include/udp.h
+gpxe.git/src/include/unistd.h
+gpxe.git/src/include/usr/
+gpxe.git/src/include/usr/aoeboot.h
+gpxe.git/src/include/usr/autoboot.h
+gpxe.git/src/include/usr/dhcpmgmt.h
+gpxe.git/src/include/usr/ifmgmt.h
+gpxe.git/src/include/usr/imgmgmt.h
+gpxe.git/src/include/usr/iscsiboot.h
+gpxe.git/src/include/usr/route.h
+gpxe.git/src/interface/
+gpxe.git/src/interface/pxe/
+gpxe.git/src/interface/pxe/pxe_errors.c
+gpxe.git/src/interface/pxe/pxe_file.c
+gpxe.git/src/interface/pxe/pxe_loader.c
+gpxe.git/src/interface/pxe/pxe_preboot.c
+gpxe.git/src/interface/pxe/pxe_tftp.c
+gpxe.git/src/interface/pxe/pxe_udp.c
+gpxe.git/src/interface/pxe/pxe_undi.c
+gpxe.git/src/libgcc/
+gpxe.git/src/libgcc/__divdi3.c
+gpxe.git/src/libgcc/__moddi3.c
+gpxe.git/src/libgcc/__udivdi3.c
+gpxe.git/src/libgcc/__udivmoddi4.c
+gpxe.git/src/libgcc/__umoddi3.c
+gpxe.git/src/libgcc/libgcc.h
+gpxe.git/src/libgcc/memcpy.c
+gpxe.git/src/net/
+gpxe.git/src/net/aoe.c
+gpxe.git/src/net/arp.c
+gpxe.git/src/net/dhcpopts.c
+gpxe.git/src/net/ethernet.c
+gpxe.git/src/net/icmpv6.c
+gpxe.git/src/net/iobpad.c
+gpxe.git/src/net/ipv4.c
+gpxe.git/src/net/ipv6.c
+gpxe.git/src/net/ndp.c
+gpxe.git/src/net/netdevice.c
+gpxe.git/src/net/nullnet.c
+gpxe.git/src/net/rarp.c
+gpxe.git/src/net/retry.c
+gpxe.git/src/net/tcp.c
+gpxe.git/src/net/tcp/
+gpxe.git/src/net/tcp/ftp.c
+gpxe.git/src/net/tcp/http.c
+gpxe.git/src/net/tcp/https.c
+gpxe.git/src/net/tcp/iscsi.c
+gpxe.git/src/net/tcpip.c
+gpxe.git/src/net/tls.c
+gpxe.git/src/net/udp.c
+gpxe.git/src/net/udp/
+gpxe.git/src/net/udp/dhcp.c
+gpxe.git/src/net/udp/dns.c
+gpxe.git/src/net/udp/tftp.c
+gpxe.git/src/proto/
+gpxe.git/src/proto/fsp.c
+gpxe.git/src/proto/igmp.c
+gpxe.git/src/proto/nfs.c
+gpxe.git/src/proto/nmb.c
+gpxe.git/src/proto/slam.c
+gpxe.git/src/tests/
+gpxe.git/src/tests/dhcptest.c
+gpxe.git/src/tests/linebuf_test.c
+gpxe.git/src/tests/memcpy_test.c
+gpxe.git/src/tests/umalloc_test.c
+gpxe.git/src/tests/uri_test.c
+gpxe.git/src/usr/
+gpxe.git/src/usr/aoeboot.c
+gpxe.git/src/usr/autoboot.c
+gpxe.git/src/usr/dhcpmgmt.c
+gpxe.git/src/usr/ifmgmt.c
+gpxe.git/src/usr/imgmgmt.c
+gpxe.git/src/usr/iscsiboot.c
+gpxe.git/src/usr/route.c
+gpxe.git/src/util/
+gpxe.git/src/util/.gitignore
+gpxe.git/src/util/Makefile
+gpxe.git/src/util/catrom.pl
+gpxe.git/src/util/disrom.pl
+gpxe.git/src/util/dskpad.pl
+gpxe.git/src/util/geniso
+gpxe.git/src/util/genliso
+gpxe.git/src/util/get-pci-ids
+gpxe.git/src/util/hijack.c
+gpxe.git/src/util/makerom.pl
+gpxe.git/src/util/mkconfig.pl
+gpxe.git/src/util/modrom.pl
+gpxe.git/src/util/mucurses_test.c
+gpxe.git/src/util/nrv2b.c
+gpxe.git/src/util/parserom.pl
+gpxe.git/src/util/sortobjdump.pl
+gpxe.git/src/util/swapdevids.pl
+gpxe.git/src/util/symcheck.pl
+gpxe.git/src/util/zbin.c
+#
+root@grml /build/test # cd gpxe.git
+#
+root@grml /build/test/gpxe.git # cd src
+#
+root@grml /build/test/gpxe.git/src # make
+Makefile.housekeeping:148: bin/deps/libgcc/__divdi3.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/libgcc/memcpy.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/libgcc/__moddi3.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/libgcc/__udivdi3.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/libgcc/__udivmoddi4.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/libgcc/__umoddi3.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/abft.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/acpi.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/ansiesc.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/asprintf.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/basename.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/btext.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/config.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/console.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/cpio.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/cwuri.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/debug.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/device.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/downloader.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/errno.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/exec.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/filter.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/getkey.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/getopt.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/hw.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/i82365.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/ibft.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/image.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/init.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/interface.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/iobuf.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/job.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/linebuf.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/main.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/malloc.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/misc.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/monojob.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/nvo.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/open.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/pc_kbd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/pcmcia.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/posix_io.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/process.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/proto_eth_slow.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/random.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/refcnt.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/resolv.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/serial.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/settings.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/string.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/stringextra.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/timer.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/uri.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/vsprintf.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/core/xfer.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/proto/fsp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/proto/igmp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/proto/nfs.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/proto/nmb.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/proto/slam.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/aoe.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/arp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/dhcpopts.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/ethernet.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/icmpv6.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/iobpad.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/ipv4.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/ipv6.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/ndp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/netdevice.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/nullnet.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/rarp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/retry.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/tcp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/tcpip.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/tls.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/udp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/tcp/ftp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/tcp/http.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/tcp/https.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/tcp/iscsi.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/udp/dhcp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/udp/dns.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/net/udp/tftp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/image/elf.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/image/initrd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/image/script.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/image/segment.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bus/eisa.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bus/isa.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bus/isa_ids.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bus/isapnp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bus/mca.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bus/pci.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bus/pciextra.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/3c509.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/3c509-eisa.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/3c515.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/3c529.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/3c595.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/3c5x9.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/3c90x.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/amd8111e.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/bnx2.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/cs89x0.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/davicom.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/depca.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/dmfe.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/e1000.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/eepro100.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/eepro.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/epic100.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/etherfabric.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/forcedeth.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/legacy.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/mtd80x.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/natsemi.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/ns83820.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/ns8390.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/pcnet32.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/pnic.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/prism2_pci.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/prism2_plx.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/r8169.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/rtl8139.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/sis900.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/smc9000.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/sundance.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/tg3.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/tlan.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/tulip.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/via-rhine.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/via-velocity.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/net/w89c840.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/block/ata.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/block/ramdisk.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/block/scsi.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/nvs/nvs.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/nvs/spi.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/nvs/threewire.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bitbash/bitbash.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bitbash/i2c_bit.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/drivers/bitbash/spi_bit.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/interface/pxe/pxe_errors.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/interface/pxe/pxe_file.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/interface/pxe/pxe_loader.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/interface/pxe/pxe_preboot.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/interface/pxe/pxe_tftp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/interface/pxe/pxe_udp.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/interface/pxe/pxe_undi.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/tests/dhcptest.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/tests/linebuf_test.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/tests/memcpy_test.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/tests/umalloc_test.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/tests/uri_test.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/asn1.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/axtls_aes.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/axtls_sha1.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/chap.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/cipher.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/crypto_null.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/framework.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/hmac.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/md5.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/ssl.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/axtls/aes.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/axtls/axtls_asn1.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/axtls/bigint.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/axtls/rsa.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/crypto/axtls/sha1.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/editstring.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/readline.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/shell_banner.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/shell.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/strerror.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/commands/autoboot_cmd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/commands/config_cmd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/commands/dhcp_cmd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/commands/ifmgmt_cmd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/commands/image_cmd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/commands/nvo_cmd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/commands/route_cmd.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/tui/settings_ui.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/alert.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/ansi_screen.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/clear.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/colour.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/edging.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/kb.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/mucurses.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/print.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/print_nadv.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/slk.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/winattrs.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/windows.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/wininit.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/hci/mucurses/widgets/editbox.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/usr/aoeboot.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/usr/autoboot.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/usr/dhcpmgmt.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/usr/ifmgmt.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/usr/imgmgmt.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/usr/iscsiboot.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/usr/route.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/basemem_packet.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/cpu.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/gdbsym.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/i386_string.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/i386_timer.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/nulltrap.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/pcibios.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/pcidirect.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/pic8259.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/realmode.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/relocate.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/umalloc.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/video_subr.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/transitions/librm_mgmt.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/basemem.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/bios.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/bios_console.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/gateA20.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/hidemem.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/memmap.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/pnpbios.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/smbios.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/image/bootsector.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/image/bzimage.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/image/eltorito.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/image/multiboot.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/image/nbi.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/image/pxe_image.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/drivers/net/undi.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/drivers/net/undiload.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/drivers/net/undinet.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/drivers/net/undionly.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/drivers/net/undipreload.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/drivers/net/undirom.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/interface/pcbios/biosint.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/interface/pcbios/int13.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/interface/pxe/pxe_call.c.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/setjmp.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/stack16.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/stack.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/start32.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/core/virtaddr.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/transitions/libkir.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/transitions/libpm.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/transitions/librm.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/bImageprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/bootpart.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/comprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/dskprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/elf_dprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/elfprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/exeprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/hdprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/kpxeprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/libprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/lkrnprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/lmelf_dprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/lmelf_prefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/mbr.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/nbiprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/nullprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/pxeprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/romprefix.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/unnrv2b.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/prefix/usbdisk.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/firmware/pcbios/e820mangler.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/drivers/net/undiisr.S.d: No such file or directory
+Makefile.housekeeping:148: bin/deps/arch/i386/interface/pxe/pxe_entry.S.d: No such file or directory
+cat: bin/.blib.list: No such file or directory
+Makefile.housekeeping:391: bin/deps/rom.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/pxe.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/kpxe.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/elf.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/elfd.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/lmelf.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/lmelfd.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/lkrn.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/bImage.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/dsk.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/nbi.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/hd.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/raw.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/com.media.d: No such file or directory
+Makefile.housekeeping:391: bin/deps/exe.media.d: No such file or directory
+Generating Makefile rules for exe media
+Generating Makefile rules for com media
+Generating Makefile rules for raw media
+Generating Makefile rules for hd media
+Generating Makefile rules for nbi media
+Generating Makefile rules for dsk media
+Generating Makefile rules for bImage media
+Generating Makefile rules for lkrn media
+Generating Makefile rules for lmelfd media
+Generating Makefile rules for lmelf media
+Generating Makefile rules for elfd media
+Generating Makefile rules for elf media
+Generating Makefile rules for kpxe media
+Generating Makefile rules for pxe media
+Generating Makefile rules for rom media
+Generating Makefile rules for arch/i386/interface/pxe/pxe_entry.S
+Generating Makefile rules for arch/i386/drivers/net/undiisr.S
+Generating Makefile rules for arch/i386/firmware/pcbios/e820mangler.S
+Generating Makefile rules for arch/i386/prefix/usbdisk.S
+Generating Makefile rules for arch/i386/prefix/unnrv2b.S
+Generating Makefile rules for arch/i386/prefix/romprefix.S
+Generating Makefile rules for arch/i386/prefix/pxeprefix.S
+Generating Makefile rules for arch/i386/prefix/nullprefix.S
+Generating Makefile rules for arch/i386/prefix/nbiprefix.S
+Generating Makefile rules for arch/i386/prefix/mbr.S
+Generating Makefile rules for arch/i386/prefix/lmelf_prefix.S
+Generating Makefile rules for arch/i386/prefix/lmelf_dprefix.S
+Generating Makefile rules for arch/i386/prefix/lkrnprefix.S
+Generating Makefile rules for arch/i386/prefix/libprefix.S
+Generating Makefile rules for arch/i386/prefix/kpxeprefix.S
+Generating Makefile rules for arch/i386/prefix/hdprefix.S
+Generating Makefile rules for arch/i386/prefix/exeprefix.S
+Generating Makefile rules for arch/i386/prefix/elfprefix.S
+Generating Makefile rules for arch/i386/prefix/elf_dprefix.S
+Generating Makefile rules for arch/i386/prefix/dskprefix.S
+Generating Makefile rules for arch/i386/prefix/comprefix.S
+Generating Makefile rules for arch/i386/prefix/bootpart.S
+Generating Makefile rules for arch/i386/prefix/bImageprefix.S
+Generating Makefile rules for arch/i386/transitions/librm.S
+Generating Makefile rules for arch/i386/transitions/libpm.S
+Generating Makefile rules for arch/i386/transitions/libkir.S
+Generating Makefile rules for arch/i386/core/virtaddr.S
+Generating Makefile rules for arch/i386/core/start32.S
+Generating Makefile rules for arch/i386/core/stack.S
+Generating Makefile rules for arch/i386/core/stack16.S
+Generating Makefile rules for arch/i386/core/setjmp.S
+Generating Makefile rules for arch/i386/interface/pxe/pxe_call.c
+Generating Makefile rules for arch/i386/interface/pcbios/int13.c
+Generating Makefile rules for arch/i386/interface/pcbios/biosint.c
+Generating Makefile rules for arch/i386/drivers/net/undirom.c
+Generating Makefile rules for arch/i386/drivers/net/undipreload.c
+Generating Makefile rules for arch/i386/drivers/net/undionly.c
+Generating Makefile rules for arch/i386/drivers/net/undinet.c
+Generating Makefile rules for arch/i386/drivers/net/undiload.c
+Generating Makefile rules for arch/i386/drivers/net/undi.c
+Generating Makefile rules for arch/i386/image/pxe_image.c
+Generating Makefile rules for arch/i386/image/nbi.c
+Generating Makefile rules for arch/i386/image/multiboot.c
+Generating Makefile rules for arch/i386/image/eltorito.c
+Generating Makefile rules for arch/i386/image/bzimage.c
+Generating Makefile rules for arch/i386/image/bootsector.c
+Generating Makefile rules for arch/i386/firmware/pcbios/smbios.c
+Generating Makefile rules for arch/i386/firmware/pcbios/pnpbios.c
+Generating Makefile rules for arch/i386/firmware/pcbios/memmap.c
+Generating Makefile rules for arch/i386/firmware/pcbios/hidemem.c
+Generating Makefile rules for arch/i386/firmware/pcbios/gateA20.c
+Generating Makefile rules for arch/i386/firmware/pcbios/bios_console.c
+Generating Makefile rules for arch/i386/firmware/pcbios/bios.c
+Generating Makefile rules for arch/i386/firmware/pcbios/basemem.c
+Generating Makefile rules for arch/i386/transitions/librm_mgmt.c
+Generating Makefile rules for arch/i386/core/video_subr.c
+Generating Makefile rules for arch/i386/core/umalloc.c
+Generating Makefile rules for arch/i386/core/relocate.c
+Generating Makefile rules for arch/i386/core/realmode.c
+Generating Makefile rules for arch/i386/core/pic8259.c
+Generating Makefile rules for arch/i386/core/pcidirect.c
+Generating Makefile rules for arch/i386/core/pcibios.c
+Generating Makefile rules for arch/i386/core/nulltrap.c
+Generating Makefile rules for arch/i386/core/i386_timer.c
+Generating Makefile rules for arch/i386/core/i386_string.c
+Generating Makefile rules for arch/i386/core/gdbsym.c
+Generating Makefile rules for arch/i386/core/cpu.c
+Generating Makefile rules for arch/i386/core/basemem_packet.c
+Generating Makefile rules for usr/route.c
+Generating Makefile rules for usr/iscsiboot.c
+Generating Makefile rules for usr/imgmgmt.c
+Generating Makefile rules for usr/ifmgmt.c
+Generating Makefile rules for usr/dhcpmgmt.c
+Generating Makefile rules for usr/autoboot.c
+Generating Makefile rules for usr/aoeboot.c
+Generating Makefile rules for hci/mucurses/widgets/editbox.c
+Generating Makefile rules for hci/mucurses/wininit.c
+Generating Makefile rules for hci/mucurses/windows.c
+Generating Makefile rules for hci/mucurses/winattrs.c
+Generating Makefile rules for hci/mucurses/slk.c
+Generating Makefile rules for hci/mucurses/print_nadv.c
+Generating Makefile rules for hci/mucurses/print.c
+Generating Makefile rules for hci/mucurses/mucurses.c
+Generating Makefile rules for hci/mucurses/kb.c
+Generating Makefile rules for hci/mucurses/edging.c
+Generating Makefile rules for hci/mucurses/colour.c
+Generating Makefile rules for hci/mucurses/clear.c
+Generating Makefile rules for hci/mucurses/ansi_screen.c
+Generating Makefile rules for hci/mucurses/alert.c
+Generating Makefile rules for hci/tui/settings_ui.c
+Generating Makefile rules for hci/commands/route_cmd.c
+Generating Makefile rules for hci/commands/nvo_cmd.c
+Generating Makefile rules for hci/commands/image_cmd.c
+Generating Makefile rules for hci/commands/ifmgmt_cmd.c
+Generating Makefile rules for hci/commands/dhcp_cmd.c
+Generating Makefile rules for hci/commands/config_cmd.c
+Generating Makefile rules for hci/commands/autoboot_cmd.c
+Generating Makefile rules for hci/strerror.c
+Generating Makefile rules for hci/shell.c
+Generating Makefile rules for hci/shell_banner.c
+Generating Makefile rules for hci/readline.c
+Generating Makefile rules for hci/editstring.c
+Generating Makefile rules for crypto/axtls/sha1.c
+Generating Makefile rules for crypto/axtls/rsa.c
+Generating Makefile rules for crypto/axtls/bigint.c
+Generating Makefile rules for crypto/axtls/axtls_asn1.c
+Generating Makefile rules for crypto/axtls/aes.c
+Generating Makefile rules for crypto/ssl.c
+Generating Makefile rules for crypto/md5.c
+Generating Makefile rules for crypto/hmac.c
+Generating Makefile rules for crypto/framework.c
+Generating Makefile rules for crypto/crypto_null.c
+Generating Makefile rules for crypto/cipher.c
+Generating Makefile rules for crypto/chap.c
+Generating Makefile rules for crypto/axtls_sha1.c
+Generating Makefile rules for crypto/axtls_aes.c
+Generating Makefile rules for crypto/asn1.c
+Generating Makefile rules for tests/uri_test.c
+Generating Makefile rules for tests/umalloc_test.c
+Generating Makefile rules for tests/memcpy_test.c
+Generating Makefile rules for tests/linebuf_test.c
+Generating Makefile rules for tests/dhcptest.c
+Generating Makefile rules for interface/pxe/pxe_undi.c
+Generating Makefile rules for interface/pxe/pxe_udp.c
+Generating Makefile rules for interface/pxe/pxe_tftp.c
+Generating Makefile rules for interface/pxe/pxe_preboot.c
+Generating Makefile rules for interface/pxe/pxe_loader.c
+Generating Makefile rules for interface/pxe/pxe_file.c
+Generating Makefile rules for interface/pxe/pxe_errors.c
+Generating Makefile rules for drivers/bitbash/spi_bit.c
+Generating Makefile rules for drivers/bitbash/i2c_bit.c
+Generating Makefile rules for drivers/bitbash/bitbash.c
+Generating Makefile rules for drivers/nvs/threewire.c
+Generating Makefile rules for drivers/nvs/spi.c
+Generating Makefile rules for drivers/nvs/nvs.c
+Generating Makefile rules for drivers/block/scsi.c
+Generating Makefile rules for drivers/block/ramdisk.c
+Generating Makefile rules for drivers/block/ata.c
+Generating Makefile rules for drivers/net/w89c840.c
+Generating Makefile rules for drivers/net/via-velocity.c
+Generating Makefile rules for drivers/net/via-rhine.c
+Generating Makefile rules for drivers/net/tulip.c
+Generating Makefile rules for drivers/net/tlan.c
+Generating Makefile rules for drivers/net/tg3.c
+Generating Makefile rules for drivers/net/sundance.c
+Generating Makefile rules for drivers/net/smc9000.c
+Generating Makefile rules for drivers/net/sis900.c
+Generating Makefile rules for drivers/net/rtl8139.c
+Generating Makefile rules for drivers/net/r8169.c
+Generating Makefile rules for drivers/net/prism2_plx.c
+Generating Makefile rules for drivers/net/prism2_pci.c
+Generating Makefile rules for drivers/net/pnic.c
+Generating Makefile rules for drivers/net/pcnet32.c
+Generating Makefile rules for drivers/net/ns8390.c
+Generating Makefile rules for drivers/net/ns83820.c
+Generating Makefile rules for drivers/net/natsemi.c
+Generating Makefile rules for drivers/net/mtd80x.c
+Generating Makefile rules for drivers/net/legacy.c
+Generating Makefile rules for drivers/net/forcedeth.c
+Generating Makefile rules for drivers/net/etherfabric.c
+Generating Makefile rules for drivers/net/epic100.c
+Generating Makefile rules for drivers/net/eepro.c
+Generating Makefile rules for drivers/net/eepro100.c
+Generating Makefile rules for drivers/net/e1000.c
+Generating Makefile rules for drivers/net/dmfe.c
+Generating Makefile rules for drivers/net/depca.c
+Generating Makefile rules for drivers/net/davicom.c
+Generating Makefile rules for drivers/net/cs89x0.c
+Generating Makefile rules for drivers/net/bnx2.c
+Generating Makefile rules for drivers/net/amd8111e.c
+Generating Makefile rules for drivers/net/3c90x.c
+Generating Makefile rules for drivers/net/3c5x9.c
+Generating Makefile rules for drivers/net/3c595.c
+Generating Makefile rules for drivers/net/3c529.c
+Generating Makefile rules for drivers/net/3c515.c
+Generating Makefile rules for drivers/net/3c509-eisa.c
+Generating Makefile rules for drivers/net/3c509.c
+Generating Makefile rules for drivers/bus/pciextra.c
+Generating Makefile rules for drivers/bus/pci.c
+Generating Makefile rules for drivers/bus/mca.c
+Generating Makefile rules for drivers/bus/isapnp.c
+Generating Makefile rules for drivers/bus/isa_ids.c
+Generating Makefile rules for drivers/bus/isa.c
+Generating Makefile rules for drivers/bus/eisa.c
+Generating Makefile rules for image/segment.c
+Generating Makefile rules for image/script.c
+Generating Makefile rules for image/initrd.c
+Generating Makefile rules for image/elf.c
+Generating Makefile rules for net/udp/tftp.c
+Generating Makefile rules for net/udp/dns.c
+Generating Makefile rules for net/udp/dhcp.c
+Generating Makefile rules for net/tcp/iscsi.c
+Generating Makefile rules for net/tcp/https.c
+Generating Makefile rules for net/tcp/http.c
+Generating Makefile rules for net/tcp/ftp.c
+Generating Makefile rules for net/udp.c
+Generating Makefile rules for net/tls.c
+Generating Makefile rules for net/tcpip.c
+Generating Makefile rules for net/tcp.c
+Generating Makefile rules for net/retry.c
+Generating Makefile rules for net/rarp.c
+Generating Makefile rules for net/nullnet.c
+Generating Makefile rules for net/netdevice.c
+Generating Makefile rules for net/ndp.c
+Generating Makefile rules for net/ipv6.c
+Generating Makefile rules for net/ipv4.c
+Generating Makefile rules for net/iobpad.c
+Generating Makefile rules for net/icmpv6.c
+Generating Makefile rules for net/ethernet.c
+Generating Makefile rules for net/dhcpopts.c
+Generating Makefile rules for net/arp.c
+Generating Makefile rules for net/aoe.c
+Generating Makefile rules for proto/slam.c
+Generating Makefile rules for proto/nmb.c
+Generating Makefile rules for proto/nfs.c
+Generating Makefile rules for proto/igmp.c
+Generating Makefile rules for proto/fsp.c
+Generating Makefile rules for core/xfer.c
+Generating Makefile rules for core/vsprintf.c
+Generating Makefile rules for core/uri.c
+Generating Makefile rules for core/timer.c
+Generating Makefile rules for core/stringextra.c
+Generating Makefile rules for core/string.c
+Generating Makefile rules for core/settings.c
+Generating Makefile rules for core/serial.c
+Generating Makefile rules for core/resolv.c
+Generating Makefile rules for core/refcnt.c
+Generating Makefile rules for core/random.c
+Generating Makefile rules for core/proto_eth_slow.c
+Generating Makefile rules for core/process.c
+Generating Makefile rules for core/posix_io.c
+Generating Makefile rules for core/pcmcia.c
+Generating Makefile rules for core/pc_kbd.c
+Generating Makefile rules for core/open.c
+Generating Makefile rules for core/nvo.c
+Generating Makefile rules for core/monojob.c
+Generating Makefile rules for core/misc.c
+Generating Makefile rules for core/malloc.c
+Generating Makefile rules for core/main.c
+Generating Makefile rules for core/linebuf.c
+Generating Makefile rules for core/job.c
+Generating Makefile rules for core/iobuf.c
+Generating Makefile rules for core/interface.c
+Generating Makefile rules for core/init.c
+Generating Makefile rules for core/image.c
+Generating Makefile rules for core/ibft.c
+Generating Makefile rules for core/i82365.c
+Generating Makefile rules for core/hw.c
+Generating Makefile rules for core/getopt.c
+Generating Makefile rules for core/getkey.c
+Generating Makefile rules for core/filter.c
+Generating Makefile rules for core/exec.c
+Generating Makefile rules for core/errno.c
+Generating Makefile rules for core/downloader.c
+Generating Makefile rules for core/device.c
+Generating Makefile rules for core/debug.c
+Generating Makefile rules for core/cwuri.c
+Generating Makefile rules for core/cpio.c
+Generating Makefile rules for core/console.c
+Generating Makefile rules for core/config.c
+Generating Makefile rules for core/btext.c
+Generating Makefile rules for core/basename.c
+Generating Makefile rules for core/asprintf.c
+Generating Makefile rules for core/ansiesc.c
+Generating Makefile rules for core/acpi.c
+Generating Makefile rules for core/abft.c
+Generating Makefile rules for libgcc/__umoddi3.c
+Generating Makefile rules for libgcc/__udivmoddi4.c
+Generating Makefile rules for libgcc/__udivdi3.c
+Generating Makefile rules for libgcc/__moddi3.c
+Generating Makefile rules for libgcc/memcpy.c
+Generating Makefile rules for libgcc/__divdi3.c
+/usr/bin/perl ./util/mkconfig.pl config.h
+Generating Makefile rules for core/serial.c
+Generating Makefile rules for core/config.c
+  [BUILD] bin/__divdi3.o
+  [BUILD] bin/memcpy.o
+  [BUILD] bin/__moddi3.o
+  [BUILD] bin/__udivdi3.o
+  [BUILD] bin/__udivmoddi4.o
+  [BUILD] bin/__umoddi3.o
+  [BUILD] bin/abft.o
+  [BUILD] bin/acpi.o
+  [BUILD] bin/ansiesc.o
+  [BUILD] bin/asprintf.o
+  [BUILD] bin/basename.o
+  [BUILD] bin/btext.o
+  [BUILD] bin/config.o
+  [BUILD] bin/console.o
+  [BUILD] bin/cpio.o
+  [BUILD] bin/cwuri.o
+  [BUILD] bin/debug.o
+  [BUILD] bin/device.o
+  [BUILD] bin/downloader.o
+  [BUILD] bin/errno.o
+  [BUILD] bin/exec.o
+  [BUILD] bin/filter.o
+  [BUILD] bin/getkey.o
+  [BUILD] bin/getopt.o
+  [BUILD] bin/hw.o
+  [BUILD] bin/i82365.o
+  [BUILD] bin/ibft.o
+  [BUILD] bin/image.o
+  [BUILD] bin/init.o
+  [BUILD] bin/interface.o
+  [BUILD] bin/iobuf.o
+  [BUILD] bin/job.o
+  [BUILD] bin/linebuf.o
+  [BUILD] bin/main.o
+  [BUILD] bin/malloc.o
+  [BUILD] bin/misc.o
+  [BUILD] bin/monojob.o
+  [BUILD] bin/nvo.o
+  [BUILD] bin/open.o
+  [BUILD] bin/pc_kbd.o
+  [BUILD] bin/pcmcia.o
+  [BUILD] bin/posix_io.o
+  [BUILD] bin/process.o
+  [BUILD] bin/proto_eth_slow.o
+  [BUILD] bin/random.o
+  [BUILD] bin/refcnt.o
+  [BUILD] bin/resolv.o
+  [BUILD] bin/serial.o
+  [BUILD] bin/settings.o
+  [BUILD] bin/string.o
+  [BUILD] bin/stringextra.o
+  [BUILD] bin/timer.o
+  [BUILD] bin/uri.o
+  [BUILD] bin/vsprintf.o
+  [BUILD] bin/xfer.o
+  [BUILD] bin/fsp.o
+  [BUILD] bin/igmp.o
+  [BUILD] bin/nfs.o
+  [BUILD] bin/nmb.o
+  [BUILD] bin/slam.o
+  [BUILD] bin/aoe.o
+  [BUILD] bin/arp.o
+  [BUILD] bin/dhcpopts.o
+  [BUILD] bin/ethernet.o
+  [BUILD] bin/icmpv6.o
+  [BUILD] bin/iobpad.o
+  [BUILD] bin/ipv4.o
+  [BUILD] bin/ipv6.o
+  [BUILD] bin/ndp.o
+  [BUILD] bin/netdevice.o
+  [BUILD] bin/nullnet.o
+  [BUILD] bin/rarp.o
+  [BUILD] bin/retry.o
+  [BUILD] bin/tcp.o
+  [BUILD] bin/tcpip.o
+  [BUILD] bin/tls.o
+  [BUILD] bin/udp.o
+  [BUILD] bin/ftp.o
+  [BUILD] bin/http.o
+  [BUILD] bin/https.o
+  [BUILD] bin/iscsi.o
+  [BUILD] bin/dhcp.o
+  [BUILD] bin/dns.o
+  [BUILD] bin/tftp.o
+  [BUILD] bin/elf.o
+  [BUILD] bin/initrd.o
+  [BUILD] bin/script.o
+  [BUILD] bin/segment.o
+  [BUILD] bin/eisa.o
+  [BUILD] bin/isa.o
+  [BUILD] bin/isa_ids.o
+  [BUILD] bin/isapnp.o
+  [BUILD] bin/mca.o
+  [BUILD] bin/pci.o
+  [BUILD] bin/pciextra.o
+  [BUILD] bin/3c509.o
+  [BUILD] bin/3c509-eisa.o
+  [BUILD] bin/3c515.o
+  [BUILD] bin/3c529.o
+  [BUILD] bin/3c595.o
+  [BUILD] bin/3c5x9.o
+  [BUILD] bin/3c90x.o
+  [BUILD] bin/amd8111e.o
+  [BUILD] bin/bnx2.o
+  [BUILD] bin/cs89x0.o
+  [BUILD] bin/davicom.o
+  [BUILD] bin/depca.o
+  [BUILD] bin/dmfe.o
+  [BUILD] bin/e1000.o
+  [BUILD] bin/eepro100.o
+  [BUILD] bin/eepro.o
+  [BUILD] bin/epic100.o
+  [BUILD] bin/etherfabric.o
+  [BUILD] bin/forcedeth.o
+  [BUILD] bin/legacy.o
+  [BUILD] bin/mtd80x.o
+  [BUILD] bin/natsemi.o
+  [BUILD] bin/ns83820.o
+  [BUILD] bin/ns8390.o
+  [BUILD] bin/pcnet32.o
+  [BUILD] bin/pnic.o
+  [BUILD] bin/prism2_pci.o
+  [BUILD] bin/prism2_plx.o
+  [BUILD] bin/r8169.o
+  [BUILD] bin/rtl8139.o
+  [BUILD] bin/sis900.o
+  [BUILD] bin/smc9000.o
+  [BUILD] bin/sundance.o
+  [BUILD] bin/tg3.o
+  [BUILD] bin/tlan.o
+  [BUILD] bin/tulip.o
+  [BUILD] bin/via-rhine.o
+  [BUILD] bin/via-velocity.o
+  [BUILD] bin/w89c840.o
+  [BUILD] bin/ata.o
+  [BUILD] bin/ramdisk.o
+  [BUILD] bin/scsi.o
+  [BUILD] bin/nvs.o
+  [BUILD] bin/spi.o
+  [BUILD] bin/threewire.o
+  [BUILD] bin/bitbash.o
+  [BUILD] bin/i2c_bit.o
+  [BUILD] bin/spi_bit.o
+  [BUILD] bin/pxe_errors.o
+  [BUILD] bin/pxe_file.o
+  [BUILD] bin/pxe_loader.o
+  [BUILD] bin/pxe_preboot.o
+  [BUILD] bin/pxe_tftp.o
+  [BUILD] bin/pxe_udp.o
+  [BUILD] bin/pxe_undi.o
+  [BUILD] bin/dhcptest.o
+  [BUILD] bin/linebuf_test.o
+  [BUILD] bin/memcpy_test.o
+  [BUILD] bin/umalloc_test.o
+  [BUILD] bin/uri_test.o
+  [BUILD] bin/asn1.o
+  [BUILD] bin/axtls_aes.o
+  [BUILD] bin/axtls_sha1.o
+  [BUILD] bin/chap.o
+  [BUILD] bin/cipher.o
+  [BUILD] bin/crypto_null.o
+  [BUILD] bin/framework.o
+  [BUILD] bin/hmac.o
+  [BUILD] bin/md5.o
+  [BUILD] bin/ssl.o
+  [BUILD] bin/aes.o
+  [BUILD] bin/axtls_asn1.o
+  [BUILD] bin/bigint.o
+  [BUILD] bin/rsa.o
+  [BUILD] bin/sha1.o
+  [BUILD] bin/editstring.o
+  [BUILD] bin/readline.o
+  [BUILD] bin/shell_banner.o
+  [BUILD] bin/shell.o
+  [BUILD] bin/strerror.o
+  [BUILD] bin/autoboot_cmd.o
+  [BUILD] bin/config_cmd.o
+  [BUILD] bin/dhcp_cmd.o
+  [BUILD] bin/ifmgmt_cmd.o
+  [BUILD] bin/image_cmd.o
+  [BUILD] bin/nvo_cmd.o
+  [BUILD] bin/route_cmd.o
+  [BUILD] bin/settings_ui.o
+  [BUILD] bin/alert.o
+  [BUILD] bin/ansi_screen.o
+  [BUILD] bin/clear.o
+  [BUILD] bin/colour.o
+  [BUILD] bin/edging.o
+  [BUILD] bin/kb.o
+  [BUILD] bin/mucurses.o
+  [BUILD] bin/print.o
+  [BUILD] bin/print_nadv.o
+  [BUILD] bin/slk.o
+  [BUILD] bin/winattrs.o
+  [BUILD] bin/windows.o
+  [BUILD] bin/wininit.o
+  [BUILD] bin/editbox.o
+  [BUILD] bin/aoeboot.o
+  [BUILD] bin/autoboot.o
+  [BUILD] bin/dhcpmgmt.o
+  [BUILD] bin/ifmgmt.o
+  [BUILD] bin/imgmgmt.o
+  [BUILD] bin/iscsiboot.o
+  [BUILD] bin/route.o
+  [BUILD] bin/basemem_packet.o
+  [BUILD] bin/cpu.o
+  [BUILD] bin/gdbsym.o
+  [BUILD] bin/i386_string.o
+  [BUILD] bin/i386_timer.o
+  [BUILD] bin/nulltrap.o
+  [BUILD] bin/pcibios.o
+  [BUILD] bin/pcidirect.o
+  [BUILD] bin/pic8259.o
+  [BUILD] bin/realmode.o
+  [BUILD] bin/relocate.o
+  [BUILD] bin/umalloc.o
+  [BUILD] bin/video_subr.o
+  [BUILD] bin/librm_mgmt.o
+  [BUILD] bin/basemem.o
+  [BUILD] bin/bios.o
+  [BUILD] bin/bios_console.o
+  [BUILD] bin/gateA20.o
+  [BUILD] bin/hidemem.o
+  [BUILD] bin/memmap.o
+  [BUILD] bin/pnpbios.o
+  [BUILD] bin/smbios.o
+  [BUILD] bin/bootsector.o
+  [BUILD] bin/bzimage.o
+  [BUILD] bin/eltorito.o
+  [BUILD] bin/multiboot.o
+  [BUILD] bin/nbi.o
+  [BUILD] bin/pxe_image.o
+  [BUILD] bin/undi.o
+  [BUILD] bin/undiload.o
+  [BUILD] bin/undinet.o
+  [BUILD] bin/undionly.o
+  [BUILD] bin/undipreload.o
+  [BUILD] bin/undirom.o
+  [BUILD] bin/biosint.o
+  [BUILD] bin/int13.o
+  [BUILD] bin/pxe_call.o
+  [BUILD] bin/setjmp.o
+  [BUILD] bin/stack16.o
+  [BUILD] bin/stack.o
+  [BUILD] bin/start32.o
+  [BUILD] bin/virtaddr.o
+  [BUILD] bin/libkir.o
+  [BUILD] bin/libpm.o
+  [BUILD] bin/librm.o
+  [BUILD] bin/bImageprefix.o
+  [BUILD] bin/bootpart.o
+  [BUILD] bin/comprefix.o
+  [BUILD] bin/dskprefix.o
+  [BUILD] bin/elf_dprefix.o
+  [BUILD] bin/elfprefix.o
+  [BUILD] bin/exeprefix.o
+  [BUILD] bin/hdprefix.o
+  [BUILD] bin/kpxeprefix.o
+  [BUILD] bin/libprefix.o
+  [BUILD] bin/lkrnprefix.o
+  [BUILD] bin/lmelf_dprefix.o
+  [BUILD] bin/lmelf_prefix.o
+  [BUILD] bin/mbr.o
+  [BUILD] bin/nbiprefix.o
+  [BUILD] bin/nullprefix.o
+  [BUILD] bin/pxeprefix.o
+  [BUILD] bin/romprefix.o
+  [BUILD] bin/unnrv2b.o
+  [BUILD] bin/unnrv2b16.o
+  [BUILD] bin/usbdisk.o
+  [BUILD] bin/e820mangler.o
+  [BUILD] bin/undiisr.o
+  [BUILD] bin/pxe_entry.o
+  [AR] bin/blib.a
+ar: creating bin/blib.a
+  [HOSTCC] util/zbin
+  [LD] bin/gpxe.dsk.tmp
+make: *** [bin/gpxe.dsk.tmp] Segmentation fault
+make: *** Deleting file `bin/gpxe.dsk.tmp'
+make  70.16s user 121.40s system 55% cpu 5:44.91 total
+root@grml /build/test/gpxe.git/src #
+
+Script done on Tue 18 Sep 2007 09:37:48 PM CEST

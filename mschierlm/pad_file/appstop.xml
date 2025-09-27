@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to dissemminate information to anyone interested in their software products.  To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+		<MASTER_PAD_EDITOR>DeuPAD 2.0.0.45 (http://www.deupad.org)</MASTER_PAD_EDITOR>
+		<MASTER_PAD_VERSION>2.01</MASTER_PAD_VERSION>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>SMSoft</Company_Name>
+		<Address_1>Ignaz-Baldauf-Str. 5</Address_1>
+		<Address_2 />
+		<Zip_Postal_Code>86551</Zip_Postal_Code>
+		<City_Town>Aichach</City_Town>
+		<Country>Deutschland</Country>
+		<State_Province />
+		<Company_WebSite_URL>http://schierlm.users.sourceforge.net/mschierlm/sm-soft/</Company_WebSite_URL>
+		<ASP_Member />
+		<ASP_Member_Number />
+		<ESC_Member />
+		<Contact_Info>
+			<Author_First_Name>Michael</Author_First_Name>
+			<Author_Last_Name>Schierl</Author_Last_Name>
+			<Author_Email>sm-soft@gmx.de</Author_Email>
+			<Contact_First_Name>Michael</Contact_First_Name>
+			<Contact_Last_Name>Schierl</Contact_Last_Name>
+			<Contact_Email>sm-soft@gmx.de</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<General_Email>sm-soft@gmx.de</General_Email>
+			<Support_Email>sm-soft@gmx.de</Support_Email>
+			<Sales_Email>sm-soft@gmx.de</Sales_Email>
+			<General_Phone />
+			<Support_Phone />
+			<Sales_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>AppStop</Program_Name>
+		<Program_Version>0.50</Program_Version>
+		<Program_Release_Year>2001</Program_Release_Year>
+		<Program_Release_Month>10</Program_Release_Month>
+		<Program_Release_Day>05</Program_Release_Day>
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Cost_Other>0.00</Program_Cost_Other>
+		<Program_Cost_Dollars>0.00</Program_Cost_Dollars>
+		<Program_Categories>System Tools</Program_Categories>
+		<Program_Language>German</Program_Language>
+		<Program_OS_Support>Win95,Win98,WinME</Program_OS_Support>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_System_Requirements>Visual Basic 6 Runtime</Program_System_Requirements>
+		<Includes_VB_Runtime>N</Includes_VB_Runtime>
+		<Includes_JAVA_VM>N</Includes_JAVA_VM>
+		<Includes_DirectX>N</Includes_DirectX>
+		<File_Info>
+			<Filename_Long>appstop.zip</Filename_Long>
+			<Filename_Generic>appsto.zip</Filename_Generic>
+			<Filename_Versioned>appsto05.zip</Filename_Versioned>
+			<Filename_Previous>appsto05.zip</Filename_Previous>
+			<File_Size_Bytes>8576</File_Size_Bytes>
+			<File_Size_K>8</File_Size_K>
+			<File_Size_MB>0.01</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Based_On />
+			<Expire_Count>0</Expire_Count>
+			<Expire_Year />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Other_Info />
+		</Expire_Info>
+		<Program_Cost_Other_Code>EUR</Program_Cost_Other_Code>
+		<Program_Category_Class>System Utilities::Launchers &amp; Task Managers</Program_Category_Class>
+		<Program_Specific_Category />
+		<Program_Change_Info />
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords />
+			<Char_Desc_45 />
+			<Char_Desc_80 />
+			<Char_Desc_250 />
+			<Char_Desc_450 />
+			<Char_Desc_2000 />
+		</English>
+		<German>
+			<Keywords>AppStop, beenden, terminieren, Taskplaner, Scheduler</Keywords>
+			<Char_Desc_45>Programm, das andere Programme beendet.</Char_Desc_45>
+			<Char_Desc_80>Kommandozeilen-Programm, das andere Programme beendet.</Char_Desc_80>
+			<Char_Desc_250>Dieses Kommandozeilen-Programm kann verwendet werden, um andere Programme zu beenden. Dadurch ist es ideal dafür geeignet, wenn beim automatischen Start eines Programmes (z. B. über den Taskplaner) zuerst ein anderes Programm beendet werden soll.</Char_Desc_250>
+			<Char_Desc_450>Dieses Kommandozeilen-Programm kann verwendet werden, um andere Programme zu beenden (terminieren). Dadurch ist es ideal dafür geeignet, wenn beim automatischen Start eines Programmes (z. B. über den Windows-Taskplaner) zuerst ein anderes Programm beendet werden muss.
+
+Das Programm entstand während einer Diskussion in der Newsgroup de.comp.shareware (ab Message-ID &lt;9nv912$9lcg0$1@ID-16994.news.dfncis.de&gt;).</Char_Desc_450>
+			<Char_Desc_2000>Dieses Kommandozeilen-Programm kann verwendet werden, um andere Programme zu beenden (terminieren). Dadurch ist es ideal dafür geeignet, wenn beim automatischen Start eines Programmes (z. B. über den Windows-Taskplaner) zuerst ein anderes Programm beendet werden muss.
+
+Das Programm entstand während einer Diskussion in der Newsgroup de.comp.shareware (ab Message-ID &lt;9nv912$9lcg0$1@ID-16994.news.dfncis.de&gt;), in der es darum ging, Programme zeitgesteuert zu beenden.
+
+AppStop geht folgendermaßen vor:
+
+Zunächst wird überprüft, ob ein Programm mit dem übergebenen Programmnamen, der wahlweise einen kompletten Pfad enthalten darf oder gar keinen, gerade läuft. Ist dies nicht der Fall, erscheint für 5 Sekunden eine Meldung und das Programm beendet sich selbst (es könnte ja sein, dass der zu beendende Prozess bereits mit seinen Aufgaben fertig ist; in diesem Falle soll die automatische Ausführung ja nicht behindert werden). Sollten mehrere Instanzen dieses Programmes geladen sein, wird die &quot;neueste&quot; ausgewählt.
+
+Daraufhin wird an alle Fenster dieses Programmes eine Close-Nachricht  versandt, also eine Aufforderung, sich zu schließen. Für die Ausführung dieser Aufforderung bekommt das Programm 30 Sekunden Zeit. Ist das Programm bis dahin immer noch nicht beendet, wird es &quot;abgeschossen&quot;: der Prozess wird terminiert (ähnlich wie bei &quot;Task Beenden&quot; über den Taskmanager). Beendet sich das Programm vorher, wird AppStop auch beendet, ansonsten beendet sich AppStop nach Abschluss des &quot;Abschießens&quot;.</Char_Desc_2000>
+		</German>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://schierlm.users.sourceforge.net/mschierlm/sm-soft/</Application_Info_URL>
+			<Application_Order_URL>http://schierlm.users.sourceforge.net/mschierlm/sm-soft/</Application_Order_URL>
+			<Application_Screenshot_URL />
+			<Application_Icon_URL />
+			<Application_XML_File_URL>http://schierlm.users.sourceforge.net/mschierlm/pad_file/appstop.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://schierlm.users.sourceforge.net/mschierlm/smsoft/appstop.zip</Primary_Download_URL>
+			<Secondary_Download_URL />
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions />
+		<EULA />
+	</Permissions>
+	<DeuPAD>
+		<DeuPAD_Extension_Version>2.00</DeuPAD_Extension_Version>
+		<DeuPAD_Extension_Info>For information on the DeuPAD Extensions please go to http://www.deupad.org</DeuPAD_Extension_Info>
+		<SAVE_Member>Y</SAVE_Member>
+		<SAVE_Member_Number>SMF</SAVE_Member_Number>
+		<Company_Unique_ID>{8F23C14D-6188-4306-882B-6BE9AACB873B}</Company_Unique_ID>
+		<Save_Prog_Num>APS</Save_Prog_Num>
+		<Program_Cost_EUR>0.00</Program_Cost_EUR>
+		<Program_Cost_DEM>0,00</Program_Cost_DEM>
+		<Program_Unique_ID>{AC6CC60A-E488-4B2E-971B-3063EF408326}</Program_Unique_ID>
+		<Program_Categories_German>System-Tools</Program_Categories_German>
+		<Program_System_Requirements_German>Visual Basic 6 Runtime</Program_System_Requirements_German>
+		<Expire_Other_Info_German />
+		<EULA_German />
+		<Program_Change_Info_German />
+	</DeuPAD>
+	<MSN>
+		<MSN_FORM>Y</MSN_FORM>
+		<MSN_IS_32bit>Y</MSN_IS_32bit>
+	</MSN>
+	<ZDNET>
+		<ZDNET_FORM>Y</ZDNET_FORM>
+		<ZDNET_Product_ID_Code />
+	</ZDNET>
+	<ASP>
+		<ASP_FORM>Y</ASP_FORM>
+		<ASP_Member>N</ASP_Member>
+		<ASP_Member_Number />
+	</ASP>
+</XML_DIZ_INFO>

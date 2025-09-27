@@ -1,0 +1,1174 @@
+Visual Studio Menu.
+	File
+		New
+			New Project...
+			New Web Site...
+			New File...
+			Project From Existing Code...
+		Open
+			Open Project...
+			Open Web Site...
+			Open File...
+			Convert...
+		Add
+			New Project...
+			New Web Site...
+			Existing Project...
+			Existing Web Site...
+		Close
+		Close Project
+		Close Solution
+		Save Selected Items
+		Save Selected Items As...
+		Save Copy of Selected Item(s) As...
+		Advanced Save Options...
+		Save Selection
+		Save All
+		Export Template...
+		Source Control
+			Get Latest Version
+			Get Latest Solution Files
+			Get...
+			Check Out for Edit...
+			Check Out for Edit
+			Check In...
+			Check In
+			Undo Checkout...
+			View History
+			Exclude Selection from Source Control
+			Refresh Status
+			Share...
+			Compare...
+			Properties...
+			Add Solution to Source Control...
+			Add Selected Projects to Source Control...
+			Open from Source Control...
+			Add Project from Source Control...
+			Change Source Control...
+			Source Control Manager...
+		View in Browser
+		View in Browser
+		Browse With...
+		Browse With...
+		Page Setup...
+		Print Preview
+		Print...
+		Print Subtopics...
+		Recent Files
+			1 E:\Michael\html\playmusic\playmusic.js
+		Recent Projects
+			1 E:\Michael\programm\c++\openwith\openwith.sln
+		Move into Project
+			Move into Project List
+			Locations...
+		Exit
+	Edit
+		Undo
+		Redo
+		Undo Last Global Action
+		Redo Last Global Action
+		Cut
+		Copy
+		Copy Diagram to Clipboard
+		Copy SQL Script
+		Copy Image
+		Paste
+		Remove from Diagram
+		Cycle Clipboard Ring
+		Add Row
+		Remove Row
+		Paste Alternate
+		Delete
+		Delete from Database
+		Remove
+		Select All
+		Find and Replace
+			Quick Find
+			Quick Replace
+			Find in Files
+			Replace in Files
+			Find Symbol
+		Go To...
+		Menu
+			Insert New
+			Insert Separator
+			Edit Names
+			Edit IDs
+			View As Popup
+			Check Mnemonics
+			Add Event Handler...
+		Object
+			Object Verb List
+			Expand/Collapse Base Type List
+			Navigate To Lollipop
+		Hide Advanced Completion Members
+		Insert File As Text...
+		Advanced
+			Format Document
+			Format Selection
+			Tabify Selected Lines
+			Untabify Selected Lines
+			Make Uppercase
+			Make Lowercase
+			Validate Document
+			Delete Horizontal White Space
+			View White Space
+			Word Wrap
+			Incremental Search
+			Comment Selection
+			Uncomment Selection
+			Increase Line Indent
+			Decrease Line Indent
+			Select Tag
+			Select Tag Content
+			Add Tag Handler
+			Edit Tag Handler
+			Remove Tag Handler
+		Bookmarks
+			Toggle Bookmark
+			Enable All Bookmarks
+			Enable Bookmark
+			Previous Bookmark
+			Next Bookmark
+			Clear Bookmarks
+			Previous Bookmark In Folder
+			Next Bookmark In Folder
+			Previous Bookmark In Document
+			Next Bookmark In Document
+			Clear All Bookmarks In Document
+			Toggle Task List Shortcut
+		Outlining
+			Collapse Block <current block>
+			Collapse All in <current block>
+			Hide Selection
+			Toggle Outlining Expansion
+			Toggle All Outlining
+			Stop Outlining
+			Stop Hiding Current
+			Collapse to Definitions
+			Start Automatic Outlining
+			Collapse Tag
+			Stop Outlining Tag
+		IntelliSense
+			Generate Method Stub
+			Resolve
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+				Found a possible match
+			Implement Interface
+				Implicitly
+				Explicitly
+			Implement Abstract Class
+			Organize File
+				Simplify type names
+				Remove unused usings
+				Sort usings
+				Simplify, remove and sort
+			Resolve
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Add appropriate using statement
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+				Fully qualify name
+			List Members
+			Parameter Info
+			Quick Info
+			Complete Word
+			Override Members...
+			Insert Snippet...
+			Surround With...
+		Resource Includes...
+		Resource Symbols...
+		Add Resource...
+		New Accelerator
+		Next Key Typed
+		New String
+		New Version Info Block
+		Delete Version Info Block
+		Next Method
+		Previous Method
+	View
+		Editor
+			File System
+			Registry
+			File Types
+			User Interface
+			Custom Actions
+			Launch Conditions
+			Additional Editors
+		Find in Editor
+		Dependencies
+		Exclude Filter
+		Outputs
+		Data Grid
+		Code
+		Designer
+		Markup
+		Component Designer
+		Open
+		Designer
+		Open With...
+		View Code Gen File
+		Broken Links Report
+		Visible Borders
+		Details
+		XML Schema Overview
+		Non Visual Controls
+		Server Explorer
+		Solution Explorer
+		Bookmark Window
+		Class View
+		Code Definition Window
+		Object Browser
+		Tab Order
+		Autosize
+		Error List
+		Output
+		Properties Window
+		Task List
+		Toolbox
+		Find Results
+			Find Results 1
+			Find Results 2
+			Find Symbol Results
+		Other Windows
+			Call Browser
+			Command Window
+			Document Outline
+			Object Test Bench
+			Property Manager
+			Resource View
+			Macro Explorer
+			Start Page
+			Web Browser
+			Class Details
+		Toolbars
+			Build
+			Class Designer
+			Crystal Reports - Insert
+			Crystal Reports - Main
+			Data Design
+			Database Diagram
+			Debug
+			Debug Location
+			Device
+			Dialog Editor
+			Formatting
+			Help
+			HTML Source Editing
+			Image Editor
+			Layout
+			Query Designer
+			Report Borders
+			Report Formatting
+			Source Control
+			Standard
+			Style Sheet
+			Table Designer
+			Text Editor
+			View Designer
+			XML Data
+			XML Editor
+			XML Schema
+			Customize...
+		Full Screen
+		Pending Checkins
+		Navigate Backward
+		Navigate Forward
+		Next Task
+		Previous Task
+		Property Pages
+		Datasets
+		Zoom...
+		Stop
+		Refresh
+	Refactor
+		Rename...
+		Extract Method...
+		Encapsulate Field...
+		Extract Interface...
+		Promote Local Variable to Parameter
+		Remove Parameters...
+		Reorder Parameters...
+	Project
+		Add
+			Project Output...
+			File...
+			Merge Module...
+			Assembly...
+		Add Windows Form...
+		Add Web Form
+		Add Master Page
+		Add Content Page
+		Add User-Defined Function...
+		Add Stored Procedure...
+		Add Aggregate...
+		Add Trigger...
+		Add User-Defined Type...
+		Add User Control...
+		Add Web User Control
+		Add HTML Page
+		Add Style Sheet
+		Add Web Service
+		Add Component...
+		Add Module...
+		Add Class...
+		Add Nested Class...
+		Add Interface...
+		Implement Interface...
+		Add Method...
+		Add Function...
+		Add Property...
+		Add Variable...
+		Add Event...
+		Add Indexer...
+		Add Connection Point...
+		Override
+		Add Resource...
+		Add New Item...
+		Add Existing Item...
+		Add Project Outputs...
+		New Folder
+		Add New Solution Folder
+		Add ASP.NET Folder
+			Bin
+			App_Code
+			App_GlobalResources
+			App_LocalResources
+			App_WebReferences
+			App_Data
+			App_Browsers
+			Theme
+		Add ASP.NET Folder
+			Bin
+			App_Code
+			App_GlobalResources
+			App_LocalResources
+			App_WebReferences
+			App_Data
+			App_Browsers
+			Theme
+		Set DB Reference as Project Default
+		Add SQL Script...
+		Add Query...
+		Set Default Reference...
+		New Database Reference...
+		Run
+		Run On...
+		Cancel
+		Run Selection
+		Design
+		Design On...
+		Copy Project...
+		Copy Web Site...
+		Web Project
+			Synchronize Folder
+			Synchronize All Folders
+		Recalculate Links
+		Web Permissions...
+		Include In Project
+		Exclude From Project
+		Show All Files
+		Nest Related Files
+		Run Custom Tool
+		Reload Project
+		Unload Project
+		Hide Folder
+		Unhide Folders
+		Add Reference...
+		Add Web Reference...
+		Update Web Reference
+		Set as StartUp Project
+		Update Reference
+		Project Dependencies...
+		Project Build Order...
+		Update Managed Resources
+		Custom Build Rules...
+		Tool Build Order...
+		Change Target Platform...
+		Upgrade Project
+		Properties
+		Set As Start Page
+		Start Options...
+		ASP.NET Configuration
+		Code Analysis Configuration
+		Install
+		Uninstall
+	Build
+		Build Solution
+		Rebuild Solution
+		Deploy Solution
+		Clean Solution
+		Build
+			Build Project List
+			Projects...
+		Build Selection
+		Rebuild All
+			Rebuild All Project List
+			Projects...
+		Rebuild Selection
+		Deploy Selection
+		Clean Selection
+		Project Only
+			Build Only Project
+			Rebuild Only Project
+			Clean Only Project
+			Link
+			Run Code Analysis on Only Project
+		Publish Selection
+		Run Code Analysis on Selection
+		Build Page
+		Build Runtime Licenses
+		Profile Guided Optimization
+			Instrument
+			Update
+			Optimize
+			Run Instrumented/Optimized Application
+		Batch Build...
+		Configuration Manager...
+		Cancel
+		Refresh Dependencies
+		Deploy
+		Compile
+		Run Code Analysis on Web Site
+	Debug
+		Windows
+			Breakpoints
+			Output
+			Script Explorer
+			Watch
+				Watch
+				Watch 2
+				Watch 3
+				Watch 4
+			Autos
+			Locals
+			Immediate
+			Call Stack
+			Threads
+			Modules
+			Processes
+			Memory
+				Memory 1
+				Memory 2
+				Memory 3
+				Memory 4
+			Disassembly
+			Registers
+		Start
+		Start Without Debugging
+		Break All
+		Stop Debugging
+		Stop Evaluation
+		Detach All
+		Terminate All
+		Restart
+		Apply Code Changes
+		Stop Applying Code Changes
+		Attach to Process...
+		Exceptions...
+		Step Into Current Process
+		Step Over Current Process
+		Step Out Current Process
+		Step Into
+		Step Over
+		Step Out
+		QuickWatch...
+		Toggle Breakpoint
+		New Breakpoint
+			Break at Function...
+			New Data Breakpoint...
+		Delete All Breakpoints
+		Enable All Breakpoints
+		Disable All Breakpoints
+		Save Dump As...
+	Schema
+		Add
+			New element
+			New attribute
+			New complexType
+			New simpleType
+			New group
+			New attributeGroup
+			New any
+			New anyAttribute
+			New facet
+			New key...
+			New Relation...
+		Expand
+		Collapse
+		Edit key...
+		Delete key
+		Edit Relation...
+		Make Type Global
+		Show Default Tree
+		Layout
+			Top-Down Layout
+			Left-Right Layout
+	Class Diagram
+		New Member
+		Relink Shape with Code
+		Toggle Lollipop Expand/Collapse
+		Show Interface
+		Implement Interface Stubs Implicitly
+		Implement Interface Stubs Explicitly
+		Add
+			Method
+			Property
+			Field
+			Event
+			Parameter
+			Constructor
+			Destructor
+			Constant
+		Refactor
+			Encapsulate Field...
+			Extract Interface...
+			Rename...
+			Reorder Parameters...
+			Remove Parameters...
+		IntelliSense
+			Implement Abstract Class
+			Override Members...
+		Show Base Type
+		Show as Association
+		Show as Collection Association
+		Show Derived Types
+		Show as Field
+		Hide Inheritance Line
+		Collapse
+		Expand
+		Hide Compartment
+		Show All Members
+		Hide
+		Unhide
+		Reroute
+		Create Instance
+			<...>
+		Invoke Static Method
+			<...>
+			Inherited Methods
+				<...>
+		Add
+			Class
+			Enum
+			Interface
+			Abstract Class
+			Struct
+			Delegate
+			Module
+			Comment
+		Zoom
+			400%
+			300%
+			200%
+			150%
+			125%
+			100%
+			75%
+			66%
+			50%
+			33%
+			25%
+			10%
+			Fit
+		Group Members
+			Group by Kind
+			Group by Access
+			Sort Alphabetically
+		Change Members Format
+			Display Name
+			Display Name and Type
+			Display Full Signature
+		Layout Diagram
+		Adjust Shapes Width
+		Export Diagram as Image...
+	XML
+		Create Schema
+		Show XSLT Output
+		Debug XSLT
+		Cancel XSLT Output
+	Data
+		Add
+			TableAdapter...
+			Query...
+			DataTable
+			Column
+			Relation...
+			Key...
+		Configure...
+		Insert Column
+		Set Primary Key
+		Edit key...
+		Delete key
+		Edit Relation...
+		Show Relation Labels
+		Generate Dataset...
+		Show Data Sources
+		Preview Data...
+		Add New Data Source...
+		Configure Data Adapter...
+		View Dataset Schema...
+		Configure Master Details ...
+		Add Query...
+		Add New
+			Diagram
+			Table
+			Trigger
+			View
+			Stored Procedure
+			Inline Function
+			Table-valued Function
+			Scalar-valued Function
+		New Query
+		Detach Database
+		Close Connection
+		Modify Connection...
+		Design
+		Edit
+		Retrieve Data
+		Execute
+		Run Selection
+		Step Into
+		Generate Create Script to Project
+		Debug ...
+	Table Designer
+		Table View
+			Standard
+			Column Names
+			Keys
+			Name Only
+			Custom
+			Modify Custom ...
+		Set Primary Key
+		Insert Column
+		Delete Column
+		Relationships...
+		Indexes/Keys...
+		Fulltext Index...
+		XML Indexes...
+		Check Constraints...
+		Generate Change Script...
+	Database Diagram
+		New Table...
+		Add Table...
+		Add Related Tables
+		Delete from Database
+		Remove from Diagram
+		Autosize Selected Tables
+		Arrange Selection
+		Arrange Tables
+		Zoom
+			200%
+			150%
+			100%
+			75%
+			50%
+			25%
+			10%
+			To Fit
+		New Text Annotation
+		Set Text Annotation Font...
+		Show Relationship Labels
+		View Page Breaks
+		Recalculate Page Breaks
+		Copy Diagram to Clipboard
+	Query Designer
+		Execute SQL
+		Verify SQL Syntax
+		Add Group By
+		Change Type
+			Select
+			Insert Results...
+			Insert Values
+			Update
+			Delete
+			Make Table...
+		Select All Rows From <TableA>
+		Select All Rows From <TableB>
+		Table Display
+			Column Names
+			Name Only
+		Add Table...
+		Add New Derived Table
+		Add to Select
+		Remove Filter
+		Sort Ascending
+		Sort Descending
+		Pane
+			Diagram
+			Criteria
+			SQL
+			Results
+		Clear Results
+	Format
+		Style...
+		Foreground Color...
+		Background Color...
+		Font
+			Bold
+			Italic
+			Underline
+			Superscript
+			Subscript
+		Justify
+			Left
+			Center
+			Right
+			Justify
+		Convert to Hyperlink...
+		Insert Bookmark...
+		Align
+			Lefts
+			Centers
+			Rights
+			Tops
+			Middles
+			Bottoms
+			to Grid
+		Space Evenly
+			Across
+			Down
+		Make Same Size
+			Width
+			Height
+			Both
+			Size to Grid
+		Arrange Buttons
+			Right
+			Bottom
+		Center in Dialog
+			Vertical
+			Horizontal
+		Size to Content
+		Auto Size
+			Stretch
+			Fixed Width
+			Optimize
+		Flip
+		Tab Order
+		Horizontal Spacing
+			Make Equal
+			Increase
+			Decrease
+			Remove
+		Vertical Spacing
+			Make Equal
+			Increase
+			Decrease
+			Remove
+		Guide Settings...
+		Toggle Guides
+		Check Mnemonics
+		Test Dialog
+		Center in Form
+			Horizontally
+			Vertically
+		Order
+			Bring to Front
+			Send to Back
+		Lock Controls
+		Lock Element
+		Show Skin
+		Rotate Right
+		Rotate Left
+		Insert New
+		Insert Separator
+		Edit Names
+	Resources
+		New Image
+	Layout
+		Insert Table
+		Insert Layer
+		Insert
+			Column to the Left
+			Column to the Right
+			Row Above
+			Row Below
+			Cell to the Left
+			Cell to the Right
+			Caption
+		Delete
+			Table
+			Columns
+			Rows
+			Cells
+			Caption
+		Select
+			Table
+			Column
+			Row
+			Cell
+		Resize
+			Resize Row
+			Resize Column
+		Merge Cells
+		Position
+			Absolute
+			Relative
+			Static
+			Not Set
+			Auto-position Options...
+	Report
+		Report Parameters...
+		Embedded Images...
+		Report Properties...
+		Data Sources...
+		Page Header
+		Page Footer
+		Grouping/Sorting...
+		Actions...
+		Parameters...
+		Chart Data...
+	Tools
+		Check Accessibility...
+		Generate Local Resource
+		Attach to Process...
+		Connect to Device...
+		Connect to Database...
+		Connect to Server...
+		Code Snippets Manager...
+		Choose Toolbox Items...
+		Unload Source Browser Files
+		Add-in Manager...
+		Macros
+			Run TemporaryMacro
+			Pause/Resume Recording
+			Record TemporaryMacro
+			Save TemporaryMacro
+			Cancel Recording
+			Macro Explorer
+			Macros IDE...
+			Load Macro Project...
+			Unload Macro Project
+			New Macro Project...
+			Set as Recording Project
+			New Macro Module
+			New Macro Command
+			Run Macro
+			Edit Macro
+		Upgrade Visual Basic 6 Code...
+		ActiveX Control Test Container
+		Create GUID
+		Dotfuscator Community Edition
+		Error Lookup
+		ATL/MFC Trace Tool
+		External Command 6
+		External Command 7
+		External Command 8
+		External Command 9
+		External Command 10
+		External Command 11
+		External Command 12
+		External Command 13
+		External Command 14
+		External Command 15
+		External Command 16
+		External Command 17
+		External Command 18
+		External Command 19
+		External Command 20
+		External Command 21
+		External Command 22
+		External Command 23
+		External Command 24
+		External Tools...
+		Device Emulator Manager...
+		Import and Export Settings...
+		Customize...
+		Options...
+	Crystal Reports
+		Insert
+			Special Field
+				Print Date
+				Print Time
+				Modification Date
+				Modification Time
+				Data Date
+				Data Time
+				Record Number
+				Page Number
+				Group Number
+				Total Page Count
+				Report Title
+				Report Comments
+				Record Selection Formula
+				Group Selection Formula
+				File Path and Name
+				File Author
+				File Creation Date
+				Page N of M
+			Text Object
+			Summary...
+			Group...
+			Section...
+			Cross-Tab...
+			Subreport...
+			Line
+			Box
+			Chart...
+			Picture...
+			OLE Object...
+		Database
+			Database Expert...
+			Set Datasource Location...
+			Log On or Off Server...
+			Verify Database
+			Verify on Every Print
+			Show SQL Query...
+		Report
+			Select Expert...
+			Selection Formula
+				Record...
+				Group...
+			Formula Workshop...
+			Section Expert...
+			Group Expert...
+			Group Sort Expert...
+			Hierarchical Grouping Options...
+			Record Sort Expert...
+			Report Options...
+			Set Print Date and Time...
+			Summary Info...
+		Design
+			Printer Setup...
+			Page Setup...
+			Default Settings...
+			Ruler
+			Grid
+		Close Subreport
+		Preview Report
+		Field Explorer
+		Set CSS Class...
+		Previous Report View
+		Next Report View
+		Check for Updates...
+		Check for Updates on Start Up
+		Register / Change Address...
+		Upgrade Now...
+	Action
+		New
+			Key
+			String Value
+			Environment String Value
+			Binary Value
+			DWORD Value
+		Import...
+		New Key
+		Add
+			Folder
+			Project Output...
+			File...
+			Assembly...
+		Add Special Folder
+			Common Files Folder
+			Common Files (64-bit) Folder
+			Fonts Folder
+			Program Files Folder
+			Program Files (64-bit) Folder
+			System Folder
+			System (64-bit) Folder
+			User's Application Data Folder
+			User's Desktop
+			User's Favorites Folder
+			User's Personal Data Folder
+			User's Programs Menu
+			User's Send To Menu
+			User's Start Menu
+			User's Startup Folder
+			User's Template Folder
+			Windows Folder
+			Global Assembly Cache Folder
+			Custom Folder
+			Web Custom Folder
+			Module Retargetable Folder
+		Create Shortcut to Selected Items
+		Create New Shortcut
+		Add File Type
+		Add Action
+		Add Dialog
+		Add File Search
+		Add Registry Search
+		Add Windows Installer Search
+		Add Launch Condition
+		Add File Launch Condition
+		Add Registry Launch Condition
+		Add Windows Installer Launch Condition
+		Add .NET Framework Launch Condition
+		Add Internet Information Services Launch Condition
+		Add Custom Action...
+		Set As Default
+		Dependencies
+		ExcludeFilter
+		Outputs
+		View
+			Large Icons
+			Small Icons
+			List
+			Details
+		Move Up
+		Move Down
+	Styles
+		Add Style Rule...
+		Build Style...
+	Image
+		Invert Colors
+		Flip Horizontal
+		Flip Vertical
+		Rotate 90 Degrees
+		Show Colors Window
+		Use Selection as Brush
+		Copy and Outline Selection
+		Adjust Colors...
+		Load Palette...
+		Save Palette...
+		Draw Opaque
+		Toolbar Editor...
+		Grid Settings...
+		New Image Type...
+		Current Icon Image Types
+			Misc Icon 1
+			Misc Icon 2
+			Misc Icon 3
+			Misc Icon 4
+			Misc Icon 5
+			Misc Icon 6
+			Misc Icon 7
+			Misc Icon 8
+			Misc Icon 9
+			More Icons...
+		Current Cursor Image Types
+			Misc Cursor 1
+			Misc Cursor 2
+			Misc Cursor 3
+			Misc Cursor 4
+			Misc Cursor 5
+			Misc Cursor 6
+			Misc Cursor 7
+			Misc Cursor 8
+			Misc Cursor 9
+			More Cursors...
+		Delete Image Type
+		Tools
+			Rectangle Selection Tool
+			Irregular Selection Tool
+			Color Selection Tool
+			Erase Tool
+			Fill Tool
+			Magnification Tool
+			Pencil Tool
+			Brush Tool
+			Airbrush Tool
+			Line Tool
+			Curve Tool
+			Text Tool
+			Rectangle Tool
+			Outlined Rectangle Tool
+			Filled Rectangle Tool
+			Rounded Rectangle Tool
+			Outlined Rounded Rectangle Tool
+			Filled Rounded Rectangle Tool
+			Ellipse Tool
+			Outlined Ellipse Tool
+			Filled Ellipse Tool
+	Window
+		New Window
+		Split
+		Floating
+		Dockable
+		Tabbed Document
+		Auto Hide
+		Hide
+		Auto Hide All
+		Cascade
+		New Horizontal Tab Group
+		New Vertical Tab Group
+		Move to Next Tab Group
+		Move to Previous Tab Group
+		Close All Documents
+		Reset Window Layout
+		1 Start Page
+		Windows...
+	Community
+		Ask a Question
+		Check Question Status
+		Send Feedback
+		Developer Center
+		Codezone Community
+		Partner Products Catalog
+		Community Search
+			Templates and Starter Kits
+			IntelliSense Code Snippets
+			Samples
+			Controls
+			Addins and Macros
+	Help
+		How Do I
+		Search
+		Contents
+		Index
+		Help Favorites
+		Dynamic Help
+		Index Results
+		Customer Feedback Options...
+		Business Objects on the Web
+			.NET Home
+			Developer News
+			Business Objects Support
+			Business Objects Home Page
+		Register Product...
+		Check for Updates
+		Technical Support
+		Help on Help
+		About Microsoft Visual Studio
+	Addins
+	Macros
+	Full Screen

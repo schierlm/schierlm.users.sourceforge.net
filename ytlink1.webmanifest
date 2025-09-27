@@ -1,0 +1,23 @@
+{
+	"lang": "de",
+	"icons": [
+		{
+			"src": "https://s.ytimg.com/yts/img/favicon_32-vflOogEID.png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "https://s.ytimg.com/yts/img/favicon_48-vflVjB_Qk.png",
+			"sizes": "48x48"
+		},  
+  		{
+			"src": "https://s.ytimg.com/yts/img/favicon_96-vflW9Ec0w.png",
+			"sizes": "96x96"
+		},
+  		{
+			"src": "https://s.ytimg.com/yts/img/favicon_144-vfliLAfaB.png",
+			"sizes": "144x144"
+		}],
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#ffffff"
+}

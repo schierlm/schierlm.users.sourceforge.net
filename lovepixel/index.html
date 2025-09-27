@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>LOVEPIXEL</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, Helvetica, sans-serif; }
+#preview { border: 2px solid white; background-color: #888888; position:fixed; }
+#preview a { float: right; }
+#preview h2 { font-size: 1em; margin: 0px; cursor: move;}
+#previewimage { position: relative;}
+#previewmarker { position: absolute; border: 1px solid white; mix-blend-mode: difference; left: 0px; top: 0px; width: 248px; height: 248px; }
+#artwork tr, #artwork td, #artwork img { border: 0px none; padding: 0px; margin: 0px; border-collapse: collapse; height: 2000px; }
+#artwork td { width: 2000px; }
+#artwork img, #preview img {display: block; }
+#artwork table { border: 2px solid red; border-spacing: 0px;}
+</style>
+<script type="text/javascript">
+window.onscroll = window.onresize = function() {
+	var bcr = document.querySelector("#artwork table").getBoundingClientRect();
+	bcr.left; 0; window.innerWidth; bcr.right;
+	var xFrom = Math.min(1, Math.max((0 - bcr.left) / (bcr.right-bcr.left), 0)) * 248 | 0;
+	var xTo = Math.min(1, Math.max((window.innerWidth-bcr.left) / (bcr.right-bcr.left), 0)) * 248 | 0;
+	var yFrom = Math.min(1, Math.max((0 - bcr.top) / (bcr.bottom-bcr.top), 0)) * 248 | 0;
+	var yTo = Math.min(1, Math.max((window.innerHeight-bcr.top) / (bcr.bottom-bcr.top), 0)) * 248 | 0;
+	var marker = document.getElementById("previewmarker");
+	marker.style.left = xFrom+"px"; marker.style.width = (xTo-xFrom)+"px";
+	marker.style.top = yFrom+"px"; marker.style.height = (yTo-yFrom)+"px";
+};
+
+function previewDrag(e) {
+	var pb = document.getElementById("previewimage").getBoundingClientRect();
+	var x = e.clientX - pb.left;
+	var y = e.clientY - pb.top;
+	var bcr = document.querySelector("#artwork table").getBoundingClientRect();
+	window.scrollTo(bcr.left + window.window.pageXOffset + x * bcr.width / pb.width, bcr.top + window.pageYOffset + y * bcr.height / pb.height);
+}
+
+window.onload = function() {
+	var previewImage = document.getElementById("previewimage");
+	var isMouseDown = false, isDragging = false;
+	previewImage.onmousedown = function(e) { isMouseDown = true; previewDrag(e); };
+	previewImage.onmouseup = function(e) { previewDrag(e); isMouseDown = false; };
+	previewImage.onmousemove = function(e) { if (isMouseDown) { e.preventDefault(); previewDrag(e); } };
+	var preview = document.getElementById("preview");
+	var previewTitle = document.querySelector("#preview h2");
+	var dragOffset = [];
+	previewTitle.onmousedown = function(e) {
+	    isDragging = true;
+	    dragOffset = [
+		+preview.style.right.replace("px","") + e.clientX,
+		+preview.style.bottom.replace("px","") + e.clientY,
+	    ];
+	};
+	previewTitle.onmouseup = function() { isDragging = false; };
+	window.onmousemove = function(e) {
+	    if (isDragging) {
+		e.preventDefault();
+		preview.style.right = ( - e.clientX + dragOffset[0]) + 'px';
+		preview.style.bottom  = (-e.clientY + dragOffset[1]) + 'px';
+	    }
+	};
+};
+</script>
+</head>
+<body>
+<h1><a href="http://www.lovepixel.idv.tw/img_pixel/cover/c_07.html">LOVEPIXEL (2006)</a>, with preview window (<a href="lovepixel.png">download image</a>)</h1>
+<div id="preview" style="right: 10px; bottom: 10px;"><h2>Preview <a href="javascript:void(document.getElementById('preview').style.display='none');">[X]</a></h2>
+<div id="previewimage"><div id="previewmarker"></div>
+<img src="preview.png" ondragstart="return false;" width="250" height="250"></div></div>
+<div id="artwork">
+<table><tbody>
+<tr><td><img src="cover07_img01.png" width="2000" height="2000"></td><td><img src="cover07_img02.png" width="2000" height="2000"></td><td><img src="cover07_img03.png" width="2000" height="2000"></td><td><img src="cover07_img04.png" width="2000" height="2000"></td><td><img src="cover07_img05.png" width="2000" height="2000"></td></tr>
+<tr><td><img src="cover07_img06.png" width="2000" height="2000"></td><td><img src="cover07_img07.png" width="2000" height="2000"></td><td><img src="cover07_img08.png" width="2000" height="2000"></td><td><img src="cover07_img09.png" width="2000" height="2000"></td><td><img src="cover07_img10.png" width="2000" height="2000"></td></tr>
+<tr><td><img src="cover07_img11.png" width="2000" height="2000"></td><td><img src="cover07_img12.png" width="2000" height="2000"></td><td><img src="cover07_img13.png" width="2000" height="2000"></td><td><img src="cover07_img14.png" width="2000" height="2000"></td><td><img src="cover07_img15.png" width="2000" height="2000"></td></tr>
+<tr><td><img src="cover07_img16.png" width="2000" height="2000"></td><td><img src="cover07_img17.png" width="2000" height="2000"></td><td><img src="cover07_img18.png" width="2000" height="2000"></td><td><img src="cover07_img19.png" width="2000" height="2000"></td><td><img src="cover07_img20.png" width="2000" height="2000"></td></tr>
+<tr><td><img src="cover07_img21.png" width="2000" height="2000"></td><td><img src="cover07_img22.png" width="2000" height="2000"></td><td><img src="cover07_img23.png" width="2000" height="2000"></td><td><img src="cover07_img24.png" width="2000" height="2000"></td><td><img src="cover07_img25.png" width="2000" height="2000"></td></tr>
+</tbody></table>
+</div>
+</body></html>

@@ -1,0 +1,2263 @@
+geLesen, geSpeichert, Online
+----------------------------
+
+$Medien: 
+MP3:
+ http://www.mynetcologne.de/~nc-heusermi/test/Hammerkammer.mp3 (Abreagieren nach Computerproblemen)
+
+Flash:
+ http://fun.drno.de/flash/see.swf (Desktopicon-Kampf)
+ http://hellsgate.online.ee/~mait/fahrschule.swf (Filmchen, wie man es im Verkehr *nicht* machen soll)
+ http://www.cs-hacks.tk/ (You are an idiot.swf)
+ http://fun.drno.de/flash/honeybear_demo.swf (WWM mit Drogenfragen(?))
+ http://www.files4fun.de/funonline/hypno.htm (Flash, das einen hypnotisiert ;))
+
+Filme:
+ http://www.stonegoose.com/grocery_store_kid_no_candy.avi (Schräge Kondomwerbung)
+
+$Newsgroups: 
+de.comp.lang.java:
+ api.openoffice.org (OpenOffice-API)
+ http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4166613 (FlowLayout in BorderLayout geht nicht so wie es soll)
+ http://www.frank-buss.de/barcode/index.html (Javacode für EAN8 und EAN13)
+ http://support.microsoft.com/default.aspx?scid=kb;de;815411 (Java startet unter XP lahm)
+ http://gstaff.org/javaCert/html/exam.html (Knifflige Java-Fragen)
+ http://jhex.sourceforge.net/ (Hexxagon in Java)
+ http://javangelist.snipsnap.org/space/Plugin (Plugin-Architekturen in Java)
+ http://javalobby.org/members/jpr/methodopt.jsp (Methoden-Benchmark -- braucht man JavaLobby Account)
+ http://www.frank-buss.de/demo/index.html (JavaDemo)
+ http://java.sun.com/products/java-media/sound/soundbanks.html (Java-Soundbank)
+ http://www.cryptix.org/ (Java+PGP)
+ http://www.stud.ntnu.no/~shane/stasj/div_bilder/25.html
+ http://www.mysrc.net/lib/java/src/net/mysrc/text/StringTokenizerExtended.java
+ http://groups.google.com/groups?threadm=3993DB9E.7BEB3CD0%40gmx.de (Java-Programmierunterricht via NG ;-))
+ http://www.jjj.de/bitwizardry/bitwizardrypage.html (Bitoperationen totoptimiert)
+ http://www.ugcs.caltech.edu/~wnoise/base2.html (Bitoperationen totoptimiert)
+ http://mindprod.com/jglossledatastream.html (Little endian DataOutputStream)
+ http://www.useit.com (CUA)
+ http://www.heinerkuecker.de/NullObjects.html (Java 3.0?)
+ http://www.harddiskcafe.de/bullshitbingo (Online-Bullshitbingo)
+ http://runner.conacom.de (LRWP2 Servlet Engine)
+ http://www.frank-buss.de/spline.html (Spline-Applet)
+ http://groups.google.com/groups?hl=eo&oe=utf-8&selm=a50lem%243n36a%243%40ID-77081.news.dfncis.de (Vektoren "virtuell" zuammenfügen ähnlich SequenceInputStream)
+ http://www.google.de/groups?threadm=avu1mg%24psf%2401%241%40news.t-online.com (Metadaten aus NTFS mit Java lesen)
+ http://www.apm.tuwien.ac.at/docs/lva/mmgdv/k3___003.htm (plane sweep)
+ http://www.apm.tuwien.ac.at/docs/lva/mmgdv/k3___007.htm
+ http://www.ratundtat.com/index01.htm?menue=40 (JBeaver)
+ http://www2.gol.com/users/tame/swing/examples/JTableExamples4.html (JTable mit Zellen über mehrere Spalten)
+ http://creativecommons.org/ (Lizenztexte)
+ http://www.horstmann.com/ (The March of Progress: Nummern formatieren in C, C++, Java)
+ http://groups.google.de/groups?selm=avuisc%24epv%241%40newsreader2.netcologne.de (Piepser)
+ http://www.theserverside.com/resources/article.jsp?l=DataListHandler
+ http://de.sun.com/Schulung/Zertifizierungen/FAQ/index.html (WO kann man sich sun certifizieren lassen...)
+ http://www.PeterBuettner.de/projects/shelljar/ (Jars mit eigenem Icon)
+ http://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/concurrent/intro.html (Threadkommunikation)
+ http://dn.planet-d.net (Java Demos)
+ http://gamejug.org/archive/JavaGames.ppt (Spiele in Java)
+ http://community.java.net/games/
+ http://fivedots.coe.psu.ac.th/~ad/jg/index.html
+ http://jdictionary.sourceforge.net/index.html (Java-Wörterbuch)
+ http://java.sun.com/products/jfc/tsc/sightings/S01.html (Riesenliste mit Java-Programmen)
+ http://www.cs.sjsu.edu/faculty/horstman/CS151/ (10 PDFs)
+ http://jeans.studentenweb.org/java/trayicon/trayicon.html (Trayicons in Java)
+ http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html (Double checked locking geht in Java nicht.)
+ http://jeans.studentenweb.org/java/trayicon/trayicon.html (Trayicon-Bibliothek)
+ http://www.examulator.com/jezam/question.jsp (Jeden Tag ne Javafrage)
+ http://www.netbeans.org/ (15 MB Netbeans)
+ http://www.zerog.com (InstallAnywhere)
+ http://www.izforge.com/izpack/index.php3?content=download (anderer Installer)
+
+alt.ascii-art
+ http://members.tripod.com/so_o2/MUDfrIdx.html (Startbildschirme von MUDs)
+ http://webpages.mr.net/bobz/ttyquake/ (Textmodus-Ego-Shooter)
+ http://www.asciiartfarts.com (Ascii-Art farts - nicht ganz politically correcte Verunstaltungen von ASCII-Bildern)
+ http://www.geocities.com/theshedragon/maze.htm
+ http://www.jave.de
+ g "de Casteljau Algorithmus" (Verfahren für Bezierkurven)
+ http://artax.karlin.mff.cuni.cz/~brain/0verkill/
+ http://www.michaelhermes.de/usenet/dara-a.zip
+ http://www.ascii-art.de/ascii/uvw/who_is_who.txt
+ http://tux-server.myip.org/fun.htm
+ http://www.jave.de/player/demo/demo7.html
+ http://www.lastfuture.de/ascii/insomnia1/
+ http://www.jjs-ascii.20m.com/jave/JJS_ASCII_Snow_Dancers_java.htm
+ http://www.geocities.com/jjs_ascii/jave/JJS_ASCII_Snow_Dancers_java.htm
+ http://www.jave.de/player/demo/demo8.html
+ http://n00n.free.fr/aatv/
+ http://fun.sdinet.de/ascii/alien.html (Colored HTML)
+
+de.admin.news.groups
+ http://tgos.org/newbie/newgroup.html (Newsgroup-Erzeugung)
+ http://www.wortrei.ch/usenet/admin/einrichtungsgruende.php (Jenseits des Trafficarguments)
+
+de.admin.net-abuse.mail
+ http://www.newsgate.ch/de/de.markt.arbeit.d/msg03419.html
+ http://www.iks-jena.de/cgi-bin/whois
+ http://www.iks-jena.de/cgi-bin/whois
+ http://www.dominik-boecker.de/suchmaschinen.html
+ http://www.rfc-ignorant.org/
+ http://chainletters.org/
+ http://www.virtualave.net
+ http://www.apnic.net/apnic-bin/ipv4-by-country.pl (IP-Bereiche nach Ländern, nur apnic!)
+ http://212.79.56.164/wbz/
+ http://www.iks-jena.de/cgi-bin/whois
+ http://marschel.de.vu/stuff/fakemail/ (Fakemailer, naja...)
+ http://www.dominik-boecker.de/email/index.html
+ http://www.ulm.ccc.de/chaos-seminar/spam/spam-bsdg-aufforderung.html
+ http://www.astrum.ch/spam/
+ http://www.visualware.com/visualroute/index.html
+ http://www.ostrosoft.com/ostronet.html
+ http://www.schnappmatik.de/TFFFFF/
+ http://www.claymania.com/safe-hex-de.html
+ http://www.robertgraham.com/tools/mailtoencoder.html
+ http://www.monkeys.com/wpoison
+ http://www.freedownloadscenter.com/Network_and_Internet/Network_Information_Tools/NetLab.html
+ http://www.netlaw.de/gesetze/bdsg.htm
+ http://www.tages-anzeiger.ch/archiv/96oktober/961024/168672.htm 
+ http://www.rewi.hu-berlin.de/Datenschutz/DSB/SH/material/recht/bdsg/bdsg.htm#Par28
+ http://www.dr-ackermann.de/spam/index.html
+ http://www.dr-ackermann.de/spam/faq.htm
+ http://www.dr-ackermann.de/spam/rechtslage.htm
+ http://www.dominik-boecker.de/email/index.html
+ http://www.samspade.org/
+ http://www.lodz.pdi.net/~eristic/junkmail/templates_de.html
+ http://skepdic.com/German/pyramid.html [-2]
+ http://finanzen.focus.de/D/DA/DA70/DA70B/da70b.htm  [-2]
+ http://www.eltern.de/forum/neue1/986308412.phtml  [-2]
+ http://www.benkelberg.com/Urteile1997/Privat/urteil.htm#Sonstiges  [-2]
+ http://www.mathematik.uni-ulm.de/admin/kettenbriefe/  [-2]
+ http://www.siug.ch/help/edsg/auskunft.txt [-2]
+ http://www.geocities.com/bbook2k/Auskunft.txt [-2]
+ http://www.admin.ch/ch/d/sr/935_51/a1.html [-2]
+ http://www.admin.ch/ch/d/sr/935_511/a43.html [-2]
+ http://tages-anzeiger.ch/archiv/96oktober/961024/168672.htm [-2]
+ http://www.dr-ackermann.de/spam/ag-kiel-1.htm [-2]
+ http://www.hreimers.handshake.de/oe5/ [-2]
+ http://www.detebe.de/formulare/shaf.html
+ http://www.dotcomtod.com/article.php?sid=5659&mode=&order=0 (GMX Bug)
+ http://www.kleinbus.org/~zza/kleinbus/
+ http://www.starweb-Service.de/content/team/graphics/a-richter_1.jpg (Bild vom Oberdialer ;-)
+ http://www.spamsong.com
+
+de.newusers.questions
+ http://findolin.de/ (Newsserver nach Gruppe suchen)
+ http://ip-service.com/IP/newsserv.htm (Newsserver nach Gruppe suchen)
+ http://www.newzbot.com/ (Newsserver nach Gruppe suchen)
+ ftp://ftp.isc.org/pub/usenet/control/ (Control-Archiv mit allen Newgroups und Rmgroups)
+ http://mptrans.de/friedhof.html
+ http://purl.net/charta/
+ http://www.sockenseite.de/usenet/plenken.html
+ http://czyborra.com/charsets/iso8859.html
+ http://oe-faq.de
+ http://volker-gringmuth.de/usenet/begriffe.htm
+ http://www.zikzak.de/~amk/netz-gott.shtml
+ http://home.knuut.de/MImlau/akronyme.html
+ http://www.cm.org/
+ http://www.uwe-stoeckert.de/usenet/akronym.htm
+ http://www.wmms.de/norwegen/tips/troll.html
+ http://www.doofes-schaf.de
+ http://support.microsoft.com/support/kb/articles/q228/9/03.asp
+ http://www.iks-jena.de/mitarb/lutz/usenet/Ermahnung.html
+ http://www.sockenseite.de/socke.html
+ http://www.bruhaha.de/kaestchen.html
+ http://www.tuxedo.org/~esr/jargon/html/entry/Breidbart-Index.html
+ http://www.afaik.de/usenet/faq/testen/
+ http://www.magma.ca/~leisen/mlnh/
+ http://www.kjartan.org/humor/troll-faq.html
+ http://mptrans.de/mbdag/
+ http://www.stoeckert.org/usenet/spezial.htm
+ http://www.usenet.at/einsteiger/mitbestimmung.html
+ http://www.iana.org/cctld/cctld-whois.htm (Länder-TLDs)
+ http://www.mindfighter.de/html/42.htm (Die Antwort auf alle Fragen)
+ http://www.aschershain.de/umfrage.html (Umfrage zu Pseudos etc.!)
+ http://www.devconsult.de/~af/usenet/ng-abkuerzungen.txt
+ http://got.to/quote/ (Richtig zitieren)
+ http://learn.to/quote/ (Richtig zitieren)
+ http://lernst.de/zitieren/kriegst.de/antworten/ (Richtig zitieren)
+ http://www.tuxedo.org/~esr/faqs/smart-questions.html (WIe man Fragen richtig fragt)
+ http://omnibus.ruf.uni-freiburg.de/~gritter/usenet.html
+ http://www.realname-diskussion.info/hinweis.htm
+ http://www.netz-knigge.de/
+
+de.comm.software.newsreader
+ http://mid.thangorodrim.org/mid.php4?id=m3ogh7x3il.fsf%40deneb.cygnus.stuttgart.netsurf.de (Wie unterscheidet man MIDs von Mailadressen?)
+ http://www.40tude.com/dialog/wiki/index.php/HomePage
+ http://www.40tude.com/dialog/ (Neuer Newsreader - beta)
+ http://www.xs4all.nl/~walterln/winface/ (Winface, neuer URL)
+ http://www.geocities.com/quazar_nl/winface/ (alter URL)
+ http://www.newsreaders.com/misc/twpierce/news/newsreader-manifesto.html (Warum man keine Newsreader programmieren soll
+ http://www.namesuppressed.com/kenny/ (Kenny-Translator)
+ http://www.landfield.com/usefor/ (USEFOR-Draft, Nachfolger des RFC1036)
+ http://www.ietf.org/ids.by.wg/usefor.html (USEFOR-Draft)
+ http://bugzilla.mozilla.org/show_bug.cgi?id=80819 (MID-Bug im Netscape)
+ http://www.wschmidhuber.de/oeprob (Bugs von OE)
+ http://piology.org/ILOVEYOU-Signature-FAQ.html (begin-end-Bug im OE)
+ http://www.volker-gringmuth.de/usenet/netscape.htm 
+ http://homepages.compuserve.de/ankmn/filterul.htm
+ http://www.klugscheisser.org/grusel.html
+ http://www.newsgruppen.de/dcancel.html
+ http://newsplex.home.att.net/index.html
+ http://www.microsoft.com/unix/ie/OE/default.ASP
+ http://www.xs4all.nl/~js/gnksa/
+ http://jlbradley.home.att.net/FIRST20.HTM#A09
+ http://home.t-online.de/home/Peter.Dobler/netscape.htm
+ http://hajuku.bei.t-online.de/hp-bilder/
+ http://www.newsreaders.com/win/oe_wishes.html
+ http://home.knuut.de/tgl/
+ http://www.gnak.de/sound/index.html
+ http://members.tripod.de/dima1703/sound/gotmail.wav
+ http://www.juelich.de/not_spam.wav :o)
+ http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q257824
+ http://www.removethis.de/EuroFAQ.html
+ http://www.albany.net/~gwoods/ (Agent Tools)
+ http://members.bellatlantic.net/~jonzonk/ago.html (AGO)
+ http://home.t-online.de/home/juergen.haible/ (Agent tools)
+ http://members.bellatlantic.net/~jonzonk/agent_tools.html (Agent tools)
+ http://www.jthz.com/puter/ (Agent tools)
+ http://www.krumsiek.com/newsarchiver  (JK News Archiver, Newsreader)
+ http://www.gnu.org/software/emacs/windows/ntemacs.html (Schriften für Emacs)
+ http://www.syseng.anu.edu.au/~jaa/ (Compface)
+ http://www.yenc.org/ (YENC, ein "Standard" zur Codierung von Binaries im Usenet)
+ http://fqdn.th-h.de/
+ http://www.myfqdn.de
+ http://www.newsreaders.com
+ http://www.iro.umontreal.ca/contrib/recode/HTML/ (Recode für Windows)
+ http://www.hmetzger.de/faq.html#61 (Mozi zeigt unten Schrott an)
+ http://www.borumat.de/nevertab.php (Merkmale von Newsreadern)
+ http://www.tin.org/docs.html (News related RFCs and Drafts)
+de.comm.software.forte-agent
+ http://home.t-online.de/home/micha-wr/hamster/files/beta-HeaderTools.zip (Version 0.4.400)
+ http://www.viebke.de/shortcut/
+ http://www.skuz.net/madhat/agent/util.html (Fehlen da Tools?)
+ http://home.att.net/~JLBradley/LANCE3.HTM#Util (Und da?)
+ http://www.geocities.com/edgemeal_software/wadsl.htm (Nimmt Binary-Group-Downloads nach einem Fehler wieder auf)
+
+de.comp.security.misc
+ http://cert.uni-stuttgart.de/doc/netsec/rxbot-pw.php (Kennwörter, die rxbot, ein Trojaner, überprüft - Kennwortliste - malware)
+ http://www.sajoh.de/sicherpc.htm (Sicherheits?tipps)
+ http://mpdshfaq.de.vu/ (MS-Heimanwender-Sicherheits-FAQ)
+ http://www.scheissprojekt.de/ (Vom Umgang mit toten Pferden...)
+ http://home.t-online.de/home/w.koser/ASS/1848/Lieder/Pfeifer.gif (Die Gedanken sind frei...)
+ http://www.fefe.de/antivirus/42.zip
+ http://grc.com/dos/drdos.htm (DDos)
+
+de.comm.software.gnus
+ ftp://ftp.cs.ualberta.ca/pub/oolog/gnus/ (Gnus Reference Cards)
+
+de.soc.recht.datennetze
+ http://www.lestarte.com/downloads/T-Online5.jpg
+ http://www.lestarte.com/t-online.html
+ http://www.schneegans.de/distanzierung-von-links.html
+ http://www.wdr.de/online/wirtschaft/euro/pfennig_millionaer/
+ http://internet.exit.mytoday.de/snafu/fun/vri.html
+ http://www.guninski.com
+
+de.alt.music.lyrics
+ http://www.leo.org/information/freizeit/fun/pastor.html
+ http://www.fernsehserien.de/infos-und-personen.php3?sendung=2734
+ http://ingeb.org/Lieder/pippilan.html
+
+de.sci.physik
+ http://www.schmunzelkunst.de/rosenquarz.htm
+ http://www.rzuser.uni-heidelberg.de/~aschesta/Experiment/index.html
+ http://www.Herwig-Huener.de/camelcase.html
+
+de.alt.paranormal
+ http://www.consciousness.arizona.edu/hameroff/New/Time_Flies/presentiment.pdf (Gehirn reagiert auf schockierende Bilder bevor Auge sie sieht)
+ http://comp9.psych.cornell.edu/dbem/ganzfeld.html
+ http://f25.parsimony.net/forum63743/index.htm (OBEs)
+ http://www.robertpeterson.org/
+ http://www.alien.de/doernenburg/Funny6.html
+ http://www.aei-potsdam.mpg.de/~mpoessel/Physik/FTL/ueberlichttunneln.html
+ http://www.oobe.ch (+Zeit)
+ http://home.t-online.de/home/Eberhard.Foerster.FfO/mainef.htm
+ http://awakenone.freeservers.com/DNA/12-strand-DNA.htm
+ http://de.geocities.com/tanbeta2001 [was zum Lachen]
+ http://people.freenet.de/soleil7/Klartraum.htm
+ http://www.rzuser.uni-heidelberg.de/~aschesta/praekog/ASW1.HTM (Präkognitionsexperiment)
+ http://www.mysonpeter.com/ (Fake?)
+
+de.comp.shareware
+ http://www.whereisit-soft.com/
+ http://www.gbelectronic.de
+ http://www.elcomsoft.com/adc.html
+ http://www.cs.wisc.edu/~ghost/ (Ghostscript, GSView)
+ ??http://www.gmixon.com/ (Chronotron Plugin)
+ http://www.liquidninja.com/metapad/
+ http://www.Shareware-Pool.de/
+ http://www.informatik.hu-berlin.de/~hanke/start.htm
+ http://www.yanew.com/english.htm (DL Expert)
+ http://www.bobos.demon.co.uk/par/PTFB.htm (Dialogbeantworter)
+ http://www.johanneshuebner.com/ (Clickoff 1.60)
+ ftp://ftp.zdnet.com/acq/downloads/pub/zd/PCMag/pcmzkm32.zip (ZdKeyMap)
+ http://www.ontrack.de (EasyRecovery, Löhnware)
+ http://home.att.net/~willowbrookemill/pricelessgraphics.html (Iconeditor u.a. Grafiktoools, Free)
+ http://www.sover.net/~whoi/Graphics.html (Iconeditor u.a. Grafiktools, Free)
+ http://solair.eunet.yu/~janko/engdload.htm (Jankos Keyboard Generator)
+
+de.comp.hardware.misc
+ http://www.crossfire-designs.de/link/soundkarten/ (Geschichte der Soundkarten)
+
+de.admin.net-abuse.misc
+ -
+
+de.alt.sysadmin.recovery:
+ http://www.nord-com.net/dkreie/pic/t-stueck.jpg (BNC-T-Stück im Eigenbau)
+ http://www.tetrinet.org/winxp/winxp_penguin.jpg (WinXP sucks - Tux auch ;-) )
+ http://www.taz.de/pt/2003/05/23.nf/tomnf (Gegen Zeugen Jehovahs - Tupperparty)
+ http://www.andreas.org/images/nmap-matrix2log.jpg (Bildschirm aus der Matrix)
+ http://www.thememoryhole.org/columbine/col-fbi-0001-0100.pdf (FBI Files columbine massacre)
+ http://www.crn.com/sections/BreakingNews/dailyarchives.asp?ArticleID=42123 (Spamfilter kaputt)
+ msgid:1991Oct5.054106.4647@klaava.Helsinki.FI (Linus announced Linux?)
+ http://www.darwinawards.com/darwin/darwin1999-50.html (9V im Blut)
+ http://www.internosis.com/aboutus/News/pressreleases/army.htm (?)
+ http://www.intergraph.com/solutions/profiles/RMDA.asp (An IT infrastructure for a next generation records management system)
+ http://www.infoworld.com/article/03/01/31/HNsourcecode_1.html (Britische Regierung bekommt MS-Source zu sehen)
+ http://www.fcw.com/fcw/articles/2000/1204/web-sap-12-08-00.asp (SAP gets slice of Army logmod deal)
+ http://www.netcraft.com (Hostnamensuche - liefert auch einiges zu *.mil)
+ http://www.dotcomtod.com/modules.php?name=News&file=article&sid=10052 (Cebit-Aktion: Raubkopien am M$-Stand shreddern)
+ http://www.bash.org/?691 (Dictionary-Attacken)
+ http://www.aldibaran.de/faq/faq4.html#2 (Aldi, rechtsdrehend? bezieht sich auf die Richtung, in der sich die Leute im Geschäft bewegen (vom Eingang zur Kasse))
+ http://anon.inf.tu-dresden.de (JAP - Java Anonymous Proxy)
+ http://www.petri.co.il/howto_install_ad_for_idiots.htm
+ http://www.counterhack.net/base_clippy_image.html
+ http://www.schlockmercenary.com/d/20021104.html
+ http://www.bofhcam.org/co-larters/index.html
+ http://techupdate.zdnet.de/story/0,,t419-s2125375,00.html
+ http://web-fuehrerschein.web.de/tourundtest/test.htm
+ http://muh.scheff.de/ (Augenkrebserzeugende Farben)
+ http://www.penetrationtest.com (fette Flashseite)
+ http://www.professionalwebdesigns.homestead.com/WebDesigns.html (Miserables Webdesign)
+ http://superduckling.org/paragraph184.jpeg (StGB und Kinderpornos ;-))
+ http://rudiment.dk/~incore/UnixFlavours.html (Unterschiede zwischen Unices)
+ http://linux-sxs.org/portsent.html (netter 404-text)
+ http://www.ratnet.stw.uni-erlangen.de/geist (404-Ticker, ohne javascript kein ticker)
+ http://www.jungnickel.com/templates/404.html
+ http://www.biologisch-positive-energiesysteme.de/de/index.html (Lustiger energetischer Bildschirmreiniger zum DL)
+ http://www.drivers.de/irgendwas.html (404 auf einem deprimierten Webserver)
+ http://www.bitspring.de (FLash- und alles braucht man da...)
+ http://www.ruhr-uni-bochum.de/www-rz/zollehcc/_rz/unzulaessig.htm (Lustige Meldung für rechtlich unzulässige Sites)
+ http://www.mtgplace.com/com/jarvis/product.asp?iService=42 (LART)
+ http://www.roadkill.net/madmins/CAT509pro.html (LART / Netzwerkkabelpeitsche)
+ http://www.mtgplace.com/com/jarvis/product.asp?iService=567
+ http://www.mtgplace.com/com/jarvis/product.asp?iService=39
+ http://www.mtgplace.com/com/jarvis/product.asp?iService=43
+ http://cgi.ebay.de/ws/eBayISAPI.dll?ViewItem&item=1720385998 (Kastrationshilfe [für Ferkel])
+ http://www.fefe.de/huerbine/ (404, bzw. Serverlog...)
+ http://www.kutilek.de/malzeit-klein.jpg (Malzeit-Foto)
+ http://www.webkind.de/hmp/ (Das Human Mirror Projekt. Lustig.)
+ http://www.csmngt.com/quote_me.htm (Tausende von Zitaten)
+ http://www.this-page-intentionally-left-blank.org/ (was wohl?)
+ http://www.pckiller.com/
+ http://www1.tagesschau.de/wiruu/videolinks/versprecherjb.smi (Video dazu)
+ http://www.eskimo.com/~scs/C-faq/q2.6.html (feld[1] am Ende einer Struktur)
+ http://www-dt.e-technik.uni-dortmund.de/~ma/qmail-bugs.html (was wohl?)
+ http://www.starbreaker.net/print.php?sid=3 (BPFH = Bastard Programmer From Hell)
+ http://cm.bell-labs.com/cm/cs/who/dmr/chist.html (C ist ein PDP11-Hochsprachenassembler)
+ http://www.fecyk.ca/spamalbum (Songs)
+ http://www.pimprig.com/myegallery.php?&do=showpic&pid=411 (Kaffeemaschine in PC-Gehäuse)
+ http://faul.dyndns.org/beitrag.html (Grüne Seite)
+ http://www.bundestag.de/mdb14/bio/c/caesaca0.html (Caesar)
+ http://home.t-online.de/home/022816000420-0001/miersch.htm (Jakob Mierscheid)
+ http://home.t-online.de/home/022816000420-0001/.impressum.html (Impressum Niese, Rolf)
+ http://www.bundestag.de/mdb14/bio/M/miersja0.html (Jakob Maria Mierscheid)
+ http://www.bundestag.de/mdb14/bio/N/niesero0.html (Rolf Niese)
+ http://www.newtek.com/discus/messages/2/5250.html?1026963476 (Notepad vs. Lightwave)
+ http://thorsten.hexa-u.de/tuer.jpg
+ http://groups.google.de/groups?selm=83qa9n%247aeu%242%40f1node01.rhrz.uni-bonn.de&output=gplain (Platten und Dynamit)
+ http://fcgp.sourceforge.net/ (Free Code Graphing Project)
+ http://docs.freebsd.org/cgi/getmsg.cgi?fetch=394609+0+current/freebsd-security (SSL-Bug)
+ http://www.theos.com/deraadt/ (Theo)
+ http://www.hdg.de/Final/deu/page2519.htm (Aprilscherz?)
+ http://www.cyberkino.de/entertainment/kino/109/109717.html (Das Phantom von Bonn, Plakat+Filmkritiken)
+ http://www.spiegel.de/netzwelt/politik/0,1518,207169,00.html (ComputerBild bemängelt: Keine "Firewall" auf BSI-Sicherhsits-CD)
+ http://groups.google.com/groups?selm=3D371E09.41C6%40t-online.de (Hans Bonfigt und C)
+ http://www-is.informatik.uni-oldenburg.de/~dibo/hamster/ (Java-"Programmier"system für Einsteiger)
+ http://www1.tagesschau.de/wiruu/wiruu-sprecher-jbrauner.html (Ganz unten: Versprecher)
+ http://andrea.shuttle.de/info_frg.txt
+ http://www.contrib.andrew.cmu.edu/~moose/sysadmin/pricelist.html
+ http://www.fiftythree.org/etherkiller/ (Stromkabel mit Netzwerkstecker)
+ http://www.sysadminday.com/
+ http://sysday.tripod.com/pDont_Touch.jpg (Kabelsalat)
+ http://www.horneck.net/dic.html#M.
+ http://www.suse.de/~sh/yast2/32-mb-hack/
+ http://www.adminspotting.org/index.html
+ http://www.msnbc.com/news/770511.asp?cp1=1
+ http://www.theregister.co.uk/content/4/25891.html
+ http://www.unitedmedia.com/comics/dilbert/archive/dilbert-20020628.html
+ http://www.sgi.com/tech/stl/next_permutation.html
+ http://www.tu-darmstadt.de/~yd52/raid/ (Bilder zu konfiuser Verkabelung)
+ http://www.fas.org/man/dod-101/sys/index.html (FernLART)
+ http://www.fas.org/nuke/guide/usa/icbm/index.html (FernLART)
+ http://www.pickelfrei.de
+ http://www.labelmaster.com/images/products/400x400/IL65.jpg (Schild: Do not freeze mit Pingu drauf)
+ http://home.arcor.de/bastian-voelker/fun/vri-richtig.html (Volkstümliche Rechtsirrtümer)
+ http://www.transgalaxis.de/html/zellaktivator.html 
+ http://www.stefan-loewe.de/usenet/dsc00202_small.jpg (Bremse mit Stufen - Straßenbahnbild)
+ http://ars.userfriendly.org/cartoons/?id=20020817
+ http://tweakers4u.de/new/do.php?include=tests//usb_ventilator/seite1.php 
+ http://domains.freecity.de/recht/news/200121-2.phtml (Gerhardschroeder.de)
+ http://ghg.ecn.purdue.edu/~ghg/ (Sauerstoffflasche, Grill anzünden mit ~)
+ http://www.freakshow.de (Freak Show (?))
+ http://www.sczech.de/PRO-homepages/wippermann/wipperm.htm (?)
+ http://strg-alt-entf.org/img/kiwi.gif (Kiwi-Bild)
+ http://www.thesunscreenman.com/download/elan0004.pdf 
+ http://wearables.unisa.edu.au/arquake/index.html (Augmented Reality Quake, also echte Welt, viruelle Monster)
+ http://www.usenet2.org/
+ http://www.ratemykitten.com
+ http://www.cat-scan.com/
+ http://www.exonome.com/fj/phkl/
+ http://www.xptheme.info/ (GNOME&KDE nach XP aussehen lassen)
+ http://www.myeWax.com (Mailsignatur? Nicht wirklich.)
+ http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/sl/sl.tar (Linux-Gagprogramm, das einen fahrenden Zug darstellt)
+ http://www.teresaudio.com/memtest86/ (Memtest-86)
+ http://uwe-sieber.de (Fonts für die Konsole)
+ ftp://ftp.javasoft.com/docs/tutorial.tar.gz (Java-Tutorial)
+ http://www.faberman.de/huerbine.php
+ http://www.dradio.de/dlf/freq/index.html (Frequenzen)
+ http://www.halcyon.com/blackbox/hw/wipp/wipp.html
+ http://support.microsoft.com/default.aspx?scid=kb;DE;q244671 (Regedit-Workaround)
+ ftp://ftp.isc.org/pub/pgpcontrol/FORMAT (Format der x-pgp-sig)
+ ptbtime.ptb.de (Timeserver)
+ http://www.sachs-web.de/amtsblatt/spielregeln/nomic/startregel.html
+ http://www.implosionswehren.de/seiten/blinddarm.html (Spaß haben)
+ http://www.abstractscience.freeserve.co.uk/symbolics/photos/IO/
+ http://www.panoramtech.com/products/pv290.html (Panoramabildschirm)
+ http://archiv.sakrak.net/usenet/dciwam/filmvorschau-cfs-v20020806.png ("Filmplakat" Deinstallatoin von Netscape 4)
+ http://zdys.dyndns.org/ (papierkorb designed for winxp)
+ http://www.geekculture.com/joyoftech/joyarchives/450.html (Microsoft migration kit)
+ http://www.adminspotting.org/Adminspotting-600x600b.png (Werbeplakat für Sysadmin werden)
+ http://relays.osirusoft.com/internethelpdesk.mp3
+ http://www.iks-jena.de/mitarb/lutz/usenet/Adminhymne.html (Adminhymne #2)
+ http://www.rhadamanthys.org/unterhaltung/grafiken/tux_in_redmond.jpg (Good evening, Mr. Gates. I'll be your server today.)
+ http://www.techtv.com/screensavers/howto/story/0,24330,3433785,00.html (Case-Modding mit Ameisen)
+ http://www.gloria.de/pdf/edvloeschanl.pdf (EDV-Löschanlage)
+ http://www.heise.de/newsticker/data/ola-03.06.03-000/ (Waschetiketten mit Textilchip)
+ http://www.thesmokinggun.com/backstagetour/mariah/mariah1.html (Sonderwünsche von Stars)
+ http://www.atlas-games.com/fengshui/index.html (Feng Shui)
+ http://us.st5.yimg.com/store4.yimg.com/I/demotivators_1737_9271268 (Individualität. Just like everybody else...)
+ http://www.attrition.org/gallery/computing/well_vented.jpg (starker, großer Lüfter)
+ http://www.dilbert.com/comics/dilbert/archive/images/dilbert2003029268523.gif (Pflanzen im Büro)
+ http://www.dreamlg.com/en/lgewasher/i_intro_summary.shtml (wash over IP)
+ http://www.havighorst.im-erftkreis.de/lem.html (St. Lem, die Waschmaschinentragödie)
+
+de.comm.provider.usenet
+ http://news.ghks.de/ (Newsportal Demoseite - WebNews)
+ http://www.usenetzone.com/eng/index.html (Newsserver mit den meisten Newsgroups)
+
+de.comm.provider.misc
+ http://www.golem.de/0307/26261.html (IPv6 das erste mal serienmäßig)
+
+alt.privacy.anon-server:
+ http://freehaven.net/anonbib/ (Anonymity Bibliography)
+ http://pki.surfnet.nl/key-mail.html (Keyserver per Mail abfragen)
+ http://www.noreply.org/latency/
+ http://www.lachschon.de/screens/200212/LoKy-1040830871.jpg
+ http://www.bigfoot.com/~potatoware/jbn2/index.html (Jack Be Nymble)
+ http://www.inetprivacy.com/a4proxy/ (Anonymity 4 Proxy - Demo-Version)
+ http://www.politechbot.com/p-02909.html
+ http://world.std.com/~franl/crypto/chaum-acm-1981.html (Artikel über Nyms)
+ http://lexx.shinn.net/faq/index.html (RemOps-FAQ)
+
+de.admin.news.announce:
+ http://www.dana.de/mod/pgp/dana-keys.asc (Die PGP-Schlüssel der dana-Mod)
+
+de.comp.security.firewall
+ http://www.zonelabs.com/store/content/support/znalmIssuesFAQ.jsp#10issues (lustige ideen? Virus setzt Startseite auf www.zonelabs.com)
+
+de.alt.recovery.webauthor:
+ http://www.guimp.com/ (Kleinste Webseite der Welt)
+ http://www.denic.de/images/stats/2002/domrel.gif (Oben links in Deutschland -- Verteilung von DE-Domains in Deutschland)
+ http://www.ltrebing.de/news/20030614-dciwam/ (DCIWAM-Treffen)
+ http://entropymine.com/jason/testbed/pngtrans/ (PNG-Tests)
+ http://openstuff.net/index.py/prod_info/prod_id/13 (Bluescreen-T-Shirt)
+ http://www.sigma-beta.de/bluescreen.php (Bluescreenfarbversteller)
+ http://logo.nino.ru/main/?id=38383 (Flash Wurx/Würx)
+ http://german.icq.com/ (ICQ-Homepage verschlimmübersetzt)
+ http://internet.ls-la.net/pictures/How-Blondes-print-with-WinWord.html
+ http://www.htmlhelp.org/cgi-bin/validate.cgi (rekursiver Seitenvalidator)
+ http://fun.sdinet.de/pics/bush/ (Bildchen über George W)
+ http://www.heise.de/ct/03/07/037/ (macromedia-Seite mit Flash)
+ http://www.roterochs.de/service/latte-macchiato.html (Rezept)
+ http://www.somafm.com (irgendein webradiosender)
+ http://www.idleworm.com/nws/2002/11/iraq2.shtml (flash)
+ http://www.idleworm.com/nws/2002/12/aol10.shtml (flash)
+ http://www.stadtplandienst.de (nur von großen Städten)
+ http://www.tagesanzeiger.ch/ta/ccSSI?include=/portal/computer/tools/rub_tests.htm&rubrikid=638
+ http://mail.socha.net:666/robin/gewinnspiel/
+ http://www.spiegel.de/spiegel/0,1518,227395,00.html
+ http://www.andreas.org/DiePost
+ http://www.autsch.de/herzschmerz/schlampen/toiletten_herren.jpg
+ http://www.theinquirer.net/?article=6535
+ http://www.heise.de/newsticker/data/tol-05.12.02-000/
+ http://www.startribune.com/stories/1451/3474149.html
+ http://www.mcseinfo.com/joke/bastard/bastard014.html
+ http://www.franzdobler.de/discographie/zuhause_mama1.htm
+ http://www.computergear.com/scripkidtshi.html
+ http://ars.userfriendly.org/cartoons/?id=20010523
+ http://cgi.ebay.de/ws/eBayISAPI.dll?ViewItem&item=2059302261 (griechisches Terminal?)
+ http://www.sanjoc.com/dau.htm (Dau-Geschichten)
+ http://www.apostroph.de/plural01.html (Fotos mit Deppenapostroph drauf)
+ http://www.cybertennis.de
+ http://praast.de/jokes/msbettwaesche.php
+ http://www.homepage-profishop.de/cgi-bin/profishop.pl (Frames, Buchstaben etc. zu verkaufen)
+ http://www.hayabusa.de/techdat.htm (Selbstmord auf 2 Rädern (Motorrad))
+ http://www.michaelhermes.de/test/Grafik1.htm (Homepage mit Corel Draw)
+ http://www.michaelhermes.de/test/Grafik2.htm
+ http://www.michaelhermes.de/test/Grafik3.htm
+ http://www.michaelhermes.de/test/Grafik4.htm
+ http://internet.ls-la.net/mirrors/99bottles/ (99 bottles of beer in verschiedenen Programmiersprachen)
+ http://assm.asstr.org/~eli/erotica/geeksex.txt.html
+ http://towo.mumpfpuffel.de/images/stress_reduction_kit.gif
+ http://www-ae.e-technik.uni-rostock.de/
+ http://www.kilimanjaro.com/gorilla/brd/
+ http://www.spiegel.de/wissenschaft/mensch/0,1518,druck-211215,00.html (Lifegems)
+ http://www.felixgroteloh.de/ (Hilfe, Hinweise und Einstellungen)
+ http://www.fastfertig.com/agb.htm
+ http://LarsKasper.de/fotos/dciwam2002-forchheim/ (Fotos vom <dciwam/>-Treffen)
+ http://www.bilkinfo.de/satire/vernetzte-kueche.htm (Was in Zukunft passieren kann...)
+ http://arnep.de/wasistwas? (Google-Orakel)
+ http://www.stud.ntnu.no/~arnesen/peltierbeer/ (Bier kühlen)
+ http://www.darw.de/statistik/statistik-java.php?mode=steffi (Statistik, die keine 100% ergibt)
+
+de.comp.software.misc
+ http://www.unixgeeks.org/security/
+ http://www.securityfocus.com/
+ http://www.packetstormsecurity.org/
+ http://www.searchlores.org (Alles über Suchen)
+ http://rrottmann.server.cybton.com/download/pwcheck.zip
+ http://uncelhacker.net/Downloads/5/nuker/rpcnuke9x-nt-xp.zip (RPC-Nuker)
+
+de.comp.technik.dsl:
+ speedmeter.de (Dubioser Internetverbindungsgeschwindigkeitstest)
+
+de.comp.editoren:
+ http://go.to/de.comp.editoren (de.comp.editoren FAQ)
+ http://www.fixedsys.com/context/ (Texteditor mit Syntax-Highlighting)
+ ftp://ftp.gnu.org/gnu/windows/emacs/... (Emacs & Leim)
+ http://freshmeat.net/projects/e3/?topic_id=63 (e3-Editor)
+ http://www.math.fu-berlin.de/~guckes/articles/vi_is_not_for_you.html
+
+de.comp.hardware.laufwerke.festplatten:
+ http://www.hgst.com/hddt/knowtree.nsf/0/4b1a62a50f405d0d86256756006e340c?OpenDocument (Festplattensounds)
+ http://www.head-crash.org/hddcrsh.htm (Festplattensounds/Headcrash)
+ http://www.cooling-solutions.de/html/modules.php?op=modload&name=FAQ&file=index&myfaq=yes&id_cat=5&categories=FAQ+zur+DTLA+Festplattenserie
+ http://www.win.tue.nl/sequoiaview/ (Welche Dateien brauchen viel Platz?)
+ http://www.private.peterlink.ru/tochinov/ (DTemp: SMART-Werte auslesen)
+ http://www.aida32.hu/aida-download.php?bit=32 (Hardwarediagnosetool)
+
+$Uni:
+WS0102
+ http://uni.jayniz.de/ (Uni-Board Augsburg Foren -- 1. Adresse -- veraltet)
+ http://www.uni-augsburg.info/ (Uni-Board Augsburg Foren -- 2. Adresse -- veraltet)
+ http://multimedia.informatik.uni-augsburg.de/lehre/ws01/info1/ (Informatik I, veraltet)
+ http://www.math.uni-augsburg.de/diff/uebungen/w0102/ (?)
+
+SS02
+ http://www.mycosima.com/Cosima.txt (Beispieldatei für ÜB 8, Informatik 2 -- veraltet)
+ http://ro.do.bei.t-online.de/lehre/ana2/ (Analysis 2 Lösungsblätter -- veraltet)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info3/lehre/vl_theo_inf_ss2002/index.html (Theoretische Informatik -- veraltet)
+ http://ganymed.informatik.uni-augsburg.de/info2/ (Informatik II, veraltet, info2/hamster)
+
+WS0203
+ http://forum.informatik.uni-augsburg.de/ (das "Konkurrenzforum" -- veraltet)
+ http://multimedia.informatik.uni-augsburg.de/lehre/ws02/INFO3/index.html (Informatik III, veraltet)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/lehre/ws0203/logik/index.html (Logik für Informatiker, veraltet)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/logik/ (Logik für Informatiker, veraltet)
+ http://scicomp.math.uni-augsburg.de/german/numerik1.html (Numerik I, veraltet)
+ http://stats.math.uni-augsburg.de/lehre/WS0203/wtheorie.html (Wahrscheinlichkeitstheorie, veraltet)
+
+SS03
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info3/lehre/ss2003/vl_sys_info/index.html (Systemnahe Informatik)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/lehre/ss03/sopra/index.html (Softwarepraktikum) 
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/lehre/ss03/sopra/todos.html (Sopra TODO)
+ http://www.math.uni-augsburg.de/alg/neisse/coding.html (Codierungstheorie)
+
+WS0304
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/lehre/ws0304/swt/index.html (Softwaretechnik)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/lehre/ws0304/swt/uebungen/index.html (Softwaretechnik TODO)
+ http://dbpra:dbp1web@ganymed.informatik.uni-augsburg.de/dbp1/ (Datenbanken)
+ http://www.math.uni-augsburg.de/opt/hachenbe/dm-w03.html (Diskrete Madde)
+ http://www.informatik.uni-augsburg.de/thi/lehre.html (Komplexitätstheorie, thi2:EidKomp)
+ http://www.informatik.uni-augsburg.de/vs/lehre/ws03/pm/ (Projektmanagement)
+
+SS04
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/lehre/ss04/sopra/index.html (Softwarepraktikum)
+ http://www.informatik.uni-augsburg.de/dbis/dbp2/ (Datenbanken 2)
+ http://www.math.uni-augsburg.de/opt/hachenbe/dm-s04.html (Diskrete Madde 2)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/lehre/ss04/javacard/index.html (JavaCards)
+ http://www.informatik.uni-augsburg.de/~vogler/vorles.html (Verteilte Algorithmen)
+
+WS0405
+ http://www.informatik.uni-augsburg.de/dbis/dbp1/ (Datenbanken 1)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info1/lehre/ws0405/bks-prakt/index.html (Beweisbar korrekte Software)
+ http://www.informatik.uni-augsburg.de/~moeller/as04/as04.html (Algebraische Semantik)
+ http://www.informatik.uni-augsburg.de/vs/lehre/ws04/vs/index.shtml (Konzepte verteilter Systeme)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/info3/lehre/ws2004/vl_mrt/ (Mikrorechnertechnik I)
+ http://www.informatik.uni-augsburg.de/~vogler/vorles.html (Petrinetze)
+
+SS05
+ http://www.informatik.uni-augsburg.de/swt/lehre/ss05/sopra/ (Softwarepraktikum) 
+ http://www.informatik.uni-augsburg.de/swt/lehre/ss05/sopra/arbeitseinteilung/ (Softwarepraktikum TODO)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/swt/se/teaching/ss05/industrieroboter05/ (Industrieroboter)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/swt/vs/lehre/SS_05/compilerbau/ (Compilerbau) 
+ http://compilerbau:cc2005.2@www.informatik.uni-augsburg.de/lehrstuehle/swt/vs/lehre/SS_05/compilerbau/folien/ (Compilerbau Folien)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/swt/vs/lehre/SS_05/compilerbau_uebung/ (Compilerbau Übung)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/dbis/pmi/lectures/ss05/graphikprogrammierung/ (Grafikprogrammierung)
+ http://137.250.39.15/skripte/lehreSS05.html (Datenstrukturen)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/swt/ti/lehre/ss05/pn_seminar/ (Seminar Petrinetze)
+
+WS0506
+ http://www.informatik.uni-augsburg.de/lehrstuehle/dbis/db/lectures/ws0506/datenbanksysteme1/ (Datenbanken I)
+
+allgemein
+ http://msdn40.e-academy.com/uni_augsburg_inf_math/ (MSDN Academic Alliance - MSDNAA)
+ http://studentenforum.uni-augsburg.de/ (Studentenforum der Uni Augsburg)
+ http://info-pool.informatik.uni-augsburg.de (Status zum Rechnerpool im Physik-Gebäude)
+ http://studentenforum.uni-augsburg.de/portal.php?active_task=2 (Uni-Augsburg-Forum Forenindex)
+ http://www.info-genie.de (Uni-Augsburg-Wiki)
+ https://peaches.informatik.uni-augsburg.de/lecturereg/index.jsp (LectureReg)
+ https://www.studis.uni-augsburg.de/" (Studis)
+
+$
+Message-IDs:
+ news:399b6677.0208310458.79e8436a@posting.google.com (Leute zum Schlachten gesucht)
+ news:9tjcvu$30jg9$1@ID-7215.news.dfncis.de (?)
+ news:80jp8d$jeb$1@krell.snafu.de
+ news:a8proe.t0.1@aljoscha-rittner.de (dclj -- Classpath ändern)
+ news:3BD9D68F.BF9A4444@webshuttle.ch (dnq -- )
+ news:LSP49.43106$nF5.10407@sccrnsc02 (dnq -- deltree c: /y als Tipp)
+ news:MPG.15b2b7807b034fa7989f7b@ID-20881.user.dfncis.de (dcsn -- siehe http://www.namesuppresse.com/kenny)
+ news:9hdc1d$1018$1@redenix.uni-muenster.de (dcsn -- Subject-Encoding ->folding.txt)
+ news:d9a955ee.0303140447.36e2fced@posting.google.com (dan-a.misc -- "rob liebwein verunglimpft heise" & reaktion)
+ news:pis03uk2b2cnn1tkmkjj3eu49rvuhl8kj3@4ax.com (AOL Witz)
+ news:3D371E09.41C6@t-online.de (dasr -- Hans kann nicht C programmieren)
+ news:0959af1595a775dc97474343e6bbe0b5@fitug.de (dasr -- Über Bielefeld...)
+ news:6v9468$53t$1@suse.coci.de (dasr -- slrn: --with-coffee)
+ news:9ueqm9.19k.1@babylonsounds.com (dasr -- )
+ news:Xns9263F00981931jkorpelacstutfi@193.229.0.31 (darw -- Object-Tag)
+ news:Result-de.sci.medizin.physiotherapie-13.04.1999@dana.de (dafu -- Die meisten ungültigen Stimmen)
+ news:9u1hg5.3t2sejl.1@hx.lademann.de (URL-Format!)
+ news:1tit1vxmxe.fsf@chef.local (Bedienelemente von Browsern weg ist wie ...)
+ news:08e0a7e1acfa61a1cdbdeaa2fd83e7c5@die.wuer.de (dan -- Gabi und indischer Besuch)
+
+Unsorted:
+ http://alt.tnt.tv/games/thedoors/ (Flashspiel)
+ http://new.linuxgazette.com/node/9083 (Aprilscherz-RFCs)
+ http://sql-info.de/mysql/gotchas.html (MySql-Gotchas)
+ http://nirsoft.net (Freeware für Passwortrecovery)
+ http://javascriptkit.com/howto/htaccess.shtml (Comprehensive Guide To .htaccess)
+ http://stern.de/computer-technik/internet/index.html?eid=519815&id=519774&nv=fs&cp=3 (Klicken fürs Zwerchfell - viele nette Bilder)
+ http://subversion.tigris.org/ (Subversion)
+ http://www.adoption.de/init_kalender.htm (Immerwährender Kalender)
+ http://develnet.org/ThisAndThat/DaddyWhyDidWeHaveToAttackIraq (Nette Beschreibung über US-Politik)
+ http://weather.noaa.gov/ (Wettervorhersagen)
+ http://www.archifee.de/groupboard/start.html (Groupboard - Shared Whiteboard)
+ http://www.sehenswert.net/kinoraeume/werbespots/werbespots.html (Lustige Werbespots)
+ http://www.bash.org (Lustige Zitate)
+ http://www.german-bash.org (Lustige Zitate auf deutsch)
+ http://www.adultpdf.com/ (PDF-Restriktionen aufheben)
+ http://www.standart.de.gg/ (Standart)
+ http://www.oberlehrer.org/naf.html (Standart etc.)
+ http://www.bessersprechen.de/fehler.htm (Standart etc.)
+ http://debiananwenderhandbuch.de/
+ http://www.bugmenot.com/ (Accountsharing)
+ http://www.spambob.com/ (öffentliche Mailadressen gegen Spam)
+ http://www.techtales.com/ (Geschichten von Hotlines)
+ http://freshmeat.net/projects/onejar/ (Jar in Jar)
+ http://www.instituteofthefuture.org/exifomatic/ (Exif-Reader in Java)
+ http://www.bindows.net/ (JavaScript-Fenstersystem)
+ http://systray.sf.net (TrayIcon unter Java)
+ http://www.trustice.com/java/jnireg/index.shtml (Registry unter Java)
+ http://www.myjavaserver.com (kostenloser JSP-Server)
+ http://www.plinko.net/404/area404.asp (Liste lustiger 404-Seiten)
+ http://www.reinhard-tchorz.de/start.html (FileSecPatch, Sicherheit-Tab unter WinXP Home)
+ http://www.phonetik.uni-muenchen.de/Mitarb/Bastard/BOFH.German/BOFH.German.html (BOFH auf Deutsch)
+ http://www.theregister.com/odds/bofh/ (BOFH)
+ http://typenav.fontshop.com/ (Schriftsuchmaschine)
+ http://murl.microsoft.com/videos/cmhc/leaders/1-kay_OnDemand_100_100K_320x240Slides.htm (Wie Kinder einen Kreis programmieren)
+ http://murlup.research.microsoft.com/videos/cmhc/leaders/1-kay_OnDemand_100_100K_320x240.asf (als .asf, ~70MB)
+ http://www.urania-dresden.de/terrasse/zeschg.htm
+ http://www.2meta.com/april-fools/collections/rfc/
+ http://www.sajoh.de/rechts21.htm (? hilft nicht überall, Sackmann)
+ http://www.tagesschau.de/aktuell/meldungen/0,2044,OID460758_TYP6_THE,00.html (Panzer als Kiesstreuer, Schneeräumer)
+ http://www.cyberpagesdesign.com/bugtest
+ http://www.vulnerabilities.org/analysis.html
+ http://pgp.dtype.org (PGP-Schlüssel-Analyse)
+ http://www.rent-a-tutor.com/luebeck/seiten/dialog.html (Filmchen, wie viel eine Webseite kostet)
+ http://www.icepingu.de/kev/lustiges/pinguin-fresse-halten.mpeg (Wenn man keine Ahnung hat - einfach mal Fresse halten!)
+ http://www.psycotic.net/web/time.swf
+ http://www2.fantasy.de/neu/content/interaktiv/downloads/saddam.mp3
+ http://www.microsoft.com/germany/library/resourcesmod/linux_partner_brosch.pdf (Linux-FUD von Microsoft)
+ http://www.ironiedetektor.de.vu
+ http://www.borland.de/products/downloads/download_jbuilder.html (JBuilder registrieren)
+ http://home.arcor.de/ironshome/tipps2/snakeoil.html (woran man schlangenölsoftware erkennt)
+ http://www.counterpane.com/keylength.html (Wieso 90 Bit https?)
+ http://www.gentleware.com/products/index.php3 (Poseidon / UML)
+ http://www.vornamen.com/ (Listen von Vornamen)
+ http://members.aol.com/tbwih/cartoons.htm (ASCII_Comic)
+ http://www.unicode.org/ (Unicode charts)
+ http://www.syseng.anu.edu.au/~jaa/ (Compface)
+ http://www.ralfhandel.de/platte.jpg (Meißel durch Festplatte hauen)
+ http://www.give-a-hint.com (anonyme nachricht über Höflichkeit)
+ http://www.myeuro.info/seriennummer.php (Euro-Seriennummer)
+ http://home.t-online.de/home/micha-wr/hamster/history/history.htm (Entstehung von hamster.*)
+ http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q244139 (Bluescreen per ScrollLock erzeugen)
+ news:3e860937.20524556@news.cis.dfn.de (zeigt, daß man einen Usenetizen mit Fakes durchaus schädigen kann).
+ http://jgrossklass.bei.t-online.de/w31mm_de.htm#Euro (Euro-Update für Win3.1)
+ http://www.musicxml.org/
+ http://www.blug.linux.no/rfc1149/ (Implementierung IPoAvianCarrier)
+ http://www.ipix.com (360°-Bilder)
+ http://groups.google.com/groups?ie=ISO-8859-1&as_umsgid=%3C9u1hg5.3t2sejl.1%40hx.lademann.de%3E&lr=&hl=de (Was bei Google archiviert wird)
+ http://download.microsoft.com/download/vb60pro/Redist/sp5/WIN98Me/EN-US/vbrun60sp5.exe (VB-Runtime)
+ http://www.icra.org/_de/ (Webseiten-Rating)
+ http://www.doublequick.de/Adventskalender/20_dez.htm (Hammer+Rot)
+ http://sourceforge.net/docman/display_doc.php?docid=766&group_id=1 (WinCVS mit PuTTY)
+ http://www.google.com/search?hl=de&ie=UTF-8&oe=utf-8&q=gau%C3%9F+ostern+formel+19+jahre&btnG=Google-Suche (Osterformel)
+ http://www.nicotec.de/epson_stylus_tintenpatronen_refill_chip.htm (Epson-Resetter für 30 ?)
+ http://martins.wunderkis.de/text/winisgut.txt
+ http://www.daea.de (->Dummfug - die witzigsten Auktionen)
+ http://www.biglumber.com (Keysigning-parties & ähnliches)
+ http://www.activestate.com/Products/ActiveTcl (Active TCL)
+ http://kordewiner.de/adsl/ (ADSL-FAQ mit Test für Bandbreite)
+ http://www.dau-alarm.de (Kaputte Hardware, die reklamiert werden sollte)
+ http://home.arcor.de/schmidthbs/newusa.jpg (zukünftige US-Flagge)
+ http://www.eqi-clan.de/lego/lego-dope.html (Legomännchen drehen Hashisch)
+ http://www.localhost.nl/stuff/images/bigimages/policeshotshed.jpg (Jemand hat Einbrecher erschossen... Polizei war ganz schnell)
+ http://prdownloads.sourceforge.net/gnuwin32/psutils-1.17-bin.zip?download (psutil)
+ http://www.notcpa.org/ (Gegen Palladium)
+ http://www.innoline-systemtechnik.de/dhgm/mb.html (Merkbefreiungsgenerator)
+ http://www.ndh.net/home/esken/usenet/regexp-realname.html
+ http://www.microsoft.com/products/msagent/downloads.htm#tts (MS Speech)
+ http://www.albinoblacksheep.com/flash/youare.html (You are an idiot)
+ http://sf.net/projects/liberator (Freenet-cmdline-Tools)
+ http://www.acm.vt.edu/~jmaxwell/dvorak/compare.html (qwerty vs dvorak)
+ https://grc.com/x/ne.dll?bh0bkyd2 (Internet-Sicherheits-Porttest)
+ http://www.pclite.de (Abgespecktes OS - Win98Lite)
+ http://www.fthode.de (OK-Popup-Orgie)
+ http://www.patrick.fm/boobies/boobies.php?text=... (I love ...-Sexbildchen)
+ http://www.speedproject.de (ZipStar download)
+ http://fachschaft.physik.ruhr-uni-bochum.de/entdeckungen/defrag.shtml (LOL - Festplatten hardwaremäßig defragmentieren)
+ http://www.catseye.mb.ca/esoteric/ (verrrückte programmiersprachen)
+ http://www.science.uva.nl/~mes/jargon/ (Jargon file, alt)
+ http://www.badtz.org/pics/bart.gif ("I will use google before asking dumb questions" x 18)
+ http://home.t-online.de/home/KH.Zeller/dcpt-Spezialnetiquette.html (flaming-howto)
+ http://download.microsoft.com/download/win95/Update/6467/W95/EN-US/256015USA5.EXE
+ http://www.teleport.com/~garumble/windows.shtml
+ http://home.knuut.de/tgl/
+ http://rpi.net.au/~ajohnson/resourcehacker/
+ http://www.amokfree.de
+ http://www.quinion.com/mqa/spell.htm
+ http://www.ee.bilkent.edu.tr/~microwave/programs/utilities/macroangel.htm
+ http://bielefeld-verschwoerung.home.pages.de/
+ http://my.gnus.org/users/mklingbeil/slrn/slrn.rar
+ http://www.mvps.org/vb/index2.html?samples.htm (!!!)
+ http://support.microsoft.com/support/kb/articles/q276/3/04.ASP
+ http://www.Gewinnmail.de
+ PowertOys unf KernelToys von http://www.microsoft.com/
+ CmosPwd von http://www.esiea.fr/public_html/Christophe.GRENIER/
+ Befreit.bat von http://www.heise.de/
+ http://www.smartcode.com/
+ google: adserver.tli.de
+ "ethereal download"
+ http://home.worldonline.de/home/leggewie/EU-Spam-Initiative.htm (mit IE)
+ http://www.iks-jena.de/mitarb/lutz/usenet/Fachbegriffe.der.Informatik.html
+ http://kris.koehntopp.de/kris/inkomploehntopp/00525.html
+ "Cakewalk Express"
+ http://java.sun.com/j2se/1.3/docs.html
+ http://java.sun.com/j2se/1.3/install.html
+ telnet koeln.ccc.de 31337
+ http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.abijahrgang-2001.de%2FFormat.css&warning=1&profile=css2
+ http://i33www.ira.uka.de/applets/index_js.html
+ http://nollsen.virtualave.net
+ http://365-24-7.net/perso/
+ http://www-ai.ijs.si/eliza/eliza.html
+ http://www.funpixx.de/pics/diverses/mausundkaese.jpg
+ http://student.uni-augsburg.de
+ "SBC" (Packer)
+ "Pegasus Mail"
+ http://go.to/wingnus      [ Diese beiden Seiten behandeln]
+ http://gnus-w32.de.vu/   [ Gnus auf Windosen.           ]
+ http://socha.net/gnus                          [ Diese Seiten sind ]
+ http://www.ccs.neu.edu/software/contrib/gnus    [ allgemein zu Gnus.]
+ http://my.gnus.org
+ http://home.t-online.de/home/g.haslbeck/software.htm
+ http://www.cs.berkeley.edu/~mikechen/im/protocols/icq/icqv5.html
+ http://de.geocities.com/quhno/ [operafaq]
+ http://biom75.narod.ru [operasec]
+ http://wildfish.narod.ru/ [opera-searchengines...]
+ http://whdkramer.home.pages.de/misc/Wahnsinnstips.txt
+ http://lynx.browser.org/
+ telnet towel.blinkenlights.nl
+ http://whdkramer.home.pages.de/misc/Allohol.txt
+ http://www.talknet.de/cgi-tli/freetime
+ ftp://ftp.germany.net/pub/news/ (Newsstatistik)
+ http://www.synicon.com.au/sw/midichlorians/bloodtest.htm (Midichlorianer...)
+ http://home.snafu.de/ohei/vera/vera.html
+ http://diverse.freepage.de/webplatz/usenet-pgp.txt
+ http://www.wortrei.ch/usenet/admin/fup-im-cfv-faq.php
+ http://www.fr-aktuell.de/fr/200/t200017.htm (?)
+ http://freenetproject.org/
+ http://www.bmbf.de/brosch_743.html (TIMMS-Broschüre)
+ http://guinnessworldrecords.com/internet1 (Guinness-Flash-Vermurks-Rekord ;-))
+ http://www.martinvogler.de/buttons_kugel4.html (Glaskugel defekt - mach dir ne neue...)
+ http://www-student.wiwi.uni-halle.de/~his/humor/witze3.html (wiwi-witze)
+ http://retrogra.de/ping.wav (Ein Sonar-Ping-Sound)
+ http://www.useit.com/alertbox/20020819.html (GUI & Schriftgrößen in Browsern)
+ http://www.esperanto.net
+ http://www.sloganizer.de/cgi-bin/sloganizer/sloganizer.exe?F=N&P=dclj&V=coden&A=exquisit&x=27&y=82 (baut Slogans)
+ http://www.eternium.de/files/oyarsa.de.jpg (Original von dara-a-Bild)
+ http://www.wdr.de/themen/wirtschaft/geld-_und_kreditwesen/euro/automatenbetrug/index.jhtml (20 Cent zu 1-Euro.Münzen umhämmern)
+ http://xlola.net/tight/ (grra cvk? arr, fpurvag jnf xbfgracsyvpugvtrf mh frva)
+ http://www.insecure.org/sploits/zip-disk.password-problem.html
+ http://www.geocities.com/extensionsearch/ (Dateierweiterungen suchen)
+ http://www.derivo.ch/rabailkal-test/hypnose/
+ http://lars.marowsky-bree.de/personal/stories/Der_Tod.html
+ http://www.dhmo.com
+ http://www.tunes.org/
+ http://radportal.charite.de/Batterie/batterie.jpg
+ http://www.sgi.com/tech/stl/next_permutation.html
+ http://www.javaperformancetuning.com/tips/volatile.shtml (Volatile in Java)
+ http://www.htthost.com
+ http://www.tlsecurity.net/windows/ids/sniffer/
+ http://groups.google.com/groups?as_q=Esperanto%20Vektorraum
+ http://www.ligo.caltech.edu/~e2e/Software/docs/wxWindows2/docs/html/wx/wx290.htm#wxsocketbasewrite (WxWindows Doku)
+ http://werner.jakobi.bei.t-online.de/ (Morver)
+ g batchrun410.exe (Mehrere Programme auf einmal starten und beednen)
+ g table.el (was für den Emacs zum Tabellen machen)
+ http://modeemi.cs.tut.fi/~tuomov/ion/ (ION-Fenstermanager)
+ http://ratpoison.sourceforge.net/ (Ratpoison-Fenstermanager)
+ http://www.modern-primitives.at/german/macher/pics/flexx.jpg
+ http://ars.userfriendly.org/cartoons/?id=20000512&mode=classic
+ telnet:piranha.zapto.org (ANSI art BBS)
+ localhost.uni-augsburg.de (127.0.0.1)
+ internet.intershop.de (127.0.0.1)
+ http://efa.vrr.de (Fahrplanauskunft)
+ http://www.geekculture.com/joyoftech/joyimages/344.gif
+ http://cgi.ebay.de/ws/eBayISAPI.dll?ViewItem&item=2028790463 (Rechenzeit zu verkaufen)
+ http://lexx.shinn.net/pipermail/remops/2002-June/010321.html (redneck is down?)
+ http://www.rfc-editor.org
+ http://www.ewetel.net/~roland.wagner/ (beworben -- down)
+ http://www.captainfuture.com/deutsch/Captain_Future_FAQ.html (Curtis Newton)
+ http://www.nomoreaolcds.org
+ http://www.cgsecurity.org/ms/index.html (Anti-Microsoft-Bilder)
+ http://www.webrankinfo.com/outils/google-dance/pagerank.php (PageRank anzeigen)
+ http://kohaistyle.com/scripts/quickcolor/ (Welche Farben passen zu?)
+ http://www.trauringe-rathgeber.de/ (Frames mit Popups simulieren...)
+ http://plugindoc.mozdev.org/resources/firebird-jre142-fix.reg (Java im Mozi Firebird)
+ junit.sf.net (JUnit)
+ http://www.cl.cam.ac.uk/TechReports/UCAM-CL-TR-560.pdf (ATM Hack)
+ http://www.mutefantasies.com (Tetripz)
+ https://bikikii.ath.cx/software/index.html (Orange RemRequest v1.0)
+ http://www.luziusschneider.com/cgi-bin/PHPWebQuiz/Deutsch/welcome.php (Bibelquiz)
+ http://source.rfc822.org/pub/mirror/ftp.ds2.pg.gda.pl/pub/macro/S.M.A.R.T./8035R2_0.PDF (Smart Werte)
+ http://ssshotaru.homestead.com/files/aolertranslator.html
+ http://netscan.research.microsoft.com (Usenet-Recherche)
+ http://gemal.dk/browserspy/ (Browsertests)
+ ftp.gaby.de (Teledisk downloaden)
+ http://www.eskimo.com/~scs/C-faq/s5.html (NULL(pointer) in C)
+ http://www.alanwood.net/unicode/fonts.html (Unicode fonts)
+ http://detroit.bustedthumb.com/stats/ (Remailer-Stats)
+ http://nolte-net.de/de/article/lego_disk.html (Festplatten-Tuning)
+ http://www.rhadamanthys.org/unterhaltung/filme/grill1.mpeg (CODEC?)
+ http://www.deutschepost.de/download/broschueren/autom_briefsendung.pdf
+ http://www.bruhaha.de/CompuServe.html (Über Compuserve...)
+ http://wecomeinpeace.free.fr/ (We come in peace - heh)
+ http://www.zyn.de (Satiremagazin)
+ ftp://ftp.franken.de/pub/people/m/pix/comp/vaio-memstick.mpg
+ http://www.heise.de/ct/Redaktion/cm/Thumpmobile_Zapper.html (Mikrowellen zum Zerstören von Elektronik verwenden)
+ http://www.ograhl.com/projects/save/checklists/test.php (Software-Testphasen)
+ http://allchars.zwolnet.com/introduction.html (Compose-Taste unter Windows)
+ http://www.iks-jena.de/mitarb/lutz/anon/n.a.n.help.html
+ http://www.lagmonster.org/humor/27549_winrg.swf
+ http://svt.se/hogafflahage/hogafflaHage_site/Kor/hestekor.swf (Musik von Kühen)
+ http://europa.tiscali.it/Media/flash/EU%20vs%20Italy.swf
+ http://www.mnieberg.de/links/downloadwww.gif (Das Internet runterladen...)
+ http://www.guhgel.de (Google durch nen Sprachverdreher)
+ http://dur.ch/klicken/ (Make a longer link)
+ http://de.wikipedia.org/wiki/Wiki (Das größte deutsche wiki)
+ http://c2.com/cgi/wiki?WelcomeVisitors (das erste wiki)
+ http://check.lfd.niedersachsen.de/start.php (Sicherheitscheck)
+ whois://whois.variomedia.de (Denic-Mitglied feststellen)
+ http://www.scheernet.de/postda/sounds_avis.html (Sie haben Post)
+ http://www.dangertheater.com/la-ep5.html (Lonely Astronaut, Flash)
+ http://www.thememoryhole.org (gescannte FBI docs)
+ http://www.straightdope.com/mailbag/mplurals.html (ausländische Pluralbildungen im Englischen)
+ http://fkk.strikenet.de/hanf.jpg (Wechselbild zum Markieren im IE)
+ http://www.amyuni.com/ger/products/rtf_converter/pricing.php (RTF-Druckertreiber)
+ http://www.unmoralische.de/law.htm (verrückte Gesetze)
+ http://www.faber-castell.de/docs/index-news.asp?id=14506&sp=D&domid=1010 (Bleistift als Textverarbeitung)
+ http://www.cs.vu.nl/grammars/vs-cobol-ii/ (BNF von COBOL)
+ http://www.wotsit.org/ (Dateiformate)
+ http://newtonhigh.sthelens.org.uk/support/file_extensions.htm (Dateiformate)
+ http://www.pcinspector.de/file_recovery/welcome.htm (Undelete-Freeware)
+ http://browsers.evolt.org/ (alte Browser)
+ http://article.gmane.org/gmane.comp.security.invisiblenet.iip.devel/102 (Trent mIRC script)
+ ftp://ftp.foolabs.com/pub/xpdf/xpdf-2.03-win32.zip (pdftops für Windows)
+ http://truecrypt.sourceforge.net/ (Truecrypt, Festplattenverschlüsselung für 2k/XP)
+ http://www.tekzoned.com/games/psychic/index.html (Gedankenlesen mit Flash)
+ http://wortschatz.uni-leipzig.de/ (Deutscher Wortschatz)
+ http://www.fuckedcompany.com/merch/big/mousepad1.jpg (Marketing ist nichts als heiße Luft)
+ http://www.jetcafe.org/~dave/usenet/freedom.html ("Radikale" Sicht von "Free speech" im Usenet)
+ http://www.8bit-museum.de (Geschichte der Videospiele)
+ http://www.hj-gym.dk/~hj/writer2latex/ (OOo -> LaTeX)
+ http://potrace.sourceforge.net/ (Bitmap -> Vektor)
+ http://www.microsoft.com/windows/ie/downloads/recommended/ime/default.asp (Input Methods für asiatische Sprachen)
+ http://www.all4you.dk/FreewareWorld/links.php?page=2&cat=24 (Encryption&Sicherheits-Freeware)
+ http://www.methodize.org/nntprss (Newsseiten über nntp lesen)
+ http://www.securityoffice.net/mssecrets/ (Hack bei Microsoft und andere Geheimnisse (?))
+ http://anfaenger.de/anfaenger.html (deutsche Mailinglisten zu Freenet, Linux etc.)
+ http://www.cl.cam.ac.uk/TechReports/UCAM-CL-TR-560.pdf (Decimalisation table attacks for PIN cracking)
+ http://www.vanager.de/ (Bietet Rootserver und VServer an)
+
+Uralt:
+ RFC0821
+ http://www.chemie.fu-berlin.de/outerspace/netnews/son-of-1036.html
+ http://www.ifi.uio.no/~larsi/notes/son-of-rfc1036.txt
+ http://www.jave.de/player/demo1.html
+ http://www.jave.de/player/demo2.html
+ http://theory.gsi.de/~vanhees/faq/
+ http://www.westfalen.de/paefken/de.newusers/umlaute-faq.txt
+ http://support.microsoft.com/support/kb/articles/Q196/6/52.ASP
+ http://members.aol.com/emailfaq/mungfaq.html
+ http://www.ascii-art.de/
+ http://www.jave.de
+ http://www.gerware.de/content/padok.php?id=363
+ http://learn.to/quote/
+ http://ourworld.compuserve.com/homepages/fdoernenburg
+ http://www.gmx.net (ummelden)
+ http://home.pages.de/~gerlo/falsche-email-adressen.html
+ Screenshot: http://www.microplanet.com/gravity/glance.htm
+ http://just.50g.com/slrn.gif
+ http://home.snafu.de/dbrueg/laws.html
+ http://home.t-online.de/home/werner.jakobi/
+ http://www.computerchannel.de/download/autoren/updates.phtml?progid=14118
+ http://www.uni-ko-ld.de/fb4/berufsbild/
+ http://dafk.dirkre.de
+ http://www.deadspam.com/
+ http://www.qad.org/faq/faq-messageid.html
+ http://www.sockenseite.de/music-faq.html#3.1.2
+ http://www.cgarbers.de/newsreaderFAQ.php3
+ http://www.best.com/~mikechat/ascii/jmov/jball.htm
+ http://www.best.com/~mikechat/ascii/jmov/snake.htm
+ http://www.asciimation.co.nz/
+ http://my.gnus.org/modules.php?op=modload&name=FAQ&file=index&myfaq=yes&id_cat=3&categories=Why+Gnus%3F
+ http://www.cgarbers.de/newsreaderFAQ.php3
+ http://www.gratistel.de
+ http://www.telefaq.asberlin.de/
+ http://www.jave.de/player/index.html
+ http://www.wmhsoft.com/
+ http://www.hochschulkompass.hrk.de
+ ftp://ftp.fu-berlin.de/doc/news/ISC/README
+ http://www.liesmal.de/fup2-faq/
+ http://www.despaml.interrob.de - dort gibt ein FAQ.
+ http://www.despaml.interrob.de/recht/ - dort ein Urteil.
+ http://www.detebe.org/3.14/ILOVEYOU-Signature-FAQ.html
+ http://www.internetworld.de/sixcms/detail.php?id=12899
+ http://www.dr-ackermann.de/
+ http://www.tobias-thierer.de/endrunde.html
+ http://www.opensource.org/docs/definition_plain.html
+ http://renameit.hypermart.net/
+ http://www.jargon.org/jargon.html
+ http://www.usenet-abc.de
+ http://www.ifi.uio.no/~larsi/notes/read_this
+ http://members.tripod.de/hanjoheyer/Paranormal.html
+ http://www.sockenseite.de/usenet/einweisung.html
+ http://www.dominik-boecker.de/email/index.html
+ http://www.zigenhorn.de/mlm.htm (REPORT 5!)
+ http://www.mastel.ch/nutznetz.html  (unter Usenet-Allerlei)
+ http://groups.google.com/groups?q=+%22Arno+Eigenwillig%22+group:de.newusers.questions&start=10&hl=de&safe=off&rnum=18&ic=1&selm=87lmtkqobf.fsf%40fulmine.dhs.org
+ http://www.jave.de/player/demo/demo6.html
+ http://home.t-online.de/home/mstiermann/
+ http://www.afaik.de/usenet/faq/zitieren/zitieren-4.php3
+ http://www.bruhaha.de/dsf.html
+ http://www.leo.org/information/freizeit/fun/merkbefrei.html
+ http://www.keywarrior.net/duesti/kurioses/merkbefreiung.de.html
+ http://bundesamt.fuer.merk.befreiung.de/
+ http://www.byteria.de/Merkbefreiungsformular.txt
+ http://www.byteria.de/
+ http://www11.freeweb.ne.jp/area/kamuiyoo/ 
+ http://www11.freeweb.ne.jp/area/kamuiyoo/index.htm
+ http://alpha.poelzi.org (Online Image2ASCII)
+ http://pdg.web.cern.ch/pdg/ (Teilchentabelle)
+ http://www.freefont.de
+ http://www.mathematik.tu-darmstadt.de/~bruhn/ (Non-Mainstream-Physik)
+ http://www.zahlungsverkehr-faq.de/ (Zahlungsverkehr-FAQ)
+ http://www.interrob.de/suche/ip/ (Schlechte IP-Whois-Metasuchmaschine)
+ http://transpatent.com/gesetze/urhg.html (Urheberrechtsgesetz
+ http://asc-trix.hicknhack.org/ (Matrix-Trailer als ASCII?)
+
+Online-Virenscanner:
+ http://www.malwareupload.com/ (Upload + händische Kontrolle, erfordert Registrierung)
+ http://www.virustotal.com/xhtml/index_en.html (Mail-Upload oder Web-Upload)
+ http://www.kaspersky.com/virusscanner (HTTP-Upload)
+ http://housecall.trendmicro.com/ (ActiveX oder Java, scannt lokal)
+ http://virusscan.jotti.org/ (Upload)
+
+REMAILER:
+ http://groups.google.com/groups?threadm=19970907224816.29967%40squirrel.owl.de&rnum=1 (weasel.owl.de)
+ http://www.nuther-planet.net/farout/misc/FromHead.html (From bei Remailern)
+ http://riot.eu.org/anon/remap.html (Remailer-Plätze)
+ http://www.eskimo.com/~turing/remailer/FAQ/ (APAS FAQ)
+ http://www.microobjects.com/emailmax/noscript.html (EmailMax - kann Remailer, naja...)
+ http://www.skuz.net/quicksilver (Quicksilver - gutes Remailertool)
+ ftp://ftp.skuz.net/pub/quicksilver (Quicksilver - gutes Remailertool - Download)
+ http://www.hardtware.de (Fakemailsoftware)
+ ftp://ftp.efga.org/privacy/pi32/pi32v526.exe (Private Idaho)
+ http://acm.uva.es/problemset/ (ACM Programming Contest)
+ http://www.dwelle.de
+ http://www.iks-jena.de/mitarb/lutz/anon/n.a.n.help.html (Nym.alias.net Anleitung)
+ http://sourceforge.net/projects/mixlet (Mixmaster in Java)
+
+Port-Datenbanken:
+ http://www.iana.org/assignments/port-numbers
+ http://www.dshield.org/port_report.php 
+ http://isc.incidents.org
+ http://seifried.org/security/ports/
+ http://www.portsdb.org/
+ ftp://ftp.portsdb.org/PortsDB/services/
+ http://www.graffiti.com/services
+ http://www.insecure.org/nmap/ -> nmap-services
+
+TeX:
+ http://www.adobe.com/support/downloads/pdrvwin.htm (Adobe-PS-Treiber)
+ ftp.uni-augsburg.de/pub/tex/ctan/macros/latex/contrib/supported/fancyhdr/ (Kopfzeilen)
+ http://www.tu-chemnitz.de/~hfst/tex/fancyhdr/  (Kurzbeschreibung für fancyhdr)  
+ http://www.dante.de/faq/de-tex-faq/ (was wohl?)
+ ftp://ftp.dante.de/tex-archive/help/Catalogue/full.html (LaTeX-Paketliste)
+ http://www.ideenreich.com/ressourcen/blindtext.shtml (Lorem ipsum dolor ...)
+ http://www.toolscenter.org/products/texniccenter/ (TeXnicCenter)
+ http://www.lyx.org/ (LyX)
+
+Emacs:
+ http://www.damtp.cam.ac.uk/user/sje30/emacs/ell.html (Emacs-Lisp-List)
+ g rect-mark.el
+ g color-theme.el
+ http://c2.com/cgi/wiki?WikiWikiWeb
+ http://mmm-mode.sf.net/ (Mehrere Modi in einem Buffer)
+ http://ecb.sourceforge.net/ (Emacs Code Browser)
+
+Freenet&Co:
+ g "Peek a Booty" (Zensierungsfreier Web-Browser)
+ http://hawk.freenetproject.org:8888/
+ http://freenetproject.org/
+
+Scientology:
+ http://www.b-org.demon.nl/
+ http://www.xenu.net/
+
+Java:
+ http://java.sun.com/docs/books/jls/second_edition/html/j.title.doc.html (JLS, Java Language Specification)
+ http://hsqldb.sourceforge.net/ (Datenbank in Java)
+ http://mckoi.com/database (Datenbank in Java)
+ http://www.xl2.net (Persistenz-Framework)
+ http://db4o.com/ (Datenbank in Java)
+ http://java.sun.com/xml/tutorial_intro.html (JAXP XML Parser Tutorial - ist aber noch "work in progress")
+ http://mindprod.com/unmainnaming.html (Obfuscaten per Hand)
+ http://java.sun.com/products/javahelp/
+ http://www.java-tutor.com/articles/160820-5.html (Ping in Java)
+ http://www.geocities.com/SiliconValley/Bit/5716/ping/index_eng.html (Ping in Java)
+ http://www.mribti.com/barcode/ (Strichcodes für PHP)
+ http://www.frank-buss.de/beep/index.html (Piep mit C)
+ http://www.tldp.org/HOWTO/Java-Decompiler-HOWTO-1.html
+ http://www.3plus4software.de/downloads/index.html
+ http://excelsior-usa.com/ (Java-EXE-Compiler)
+ http://dmoz.org/Computers/Programming/Languages/Java/Development_Tools/Obfuscators/ (Listen von Programmen, die Java schwerer crackbar machen)
+ http://www.xref-tech.com/
+ http://sourceforge.net/projects/oo-browser/
+ http://www.jcraft.com/jsch/index.html (SSH in Java)
+
+Instant Messenger:
+ http://www.ceruleanstudios.com (Trillian)
+ http://jajc.ksn.ru/ (JAJC, Jabber Client)
+ http://psi.affinix.com/ (PSI, Jabber Client)
+
+Jabber:
+ http://www.jabber.org/ (jabber.org)
+ http://www.jabberstudio.org (JabberStudio)
+ http://jabber.ccc.de/ (jabber.ccc.de)
+ http://www.amessage.info/ (a-message Jabber Server)
+ http://jjru.jabberstudio.org/ (jJRU)
+ http://jeti.jabberstudio.org/ (Jeti)
+
+StarOffice:
+ http://sunsolve.sun.com/pub-cgi/show.pl?target=patches/xprod-StarOffice&nav=pub-patches
+ ftp://sunsolve.sun.com/pub/patches/109945-03.zip
+ http://www.wernerroth.de (StarOffice FAQ)
+ http://www.sternenfressen.de/ (StarOffice Usertreffen)
+
+OPERA:
+ http://www.opera.no/
+ http://www.blauwal.at/opera/index.html (Opera FAQ)
+
+Schriften:
+ http://www.transaction-one.com/gs/html/a/adobe/fontstore/en/type/browser/P/P_058.jsp
+ http://members.xoom.virgilio.it/_XOOM/fmboschetto/didattica/KEYPUNCN.TTF
+ http://users.iclway.co.uk/l.emmett/
+ http://www.marvosym.de/
+ http://www.high-logic.com/fcp.html
+
+BWINF:
+ http://www.muppetlabs.com/~breadbox/bf/
+
+Übersetzung:
+ http://dict.leo.org/
+ ftp://ftp.math.uni-hamburg.de/pub/misc/dicts/translate-0.5.tgz
+ ftp://ftp.math.uni-hamburg.de/pub/misc/dicts/en-de.ISO-8859-1.vok.tgz
+
+Visual Basic
+ http://www.allapi.net (API Guide)
+ http://www.bit-arts.com/fusion.html
+ http://www.allapi.net/vbasic/misc.php ("Windows Analyzer")
+ http://www.freevbcode.com/ShowCode.Asp?ID=1427
+ http://www.xploiter.com/programming/vb/visual3.shtml#A4
+ http://www.arcatapet.com/vb.html
+ http://www.powervb.com/consoleapp.htm
+ "Desaware SpyWorks control"
+ http://groups.google.com/groups?hl=en&safe=off&th=ca946660a93873b8,8&seekm=119475293%40NEWS.SAIC.COM#p
+ http://www.mvps.org/btmtz/treeview/tvduplicateex.zip
+ http://www.mvps.org/btmtz/listview/remotelistview.zip
+ http://developer.intel.com/software/products/perflib/ijl/
+ http://www.vbaccelerator.com/codelib/gfx/vbjpeg.htm
+ http://www.allapi.net (API Viewer)
+ http://www.mvps.org/vbnet/code/system/shellhwnd.htm
+ http://www.mvps.org/vbnet/code/network/ping.htm
+ http://www.catalyst.com
+ http://www.softcircuits.com ("VB95IO.ZIP")
+ "SCREENSAVE_DATA"
+ http://www.zoschke.com/products/MS/MSDN/MSDN.asp (MSDN Abo)
+ http://msdn.microsoft.com/library/en-us/shellcc/platform/Shell/SHLWAPI/Registry/AssocQueryString.asp (MSDN Info API, down...)
+
+WINDOWS
+ http://www.winfaq.de/ (Windows FAQ)
+ http://www.neuro.gatech.edu/users/cwilson/cygutils/unversioned/consize/ (.BAT-Erweiterung für WinME aka Win95cmd.exe)
+ http://www.microsoft.com/msdownload/platformsdk/sdkupdate/ (Eine schlimme verActiveXte Seite zum Beschaffen des Platform SDK)
+ http://www.microsoft.com/speech/ (Microsoft TextToSpeechEngine 5.0)
+
+LINUX
+ http://www.kernelnotes.de/ (Linux-Version)
+ http://freshmeat.net/projects/twin/ (Textmode WINdow env.)
+ http://acpid.sf.net/ (ACPI-Daemon)
+ http://acl.bestbits.at/ (ACLs)
+
+SHOWVIEW:
+ http://www.zelczak.com/vcrplus.htm
+ http://www.isis.de/members/~fichtner/ShowView
+
+STAROFFICE:
+ http://api.openoffice.org/ (das Miststück kann kein Resuming...)
+
+Winamp:
+ http://www.blorp.com/~peter/zips/read_file.zip (Winamp Plugin...)
+ http://www.3dslut.com/download/winamp/Dancing3DLuder.exe (Läuft auf ME nicht)
+
+Die Zahl Pi:
+ http://www.jjj.de/hfloat/hfloatpage.html#pidig
+ http://www.pithemovie.com/java.html
+ http://www.cecm.sfu.ca/pi/yapPing.html
+ http://www.cecm.sfu.ca/organics/papers/borwein/paper/html/local/billdigits.html
+ http://www.olbers.de
+ http://olsnsrv.cs.uni-magdeburg.de/Wissen/Informatik/pi/pi_4.htm
+
+Java beautify:
+ http://www.jext.org
+ http://www.netbeans.org
+ http://jrefactory.sourceforge.net
+ http://mathsrv.ku-eichstaett.de/MGF/homes/grothmann/je/
+ http://jalopy.sourceforge.net
+ http://astyle.sourceforge.net
+ http://www.mmsindia.com/JPretty.html
+ http://www.jindent.com/
+
+Epson:
+ http://www.printerowners.co.uk/ (Epson Chip Reset)
+ http://www.epson-faq.de.vu
+ http://www.ssclg.com/epsone.shtml (Chip-Utility)
+
+Linux-Bootdisks:
+ * Floppix http://floppix.ccai.com/
+ * muLinux http://sunsite.auc.dk/mulinux/
+ * CClinux http://www.cosmicchaos.com/CClinux/index.shtml
+ * Trinux  http://www.trinux.org/
+ * Tomsrtb http://www.toms.net/rb/
+
+C++:
+ http://www.usv.ro/docm/calculatoare/JAVA/thinkjava/Cookbook.html
+ http://www.infosys.tuwien.ac.at/Research/Component/tutorial/stl-tut.zip
+ http://www.infosys.tuwien.ac.at/Research/Component/tutorial/stl-sol.zip
+
+JBN2_devel:
+ http://www.catalyst.com/ (Catalyst SocketTools 2.1)
+ http://www.oz.net/~srheller/privacy/pgp/spgp/spgp.htm (SPGP.DLL, evtl.)
+ http://www.netmastersllc.com/home/ (FastNet ActiveX)
+ '-http://www17.gmx.net/de/cgi/derefer?DEST=http%3A%2F%2Fwww%2Enetmastersllc%2Ecom%2Fdownload%2Fnow%2Fdefault%2Easp%3FKey%3D%2D1077228652
+ http://www.dev-soft.com/ (IPWorks, evtl.)
+ http://frogadmin.yi.org/ (Frog's Seite mit Cracks...)
+
+HEXEDITOREN:
+ http://www.kibria.de/frhed.html (FrHed)
+ http://de.geocities.com/hexwizard2/index.html (HexWizard)
+ http://www.chmaas.handshake.de/delphi/freeware/xvi32/xvi32.htm (XVI32)
+ http://www.winhex.com/winhex/index-d.html (WinHex - shareware)
+ http://www.users.on.net/johnson/resourcehacker/ (Resource Hacker)
+ http://www.hexworkshop.com (Hex Workshop - shareware)
+
+CODING:
+ http://www.joelonsoftware.com/articles/fog0000000043.html (12 Steps to better code)
+
+RFCs:
+ http://www.ietf.org/rfc/rfc1036.txt (Standard for Interchange of USENET Messages)
+ http://www.ietf.org/rfc/rfc822.txt (STANDARD FOR THE FORMAT OF ARPA INTERNET TEXT MESSAGES)
+ http://www.ietf.org/rfc/rfc2821.txt (Simple Mail Transfer Protocol - SMTP)
+ http://www.ietf.org/rfc/rfc2646.txt (The Text/Plain Format Parameter; format=flowed)
+
+Viren:
+ http://www.csd.uwo.ca/staff/magi/personal/humour/Computer_Folklore/Robin%20Hood%20And%20Friar%20Tuck.html (Uraltes Sicherheitsloch und Malware, die sich selbst überwacht)
+
+tot:
+ ftp://lrcftp.epfl.ch/pub/people/almesber/psion/ush-2.tar.gz (ush)
+ http://home-tj.org/wiki/index.php/Libata-tj-stable (Libata-tj-stable - HomeTJ)
+ http://www.jgraph.com/forum/viewtopic.php?t=2072&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight= (JGraph.com :: View topic - Delivering clicks to (J)Components displayed by a CellRender)
+ http://www.prospector.cz/Free-email-accounts/Temporary-email-accounts/ (Temporary email account list)
+ http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ipc/base/getnamedpipehandlestate.asp (Pipe Functions)
+ http://msdn.microsoft.com/library/default.asp?url=/library/en-us/ipc/base/named_pipes.asp (Named Pipes)
+ http://www.theparallax.org/projekte/rfc/rfc_faq.html (RFC-FAQ - Request for Comments FAQ v0.5 - The Parallax)
+ http://wwwhome.cs.utwente.nl/~tukkers/GoT/antimult011-smokekills.swf (http://wwwhome.cs.utwente.nl/~tukkers/GoT/antimult011-smokekills.swf)
+ http://www.languageidentifier.com/ (Google-Suche: language detection)
+ http://www.carv-tech.ch/jukebox.htm (__ jukebox _ oldies zum dl)
+ http://www.invisiblenet.net/ (InvisibleNet - Dedicated to the Development of Intelligent Networks)
+ http://www.kernelnotes.de/ (kernelnotes.de)
+ http://uni.jayniz.de/ ( Uni-Augsburg Informationen  )
+ http://www.f-prot-antivirus.de/ (F-PROT (FPROT) FP-WIN F-SECURE in Deutschland und antivirus-shop.com)
+ http://multimedia.informatik.uni-augsburg.de/lehre/WS01/info1/index.html (Informatik I, WS 2001)
+ http://www.bndlg.de/~vwiendl/ (Abi-Online - Die Seite des DGG Jahrgangs 1998/2000)
+ http://www.linuxhq.de/ (linuxhq.de)
+ http://24h-radio.fm/playing.php (http://24h-radio.fm/playing.php)
+ http://malte-wetz.cjb.net/index.php?viewPage=sec-compromise.html (Malte J. Wetz Online)
+ http://www.euro-ro.net/community/phorum/read.php?9,438166,438586 (validiert)
+ http://home.snafu.de/sitopeju/main.html (Animorphs Fan-Site)
+ http://www.datafellows.com/vir-info/ (F-Secure Virus Info Center)
+ http://www.winfiles.com/tips/product.html (WinFiles.com Productivity Tips)
+ http://www.webhostlist.de/free/go2.php3?ID=355 (Freewebhost: Anbieterdetails)
+ http://home.netscape.com/de/escapes/search/ntsrchrnd-2.html (Internet-Suche)
+ http://www.messdienernet.de/cgi-bin/chat/chat.cgi (Ministranten Deutschland Chatraum - Einloggen)
+ http://www.nickles.de/forum2/index.php3?this_category=9 (Nickles: Diskussions-Bretter)
+ http://my.gnus.org/node/view/251 (Gnus on Emacs on W2K | my.gnus.org)
+
+Games:
+ http://onlinegames24.blogspot.com/2007/07/bloons-players-pack-1.html (Play Bloons Players Pack 1 Game at OnlineGames24 - Addicting Free Online Flash Room Escape Games, Point and Click Games, Puzzle Games, Adventure Games and Walkthroughs)
+ http://www.albartus.com/motas/ (MOTAS - Mystery Of Time And Space Copyright © 2001-2008 Jan Albartus. All rights reserved.)
+ http://nikon.bungie.org/misc/warthog_launch/warthog_launch.swf (Warthog Launch)
+ http://www.2flashgames.com/f/f-461.htm (Divine Intervention: Pt.1 - 2 Flash Games (BRUTAL!))
+ http://www.nix-glop.de/EPISODE1.htm (GOOD NIGHT, MR. SNOOZLEBERG)
+ http://www.nix-glop.de/games/Snooz.htm (GOOD NIGHT, MR. SNOOZLEBERG)
+ http://netoquiz.prv.pl/gra/ (The Office District Adventure)
+ http://nifflas.ni2.se/index.php?main=02Knytt_Stories (Nifflas' Games)
+ http://jayisgames.com/archives/2007/08/remaze.php (ReMaze walkthrough, review, discussion, hints and tips at Jay is Games)
+ http://www.wickedpissahgames.com/games/gravitypods/GravityPods.html (http://www.wickedpissahgames.com/games/gravitypods/GravityPods.html)
+ http://www.kongregate.com/games/tapir/teleporter-twins (Play Teleporter Twins, a free online game on Kongregate)
+ http://www.moregames24.com/2007/07/phit.html (Play Phit)
+
+Stellen:
+ http://www.alphasystems.com/main.php?pos1=6&amp;pos2=2&amp;pos3=0 (alphasystems gmbh - Softwareentwicklung - Beratung - Internet - Intranet - C++ - e-Billing)
+ http://www.aracom.de/html/aufgabenbereiche.html (ARACOM)
+ http://www.dhd24.com/stellenmarkt/stellenanzeige-13101-04052006-75584.html (Stellenanzeigen: Java-Entwickler/in Augsburg, Bayern)
+ http://redaktion.weltbild.com/frontend/jobs_detail.php?anzeige=1005&amp;rubrik=1 (Weltbild Verlag GmbH | Jobs - Stellenangebote)
+ http://redaktion.weltbild.com/frontend/jobs_bewerben.php?rubrik=1&amp;anzeige=777 (Weltbild Verlag GmbH | Jobs - Stellenangebote)
+ http://www.bwso.de/job.html?id=41 (BWSO - Perfektion im Netz)
+ http://www2.endoxon.com/news_jobs.html?lang=de (:: endoxon :: NEWS - Jobs)
+ http://www.gogol-medien.de/index.php?docid=53&amp;navnodeid=115&amp;prenavnodeid=114&amp;iterationid=3&amp;PHPSESSID=0478361c7cb15660b6704c1de423d6d7 (: : : gogol medien GmbH &amp; Co. KG : Jobs - Stellenagebote : : :)
+ http://www.neulandmm.de/jobs.php (NEULAND Multimedia GmbH)
+ http://jobsuche.monster.de/getjob.asp?JobID=40432553&amp;AVSDM=2006%2D07%2D03+06%3A07%3A00&amp;Logo=1&amp;q=augsburg&amp;sort=dt&amp;tm=7d&amp;lid=820&amp;fn=543&amp;fn=9578&amp;fn=6&amp;fn=660&amp;fn=9576&amp;jt=4&amp;brd=1&amp;brd=5808&amp;cy=US&amp;col=dltci (Weltbild: Java-Entwickler (m/w) Internet Shopsysteme)
+ http://www.man-roland.de/de/p0070/p0071/p0129/_content/jobexplizit.jsp?dataset=50 (MAN Roland &gt;)
+ http://jobsuche.monster.de/getjob.asp?JobID=46207877&amp;AVSDM=2006%2D07%2D28+08%3A50%3A00&amp;Logo=1&amp;lid=820&amp;fn=543&amp;fn=9578&amp;fn=6&amp;fn=660&amp;fn=9576&amp;jt=4&amp;brd=1&amp;brd=5808&amp;tm=1d&amp;q=augsburg&amp;cy=US&amp;col=dltci (-ALPHASYSTEMS- Software-Entwickler(in))
+ http://www.jobscout24.de/stellenangebote/JobAngebotEintragFrame.asp?ID=260155&amp;SAID=260155&amp;SUCH=Augsburg&amp;FROM= (JobScout24 - Stellenanzeige: Programmierer, Augsburg, SSE Software GmbH)
+ http://www.sse-online.de/sse-website/html/_set-kontakt.html (SSE - Software Systeme Entwicklungen)
+ http://www.informatik.uni-augsburg.de/lehrstuehle/sik/aktuell/2006_07_05_land_hardware_mitarbeiter.html (-UNI- Stellenausschreibung)
+ http://jobsuche.monster.de/getjob.asp?JobID=47701732&amp;AVSDM=2006%2D09%2D08+10%3A46%3A00&amp;Logo=1&amp;q=augsburg&amp;sort=dt&amp;tm=3d&amp;brd=5808,1&amp;fn=9576,543,9578,6,660&amp;lid=820&amp;jt=4 (WebObjects-Entwickler(in) für Web Anwendungen)
+ http://www.sap.com/germany/jobs/absolventen/index.epx (SAP Deutschland - Jobs &amp; Karriere - Absolventen)
+ http://www.sap.com/germany/jobs/absolventen/jobsuche/jobdetail.epx?id=4272 (SAP Deutschland - Jobs &amp; Karriere - Absolventen - Jobbörse)
+ http://www.sap.com/germany/jobs/absolventen/jobsuche/jobdetail.epx?id=5832 (SAP Deutschland - Jobs &amp; Karriere - Absolventen - Jobbörse)
+ http://www.sap.com/germany/jobs/absolventen/unternehmensbereiche/einstieg.epx (SAP Deutschland - Jobs &amp; Karriere - Absolventen - Unternehmensbereiche)
+ http://jobsuche.monster.de/getjob.asp?JobID=46207877&amp;AVSDM=2006%2D07%2D28+08%3A50%3A00&amp;Logo=1&amp;lid=820&amp;fn=543&amp;fn=9578&amp;fn=6&amp;fn=660&amp;fn=9576&amp;jt=4&amp;brd=1&amp;brd=5808&amp;tm=1d&amp;q=augsburg&amp;cy=US&amp;col=dltci (Software-Entwickler(in))
+
+Privat:
+ http://www.talknet.de/cgi-tli/freetime (Restminuten)
+ http://debian.netcologne.de/www.grml.org/devel/ (GRML develreleases)
+
+CGI:
+ http://webmasterwelt.virtualave.net/ (Carsten Schubert Homepage)
+ http://www.cgi101.com/class/ (CGI Programming 101 - Learn CGI Today!)
+ http://www.cgi-resources.com/ (CGI Resource Index)
+ ftp://ftp.rfc-editor.org/in-notes/tar/ (Verzeichnis von /in-notes/tar)
+
+UnsupportedExtension:
+ http://www-xray.ast.cam.ac.uk/~jgraham/mozilla.xml (DocumentMap)
+ http://www.whoisnt.net/?page_id=5 (www.whoisnt.net » Firefox Extension)
+ http://urlparams.blogwart.com/share/downloads.php (UrlParams)
+ http://addneditcookies.mozdev.org/ (mozdev.org - addneditcookies: index)
+ http://ihoss.not-a-blog.com/tagbb.php (BB Tags - Ihoss Extensions)
+ https://addons.mozilla.org/firefox/1942/ (Reveal | Firefox Add-ons | Mozilla Corporation)
+ http://minkaku.goga.co.jp/comment.php?ext_id=2207&ver=&lang=de (GOGA - Minkaku Hypertext DOM Browser Nur Deutsch)
+ https://addons.mozilla.org/de/firefox/addon/158 (Tabbrowser Preferences :: Firefox Add-ons)
+ http://www.addonzilla.com/ (FireFoxMenuButtons - Addonzilla)
+ https://addons.mozilla.org/de/firefox/addon/2011 (Internote :: Firefox Add-ons)
+ https://addons.mozilla.org/de/firefox/addon/2384 (Morse :: Firefox Add-ons)
+ https://addons.mozilla.org/de/firefox/addon/6420 (NumberFox :: Firefox Add-ons)
+ https://addons.mozilla.org/de/firefox/addon/1825 (Peekko Chat :: Firefox Add-ons)
+ https://addons.mozilla.org/de/firefox/addon/1616 (SpiderZilla :: Firefox Add-ons)
+
+Freenet related:
+ http://freenetproject.org (Freenet)
+ http://jtcfrost.sourceforge.net (Frost)
+ http://artificial-stupidity.net/~fish/  (fishtools)
+ http://www.invisiblenet.net (invisiblenet - IIP)
+ http://wiki.invisiblenet.net/?Meetings  (IIP meeting logs)
+ http://www.i2p.net/meetings (I2P meeting logs)
+ http://dev.i2p.net/i2pdb/ (I2P refs)
+
+Shell-Accounts:
+ http://anapnea.net/ (anapnea.net)
+ http://anapnea.wordpress.com/ (Anapnea Blog)
+ http://rootshell.be/  (phenix.rootshell.be)
+ http://www.urlwatch.be (URLWatch)
+ http://sdf.lonestar.org (SDF)
+ http://www.nic-nac-project.de/ (Nic-Nac-Project)
+
+Unsorted 2:
+ http://msdn.microsoft.com/en-us/library/ms704147(VS.85).aspx (Power Management in Windows XP)
+ http://temporaryinbox.com/inbox.php (temporaryinbox.com | temporary disposable email addresses and email forwarding addresses for fighting spam)
+ http://escapetheroom.blogspot.com/2007/09/archelon-code.html (Archelon Code Walkthrough, Solution, Cheats, Hints, Tips, Passwords, Answers, Help, Guide, Tutorial, Review, and Free Game Download)
+ http://media.putfile.com/callcenter-ansage-dobrowalsky (callcenter ansage dobrowalsky - Putfile)
+ http://www.wo-ist-w.de/5_montevideo.htm (Wo ist W.? - Level 5 - Montevideo)
+ http://ooomacros.sourceforge.net/user.php (OOoMacros)
+ http://www.amazon.de/gp/offer-listing/3460010266/ref=dp_olp_3/302-8820620-6254432 (Amazon.de: Neu und gebraucht: Die Bibel. Einheitsübersetzung. Gesamtausgabe. CD-ROM für Windows 95/98/ME/NT 4.0/2000/XP.)
+ http://www.heise.de/security/news/meldung/95956/c-t-magazin-tv-Truegerische-Sicherheit-im-Funknetz (heise Security - News - c't magazin.tv: Trügerische Sicherheit im Funknetz)
+ http://www.pouet.net/topic.php?which=4624 (pouet.net BBS :: Linux problem)
+ http://www.heise.de/security/Sophos-Linux-spielt-wichtige-Rolle-in-Botnetzen--/news/meldung/103563 (Sophos: Linux spielt wichtige Rolle in Botnetzen - heise Security)
+ http://www.phoronix-test-suite.com/ (Phoronix Test Suite - Linux Testing &amp; Benchmarking Platform)
+ http://www.youtube.com/watch?v=fc6BPoHZXcA (The French Drop Illusion : Magic Tricks Explained)
+ http://www.skorczynski.com/chat/1.php (BUCKA - busy webchat?)
+ http://www.codeproject.com/tools/winmacro.asp?df=100&amp;forumid=65392&amp;exp=0&amp;select=1266281 (Writing a Macro Recorder/Player using Win32 Journal Hooks - The Code Project - Free Tools)
+ http://www.griddlers.net/pages/demo (Griddlers Net)
+ http://www.heise.de/ct/projekte/machmit/asteroids/ (creativ'08: Programmierwettbewerb Asteroids - Trac)
+ http://www.harbaum.org/till/palm/mulg/games.html (Tills Palm Pages - games)
+ http://www.andkon.com/arcade/ (Andkon Arcade: 1000+ Free Flash Games)
+ http://del.icio.us/home (my del.icio.us)
+ http://slashdot.org/submit.pl (Slashdot Submissions)
+ http://www.google.de/search?hl=de&amp;client=opera&amp;rls=de&amp;hs=eNW&amp;q=related:www.tutorials-win.com/WindowsXP/Help-Troubleshooting/ (Ähnliche Seiten (tutorials-win.com))
+ http://www.tramontana.co.hu/wix/ (WiX Tutorial - Introduction to the Windows Installer XML Toolset)
+ http://www.baen.com/library/ (Baen Free Library)
+ http://www.palmopensource.com/index.php?category=9 (www.palmopensource.com - The PalmOS Open Source Portal - Top:/ PalmOS Software/Games)
+ http://www.blackflip.org/ (blackflip - enlarge your brain!)
+ http://onlinegames24.blogspot.com/2007/09/hexiom.html (Play Hexiom Game Online for Free at OnlineGames24 - Addicting Free Online Flash Room Escape Games, Point and Click Games, Puzzle Games, Adventure Games and Walkthrough)
+ http://multimedia.informatik.uni-augsburg.de/lehre/WS01/info1/index.html (Informatik I, WS 2001)
+ http://www.nwb.de/ (Verlag Neue Wirtschafts-Briefe, NWB)
+ http://www.bundesfinanzministerium.de/Steuern-und-Zoelle/Veroeffentlichungen-zu-Steuerarten-.477.htm (BMF: Veröffentlichungen zu Steuerarten)
+ http://foren.recht.de/articles.public/?newsgroup=18&amp;lid=17 ( Forum für Steuerrecht im Forum Deutsches Recht  )
+ http://www.handy-pak.de/angebote.php (faircom-Handy-Pak)
+ http://www.iks-jena.de/cgi-bin/whois (Abfrage von WHOIS-Datenbanken)
+ http://www.rfc-editor.org/ (RFC-Editor Webpage)
+ http://www.cgi101.com/class/ (CGI Programming 101 - Learn CGI Today!)
+ http://www.cgi-resources.com/ (CGI Resource Index)
+ http://www.hochschulkompass.hrk.de/ (HRK - Hochschulkompass)
+ http://www.nickles.de/newarchiv/archiv_sub_index.php3?indexfile=12 (Nickles.de - Das Archiv)
+ http://www.secureroot.com (SecureRoot Underground )
+ ftp://ftp.rfc-editor.org/in-notes/tar/ (RFC-Downloads in 500er-Blöcken im tar-Format)
+ ftp://ftp.europe.datafellows.com/f-prot/free/ (Index of /f-prot/free/)
+ http://www.bmwi.de/ (Bundesministerium für Wirtschaft und Technologie)
+ http://www.fprot.org/ (F-PROT in Deutschland)
+ http://download-tipp.de/cgi-bin/suchen.cgi?mh=30&amp;query=Schierl&amp;Status=---&amp;type=keyword&amp;bool=and (My Download-Tipp)
+ http://www.sparda-a.de/ (Willkommen bei der Sparda-Bank Augsburg eG!)
+ http://whatsupgold.com/Products/WS_FTP/reviews.html (WS_FTP Pro by Ipswitch, - Reviewed in the Media.)
+ http://de.selfhtml.org/perl/sprache/index.htm (SELFHTML: CGI/Perl / Perl-Sprachelemente / Dateien lesen und schreiben)
+ http://ftp.wustl.edu/aminetbin/find (Aminet searches)
+ http://home.snafu.de/sitopeju/main.html (Animorphs Fan-Site)
+ http://www.better-counter.com/d_index.html (Better Counter - kostenloser &quot;live&quot; Counter, Hits Analyse)
+ http://www.chip.de/tips/database/tips_fs.phtml?suchwort=tip* (CHIP Tips &amp; Tricks - tip*)
+ http://www.fprot.org/ (F-PROT in Deutschland)
+ http://www.datafellows.com/vir-info/ (F-Secure Virus Info Center)
+ http://ftpsearch.lycos.com/?form=normal (FAST FTP Search v4.0 - The World's Largest File Search Engine)
+ file:///c%7C/winprog/tools/winupd/liste/win95files.html (FREEBIES WORLD PARADISE WINDOWS 95 SYSTEM FILES/UPDATES)
+ http://www.gerware.de/content/admin/stats.php?sid=3ca8be1daf0fe982e0dd64beeace3e74 (GERware.de - Admin - Statistiken)
+ http://www.cs.wisc.edu/~ghost/index.html (Ghostscript, Ghostview and GSview)
+ http://www.hochschulkompass.hrk.de/ (HRK - Hochschulkompass)
+ ftp://ftp.europe.datafellows.com/f-prot/free/ (Index of /f-prot/free/)
+ http://www.nickles.de/newarchiv/archiv_sub_index.php3?indexfile=12 (Nickles.de - Das Archiv)
+ http://www.secureroot.com/search?search=ea95&amp;submit=Search (SecureRoot Underground Search - Search results)
+ http://www.verwaltung.uni-muenchen.de/studenten/studentenkanzlei/Informatik-Sonderinfo.htm (Sonderinformation Informatik)
+ ftp://ftp.rfc-editor.org/in-notes/tar/ (Verzeichnis von /in-notes/tar)
+ http://www.winfiles.com/tips/product.html (WinFiles.com Productivity Tips)
+ http://www.bma.de/bmahome/page2/seite02.htm (BMA - Verteilerseite)
+ http://www.bmwi.de/ (Bundesministerium für Wirtschaft und Technologie)
+ http://www.katholische-sonntagszeitung.de/spielen.htm (Katholische SonntagsZeitung - Mitspielen - Mitgewinnen)
+ http://www.bundesfinanzministerium.de/fach/abteilungen/besiverk/besiverk.htm (Steuerabteilung)
+ http://www.nwb.de/ (Verlag Neue Wirtschafts-Briefe, NWB)
+ http://www.nwb.de/toplink/toplink.htm (Verlag NWB - Tür ins Internet)
+ http://www.sparda-a.de/ (Willkommen bei der Sparda-Bank Augsburg eG!)
+ http://www.sparda-a.de/ (Willkommen bei der Sparda-Bank Augsburg eG!)
+ http://members.tripod.com/~virtual_cat/games/ (Adventure Game:Authoring Systems)
+ http://www.google.de/ (Google)
+ http://www.funescape.com/games/Tix/main.htm (FunEscape.com: Tix)
+ http://www.delphi-jedi.org/DelphiGraphics/directx/download.htm (???)
+ http://www.davidmoore.de/dbwn/dbwnlinks/3dengines.php3 (DB WorldNews)
+ http://www.ambrosine.com/resource.html (Game Creation Resources)
+ http://www.altavista.com/ (AltaVista HOME)
+ http://search.support.microsoft.com/kb/psssearch.asp?SPR=vbb&amp;T=B&amp;KT=PHRASE&amp;T1=7d&amp;LQ=HOWTO%3A&amp;S=T&amp;A=T&amp;DU=C&amp;FR=0&amp;D=vbwin&amp;LPR=&amp;LNG=ENG&amp;VR=http%3A%2F%2Fsupport.microsoft.com%2Fsupport%3Bhttp%3A%2F%2Fsupport.microsoft.com%2Fservicedesks%2Fwebcasts%3Bhttp%3A%2F%2Fsupport.microsoft.com%2Fhighlights&amp;CAT=Support&amp;VRL=ENG&amp;SA=MSDN&amp;Go.x=26&amp;Go.y=23 (Microsoft Support Knowledge Base--Search Results)
+ http://leda.spaceports.com/~game/download.htm (Normale Seite ohne Titel)
+ http://dink.telefragged.com/down_dmods.shtml (The Dink Network)
+ file:///D|/winprog/Teleport Pro/Adventures/index-5.html (mAGE - Mark's Adventure Game Engine)
+ http:///www.yahoo.de (Yahoo Deutschland)
+ http:///www.jet3d.com (jet 3d)
+ http://www.gnutella.co.uk/servers/ (www.gnutella.co.uk - the NUMBER ONE source for all gnutella versions, clones, servers and links!)
+ http://www.pearl.de/pearl2-bin/pearl.exe/pearl?uid=schierl&amp;pwd=faxit&amp;verify=00364B (Willkommen bei Pearl)
+ http://www.mvps.org/vbnet/ (VBnet Visual Basic Developers Resource Centre)
+ http://vbaccelerator.com/ (vbAccelerator - The Site For Advanced Visual Basic Source Code)
+ http://www.snowdesign.de/xenoage/vbnet/start.html (VB Games Network - News)
+ http://www.vbbox.com/ (The VB Box)
+ http://www.wolfsburg.de/~mb/kcheat.htm (SECOND UNIT K-CHEAT)
+ http://home5.swipnet.se/~w-57481/ (Jocke's GamePage)
+ http://www.infoseek.de/ (Infoseek - Willkommen)
+ http://freeshell.org/~michael/ (Iczelion's Win32 Assembly HomePage)
+ http://www.muehlen.net/freespace/ (Freespace - Kostenloser Webspace)
+ http://www.dlh.net/ (DLH.Net)
+ http://www.modarchive.com/ (The Mod Archive - Main )
+ http://sourceforge.net/projects/ejab/ (SourceForge: Project Info - EJab)
+ ftp://ftp.gnu.org/gnu/windows/emacs/ (Emacs for Windows)
+ http://murl.microsoft.com/LectureDetails.asp?765 (Seminar Details - Multi-University/Research Lab (MURL) Seminar Series)
+ http://home.snafu.de/tilman/zauber/index.html (Zaubertricks entschlüsselt)
+ http://studentenforum.uni-augsburg.de/ (Studentenforum der Uni Augsburg :: Index)
+ http://sourceforge.net/project/showfiles.php?group_id=79309 (SourceForge.net: Project Filelist (emacs hacks))
+ http://www.ritsumei.ac.jp/~akitaoka/index-e.html (Akiyoshi's illusion pages)
+ https://www.meshmx.com/fe/download_get.php (fe.meshmx.com: File-Exchange)
+ http://www.mit.edu/people/patil/yatta.html (yatta! (History))
+ http://www.leckse.net/profilieren/ (Profilieren im Netz leicht gemacht)
+ http://edge-op.org/files/kernel-releases.html (Kernel Releases)
+ http://www.pc-special.net/?idcat=3 (www.PC-Special.net - Downloads)
+ http://stern.de/computer-technik/internet/index.html?eid=519815&amp;id=519774&amp;nv=fs&amp;cp=3 (Klicken fürs Zwerchfell | stern.de | Computer&amp;Technik | Internet)
+ http://jemacs.sourceforge.net/ (JEmacs - the Java/Scheme-based Emacs)
+ http://www.catb.org/~esr/jargon/html/appendixa.html (Appendix A. Hacker Folklore)
+ http://www.aquaplastics.org/german/ (Aquaplastics 2004)
+ http://www.aquaplastics.org/english/code/thankyou.asp (Aquaplastics 2004)
+ http://www.25hoursaday.com/CsharpVsJava.html (C# From a Java Developer's Perspective)
+ https://www.vr-ebanking.de/index.php?RZBK=0552 (VR-NetWorld eBanking - Augusta-Bank eG RVB )
+ http://www.nocrew.org/software/httptunnel.html (GNU httptunnel)
+ http://www.archifee.de/groupboard/start.html (Groupboard)
+ http://www.med1.de/Forum/Dermatologie/22064/5/ (Steißbeinfistel - Forum @med1)
+ http://www.med1.de/Forum/Dermatologie/22064/6/ (Steißbeinfistel - Forum @med1)
+ http://www.bessersprechen.de/ (Logopaedie --&gt; www.bessersprechen.de - Institut für Sprachtherapie Uwe Kurz &lt;-- Sprachtherapie)
+ http://www.mind-gate.com/OBE/sven/ (Index Astral)
+ http://www.frei111.de/ ([verrückte seite] Hallo Besucher - Ich freue mich dass Du hier her gefunden hast)
+ http://www.levenez.com/lang/history.html (Computer Languages History (preview))
+ http://userpages.umbc.edu/~ian/procmail.html (Procmail How-To Page)
+ http://www.noc.dfn.de/cgi-bin/dfnnoc-tts (Trouble Tickets G-WiN IP-Dienst)
+ http://msdn40.e-academy.com/uni_augsburg_inf_math/ (MSDN-AA in Informatik / Mathematik - Uni Augsburg)
+ http://www.openwrt.org/ (___Firmware___)
+ http://www.mathekalender.de/kalender.html (Mathekalender 2005 - Kalender)
+ http://www.tagesschau.de/adventskalender/flash/index.php?id= (tagesschau.de-Adventskalender 2005)
+ file://localhost/d:/progs/java/docs-150/guide/jpda/index.html (Java(tm) Platform Debugger Architecture)
+ http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/outputdebugstring.asp (OllyDebug crasht bei dieser Funktion: OutputDebugString)
+ http://www.manalaa.net/creative_commons_live_on_radio_cairo (Creative Commons live on radio cairo | Manal and Alaa's bit bucket)
+ http://www.mathematische-basteleien.de/ (Mathematische Basteleien)
+ http://www.kloeck.de/ (http://www.kloeck.de/)
+ http://www.frappr.com/opennews/ (OpenNews Frappr!)
+ http://wiki.kernelnewbies.org/LinuxChanges (LinuxChanges - KernelNewbies Wiki)
+ http://usenet.dex.de/ (Newsgroups de.* zum gucken)
+ http://linux-ata.org/ (Serial ATA (SATA) for Linux)
+ http://sosdg.org/~coywolf/lxr/search (Linux freetext search)
+ http://standards.ieee.org/regauth/oui/oui.txt (http://standards.ieee.org/regauth/oui/oui.txt)
+ http://www.dnsstuff.com/ (DNS Stuff: DNS tools, DNS hosting tests, WHOIS, traceroute, ping, and other network and domain name tools.)
+ http://www.cswl.com/whitepapers/palm-pilot.html (Pilot Software Development Services : Pulse Shaping on the Palm Pilot - Palm Pilot Programming)
+ http://www.heise.de/newsticker/meldung/56098 (heise online - Wieder gefragt: Software-Entwickler und IT-Dienstleister)
+ http://www.creamundo.com/index.php?lang=en&amp;letra=123 (9800 Free Fonts, fonts for free, font finder, download free fonts, free typography)
+ https://www.pilot1.vr-networld-ebanking.de/index.php?RZKZ=XC&amp;RZBK=0552 (VR-NetWorld eBanking - Augusta-Bank eG RVB)
+ http://www.daujones.com/detail.php?usrid=700 (... der etwas andere support ...)
+ http://www.spinnaker.de/linux/c1320/ (__SATA__ Fujitsu-Siemens LifeBook C1320)
+ http://www.die-alternative-zeitschrift.de/jk/im.php#ICQ ([ICQ] Warum man ICQ und MSN nicht benutzen sollte - und was stattdessen [JK])
+ http://www.kartentricks.de/karten.htm (www.kartentricks.de Homepage für Kartentricks)
+ http://www.mathematische-basteleien.de/ (Mathematische Basteleien)
+ http://www.ora.de/opensource/magic-cauldron/cauldron.g.01.html (Der verzauberte Kessel)
+ http://www.cl.cam.ac.uk/~rja14/book.html (Security Engineering - A Guide to Building Dependable Distributed Systems)
+ http://www.bunchball.com/ (Bunchball - Multi-player Games &amp; Widgets)
+ http://nic-nac-project.de/ (Welcome to Nic.Nac.Project - Debian Linux Free Shell Provider)
+ http://dasgoldenegold.podspot.de/?page=2 (Das Goldene Gold)
+ http://www.chiark.greenend.org.uk/~sgtatham/bugs-de.html (Fehlerberichte - wie Sie Softwarefehler melden sollten)
+ http://searchenginez.com/translate_words.html (* Translate words from one language to another)
+ http://mrl.nyu.edu/~dhowe/TrackMeNot/ (TrackMeNot)
+ http://msdn2.microsoft.com/en-us/library/37899azc.aspx (Extending Design-Time Support)
+ http://linux.yyz.us/git-howto.html (Kernel Hackers' Guide to git)
+ http://codebetter.com/blogs/paul.laudeman/archive/2005/04/19/Microsoft-Virtual-PC-Tip-_2D00_-Using-the-Microsoft-Loopback-Adapter.aspx (___Paul Laudeman : Microsoft Virtual PC Tip - Using the Microsoft Loopback Adapter)
+ http://www.ripe.net/ripe/docs/ipv4-policies.html (RIPE | Document Store | ripe-387 IPv4 Address Allocation and Assignment Policies for the RIPE NCC Service Region)
+ http://www.newcom101.de/content/videos/In-der-Schule,328.html?MOV_VGS=4 (Schweinebildchen am Ende -- In der Schule)
+ http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=Gentium (Gentium - a typeface for the nations)
+ http://www.vbulletin.com/forum/showthread.php?page=4&amp;t=148061 (List of disposable email address domains)
+ http://www.slengpung.com/v3/show_photo.php?id=13479&amp;ref=event (Slengpung: Rob is jarig)
+ http://crossloop.com/ (CrossLoop - Simple Secure Screen Sharing)
+ http://home.arcor.de/zscherni/heimseite/Tastaturlayout_uni.html (Wie passe ich die Tastatur meinen Bedürfnissen an?)
+ http://www.amazon.de/gp/offer-listing/3460010266/ref=dp_olp_3/302-8820620-6254432 (Amazon.de: Neu und gebraucht: Die Bibel. Einheitsübersetzung. Gesamtausgabe. CD-ROM für Windows 95/98/ME/NT 4.0/2000/XP.)
+ http://www.fundable.org/ (Fundraising - Fundable - Online Fundraising)
+ http://www.access-company.com/developers/documents/docs/palmos/PalmOSReference/ReferenceTOC.html (dbget)
+ http://www.access-company.com/developers/documents/docs/palmos/PalmOSReference/DataAndResourceManager.html#1008861 (dmopen)
+ http://www.cdc.informatik.tu-darmstadt.de/aircrack-ptw/ (aircrack-ptw)
+ http://www.yourminis.com/xml/allshows.xspf (http://www.yourminis.com/xml/allshows.xspf)
+ http://www.rockin-b.de/c4/2007/results.html (flag demo effect)
+ http://www.microsoft.com/technet/archive/community/columns/security/essays/10imlaws.mspx?mfr=true (Microsoft TechNet: 10 Immutable Laws of Security)
+ http://www.heise.de/ct/08/09/176/ (0001)
+ http://bcheck.scanit.be/bcheck/index.php (Browser Security Test)
+ http://www.phoronix-test-suite.com/ (Phoronix Test Suite - Linux Testing &amp; Benchmarking Platform)
+ http://web.archive.org/web/20050306102203/http://www.atstake.com/research/advisories/2001/a030101-1.txt (@stake Advisory: Palm OS Password Lockout Bypass)
+ http://web.archive.org/web/20050306200801/http://www.atstake.com/research/advisories/2000/a092600-1.txt (@stake advisory: PalmOS Password Retrieval and Decoding (A092600-1))
+ http://zfoneproject.com/ (Zfone Project Home Page)
+ http://pianosociety.com/cms/index.php?section=1 (Piano Society - Free Classical Recordings and Sheet Music)
+ http://www.menschenrecht.com/flash/smokekills.html (Smoke Kills)
+ http://www.bestatterweblog.de/ (Bestatterweblog)
+ http://wo-ist-w.de/ (Wo ist W? - Die große Online-Agentenjagd zu Weihnachten)
+ http://notalwaysright.com/ (Not Always Right | Funny &amp; Stupid Customer Quotes)
+ http://notalwaysright.com/page/71 (Not Always Right | Funny &amp; Stupid Customer Quotes)
+ http://notalwaysright.com/page/42 (Not Always Right | Funny &amp; Stupid Customer Quotes)
+ http://miranda-export-history.qarchive.org/ (miranda)
+ http://java.sun.com/javase/downloads/ea.jsp (Java SE Early Access Downloads)
+ http://www.youtube.com/watch?v=6_43S3lgq2Y (YouTube - Jasper - Der HDL-Song - [original &amp; live])
+ http://www.youtube.com/watch?v=fuPFz5deXOw (YouTube - Hit and Run Build Breaker)
+ http://www.kloth.net/services/dnsbl.php (KLOTH.NET - Multi DNSBL-check - Look up IP addresses in DNS Blackhole Lists)
+ http://pouet.net/prod.php?which=49856 (Neon Station by Digimind)
+ http://www.techcult.com/high-tech-pranks/ (The 25 Best High-Tech Pranks)
+ http://www.ics.uci.edu/~eppstein/junkyard/all.html (The Geometry Junkyard: All Topics)
+ http://unix.rulez.org/~calver/pictures/curves.jpg (Classical learning curves for some common editors)
+ http://unix.rulez.org/~calver/pictures/curves.jpg (http://unix.rulez.org/~calver/pictures/curves.jpg)
+ http://msdn.microsoft.com/en-us/library/system.windows.forms.gridtablesfactory.aspx (GridTablesFactory Class (System.Windows.Forms))
+ http://wiki.secondlife.com/wiki/Here (Here - Second Life Wiki)
+ http://asm.sourceforge.net/asmutils.html (asmutils)
+ http://www.google.com/search?hl=de&amp;q=intitle%3Aphpmyadmin+inurl%3Atbl_properties_operations.php (PhpMyAdmin finden)
+ http://www.drgarbage.com/bytecode-visualizer-2008.html (Bytecode Visualizer 2008 - Dr. Garbage)
+ http://camstudio.org/ (CamStudio - Free Screen Recording Software)
+ http://www.youtube.com/watch?v=zn5ci099cFc (YouTube - angry man)
+ http://store.epatec.net/de/product_info.php?cPath=1&amp;products_id=28 (Thin Client 129EUR - EPATec GmbH)
+ http://store.epatec.net/de/product_info.php?cPath=1&amp;products_id=42 (Thin Client 159 EUR - EPATec GmbH)
+ http://mahopa.de/murks/ (Murks - mahopa.de)
+ http://adunk.ozehosting.com/software/vss6.html (An analysis of the files used by Visual Source Safe 6.0)
+ http://extensions.services.openoffice.org/project/aletras (A Letras Openoffice Extension)
+ http://de.sevenload.com/videos/aHjpQoc-The-Cheat-Report (Video &quot;The Cheat Report&quot; | sevenload)
+ http://fontly.com/sandbox/spiro.html (Spiro Splines)
+ http://www.google.com/search?q=inurl:server_processlist.php+intitle:phpmyadmin (PHPMyAdmin)
+ http://www.jamendo.com/de/player?url=album%2F3777%2F7 (JamPlayer)
+ http://theawesomer.com/ (The Awesomer)
+ http://www.mathekalender.de/aufgaben/1/1.php (Mathekalender 2008 - Aufgabe vom 1. Dezember - Eine neue Strecke für das Rentierschlittenrennen)
+ http://www.chip.de/news/CHIP-Adventskalender-Gratis-Software-zum-Download_17685787.html (CHIP-Adventskalender: Gratis-Software zum Download - News - CHIP Online)
+ https://www.mathe-im-advent.de/Calendar/SolveTask/1 (Mathe im Advent 2008)
+ http://curl.haxx.se/mail/curlphp-2008-04/0042.html (TuxGuru)
+ http://www.doublequick.de/Adventskalender/index2.htm (Adventskalender 2008)
+ http://www.getjar.com/software/Siemens/A65 (Siemens A65 Software)
+ http://www.jacquielawson.com/cards_christmas.asp (Jacquie Lawson animated christmas e-cards)
+ http://kanzlei-flick.de/reim.html (Mahnung in Versform; LG Frankfurt, Urteil v. 17.02.1982 - 2/22 O 495/81; bei Flick  , Rechtsanwalte Hamburg)
+ http://www.ingenfeld.de/schachon/online.htm (schach online)
+ http://www.woistw2.de/28-bonustrack (Wo ist W - Abenteuer in London - Level 28)
+ http://de.youtube.com/watch?v=1LHujSq_suI (Weihnachtsmann und Jesus)
+ http://de.youtube.com/watch?v=1gW3rznLI_g (YouTube - Cartoon-Christmas Comes But Once a Year (1936))
+ http://www.shapeways.com/about/material-options (Shapeways | material options)
+ http://www.ponoko.com/make-and-sell/downloads (Starter Kits - Make and Sell - Ponoko)
+ http://browsers.evolt.org/ (evolt.org - Browser Archive)
+ http://handelsregister.augsburger-allgemeine.de/ (Handelsregister -Augsburger-Allgemeine.de)
+ http://www.jesusexperiment.de/main.php (Das Jesus-Experiment - Rausfinden, was dran ist.)
+ http://www.tutorialized.com/ (Photoshop Tutorials and Flash Tutorials - Tutorialized)
+ http://proxy.org/cgi_proxies.shtml (Free Web Proxies)
+ ftp://ccc.chscene.ch/congress/2005/video/mp4/ (Chaos Communication Congress 2005 Video Recordings)
+ http://de.wikipedia.org/wiki/Strc_prst_skrz_krk (Strc prst skrz krk - Wikipedia)
+ http://live.linux-gamers.net/ (live.linux-gamers.net)
+ http://www.ericsink.com/scm/source_control.html (Source Control HOWTO)
+ http://www.youtube.com/watch?v=36hWvDEwXCE&amp;feature=related (YouTube - Jasper Happy Birthday)
+ http://www.resolversystems.com/about/contact.php (Resolver Systems: About Us)
+ http://java.sun.com/j2se/1.5.0/docs/guide/jpda/index.html (JDK 5.0 Java Platform Debugger Architecture (JPDA))
+ http://dagobah.biz/flash/dearpenis.swf (Dearpenis.swf (music video))
+ http://de.add-ons.mozilla.com/de/firefox/bookmarks/ (Lesezeichen-Add-ons herunterladen)
+ http://bcheck.scanit.be/bcheck/ (Browser Security Test Start Page)
+ http://de.www.mozilla.com/de/firefox/central/ (Erste Schritte)
+ http://dict.leo.org/plugins/Shared/Sidebar/sidebar_de.html (LEO)
+ http://www.netvibes.com (Netvibes)
+ http://www.goowy.com (Goowy)
+ http://demo.neximage.com (nexImage)
+ http://www.writely.com (Writely)
+ http://www.samspade.org/t/ (SamSpade)
+ http://www.identifont.com/identify.html (Identifont)
+ http://www.percomp.de/ (F-Prot)
+ http://www.amazon.de/ (Amazon)
+ http://www.kunigunde.ch/ (Vornamen)
+ http://wwwkeys.de.pgp.net (PGP-Keyserver)
+ http://cgi1.ebay.de/aw-cgi/eBayISAPI.dll?MyEbayLogin&ssPageName=h:h:myebay:DE (Mein eBay)
+ http://www.ehrensenf.de (Ehrensenf)
+ http://www.bombzone.de/forum/wbb/ (Bombzone)
+ http://blogs.technet.com/hhh_comic/default.aspx (Heroes happen here)
+ http://www.florianzimmer-group.com/forum/ (FZG Forum)
+ http://www.siemens.de/technopark-augsburg (Technopark Augsburg)
+ http://dosdose.com/game/384/oh_no_-_more_lemmings/ (Oh no - More Lemmings - Play the DOS puzzle game Oh no - More Lemmings online)
+ http://doodle.com/3dnzvhv43tmhpcpn (Removal of LaTeX on grml)
+ http://superuser.com/ (http://superuser.com/)
+ http://www.joelonsoftware.com/articles/fog0000000043.html (The Joel Test: 12 Steps to Better Code - Joel on Software)
+ http://www.joelonsoftware.com/articles/fog0000000067.html (Top Five (Wrong) Reasons You Don't Have Testers - Joel on Software)
+ http://stackoverflow.com/questions/798800/whats-the-best-way-to-calculate-remaining-download-time (What's the best way to calculate remaining download time? - Stack Overflow)
+ http://www.marijnstevens.nl/ (Marijn Stevens)
+ http://www.project10tothe100.com/intl/DE/index.html (Projekt 10 hoch 100)
+ http://www.apple.com/de/magicmouse/ (Apple - Magic Mouse - Die erste Multi-Touch-Maus der Welt.)
+ http://colorer.sourceforge.net/eclipsecolorer/ (Eclipse platform plugin)
+ http://www.opencellid.org/users/staticShow/download (OpenCellID)
+ http://home.ccil.org/~cowan/XML/tagsoup/ (TagSoup home page - Java HTML Parser Library)
+ http://www.de.amadeus.com/elearning.php (Amadeus Training)
+ http://www.masukomi.org/talks/unit_testing_talk_2/ (Index of /talks/unit_testing_talk_2 - mit Firefox anschauen!)
+ http://code.google.com/p/emacs-for-windows/downloads/list (Downloads -   emacs-for-windows -    Google Code)
+ http://msdn.microsoft.com/en-us/library/system.windows.forms.control.dodragdrop.aspx (Control.DoDragDrop Method  (System.Windows.Forms) - eats exceptions)
+ http://securitytoolslist.domandhost.com/ (The largest security tools list)
+ http://musicmachinery.com/2009/04/27/moot-wins-time-inc-loses/ (moot wins, Time Inc. loses «  Music Machinery)
+ http://www.schockwellenreiter.de/blog/2009/05/20/du-ist-terrorist-ja-du/ (Du ist Terrorist - ja, Du! – Der Schockwellenreiter)
+ http://www.drgarbage.com/bytecode-visualizer-3-4.html#bytecode-debugger (Bytecode Visualizer 3.4 - Dr. Garbage)
+ http://www.bhami.com/rosetta.html (Rosetta Stone for Unix)
+ http://www.joelonsoftware.com/articles/fog0000000067.html (Top Five (Wrong) Reasons You Don't Have Testers - Joel on Software)
+ http://www.joelonsoftware.com/articles/fog0000000043.html (The Joel Test: 12 Steps to Better Code - Joel on Software)
+ http://thedailywtf.com/Articles/Sponsor-Appreciation,-Emptiness,-Empty-Support--More.aspx#Pic9 (Schildkröten in der Engelsburg)
+ http://www.cometdocs.com/ (Convert Data, Files Online FREE: PDF, Word, Excel, Text, Images)
+ http://www.jscreenfix.com/ (JScreenFix - Fix stuck pixels and screen burn-in)
+ http://www.w3b.de/cgi-bin/w3bstart.acgi$pw=Bj56wJ1i (w3b | umfrage)
+ http://isc.sans.org/diary.html?storyid=6655&amp;rss (How Malware Defends Itself Using TLS Callback Functions)
+ http://www.wechall.net/tools/JPK/ (JPocketKnife)
+ http://people.mozilla.com/~prouget/demos/DynamicContentInjection/play.xhtml (Dynamic Content Injection)
+ http://www.expli.de/anleitung/design-idee-power-nap-schlafen-am-arbeitsplatz-1768/ (Design Idee: Power Nap / Schlafen am Arbeitsplatz)
+ http://www.musik-und-liturgie.de/audio.html (Musik und Liturgie - Audiodownload - Ulrich Wolf)
+ http://pdos.csail.mit.edu/scigen/ (SCIgen - An Automatic CS Paper Generator)
+ ftp://ftp.cs.wisc.edu/connectivity_table/ (Connectivity Map)
+ http://homokaasu.org/rasterbator/ (The Sect of Homokaasu - The Rasterbator (rasterize huge posters))
+ http://groups.google.com/group/comp.text.tex/browse_frm/thread/dc35537380111a0b/82d8da1705bfc396?q= (HOWTO build a TeXbook.pdf with interactive features - comp.text.tex | Google Groups)
+ http://www.bild.de/BILD/lifestyle/2009/07/zauberserie-zaubertricks-erklaeren-enthuellen-alle-teile/entlarven-zauberei-tricks-zaubern-video-im-florian-zimmer-zauberschule.html (Zaubertricks entlarven: Florian Zimmer erklärt magische Tricks im Video – alle Teile der BILD.de-Zauberschule  - Lifestyle - Bild.de)
+ http://www.expli.de/anleitung/design-idee-power-nap-schlafen-am-arbeitsplatz-1768/ (Design Idee: Power Nap / Schlafen am Arbeitsplatz | EXPLI | Anleitung, selber machen, DIY, Tipps, Power Nap, Schlafen, Ausruhen)
+ http://www.heise.de/security/Expertin-warnt-vor-Flash-Cookies--/news/meldung/143267 (heise Security - 12.08.09 - Expertin warnt vor Flash-Cookies)
+ http://code.google.com/intl/de-DE/apis/maps/documentation/staticmaps/ (Google Static Maps-API - Google Code)
+ http://www.showmycode.com/ (Show My Code | Free Online swf Adobe flash decompiler, java class decoder, java class decompiler, php dezender, Zend decompiler, Zend decoder,Zend Guard, ActionScript recover)
+ http://answers.yahoo.com/question/index;_ylt=Al9heImR107FBtX51PY8R7Xpy6IX;_ylv=3?qid=20090609152305AA5xw3m (Am I spoiled?I don't think I am because we donate to charity but my friends think so and other people? - Yahoo! Answers)
+ http://failblog.org/2009/04/27/double-fail-2/ (Double Fail « FAIL Blog: Pictures and Videos of Owned, Pwnd and Fail Moments)
+ http://www.journalistische-praxis.de/jpsprech/woerter.htm (Sprechertraining)
+ http://www.projectcartoon.com/ (Project Cartoon)
+ http://web.archive.org/web/20080208180523/http://www.c2i.ntu.edu.sg/AI+CI/Humor/AI_Jokes/AIKoans-DHillis.html (AI Koans)
+ http://www.projectcartoon.com/create/ (Project Cartoon)
+ https://www.isecpartners.com/jailbreak.html (Jailbreak | iSEC Partners)
+ http://msdn.microsoft.com/en-gb/magazine/cc301808.aspx (Inside Windows: An In-Depth Look into the Win32 Portable Executable File Format, Part 2)
+ http://msdn.microsoft.com/en-gb/magazine/cc301805.aspx (Inside Windows: An In-Depth Look into the Win32 Portable Executable File Format)
+ http://www.pixel-technology.com/freeware/tessnet2/ (Tessnet2 a .NET 2.0 Open Source OCR assembly using Tesseract engine)
+ http://www.pushl.com/taskspy/ (TaskSpy - Task manager for Symbian OS)
+ http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html#cz (Language Plural Rules)
+ http://www.oracle.com/technology/pub/articles/dev2arch/2006/11/effective-exceptions.html (Effective exception handling in Java)
+ http://mathekalender.mathe-im-advent.de/ (Mathe im Advent 2009)
+ http://www.mathe-kaenguru.de/wettbewerb/advent/index.html (Känguru der Mathematik e.V. | Wettbewerb | Ablauf)
+ http://maps.google.de/maps?q=from:+Onesto+GmbH+in+Aichach+to:+Lindner+Hotel+Kaiserhof+in+Landshut (Onesto GmbH in Aichach nach Lindner Hotel Kaiserhof - Google Maps)
+ http://slgeocaching.com/joomla/index.php?option=com_dbquery&amp;Itemid=52&amp;task=ExecuteQuery&amp;qid=6&amp;previousTask=PrepareQuery (slgeocaching.com)
+ http://www.stefandidak.com/office/ (Stefan Didak's Home Office - 12 Bildschirme / Monitore für einen Fotografen)
+ http://vrt-sourcefire.blogspot.com/2009/12/matts-guide-to-vendor-response.html (The Blog of Sourcefire - VRT: Matt's Guide to Vendor Response)
+ http://t4f.org/shop (OpenRFID - T4F (Tech For Fun)- Products)
+ http://fedoraproject.org/wiki/Licensing#Software_License_List (Licensing:Main - FedoraProject)
+ http://shells.red-pill.eu/ (Free Shell Accounts - the biggest list on the net :-) - Rankings - All Sites)
+ https://www-trunk.stage.mozilla.com/en-US/plugincheck/ (Plug-In Check)
+ http://www.offensive-security.com/metasploit-unleashed/ (Metasploit Unleashed - Mastering the Framework)
+ http://www.smallgreenhill.com/games/finwick/ (Finwick)
+ http://www.x-isp.de/agb.html (X-ISP AGB)
+ http://www.netboot.me/browse/ (netboot.me - netboot.me)
+ https://www.ohloh.net/forums/8/topics/3276 (Ohloh General Discussion: Who added my project to ohloh? How do I get administration rights?)
+ http://www.emhsoft.com/fillets/index.html (Fish Fillets - Next Generation Walkthrough)
+ http://sandboxphysics.com/here.html (sandboxphysics videos and search engine)
+ http://www.nextnature.net/2010/02/augmented-hyperreality/ (Augmented (Hyper)Reality « NextNature.net)
+ http://polynap.grelly.com/?page_id=7 (Polynapping @ grelly.com » 1: Polynap MP3 Soundtrack)
+ http://www.robtex.com/ (robtex - swiss army knife internet (dns) tool)
+ http://www.google.com/patents/about?id=HxwDAAAAEBAJ&amp;dq=rocket+launcher+flatulence (Toy gas fired missile and launcher ... - Google Patent Search)
+ http://www.kontraband.com/videos/3407/Fart-Burner/ (Fart Burner at Kontraband)
+ http://cacm.acm.org/magazines/2010/2/69354-a-few-billion-lines-of-code-later/fulltext (A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World | February 2010 | Communications of the ACM)
+ http://www.handelsregisterbekanntmachungen.de/ (Justizportal - Verfahren)
+ https://www.unternehmensregister.de/ureg/?submitaction=startpage&amp;session.sessionid= (Unternehmensregister)
+ http://downforeveryoneorjustme.com/ (Down for everyone or just me?)
+ http://blog.koehntopp.de/archives/2518-Falscher-Planet,-falsches-Jahrtausend.html (Falscher Planet, falsches Jahrtausend - Die wunderbare Welt von Isotopp)
+ http://www.mathekalender.de/home.html (Digitaler Adventskalender - Startseite)
+ http://events.ccc.de/congress/2009/wiki/Conference_Recordings (Conference Recordings - 26C3 Public Wiki)
+ http://www.c64upgra.de/c-one/ (C-ONE Reconfigurable Computer)
+ http://www.europainstitut.eu/aktuell/details_352_3_15496.html (Die Top 4 der Online-Wörterbücher - Reutlingen EUROPA-INSTITUT Dr. Kramer)
+ http://javaist.com/rosecode/problems.php (RoseCode)
+ http://ucdetector.org/index.html (UCDetector)
+ http://was-ist-foaf.de/ (Was ist FOAF (Friend of a Friend)?)
+ http://marijn.haverbeke.nl/codemirror/ (CodeMirror: In-browser code editing)
+ http://sourceforge.net/blog/smillaenlarger-shows-good-things-come-in-small-packages/ (SourceForge.net: SmillaEnlarger shows good things come in small packages)
+ http://test-ipv6.com/ (Test your IPv6.)
+ http://www.heise.de/security/meldung/EC-Karten-Probleme-bei-Haendlern-in-Deutschland-geloest-899827.html (heise security - EC-Karten-Probleme bei Händlern in Deutschland gelöst)
+ http://chipcardmaster.de/ascreenshots.htm (Chipcard master - Chipkarten und Smartcards lesen)
+ http://w3dt.net/ (w3dt.net - World Wide Web Domain Tools - By ITOC Incorporated)
+ http://extundelete.sourceforge.net/ (extundelete: An ext3 and ext4 file undeletion utility)
+ http://openstudy.com/ (OpenStudy)
+ http://learnyouahaskell.com/ (Learn You a Haskell for Great Good!)
+ http://www.scene.cz/project/massage/ (music.massage...module.review.show...independent.vibes)
+ http://benfirshman.com/projects/jsnes/ (JSNES: A JavaScript NES emulator)
+ http://databene.org/databene-benerator (databene benerator)
+ http://www.cvedetails.com/ (CVE security vulnerability information. You will find what you are looking for.)
+ http://www.zdnet.com/blog/security/postcards-from-the-anti-virus-world/6370?tag=content;search-results-rivers (Postcards from the anti-virus world | ZDNet)
+ http://www.swftools.org/ (SWFTOOLS)
+ http://www.youtube.com/view_play_list?gl=DE&amp;hl=de&amp;p=C5918220CD4ED709 (Wo sind meine Daten - wie wir weltweit ausspioniert werden - YouTube)
+ http://closure-compiler.appspot.com/home (Closure Compiler Service)
+ http://blindelephant.sourceforge.net/ (BlindElephant Web Application Fingerprinter)
+ http://www.quirksmode.org/compatibility.html (Compatibility Master Table)
+ http://www.thewildernessdowntown.com/ (The Wilderness Downtown)
+ http://mark0.net/onlinetrid.aspx (Marco Pontello's Home - Software - Online TrID)
+ http://www.examulator.com/phezam/question.php (Java Examulator)
+ http://www.bildschirmarbeiter.com/video/sicherheitshinweise_im_flieger/ (Sicherheitshinweise im Flieger - Video auf bildschirmarbeiter.com)
+ http://blog.mindedsecurity.com/2010/10/java-6u21-seven-issues-summary.html (Minded Security Blog: Java 6u21 Seven Issues Summary)
+ http://www.lowlevel.eu/wiki/AMD_PCnet (AMD PCnet – Lowlevel)
+
+Unsorted 3:
+ http://www.rfc-editor.org/rfc-index.html (mnemonics)
+ http://docs.oracle.com/cd/B28359_01/backup.111/b28273/rcmcomma005.htm#RCMRF1921 (catalog)
+ http://schierlm.users.sourceforge.net/smallestjs.html (SmallestJS)
+ http://pastebin.com/HumEARa4 (Some more commands to add to Java Meterpreter meterp_compare module is at: ht - Pastebin.com)
+ http://candies.aniwey.net/index.php?pass=71ui7 (Candy box !)
+ http://en.helpdoc-online.com/virtualbox_4.1.2/source/ch12.html#debugger (debugger)
+ http://tineye.com/ (TinEye Reverse Image Search)
+ http://pastebin.com/rMM5REti ([C#] PowerShell StreamHost implementation in c# - Pastebin.com)
+ http://www.oracle.com/technetwork/topics/security/javacpujun2012-1515912.html (Oracle Java Critical Patch Update - June 2012)
+ http://github.github.com/github-flavored-markdown/preview.html (GitHub Flavored Markdown - Live Preview)
+ http://www.keep-project.eu/ezpub2/index.php?/eng/content/view/sitemap/2 (newsle)
+ http://superuser.com/questions/27884/gparted-change-partition (GParted Change Partition - Super User)
+ http://www.bild.de/BILD/lifestyle/2009/07/zauberserie-zaubertricks-erklaeren-enthuellen-alle-teile/entlarven-zauberei-tricks-zaubern-video-im-florian-zimmer-zauberschule.html (Zaubertricks entlarven: Florian Zimmer erklärt magische Tricks im Video – alle Teile der BILD.de-Zauberschule - Lifestyle - Bild.de)
+ http://www.expli.de/anleitung/design-idee-power-nap-schlafen-am-arbeitsplatz-1768/ (Design Idee: Power Nap / Schlafen am Arbeitsplatz | EXPLI | Anleitung, selber machen, DIY, Tipps, Power Nap, Schlafen, Ausruhen)
+ http://people.mozilla.com/~prouget/demos/DynamicContentInjection/play.xhtml (Dynamic Content Injection)
+ http://survivingtheworld.net/Lesson355.html (Surviving the World - Lesson 355 - The Near Future)
+ http://survivingtheworld.net/Lesson315.html (Surviving the World - Lesson 315 - Beethoven)
+ http://survivingtheworld.net/Lesson258.html (Surviving the World - Lesson 258 - Roadkill)
+ http://survivingtheworld.net/Lesson205.html (Surviving the World - Lesson 205 - Bed Contentment)
+ http://survivingtheworld.net/Lesson153.html (Surviving the World - Lesson 153 - Military Mascots)
+ http://emea.norton.com/global/hero/comic/de/ (Norton heroes)
+ http://www.symantec.com/region/de/norton_heroes/ (Symantec Norton Heroes – Die Viren- und Spyware-Erkennung?– Adware und Spyware entfernen?– Virenschutz | Norton 2009er Produkte)
+ http://www.codeproject.com/KB/dotnet/wiascriptingdotnet.aspx (CodeProject: WIA Scripting and .NET. Free source code and programming help)
+ http://blogs.msdn.com/coding4fun/archive/2006/10/31/912546.aspx (Coding4Fun : Look at me! Windows Image Acquisition)
+ http://sof.modos.org/tracker/sfupdate/2305 (ServerFault Update Script)
+ http://www.pterodactylus.net/ (www.pterodactylus.net)
+ http://survivingtheworld.net/Lesson126.html (Surviving the World - Lesson 126 - Finding Religion)
+ http://sof.modos.org/tracker/update/90203 (StackOverflow Update Script)
+ http://survivingtheworld.net/Lesson106.html (Surviving the World - Lesson 106 - Natural Bodily Processes)
+ http://survivingtheworld.net/Lesson61.html (Für Milos!)
+ http://www-307.ibm.com/pc/support/site.wss/document.do?lndocid=MIGR-64283 (Lenovo Support &amp; downloads - Drivers and software - ThinkPad R60)
+ http://thedailywtf.com/Articles/Sponsor-Appreciation,-Emptiness,-Empty-Support--More.aspx#Pic9 (Sponsor Appreciation, Emptiness, Empty Support &amp; More - The Daily WTF)
+ http://pinvoke.net/default.aspx/kernel32/CreateFile.html (pinvoke.net: CreateFile (kernel32))
+ http://www.google.com/search?q=jscreenfix (jscreenfix - Google-Suche)
+ http://wiki.secondlife.com/wiki/Office_hours (m linden)
+ http://dren.dk/hunspell.html (Java API for Hunspell, based on JNA)
+ http://connect.yesmail.com/axis2-admin/listService (Axis2 :: Administration Page)
+ http://www.0x13.de/index.php/code-snippets/74-icmp-ping-in-java.html (ICMP Ping in Java)
+ http://www.jaganelli.de/ (Jaganelli.de - die krankeste Hompeitsch im Intanet)
+ http://personal.stevens.edu/~nkahl/Top100Theorems.html (Top 100 Theorems)
+ http://developer.apple.com/textfonts/TTRefMan/RM06/Chap6OS2.html (OS/2 Compatibility Table)
+ http://uclinux-mb86h2x.cvs.sourceforge.net/viewvc/uclinux-mb86h2x/PVR2_100CI/v3_6l/src/statlist.h?revision=1.2&amp;view=markup (SourceForge.net Repository - [uclinux-mb86h2x] View of /PVR2_100CI/v3_6l/src/statlist.h)
+ http://uclinux-mb86h2x.cvs.sourceforge.net/viewvc/uclinux-mb86h2x/PVR2_100CI/v3_6l/src/statlist.c?revision=1.2&amp;view=markup (SourceForge.net Repository - [uclinux-mb86h2x] View of /PVR2_100CI/v3_6l/src/statlist.c)
+ http://tscomagcv.berlios.de/data.html (Data Formats of the Comag PVR2/100CI)
+ http://www.imified.com/developers/api (IMified - IMified API (Create Jabber Bots with HTTP))
+ http://www.heckrath.net/ (heckrath.net IT-Services (günstige vServer))
+ http://www.basisbibel.de/nc/basisbibel-online/bibeltext/ (Basisbibel - Bibeltext)
+ https://launchpad.net/puredyne (Puredyne in Launchpad)
+ http://www.javabluetooth.org/ (www.JavaBluetooth.org)
+ https://addons.mozilla.org/de/thunderbird/tag/resubmission (resubmission :: Thunderbird Add-ons)
+ http://www.stanford.edu/dept/itss/docs/oracle/10g/java.101/b12021/toc.htm (Oracle Database Java Developer&#39;s Guide - Contents)
+ http://whatmac.com/ (WhatMac Project)
+ http://software77.net/geo-ip/ (FREE IP to Country Database (IPV4 and IPV6))
+ http://g0tmi1k.blogspot.com/2011/06/dictionaries-wordlists.html (g0tmi1k: Dictionaries &amp; Wordlists)
+ http://www.zerodayinitiative.com/advisories/upcoming/ (Upcoming Advisories - Zero Day Initiative)
+ http://wiki.eclipse.org/JDT/Eclipse_Java_7_Support_(BETA) (JDT/Eclipse Java 7 Support (BETA) - Eclipsepedia)
+ http://onlinehashcrack.com/ (Online Hash Crack MD5 / LM / NTLM / SHA1 / MySQL5 / MySQL323 / MD4 - Passwords recovery - Reverse hash lookup Online - Hash Calculator)
+ http://powertab.codeplex.com/ (PowerTab - Home)
+ http://blog.o0o.nu/2010/07/cve-2010-1871-jboss-seam-framework.html (o0o: CVE-2010-1871: JBoss Seam Framework remote code execution)
+ http://chall32.blogspot.com/2010/06/android-market-fingerprints-demystified.html (Android Market Fingerprints Demystified ~ What the.....?)
+ http://www.splashtop.com/os (Splashtop Inc. - Splashtop OS)
+ http://www.mydefrag.com/forum/index.php?PHPSESSID=23b7fc8b38e1284bae99de8700713f91&amp;topic=2303.15 (How to defragment FAT directories on Win32 without rebooting (basic CMD script))
+ http://pastebin.com/32NKVfrF ([Java] /* * Running shellcode from Java without JNI (i. e. loading a DLL from disk). - Pastebin.com)
+ http://www.bleepingcomputer.com/ (Bleeping Computer - Computer Help and Discussion)
+ http://geeknizer.com/decompile-reverse-engineer-android-apk/ (Decompile / Reverse Engineer Android APK)
+ http://www.i2p2.de/how (Index to Technical Documentation - I2P)
+ http://www.darkoperator.com/blog/2011/5/10/virtualizing-junos-on-vmware.html (Security and Networking - Blog - Virtualizing JunOS on VMware)
+ http://koresecure.com/?p=4648 (How Hardware Trojans are created and activated | KoreSecure – I.T. Security News)
+ http://samy.pl/androidmap/index.php (mapping MAC addresses - samy kamkar)
+ http://www.transnationalrepublic.org/ (TRansnational Republic • Globalisation needs Democracy!)
+ http://www.heise.de/open/meldung/Freier-Notensatz-fuer-Linux-Windows-und-Mac-OS-X-1236662.html (Freier Notensatz für Linux, Windows und Mac OS X | heise open)
+ http://malc0de.com/database/ (Malc0de Database)
+ http://www.umlet.com/changes.htm (UMLet Homepage - Free UML Tool)
+ http://download.oracle.com/javase/1.5.0/docs/guide/management/agent.html (Platform Monitoring and Management Using JMX)
+ http://hackertyper.net/ (Hacker Typer)
+ http://www.travelment.de/ (Geschäftsreisen online buchen - travelment)
+ http://forum.cyanogenmod.com/topic/5340-cyanogenmod-6-with-the-android-emulator/ (CyanogenMod 6 with the Android emulator - CyanogenMod Forum)
+ http://www.kernelmode.info/forum/viewtopic.php?f=16&amp;t=308 (KernelMode.info • View topic - List of Malware Sources (like malc0de or malwaredomainlist))
+ http://eclipse.org/mat/ (Eclipse Memory Analyzer Open Source Project)
+ http://www.napsounds.com/ (Power Nap | NapSounds)
+ http://www.gabbly.com/ (Gabbly - gabbly.com)
+ http://groups.google.com/group/de.alt.recovery.webauthor/msg/445067259b6af50e?msgid=71q67cFmhhniU1@mid.individual.net (Exel und die Rechenmaschine - de.alt.recovery.webauthor | Google Groups)
+ http://www.lynda.com/ (Software training online-tutorials for Adobe, Microsoft, Apple &amp; more)
+ http://www.linguee.de/ (Linguee – Das Web als Wörterbuch – Deutsch/Englisch)
+ http://www.mindeks.com/mindeks/finn.php (Mindeks :: Search for melody)
+ http://www.retailmenot.com/ (Coupon codes and discounts for 65,000 online stores! RetailMeNot.com)
+ http://droolr.com/ (The Wishlist for Geeks! – Droolr)
+ http://www.shodanhq.com/ (SHODAN - Computer Search Engine - Search vulnerable - Search User-Agent - nmap search)
+ http://www.gemeinde-liest-bibel.de/02.Seiten/02.%20Bibelleseplan.html (Bibelleseplan - Gemeinde-liest-Bibel)
+ https://www.libertyreserve.com/ (Liberty Reserve – largest payment processor and money transfer system. Liberty Reserve serves millions since 2002 - Home)
+ http://www.kurzgeschichten.de/vb/showthread.php?t=4529&amp;page=3 (Empfehlungen - Seite 3 - Kurzgeschichten.de)
+ http://www.kurzgeschichten-verlag.de/science-fiction/index.html (Science Fiction SciFi Sci-Fi Sciencefiction Phantastik phantastische Geschichten Zukunftsgeschichen Abenteuer)
+ http://www.oracle.com/technetwork/topics/security/javacpufeb2011-304611.html (http://www.oracle.com/technetwork/topics/security/javacpufeb2011-304611.html)
+ http://cwe.mitre.org/data/definitions/694.html (CWE - CWE-694: Use of Multiple Resources with Duplicate Identifier (1.11))
+ http://code.google.com/p/pentest-bookmarks/wiki/BookmarksList (BookmarksList - pentest-bookmarks - Bookmarks List - Project Hosting on Google Code)
+ http://api.dev.amadeus.net/api/Development/Static/ErrorMessages/Predef_Errors_1_1000.htm (Amadeus Predefined Host Messages : 1 - 1000)
+ http://checkmate.gissen.nl/headers.php (Checkmate MP3 Checker - MPEG Audio Layer I/II/III frame header)
+ http://robocode.sourceforge.net/ (Robocode Home)
+ http://ie6countdown.com/ (IE6 Countdown)
+ http://musescore.org/ (MuseScore | Freies Notensatzprogramm)
+ http://fhoguin.com/2011/03/oracle-java-unsigned-applet-applet2classloader-remote-code-execution-vulnerability-zdi-11-084-explained/ (Oracle Java Unsigned Applet Applet2ClassLoader Remote Code Execution Vulnerability (ZDI-11-084 explained) | fhoguin)
+ http://helloracer.com/webgl/ (HelloRacer™ WebGL)
+ http://dev.sencha.com/deploy/touch/docs/ (Sencha Touch API Documentation)
+ http://j00ru.vexillium.org/?p=893 (CVE-2011-1281: A story of a Windows CSRSS Privilege Escalation vulnerability | j00ru//vx tech blog)
+ http://code.google.com/p/zxing/ (zxing - Multi-format 1D/2D barcode image processing library with clients for Android, Java - Google Project Hosting)
+ http://www.unicode.org/reports/tr36/ (UTR# 36: Unicode Security Considerations)
+ https://community.rapid7.com/docs/DOC-1467 (Rapid7 Community: Metasploit Exploit Bounty - Exploit List)
+ http://www.infoq.com/articles/ruby-open-classes-monkeypatching (InfoQ: Ruby&#39;s Open Classes - Or: How Not To Patch Like A Monkey)
+ http://tech.natemurray.com/2007/03/ruby-shell-commands.html (tech.natemurray.com: 6 Ways to Run Shell Commands in Ruby)
+ http://www.jesusfilm.org/film-and-media/watch-the-film (The JESUS Film Project | Watch the &quot;JESUS&quot; Film)
+ http://netoquiz.prv.pl/gra/en.html (The Office District Adventure)
+ http://www.ethicalhacker.net/content/view/379/2/ (The Ethical Hacker Network - Free Armitage and Metasploit Video Training Course)
+ http://www.jidesoft.com/products/oss.htm (JIDE Software - JIDE Common Layer - The Best Open Source Swing Component Library)
+ http://www.getinpulse.com/guide/ (Get Alerts on Your Watch. Get inPulse | Guide)
+ http://www.oracle.com/technetwork/java/seccodeguide-139067.html#0-7d (Secure Coding Guidelines for the Java Programming Language, Version 3.0 - Sun Developer Network)
+ http://techno.org/electronic-music-guide/ (Ishkur&#39;s Guide to Electronic Music | New Home on Techno.org)
+ http://www.di.fm/ (Digitally Imported - addictive electronic music)
+ http://canyouxssthis.com/ (Can You XSS This?)
+ http://www.akamai.com/html/technology/dataviz1.html (Real-time Web Monitor - Attacks / Latency / Traffic)
+ http://code.google.com/p/isr-evilgrade/ (isr-evilgrade - Update explotation framework - Google Project Hosting)
+ http://www.opensource-dvd.de/isodownload.htm (Die Opensource-DVD und Download von Opensource und LibreOffice)
+ http://homepage.ntlworld.com/jonathan.deboynepollard/FGA/put-down-the-chocolate-covered-banana.html (FGA: Put down the chocolate-covered banana and step away from the European currency systems.)
+ http://open.zorinaq.com:31337/about/ (65k Open TCP Ports)
+ http://anubis.iseclab.org/?action=sample_report (Anubis: Analyzing Unknown Binaries)
+ http://www.irongeek.com/i.php?page=videos/derbycon1/mainlist (Derbycon 2011 Videos (Hacking Illustrated Series InfoSec Tutorial Videos))
+ http://kb2.adobe.com/de/cps/836/cpsid_83641.html#main_Try_a_different_download_link (Download/Installation von Reader nicht möglich | Schnellkorrektur)
+ http://pev.sourceforge.net/ (pev - the PE file analyzer)
+ http://datalossdb.org/ (OSF DataLossDB | Data Loss News, Statistics, and Research)
+ http://pastebin.com/6CmUY3ZB ([Java] /* * Running shellcode from Java without JNI (i. e. loading a DLL from disk). - Pastebin.com)
+ http://pastebin.com/gSzyhbyQ (/* * Running shellcode from Java without JNI (i. e. loading a DLL from disk). - Pastebin.com)
+ http://en.wikipedia.org/wiki/Standard_electrode_potential_(data_page) (Standard electrode potential (data page) - Wikipedia, the free encyclopedia)
+ http://www.corporate.7safe.com/hacking-oracle-from-the-web-part-2 (Hacking Oracle From the Web: Part 2 | 7Safe Limited)
+ http://packetstormsecurity.org/files/104852 (Microsoft Windows Server 2008 R1 Denial Of Service ˜ Packet Storm)
+ http://www.earnstar.de/faq.php#antwort16 (EarnStar - häufig gestellte Fragen (FAQ))
+ http://rfeest.blogspot.com/2008/05/tomcat-logging-mit-eclipse-wtp.html (Rainer Feest Blog: Tomcat-Logging mit Eclipse WTP)
+ http://analyze.privacy.net/Default.asp (Privacy.net Analyzer Results)
+ http://www.kernel.org/ (The Linux Kernel Archives)
+ http://kernelnewbies.org/LinuxChanges (LinuxChanges - Linux Kernel Newbies)
+ http://www.die-jahresbibel.de/ (Die Jahresbibel: Startseite)
+ http://pastebin.com/TTk92Ywb ([Java] JITShellcodeRunner.java - Pastebin.com)
+ http://www.burosch.de/ (Burosch LCD-Testbilder)
+ http://denemo.org/Download (Denemo - Free and Open Music Notation Editor | Download)
+ http://m.microsoft.com/windowsphone/en-us/demo/ (Windows Phone demo)
+ http://sonatype.github.com/jarjar-maven-plugin/ (JarJar Maven Plugin - JarJar Plugin for Maven)
+ http://marmalade-repo.org/about (Marmalade: Spreadable Elisp)
+ http://www.heise.de/security/meldung/Adobe-bietet-Tool-zur-Analyse-von-Flash-an-1443469.html (Adobe bietet Tool zur Analyse von Flash an | heise Security)
+ http://www.netspi.com/blog/2009/10/05/windows-privilege-escalation-part-1-local-administrator-privileges/ (Windows Privilege Escalation Part 1: Local Administrator Privileges | NetSPI Blog)
+ http://www.williballenthin.com/forensics/shellbags/index.html (Windows Shellbag Forensics)
+ http://code.google.com/p/byteseek/ (byteseek - A Java library for byte pattern matching and searching. - Google Project Hosting)
+ http://finalbuilds.com/iecollection.htm (Final Builds Site - IE Collection)
+ http://deceptive-room.blogspot.de/2012/02/cracking-credit-card-code.html (Cracking the Credit Card Code)
+ http://isjavaexploitable.com/ (Is Java Exploitable?)
+ http://www.chrononsystems.com/ (Java Logging, Eclipse Debugger, Java Debugging, Eclipse Remote Debugging | Chronon Systems)
+ http://translate.google.com/#en|eo|Echo%20changes%20every%20Thursday (Google Übersetzer - Esperanto)
+ http://zim-wiki.org/ (Zim - a desktop wiki)
+ http://www.you-tube-download.com/ (You-Tube-Download)
+ https://prod.governikus-eid.de/jmx-console/ (JBoss JMX Management Console - eId1Server.governikus-eid.de (10.11.30.12))
+ https://github.com/nicoulaj/auto-instrument/blob/master/src/main/java/net/nicoulaj/instrument/AutoInstrumentation.java (auto-instrument/src/main/java/net/nicoulaj/instrument/AutoInstrumentation.java at master · nicoulaj/auto-instrument · GitHub)
+ http://pen-testing.sans.org/blog/2012/06/06/escaping-restricted-linux-shells# (Escaping Restricted Linux Shells)
+ http://grooveshark.com/ (http://grooveshark.com/)
+ https://www.exodusintel.com/research.html#presentations (Exodus Intelligence)
+ http://malwr.com/ (Malwr)
+ https://twitter.com/#!/needadebitcard (Debit Card (needadebitcard) auf Twitter)
+ http://www.salmiyuck.com/ (Salmiyuck!)
+ http://www.flightradar24.com/48.45,11.07/11 (Flightradar24.com - Live flight tracker!)
+ http://www.baen.com/library/books.asp (Baen Free Library - Books - Baen Books)
+ http://code.google.com/p/aadp/ (aadp - Anti-Anti-Debugger Plugins - Google Project Hosting)
+ http://tos-dr.info/ (Terms of Service; Didn&#39;t Read)
+ http://www.ask-a-pentester.com/ (Ask a Pentester)
+ http://git.ccc-ffm.de/smartkram.git/ (git.ccc-ffm.de Git - smartkram.git/summary)
+ http://scoperchiatore.wordpress.com/2011/05/06/java-webshell-wsh-g-jboss-version/ (Java WebSHell – wsh-g – JBOSS version « Goats Uncovered)
+ http://docs.oracle.com/javase/specs/jvms/se7/html/jvms-4.html#jvms-4.7.2 (ConstantValue Attribute - Chapter 4. The class File Format)
+ https://www.pentesterlab.com/exercises (PentesterLab.com » The Exercises)
+ http://www.zauberartikel24.de/public/dyn_layer.aspx?tpl=Zaubertricks_Aufl%C3%B6sungen&amp;suid=3058 (Zaubertrick-Videos - Ihr Zaubershop für professionelle Zauberartikel)
+ http://easyhook.codeplex.com/ (EasyHook - The reinvention of Windows API Hooking - Home)
+ http://embeddedsw.net/OpenPuff_Steganography_Home.html (OpenPuff Steganography &amp; Watermarking)
+ http://www.chip.de/downloads/Sardu_45464819.html (Sardu - Download - CHIP Online)
+ http://x-js.co.uk/ (X-JS - Cross browser JavaScript)
+ http://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html (directory)
+ http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time (Falsehoods programmers believe about time: @NoahSussman: Infinite Undo)
+ http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/ (Falsehoods Programmers Believe About Names | Kalzumeus Software)
+ http://obscuresecurity.blogspot.de/2012/12/finding-simple-av-signatures-with.html (obscuresec: Finding Simple AV Signatures with PowerShell)
+ http://clirr.sourceforge.net/clirr-maven/index.html (Clirr Maven plugin - Maven plugin for Clirr)
+ http://www.hidemyass.com/youtube-proxy/ (YouTube Proxy - Unblock YouTube and watch videos anonymously - Hide My Ass!)
+ https://www.transifex.com/ (Transifex - Localization platform)
+ http://www.smarthomebus.com/control-panel.html (Smart-Bus Home Automation - Control Panel, DDP, Dynamic Display Panel)
+ http://www.dafont.com/ (dafont.com - download free fonts)
+ http://quickscan.bitdefender.com/de/ (Schneller &amp; kostenloser Virenscanner - Bitdefender Quickscan)
+ http://www.chip.de/artikel/Download-Adventskalender_33781926.html (Download-Adventskalender - CHIP Online)
+ http://www.gestatten-max.de/adventskalender/ (Weihnachtsquiz mit Max Maulwurf)
+ https://www.facebook.com/CHIPde (CHIP Online - München, Germany - Webseite | Facebook)
+ http://img7.joyreactor.cc/pics/post/full/?????-geek-534947.gif (?????-geek-534947.gif (1366×782))
+ http://vscan.novirusthanks.org/ (Free Online Multi Engine Antivirus File and URL Scanner - Powered by NoVirusThanks.org)
+ http://virtest.com/ (virtest.com - ????????? ???????????? ????????. ????????? ?????? ??????, ?????, ??????)
+ https://bugzilla.mozilla.org/show_bug.cgi?id=813906 (813906 – (CVE-2013-0758) Content can access chrome-privileged pages using plugin objects)
+ http://www.sitekiosk.com/SiteKiosk/Default.aspx (Kiosk Software - Download die Nr.1 SiteKiosk™ für Win &amp; Android.)
+ http://www.modern.ie/en-US/virtualization-tools (Cross-browser testing simplified | Testing made easier in Internet Explorer | modern.IE)
+ http://java-0day.com/ (Java 0day countdown)
+ http://istherejava0day.com/ (Is there Java 0day?)
+ http://www.adobe.com/de/downloads/cs2_downloads/index.html (Adobe - CS2-Download)
+ http://scan4you.net/# (Scan4You.net - Online Anonymous Virus and Malware Scan)
+ http://hgbook.red-bean.com/ (Mercurial: The Definitive Guide)
+ http://cwe.mitre.org/data/definitions/916.html (CWE - CWE-916: Use of Password Hash With Insufficient Computational Effort (2.4))
+ http://chk4me.com/ (chk4me.com - AV-Check Service)
+ https://github.com/marak/Faker.js/ (Marak/Faker.js · GitHub)
+ http://pastebin.com/XuJuF0zD ([Java] Interesting Anti-Debugging Technique for standalone Java app - Pastebin.com)
+ http://lukas-prokop.at/proj/fanstuff/knuth/questions.html#qfe49C4d0 (Questions answered by Don Knuth in public)
+ http://www.rdmag.com/news/2013/04/computer-scientists-develop-video-game-teaches-java-programming (Computer scientists develop video game that teaches java programming)
+ http://blog.clemens.endorphin.org/2007/12/removing-chs-based-access-from-windows_3170.html (CFruhwirth&#39;s Weblog: Removing CHS based access from windows boot loaders)
+ https://github.com/scriptjunkie/Hacker-Games-Evil-VM (scriptjunkie/Hacker-Games-Evil-VM · GitHub)
+ http://support.microsoft.com/kb/314082/de (Stop-Fehler 0x0000007B, nachdem die Windows XP-Systemfestplatte in einen anderen Computer eingebaut wurde)
+ http://www.amazon.de/dp/B0032IXOLE/?smid=AN2228LAWLC4U&amp;tag=preisvergleich-idealode-21&amp;linkCode=asn&amp;creative=6742&amp;camp=1638&amp;creativeASIN=B0032IXOLE&amp;ascsubtag=CttlADVQgea2X0OJQOizpw (Abschiedskarte Abschied / Goodbye: Amazon.de: Bürobedarf &amp; Schreibwaren)
+ http://getairmail.com/ (Temporary Disposable Email | AirMail)
+ http://tohtml.com/ (Online syntax highlighting)
+ http://thedailywtf.com/Articles/Slacking-Off.aspx (Slacking Off - The Daily WTF)
+ http://msdn.microsoft.com/en-us/library/windows/desktop/ms679291.aspx?lc=1033 (DbgHelp Functions (Windows))
+ https://github.com/lra/pouet.net (lra/pouet.net · GitHub)
+ http://www.heise.de/security/meldung/Intels-gut-gemeinter-Passwort-Test-1860115.html (Intels gut gemeinter Passwort-Test | heise Security)
+ http://www.formymobile.co.uk/6220classicdisassembly.php#.UY_Cgz4s7fI (Nokia 6220 Classic repair guide)
+ http://robotification.com/pfp/ (Print, Fold, Post: The Printable Envelope)
+ http://forums.mydigitallife.info/printthread.php?t=37590&amp;pp=40&amp;page=1 (Windows 8 Product Key Decoding)
+ http://www.tecchannel.de/pc_mobile/windows/401697/inside_windows_product_activation/ (Inside Windows Product Activation | TecChannel.de)
+ http://www.youtube.com/watch?v=OOoul9THwTU (16 Malen, pinseln, streichen, schmieren (Schlussmusik) - YouTube)
+ http://www.commonexploits.com/?p=789&amp;cpage=1#comment-2507 (AV0id – Anti-Virus Bypass Metasploit Payload Generator Script | Common Exploits - Penetration Testing Information)
+ http://projects.wsj.com/games/thefederator/ (WSJ.com presents - The Federator the Game)
+ https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler (mstrobel / Procyon / wiki / Java Decompiler — Bitbucket)
+ http://woodmann.com/BobSoft/Pages/Plugins/OllyDbg2 (BobSoft - [OllyDbg v2.xx Plugins])
+ http://www.moderndayturing.com/ (Redact Secure Messenger)
+ http://www.snapmyad.com/ (SnapMyAd)
+ https://github.com/revivalizer/compilertalk/commits/master (Commit History · revivalizer/compilertalk)
+ http://resources.infosecinstitute.com/hacking-java-applications-using-javasnoop/ (InfoSec Institute Resources – Hacking Java Applications using JavaSnoop)
+ https://github.com/GoodBoyDigital/pixi.js (GoodBoyDigital/pixi.js · GitHub)
+ http://emuframework.sourceforge.net/ (Emulation Framework [EF])
+ http://hooked-on-mnemonics.blogspot.de/2011/01/intro-to-creating-anti-virus-signatures.html (Hooked on Mnemonics Worked for Me: An Intro to Creating Anti-Virus Signatures:)
+ http://downloads.efxclipse.org/eclipse-java8/ (Index of /eclipse-java8)
+ https://github.com/ryppl/Boost2Git/issues/20 (Remove redundant merge parents · Issue #20 · ryppl/Boost2Git)
+ http://d0cs4vage.blogspot.de/2013/06/windbg-tricks-javascript-windbg.html (d0c_s4vage: Windbg Tricks - Javascript Windbg Instrumentation)
+ https://www-01.ibm.com/products/hardware/configurator/americas/bhui/flowAction.wss?nc=1371155629812&amp;_eventId=continue&amp;_flowExecutionKey=_c5B16B019-2C41-D816-13DC-5FAB98014C7A_k6FB5F934-4205-1328-1ABD-055F8E23DDE7 (adaptec)
+ http://labs.spotify.com/2013/06/18/creative-usernames/ (Creative usernames and Spotify account hijacking | Spotify Labs)
+ http://rweverything.com/download/ (Download | RWEverything)
+ http://social.technet.microsoft.com/Forums/windows/en-US/8a3e9b05-353b-4250-a023-066a085e9657/tap-driver-identified-vs-unidentified-networks (TAP driver / identified vs unidentified networks)
+ http://technet.microsoft.com/en-us/library/ff393699(v=ws.10).aspx (RDP Settings for Remote Desktop Services in Windows Server 2008 R2)
+ http://www.donkz.nl/files/rdpsettings.html (Remote Desktop Plus - Overview of .rdp file settings)
+ http://security.stackexchange.com/questions/30985/create-a-unterminable-process-in-windows (Create a unterminable process in Windows - IT Security Stack Exchange)
+ http://aceeca.com/index.php?option=com_maqmahelpdesk&amp;Itemid=5&amp;id_workgroup=1&amp;task=downloads_product&amp;id=6 (64 bit USB Windows Driver for Palm/Garnet OS - Downloads - Aceeca.com)
+ http://www.chip.de/downloads/Palm-Desktop-Software_12993047.html (Palm Desktop Software - Download - CHIP Online)
+ http://www.youtube.com/watch?feature=player_embedded&amp;v=O37yJBFRrfg (The European Union Explained* - YouTube)
+ http://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3/answer/Michael-Wolfe?srid=24b&amp;share=1 (Michael Wolfe&#39;s answer to Engineering Management: Why are software development task estimations regularly off by a factor of 2-3? - Quora)
+ http://codebutler.com/2012/10/10/configuring-a-usable-android-emulator/ (Configuring a usable Android emulator - codebutler)
+ http://stackoverflow.com/questions/11154222/google-play-on-android-4-0-emulator (Google Play on Android 4.0 emulator - Stack Overflow)
+ http://www.youtube.com/watch?v=p6HzhQIkXQ8 (WYD Rio2013 English Anthem - YouTube)
+ http://www.youtube.com/watch?v=ceRPoJa6M7k (WYD Madrid 2011 Theme song Firmes en la fe English version JMJ - YouTube)
+ http://issendai.livejournal.com/572510.html (Issendai&#39;s Superhero Training Journal - Sick systems: How to keep someone with you forever)
+ http://www.youtube.com/watch?v=-pjQ0FNzkLQ (Do Easy - YouTube)
+ https://search.nerdydata.com/ (Source Code Search - NerdyData)
+ http://code.google.com/p/badvpn/wiki/tun2socks (tun2socks - badvpn - tun2socks - socksify TCP at the network layer - NCD scripting language, tun2socks proxifier, P2P VPN - Google Project Hosting)
+ https://beta.thoughtcolony.com/ (thoughtcolony)
+ http://www.varsanofiev.com/inside/using_tuntap_under_windows.htm (Using tuntap under Windows)
+ http://www.intelligentexploit.com/ (Intelligent Exploit Aggregation Network - IEAN)
+ http://stereomixplus.com/index.html (Stereo Mix Plus - Fix no Stereo Mix on Windows 7/Vista | Stereo Mix recorder/enhance tool)
+ http://www.securitybeacon.com/?p=636 (Protecting yourself from Cell Phone hacks…. | Security Beacon)
+ http://rileykidd.com/2013/08/21/the-backdoor-you-didnt-grep/ (The backdoor you didn’t grep | Riley Kidd)
+ https://gist.github.com/aras-p/6224951 (Things to commit just before leaving your job)
+ http://www.ex-parrot.com/pete/upside-down-ternet.html (Upside-Down-Ternet)
+ http://stackoverflow.com/questions/194812/list-of-freely-available-programming-books/392926#392926 (creative commons - List of freely available programming books - Stack Overflow)
+ http://www.vetusware.com/ (VETUSWARE.COM - the biggest free abandonware collection in the universe)
+ https://github.com/PenturaLabs/Linux_Exploit_Suggester/blob/master/Linux_Exploit_Suggester.pl (Linux_Exploit_Suggester/Linux_Exploit_Suggester.pl at master · PenturaLabs/Linux_Exploit_Suggester)
+ http://www.infoq.com/articles/Introduction-to-HotSpot (Getting Started with HotSpot and OpenJDK)
+ http://www.winvistaside.de/forum/index.php?showtopic=3039 (Was ist der WinSxS Ordner und warum wird er immer größer? - WinVistaSide Forum)
+ http://www.winvistaside.de/forum/index.php?showtopic=3836 (vLite Alternative für Windows 7 - WinVistaSide Forum)
+ http://blog.apkudo.com/2012/08/08/run-google-play-on-an-emulator-and-pretend-to-be-any-device/ (Run Google Play on an emulator and pretend to be any device | apkudo)
+ http://www.youtube.com/watch?v=T6r5bo_D9QY#t=2h51m19s (4 Hours of Emotional Music - YouTube)
+ http://www.youtube.com/watch?v=jiwuQ6UHMQg (? 2 Hours of Celtic Music - YouTube)
+ http://www.miller-system.eu/profil.html (Profil - Bernd Miller)
+ https://www.xing.com/profile/Bernd_Miller4 (Bernd Miller - ORACLE Entwickler - Computer Software | XING)
+ http://technet.microsoft.com/library/cc754948.aspx?ITPID=article (Group Policy Planning and Deployment Guide)
+ http://www.fourmilab.ch/random/ (Pseudorandom Number Sequence Test Program)
+ http://www.youtube.com/watch?v=HKAkSGdRzP8#t=13m30s (? ZDFzoom: World Wide War [11.09.13] - YouTube)
+ http://www.jchq.net/phezam/question.php (Java Examulator)
+ https://github.com/Akdeniz/google-play-crawler (Akdeniz/google-play-crawler)
+ http://0xffe4.org/browser-fuzzing-bamboo/ (Browser fuzzing: introducing bamboo.js)
+ http://www.jsdb.io/?sort=trending (JSDB.io - The Database of JavaScript Libraries)
+ http://www.lustigestories.de/stories/boss.php (Der Boss (im Körper?) - Lustigestories.de)
+ http://www.youtube.com/watch?v=H8-lWIDT19k (? Music to Help Study and Work - YouTube)
+ http://www.youtube.com/watch?v=vCYk9CRx0g8 (LONG Playlist of Relaxing Soft Piano Music to Sleep and Study - YouTube)
+ http://www.oracle.com/technetwork/java/javase/community/jvmls2013-2013900.html (JVM Language Summit 2013)
+ https://wiki.openjdk.java.net/display/general/JBS+Overview (JBS Overview - About - OpenJDK Wiki)
+ http://www.heise.de/security/foren/S-Re-Neuer-Artikel-Browser-SSL-entschluesselt/forum-44154/msg-24176609/read/ (Re: Neuer Artikel: Browser-SSL entschlüsselt | Penetration Tests | heise security-Foren)
+ http://int3.cc/collections/frontpage/products/usbcondoms (int3.cc - USBCondoms)
+ http://www.avsforum.com/t/948496/avs-hd-709-blu-ray-mp4-calibration (AVS HD 709 - Blu-ray &amp; MP4 Calibration)
+ http://www.bicyclecards.com/rules (Mobile Apps - The Official Bicycle® Playing Cards Apps)
+ http://mallocat.com/another-journey-to-antivirus-escalation/ (Another journey to antivirus escalation (Bypassing Driver Filters) | MALLOCAT)
+ https://www.wuala.com/alluringreality/Public/MP4-2c.7z (Wuala Explorer)
+ http://ms-sys.sourceforge.net/ (ms-sys (create bootable DOS partition from Linux))
+ https://github.com/bekk/retire.js/blob/master/repository/jsrepository.json (retire.js/repository/jsrepository.json at master · bekk/retire.js)
+ http://aosabook.org/en/index.html (The Architecture of Open Source Applications)
+ http://blog.rewolf.pl/blog/?p=786#.UqDeXEDpxTw (Java bytecode debugging)
+ http://www.voelkner.de/products/145957/GPS-Logger-Gt-750-Bluetooth.html (GPS-Logger Gt-750 Bluetooth | voelkner - direkt günstiger)
+ http://crash.opera.com/response?id=250152150&amp;c=5d7173f12daf2c5dc64ae2489399a2bacc2c37d6209342d3fc1003ab2b9e2f2d (Crash Log Submission)
+ http://crash.opera.com/response?id=250152295&amp;c=6acd1b6eeff05586f73d8b4e01792f9265f10c922d4c84d5444f2c9d050b598f (Crash Log Submission)
+ http://crash.opera.com/response?id=250245445&amp;c=11ee3f6dc15acf448b44ea83dd068accc1fa595b086383eeb21539bf31ee0f99 (Crash Log Submission)
+ http://forums.mydigitallife.info/threads/8047-How-do-you-rearm-30-day-trial-in-Windows-XP (How do you rearm 30 day trial in Windows XP)
+ http://www.benf.org/other/cfr/ (CFR - yet another java decompiler.)
+ http://pastebin.com/gYDJwFeQ (msf auxiliary(meterp_compare) &gt; rerun [*] Reloading module... [+] Scanning s - Pastebin.com)
+ http://support.lenovo.com/en_US/downloads/detail.page?DocID=DS029124 (BIOS Update Utility for Windows 8.1 (32-bit, 64-bit), 8 (32-bit, 64-bit), 7 (32-bit, 64-bit), XP - ThinkPad L430, L530)
+ http://www.iteral.com/jscrush/ (JavaScript Crush by Aivo Paas)
+ http://chocolatey.org/packages (Chocolatey Gallery | Packages)
+ http://www.freimann.eu/eliphi/phi/informatikbegriffe.php (Einweisung in die Informatik (neu stiefeln und so))
+ http://weblog.ikvm.net/PermaLink.aspx?guid=c488be91-b644-4dec-9afc-fd1fdf607fd1 (IKVM.NET Weblog - Publicly Reported OpenJDK Vulnerability Fixed in 7u51)
+ http://littlecalamity.tripod.com/Text/HateEnglish.html (Reasons to Hate the English Language)
+ http://www.ekst.asia/ (Die Gefahren des Reiki)
+ https://picasaweb.google.com/108047337224271966171 (Picasa Web Albums - Jiriik Jiriik)
+ http://www.hemingwayapp.com/ (Hemingway)
+ http://www.securelist.com/en/analysis/204792300/Anti_decompiling_techniques_in_malicious_Java_Applets&amp;theme=white (Anti-decompiling techniques in malicious Java Applets - Securelist)
+ https://leakdb.abusix.com/ (Start | leakdb)
+ http://exercism.io/ (exercism.io)
+ http://www.platformthegame.com/ (Platform - The Game)
+ http://www.fuzzysecurity.com/tutorials/16.html (FuzzySecurity | Windows Privilege Escalation Fundamentals)
+ http://phantomjs.org/ (PhantomJS | PhantomJS)
+
+Unsorted 4:
+ http://www.yr.no/place/Germany/Bavaria/Aichach/hour_by_hour_detailed.html (Detailed hourly forecast for Aichach, Bavaria (Germany) – yr.no)
+ https://community.logos.com/forums/t/102464.aspx?PageIndex=2 (Offene Bibel als Persönliches Buch - Logos Bible Software Forums)
+ https://community.logos.com/forums/p/104429/722096.aspx#722096 (Leonberger Bibel als PB - Logos Bible Software Forums)
+ https://community.logos.com/forums/p/104451/722360.aspx#722360 (NEÜ, Zürcher 1931, Schlachter 1951 als PBs - Logos Bible Software Forums)
+ https://cajs.co.uk/logs/freenode/log.php?channel=yourbnc (https://cajs.co.uk/logs/freenode/log.php?channel=yourbnc)
+ https://twitter.com/_nighthacking/status/329145797042114560 (NightHacking on Twitter: &quot;Java Spotlight Episode 130: Santiago Pericas-Geertsen on JSR 339: JAX-RS 2.0 @spericas http://t.co/DkJF7Xo3kb&quot;)
+ https://blogs.oracle.com/javaspotlight/entry/java_spotlight_episode_134_kin?utm_source=feedburner&amp;utm_medium=twitter&amp;utm_campaign=Feed%3A+TheJavaSpotlightPodcast+%28The+Java+Spotlight+Podcast%29 (Java Spotlight Episode 134: Kin-man Chung on JSR 341: Expression Language 3.0@jcp (The Java Spotlight Podcast))
+ http://www.openxava.org/ (AJAX Java Web Framework for Rapid Application Development of Enterprise Applications - OpenXava)
+ https://www.youtube.com/user/BlackHatOfficialYT/feed (Black Hat - YouTube)
+ http://quickcheck-ci.com/# (QuickCheck | Continuous Integration)
+ http://forums.lenovo.com/t5/W-Series-ThinkPad-Laptops/HOWTO-Brick-a-W540-in-easy-steps/td-p/1400393/highlight/true/page/7 (HOWTO - Brick a W540 in easy steps - Page 7 - Lenovo Community)
+ https://devio.us/signup (Sign Up - Devio.us)
+ http://candybox2.net/ (Candy Box 2)
+ https://java.net/projects/adoptopenjdk/pages/TestingJava8 (Adopt OpenJDK: Wiki: TestingJava8 — Project Kenai)
+ http://www.ebay.de/itm/Original-Nokia-6220-Classic-Cover-Akkudeckel-Akkufachdeckel-Deckel-Black-Schwarz-/110992111041#vi-content (Original Nokia 6220 Classic Cover Akkudeckel Akkufachdeckel Deckel Black Schwarz | eBay)
+ http://www.jumpshot.com/ (Jumpshot)
+ http://samples.msdn.microsoft.com/ietestcenter/default.htm#webperf (Internet Explorer: Testing Center)
+ http://samples.msdn.microsoft.com/ietestcenter/default.htm (Internet Explorer: Testing Center)
+ http://experimentalgameplay.com/ (Experimental Gameplay Project)
+ http://www.yanone.de/ (Yanone - Hello, World)
+ http://shiro.apache.org/index.html (Apache Shiro | Java Security Framework)
+ http://www.urbanfonts.com/fonts.php?fontauthor=26 (Brian Kent - Free Fonts | UrbanFonts.com)
+ http://www.raylynch.com/relaxing_music/index.html (Relaxing Music from Ray Lynch)
+ http://www.cup-of-dreams.com/ (Cup Of Dreams)
+ http://www.clu.de/ (clu.de | cluge Köpfe entwickeln gemeinsam Ideen)
+ http://nintendo8.com/toplist/ (nintendo8.com - play Nintendo 8-bit games online (no download required))
+ http://gbemul.com/all/ (gbemul.com - play Gameboy games online (no download required))
+ http://tonicsystems.com/products/jarjar/ (JarJar)
+ http://ultrasurf.us/user-center.html (Ultrasurf User Center - Advice and Tips for Internet Privacy and Security)
+ http://www.vbforums.com/showthread.php?t=240304 (VB - Raw disk access - VBForums)
+ http://www.soundonsound.com/sos/allsynthsecrets.htm (Synth Secrets: Links to All Parts)
+ http://musicalrelaxation.com/ (Free Relaxation Music: Musical Relaxation, finest free relaxation music since 1996 (Powered by CubeCart))
+ http://www.radiosrichinmoy.org/free-online-music-radio/free_relaxation_music/ (Free Relaxation Music — Radio Sri Chinmoy)
+ http://www.heise.de/developer/architektur-methoden-1031.html (Architektur/Methoden | heise Developer)
+ http://fail0verflow.com/ (failOverflow)
+ http://podup.sargodarya.de/ (Diaspora Pod Up - Search and find good Pods)
+ http://www.heise.de/newsticker/meldung/Google-Maps-5-0-3D-Gebaeude-und-Offline-Speicher-1155420.html (heise online - Google Maps 5.0: 3D-Gebäude und Offline-Speicher)
+ http://www.phrack.org/issues.html?issue=67 (.:: Phrack Magazine ::.)
+ http://hakin9.org/magazine/article (Hakin9 :: Download)
+ http://web.monkeysphere.info/ (The Monkeysphere Project)
+ http://www.bright-shadows.net/ (TheBlacksheep at www.bright-shadows.net: Internet Security Challenges, Network security, Computer security - Community)
+ http://www.mysterytwisterc3.org/ (Welcome to the new Mystery Twister C3)
+ http://projecteuler.net/index.php?section=profile (Project Euler)
+ http://github.com/mcmorran/dailywtf-eclipse (mcmorran&#39;s dailywtf-eclipse at master - GitHub)
+ http://us.metamath.org/ (Metamath Home Page)
+ http://www.vogella.de/articles/GWT/article.html#debugging (GWT Tutorial)
+ http://www.sleepphones.com/downloads (Download FREE Binaural Beat MP3s for Sleep | SleepPhones)
+ http://github.com/amooma/GemeinschaftPBX (amooma&#39;s GemeinschaftPBX at 3.0 - GitHub)
+ http://www.commandlinefu.com/commands/browse (All commands | commandlinefu.com)
+ http://ultrakurz.wordpress.com/2007/02/ (2007 Februar « Ultrakurzgeschichten)
+ http://www.topcoder.com/ (Programming Contests, Software Development, and Employment Services at TopCoder)
+ http://www.abijahrgang-2001.de/ (Abijahrgang 2001 am DHG)
+ http://www.dest-unreach.org/socat/doc/socat.html (socat)
+ http://www.gentilkiwi.com/telechargements-s43-t-socat.htm#englishversion (Gentil Kiwi . com : Téléchargements - Socat)
+ http://twitter.com/earlybird (Earlybird Offers (earlybird) on Twitter)
+ http://wiki.ubuntuusers.de/DRBD (DRBD › Wiki › ubuntuusers.de)
+ http://www.epicwinapp.com/ (EPICWIN)
+ http://www.thotcon.org/archive/ (THOTCON - Chicago&#39;s Hacking Conference - Archive)
+ http://wiki.laptop.org/go/Forth_Lesson_6 (Forth Lesson 6 - OLPC)
+ http://www.math.umd.edu/~dcarrera/ruby/0.3/chp_05/about.html (Learning Ruby)
+ http://www.florianzimmer-group.com/ (http://www.florianzimmer-group.com/)
+ http://anonymous.livelyblog.com/2007/06/07/the-end-of-the-hidden-wiki-on-tor/ (The end of The Hidden Wiki on Tor)
+ http://www.pushl.com/taskspy/ (TaskSpy - Task manager for Symbian OS)
+ http://www.heise.de/security/artikel/Programmieren-von-Exploits-860839.html (heise Security - 17.11.09 - Programmieren von Exploits)
+ http://www.connect.microsoft.com/content/content.aspx?ContentID=6415&amp;SiteID=94 (Willkommen - wie vereinfacht SharedView meine Arbeit? | Microsoft Connect)
+ http://www.heise.de/software/download/special/digitale_schoenheitsfarm/65_1 (Digitale Schönheitsfarm, Themen-Special im heise Software-Verzeichnis)
+ http://www.codeproject.com/KB/dotnet/AppBar.aspx (CodeProject: AppBar using C#. Free source code and programming help)
+ https://har2009.org/program/events/206.en.html (HAR2009: Distributed social networking)
+ https://har2009.org/program/events/92.en.html (HAR2009: Capture the flag)
+ http://images1.noterik.com/har/ (HAR uncut mp4)
+ http://www.theregister.co.uk/odds/bofh/ (The Home of the Mighty BOFH • The Register)
+ http://www.runesofmagic.com/de/index.html (Startseite // Runes of Magic // Frogster)
+ http://weblogs.asp.net/kennykerr/archive/2004/10/19/244670.aspx (Introduction to MSIL – Part 7 – Casts and Conversions - Kenny Kerr)
+ http://groups.google.com/group/GroupXye/web/new-levels-page?pli=1 (New levels page -   Xye Discussion | Google Groups)
+ http://www.codeproject.com/KB/dotnet/twaindotnet.aspx?display=PrintAll&amp;fid=2619&amp;df=90&amp;mpp=25&amp;noise=3&amp;sort=Position&amp;view=Quick&amp;fr=176 (CodeProject: .NET TWAIN image scanner. Free source code and programming help)
+ http://www.tech-archive.net/Archive/DotNet/microsoft.public.dotnet.framework.interop/2007-03/msg00030.html (RE: Using GetOutlineTextMetrics GDI API from C#)
+ http://superuser.com/ (http://superuser.com/)
+ http://www.project10tothe100.com/intl/DE/index.html (Projekt 10 hoch 100)
+ http://www.eclipse.org/mat/ (Eclipse Memory Analyzer Open Source Project)
+ http://www.codeproject.com/KB/edit/MyExtRichTextBox.aspx (CodeProject: Inserting images into a RichTextBox control (the OLE way). Free source code and programming help)
+ http://news.cnet.com/8301-1009_3-10234872-83.html: (Q&amp;A: FBI agent looks back on time posing as a cybercriminal | Security - CNET News)
+ http://www.heise.de/security/news/foren/S-BSI-Kongress-Preis-fuer-Beitrag-zu-Handy-Manipulation/forum-158947/list/hs-16/ (BSI-Kongress: Preis für Beitrag zu Handy-Manipulation | heise security news-Foren)
+ http://discussion.forum.nokia.com/forum/archive/index.php/t-48831.html (How to keep the backlight on in ALL java-phones? [Archive] - Developer Discussion Boards)
+ http://www.hacker.org/challenge/text.php (Challenge)
+ http://www.basisbibel.de/ (BasisBibel: Basisbibel - Die Bibel interaktiv.)
+ http://stackoverflow.com/ (Stack Overflow)
+ http://vonrauch.de/kbd/kyrde.html (vonRauch.de - Tastaturen - Kyrillisch-Deutsch)
+ http://www.escapegames24.com/ (Escape Games 24 - Room Escape Games, Point and Click Games, Puzzle Games, Adventure Games, Casual Games, Walkthroughs and Free Games Download)
+ http://www.florianzimmer-group.com/forum/ (Florian Zimmer Group • Foren-Übersicht)
+ http://docs.python.org/ref/compound.html (PLS 7. Compound statements)
+ http://www.40tude.com/dialog/mantis/login_page.php (40tude Dialog Mantis)
+ http://www.ietf.org/iesg/1rfc_index.txt (rfc_index.txt)
+ http://forums.lenovo.com/t5/R-and-L-Series-ThinkPad-Laptops/L530-2481-3SG-First-1-4-GB-RAM-of-4-GB-reserved-by-hardware-and/td-p/1539272 (L530 2481-3SG - First 1.4 GB RAM of 4 GB &#39;reserved... - Lenovo Community)
+ http://windows.microsoft.com/en-us/windows/end-support-help (Windows XP support has ended - Microsoft Windows)
+ http://superuser.com/questions/746497/what-hardware-device-used-to-eat-up-1-4gb-of-my-4gb-ram-and-now-suddenly-after?noredirect=1#comment963048_746497 (boot - What hardware device used to eat up 1.4GB of my 4GB RAM, and now suddenly after no hardware changes eats up 2.2GB? - Super User)
+ http://www.jasonbock.net/jb/News/Item/7c334037d1a9437d9fa6506e2f35eaac (if carpenters were hired like programmers - jasonbock.net)
+ http://www.intel.com/p/en_US/support/detect/graphics (Intel® Driver Update Utility for graphics drivers)
+ http://www.yr.no/ (yr.no – Weather forecasts for Norway and the world from the Norwegian Meteorological Institute and the NRK)
+ http://www.yr.no/place/Germany/Bavaria/Aichach/hour_by_hour_detailed.html (Detailed hourly forecast for Aichach, Bavaria (Germany) – yr.no)
+ http://runnable.com/ (Runnable - Discover Everything through Code)
+ http://www.hauskreisgemeinde-cottbus.de/home/liedergedichte/Saeg_am_Kreuz_nichts_ab.html (Säg` am Kreuz nichts ab!; A. Jung)
+ http://robofan.de/SidebarGadget.html (Sidebar Gadget Tutorial - Wir erstellen und programmieren Minianwendungen für Windows 7 und Vista)
+ http://www.punypng.com/ (PunyPNG - PNG Compression and Image Optimization)
+ http://www.pbs.org/wgbh/nova/labs/lab/cyber/ (Cybersecurity | NOVA Labs | PBS)
+ https://github.com/norayr/rrro (Oberon RISC Crosscompiler norayr/rrro)
+ http://wirth-symposium.ethz.ch/programme.html (Niklaus Wirth Birthday Symposium: Programme)
+ http://fightcodegame.com/ (FightCode - Killing Robots for Fun)
+ http://www.heise.de/security/meldung/Security-Check-fuer-kleine-und-mittlere-Unternehmen-2141447.html (Security-Check für kleine und mittlere Unternehmen | heise Security)
+ https://www.nowvia.com/ (Nowvia - Save, organize, and discuss the interesting things you find online)
+ https://www.symform.com/ (Free Online Backup Service – Start with 10 GB Free Cloud Storage | Symform)
+ http://www.irongeek.com/i.php?page=videos/derbycon4/mainlist (Derbycon 2014 Videos (Hacking Illustrated Series InfoSec Tutorial Videos))
+ http://worldnames.publicprofiler.org/ (World Family Names)
+ http://www.security-explorations.com/en/SE-2014-01-details.html (Security Explorations - SE-2014-01 - Java in RDBMS - Details)
+ https://github.com/Konloch/bytecode-viewer (Konloch/bytecode-viewer)
+ http://www.daujones.com/ (D.A.U. Jones | 10853 Computer Geschichten mit den Duemmsten Anzunehmenden Usern ( DAU ) | Top 10 | Dau-Sprüche | Lustige Erlebnisse am Computer | DAUjones.com)
+ http://www.emoji-cheat-sheet.com/ (Emoji cheat sheet for Campfire and GitHub)
+ https://github.com/dtinth/JXA-Cookbook (dtinth/JXA-Cookbook)
+ http://pastebin.com/ym4vhLrt ([Java] Lookup native thread ID for Java thread from within Java - Pastebin.com)
+ http://blog.cryptographyengineering.com/2014/11/zero-knowledge-proofs-illustrated-primer.html (A Few Thoughts on Cryptographic Engineering: Zero Knowledge Proofs: An illustrated primer)
+ http://virtualkd.sysprogs.org/tutorials/install/ (VirtualKD - Installation Instructions)
+ http://blog.gdssecurity.com/labs/2014/7/11/introducing-windows-exploit-suggester.html (GDS - Blog - Introducing Windows Exploit Suggester)
+ http://doodle.com/iziihcqyfzxxr4cp#table (Doodle: 10-jähriges Abi-Treffen DHG Aichach 2001)
+ http://code.google.com/p/tortoisegit/ (tortoisegit - Windows Shell Interface to Git - Google Project Hosting)
+ http://pastie.org/private/mc2dvmu4tgk8dqnsjg9tiw (AVEvasion - Private Paste - Pastie)
+ http://www.sansbullshitsans.com/ (Sans Bullshit Sans — Leveraging the synergy of ligatures)
+ http://docs.sencha.com/touch/1.1.1/ (API Documentation - Touch 1.1.1 - Sencha Docs)
+ http://www.buecherkiste.org/ (Buecherkiste)
+ http://svnkit.com/download.php (SVNKit :: Download)
+ http://istherdpexploitoutyet.com/ (Is The MS12-020 RDP Exploit Out Yet?)
+ https://community.logos.com/forums/p/102464/708814.aspx#708814 (Offene Bibel als Persönliches Buch - Logos Bible Software Forums)
+ https://app.net/ (Join App.net)
+ http://visualvm.java.net/eclipse-launcher.html (Eclipse launcher for VisualVM — Project Kenai)
+ http://web.archive.org/web/20120626233126/http://www.abysssec.com/blog/2011/07/03/depaslr-bypass-using-3rd-party-clarification (DEP/ASLR bypass using 3rd party + Clarification | Abysssec Security Research)
+ https://blogs.oracle.com/java/entry/moving_java_forward_a_video#comments (Moving Java Forward: A Video Discussion about Java 7 (The Java Source))
+ https://en.wikipedia.org/wiki/Tic-tac-toe#Strategy (Tic-tac-toe (strategy) - Wikipedia, the free encyclopedia)
+ http://samy.pl/pwnat/ (pwnat - NAT to NAT client-server communication)
+ http://www.heise.de/netze/Netzwerk-Tools_1386736.html (Tools | heise Netze)
+ http://jira.phoenixviewer.com/projects/FIRE (Firestorm - Firestorm Bug Tracker [Alternative Second Life Viewer])
+ http://code.google.com/p/beef/wiki/WindowsInstall (WindowsInstall - beef - Browser Exploitation Framework - Google Project Hosting)
+ http://beefproject.com/ (BeEF - The Browser Exploitation Framework Project)
+ http://code.google.com/p/beef/wiki/Install (Install - beef - Details of the install process. - Browser Exploitation Framework - Google Project Hosting)
+ https://github.com/rapid7/metasploit-framework/wiki/Setting-Up-a-Metasploit-Development-Environment (Setting Up a Metasploit Development Environment · rapid7/metasploit-framework Wiki)
+ https://msdn.microsoft.com/en-us/library/dd374093(v=VS.85).aspx (Uniscribe Functions (Windows))
+ http://webservices.seekda.com/search?q=services%20-.asmx&amp;p=10 (&quot;Search with keywords: &quot;services -.asmx&quot; @ seekda.com&quot;)
+ http://forum.dailymobile.net/forums/symbian-s60v5-custom-firmware-cooking-discussion/32435-swicertstore-dat-leftup-original.html (swicertstore.dat - LeftUP, others, and original)
+ http://git-scm.com/book/en/v2 (Git - Book)
+ http://winstone.sourceforge.net/#license (Winstone Servlet Container)
+ https://www.google.com/intl/en/maps/streetview/ (Street View - Google Maps)
+ https://old.securelist.com/en/blog/687/A_unique_fileless_bot_attacks_news_site_visitors#c15469 (A unique ‘fileless’ bot attacks news site visitors - Securelist)
+ https://gun.io/open/48/ (Metasploit Module for CVE-2012-0002 - Gun.io)
+ https://twitter.com/danhaagman/statuses/104959442344345600 (Twitter / @7safe: How phone hacking worked a ...)
+ http://hibernate.org/orm/documentation/5.0/ (Hibernate ORM documentation (5.0) - Hibernate ORM)
+ http://docs.jboss.org/hibernate/orm/4.1/manual/en-US/html/ (HIBERNATE - Relational Persistence for Idiomatic Java)
+ http://sourceforge.net/projects/emuframework/files/Release_2.1.0/ (Emulation Framework - Browse /Release_2.1.0 at SourceForge.net)
+ http://fossil-scm.org/index.html/doc/trunk/www/index.wiki (Fossil: Home)
+ https://github.com/technomancy/emacs-starter-kit (technomancy/emacs-starter-kit)
+ http://hamsterworks.co.nz/mediawiki/index.php/FPGA_course#Course_prerequisites (FPGA course - Hamsterworks Wiki!)
+ http://community.nvda-project.org/raw-attachment/ticket/455/keycommands%20with%20laptop%20keyboard%20layout.html (NVDA command key quick reference)
+ http://www.certum.eu/certum/cert,offer_code_signing.xml (Code Signing Certificates)
+ http://sourceforge.net/projects/practicalmacro/files/?source=navbar (Practically Macro - Browse Files at SourceForge.net)
+ http://doc.sikuli.org/ (Sikuli Documentation — Sikuli X 1.0 documentation)
+ http://www.microsoft.com/de-de/download/details.aspx?id=10 (Download Excel Viewer from Official Microsoft Download Center)
+ https://apexapps.oracle.com/pls/apex/f?p=44785:24:0::::P24_CONTENT_ID,P24_PREV_PAGE:6859,1 (Oracle Secure Java Coding Guidelines)
+ https://hack.me/s/ (Hack.me · Search)
+ http://conference.hitb.org/hitbsecconf2013ams/materials/ (Index of /hitbsecconf2013ams/materials)
+ http://www.nosuchcon.org/talks/ (Index of /talks)
+ https://www.youtube.com/watch?v=kLt_uqSCEUA&amp;feature=em-subs_digest-vrecs (DEFCON 20: Owning Bad Guys {And Mafia} With Javascript Botnets - YouTube)
+ https://www.youtube.com/playlist?list=PLeUGLKUYzh_jQVMEoUTZWWg4ntwZW4Uh3 (2013 US Keynotes - YouTube)
+ https://www.youtube.com/watch?v=AUjuefLqphY (DEFCON 19: Hacking MMORPGs for Fun and Mostly Profit - YouTube)
+ https://www.virtualbox.org/wiki/Windows%20build%20instructions (Windows build instructions – Oracle VM VirtualBox)
+ https://twitter.com/strcpy/statuses/338009560625328129 (__builtin_expect() on Twitter: &quot;if you type &quot;strace ltrace /bin/bash&quot; your computer gets sucked into a black hole.&quot;)
+ http://forums.mydigitallife.info/threads/7520-How-to-decrypt-the-Pkey-that-found-in-the-registry-! (How to decrypt the Pkey that found in the registry?!)
+ https://twitter.com/jclarity/statuses/326637095177289728 (jClarity on Twitter: &quot;Do you get Classloaders - http://t.co/8CgxjALLIJ Raising the Bar - http://t.co/gOGZKY0KUP Practical GC tuning - http://t.co/v6ril6gbq0&quot;)
+ https://cansecwest.com/csw13archive.html (CanSecWest Applied Security Conference: Vancouver, British Columbia, Canada)
+ http://blackhat.com/eu-13/archives.html (Black Hat | Europe 2013 - Briefings)
+ http://www.securityweek.com/podcast-cansecwest-founder-dragos-ruiu-talks-pwn2own-hacker-culture (Podcast: CanSecWest Founder Dragos Ruiu Talks Pwn2Own, Hacker Culture | SecurityWeek.Com)
+ https://github.com/rapid7/metasploit-framework/pull/1903/files (Added firefox pw decryption support by n3phos · Pull Request #1903 · rapid7/metasploit-framework)
+ http://www.irongeek.com/i.php?page=videos%2Fbsidesri2013%2Fmainlist (BSides Rhode Island 2013 (Hacking Illustrated Series InfoSec Tutorial Videos))
+ https://twitter.com/jclarity/statuses/357426639468118016 (jClarity on Twitter: &quot;Hacking #openjdk - interesting article on instrumenting the GC subsystem to get more metrics - http://t.co/aY9va34VgL via @RichardWarburto&quot;)
+ https://twitter.com/cscotta/status/357200517052628997 (C. Scott Andreas on Twitter: &quot;Hacking OpenJDK Pt 2: A crash course in HotSpot&#39;s core memory management classes, and how to expose data inside them: http://t.co/e9tGu1iq5M&quot;)
+ http://media.ccc.de/browse/conferences/sigint13/index.html (C3TV - sigint13)
+ https://www.youtube.com/watch?v=T05rykZMuGY (BEST RELAX PIANO MUSIC - YouTube)
+ https://www.youtube.com/watch?v=vCYk9CRx0g8 (LONG Playlist of Relaxing Soft Piano Music to Sleep and Study - YouTube)
+ http://hg.openjdk.java.net/jdk7u/jdk7u-dev/jdk/rev/ec931d812faa (jdk7u/jdk7u-dev/jdk: ec931d812faa)
+ https://www.blackhat.com/us-13/archives.html (Black Hat USA 2013 | Archives)
+ https://www.jumptuit.com/ (jumptuit (ehem. Glide))
+ http://linux.die.net/man/1/ionice (ionice(1) - Linux man page)
+ http://code.google.com/p/psutil/issues/detail?id=328 (Issue 328 - psutil - ionice on windows - A cross-platform process and system utilities module for Python - Google Project Hosting)
+ http://blogs.msdn.com/b/jeffrey_wall/archive/2004/09/13/229137.aspx (Defrag API C# wrappers - Jeffrey Wall&#39;s WebLog - Site Home - MSDN Blogs)
+ https://www.cia.gov/library/video-center#Z0Mh7EiXRJI (Video Center — Central Intelligence Agency)
+ http://docs.notepad-plus-plus.org/index.php/Messages_And_Notifications (Messages And Notifications - Notepad++ Wiki)
+ https://notepad-plus-plus.org/contribute/plugin-howto.html (Notepad++ Plugin HowTo)
+ https://f-droid.org/ (F-Droid | Free and Open Source Android App Repository)
+ https://www.virtualbox.org/ticket/11375 (#11375 (Running Virtualbox causes high CPU usage in Elan Touchpad drivers) – Oracle VM VirtualBox)
+ https://www.parleys.com/channel/5148921d0364bc17fc56adf0 (Devoxx 2012 | Tutorial | Parleys)
+ https://www.exploit-db.com/exploits/28713/ (Apache Tomcat/JBoss EJBInvokerServlet / JMXInvokerServlet RMI over HTTP Marshalled Object RCE - Exploits Database)
+ http://www.irongeek.com/i.php?page=videos/derbycon3/1301-cracking-corporate-passwords-exploiting-password-policy-weaknesses-minga-rick-redman (Cracking Corporate Passwords – Exploiting Password Policy Weaknesses - Minga / Rick Redman Derbycon 2013 (Hacking Illustrated Series InfoSec Tutorial Videos))
+ https://www.youtube.com/channel/UCp7-B0gynjJ_NmOTk_3QTdA/videos (Defcon Videos - Evergreen Institute - YouTube)
+ https://github.com/stephenfewer/ReflectiveDLLInjection (stephenfewer/ReflectiveDLLInjection)
+ https://github.com/dtag-dbu/oscad/commits/master (Commits · dtag-dbu/oscad)
+ https://github.com/dtag-dbu/oslic (dtag-dbu/oslic)
+ http://blog.azimuthsecurity.com/2013/02/from-usr-to-svc-dissecting-evasi0n.html (Azimuth Security: From USR to SVC: Dissecting the &#39;evasi0n&#39; Kernel Exploit)
+ http://psoug.org/reference/dbms_debug_jdwp.html (Oracle DBMS_DEBUG_JDWP)
+ https://msdn.microsoft.com/en-us/library/windows/desktop/aa378618(v=vs.85).aspx (ImpersonateNamedPipeClient function (Windows))
+ http://www.ghacks.net/2013/11/01/mute-fm-automatically-pause-music-playback-play-sounds/ (Mute.fm: automatically pause music playback when you play other sounds - gHacks Tech News)
+ https://blogs.mcafee.com/mcafee-labs/digging-into-the-sandbox-escape-technique-of-the-recent-pdf-exploit/ (Digging Into the Sandbox-Escape Technique of the Recent PDF Exploit - McAfee)
+ https://labs.mwrinfosecurity.com/blog/2013/04/19/mwr-labs-pwn2own-2013-write-up---webkit-exploit/ (MWR Labs Pwn2Own 2013 Write-up - Webkit Exploit - mwrlabs)
+ http://www.infinitepartitions.com/art001.html (http://www.infinitepartitions.com/art001.html)
+ http://wiki.eclipse.org/JDT_Core/Java8 (JDT Core/Java8 - Eclipsepedia)
+ https://www.youtube.com/watch?v=V_SMsAA7wcg&amp;list=PLBXmeocYXDfCFnkCoxkSpFChle3gmidEn&amp;index=12 (Bullshit made in Germany [30c3] - YouTube)
+ https://www.youtube.com/playlist?list=PLiq_fDYFoqMocM7ADQCTfGAdI9CXA-kUs (Black Hat USA 2013 - YouTube)
+ https://www.youtube.com/watch?v=IvQfGz5wla0&amp;list=PLBXmeocYXDfCFnkCoxkSpFChle3gmidEn&amp;index=13 (Mind-Hacking mit Psychedelika [30c3] - YouTube)
+ https://www.youtube.com/watch?v=aNJcr-ka2fA&amp;feature=em-hot-vrecs (Slow Background Music - lugn musik, soothing, calming - by relaxdaily - YouTube)
+ https://www.youtube.com/playlist?list=PLBXmeocYXDfCFnkCoxkSpFChle3gmidEn (30C3 - YouTube)
+ http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/ (Shadow DOM 101 - HTML5 Rocks)
+ http://www.vupen.com/blog/20140520.Advanced_Exploitation_Firefox_UaF_Pwn2Own_2014.php (VUPEN Vulnerability Research Blog - Advanced Exploitation of Mozilla Firefox Use-After-Free Vulnerability (Pwn2Own 2014 / CV...)
+ https://plus.google.com/communities/103352430235157601705?cfem=1 (Google Trusted Tester Community – Community – Google+)
+ http://www.contiki-os.org/start.html (Get Started with Contiki, Instant Contiki and Cooja)
+ https://github.com/schierlm/metasploit-framework/commit/d212bc6f1c67813c34c9482e53712e72d719adf9#commitcomment-6640061 (Add war_bind_http support to tomcat_mgr_deploy · schierlm/metasploit-framework@d212bc6)
+ http://genode.org/ (Genode - Genode Operating System Framework)
+ http://www.vtm-stein.de/brainwavetec/burnout-vorbeugen/burnout-vorbeugen.php (Burnout vorbeugen – Beschwerden lindern, BrainWaveTec von Dr. Stein, 978-3-89326-601-2)
+ http://runt.mybox.org/ (RUNT Linux)
+ http://qrohlf.com/trianglify/ (Trianglify by @qrohlf)
+ http://blog.opensecurityresearch.com/2014/08/learning-exploitation-with-fsexploitme.html (Open Security Research: Learning Exploitation with FSExploitMe)
+ http://rapid7.github.io/metasploit-framework/api/ (Metasploit API)
+ http://www.rankmyhack.com/about.php (RankMyHack)
+ https://twitter.com/p4r4n0id_il/statuses/531073704369741824 (p4r4n0id on Twitter: &quot;KdExploitMe - http://t.co/oIs3q6MJj3 http://t.co/EW8WI74y11&quot;)
+ http://wikis.sun.com/display/ProjectCoin/Home (Project Coin)
+ https://github.com/pentestmonkey/windows-privesc-check (pentestmonkey/windows-privesc-check)
+ https://www.icinga.org/ (Icinga | Open Source Monitoring)
+ http://www.heise.de/security/meldung/l-f-Videos-vom-31C3-2513019.html (l+f: Videos vom 31C3 | heise Security)
+ https://www.bouncerstation.com/logs/login/ (Bouncerstation)
+ http://clemens.endorphin.org/killchs.c (killchs.c - Clemens Fruhwirth)
+ http://www.hackertest.net/ (Hacker Test: A site to test and learn about web hacking)
+ https://www.instawallet.org/ (Instawallet)
+ https://wiki.openjdk.java.net/display/quality/Quality+Outreach (Quality Outreach - Quality - OpenJDK Wiki)

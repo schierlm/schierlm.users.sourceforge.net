@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items baseHref="snd/" defaultVol="100">
+ <sound id="t01" href="c1_8.mp3" /> <sound id="t13" href="c2_8.mp3" />
+ <sound id="t02" href="cis1_8.mp3" /> <sound id="t14" href="cis2_8.mp3" />
+ <sound id="t03" href="d1_8.mp3" /> <sound id="t15" href="d2_8.mp3" />
+ <sound id="t04" href="dis1_8.mp3" /> <sound id="t16" href="dis2_8.mp3" />
+ <sound id="t05" href="e1_8.mp3" /> <sound id="t17" href="e2_8.mp3" />
+ <sound id="t06" href="f1_8.mp3" /> <sound id="t18" href="f2_8.mp3" />
+ <sound id="t07" href="fis1_8.mp3" /> <sound id="t19" href="fis2_8.mp3" />
+ <sound id="t08" href="g1_8.mp3" /> <sound id="t20" href="g2_8.mp3" />
+ <sound id="t09" href="gis1_8.mp3" /> <sound id="t21" href="gis2_8.mp3" />
+ <sound id="t10" href="a1_8.mp3" /> <sound id="t22" href="a2_8.mp3" />
+ <sound id="t11" href="ais1_8.mp3" /> <sound id="t23" href="ais2_8.mp3" />
+ <sound id="t12" href="b1_8.mp3" /> <sound id="t24" href="b2_8.mp3" />
+</items>

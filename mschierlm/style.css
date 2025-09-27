@@ -1,0 +1,103 @@
+body {
+ background: url(_back.jpg) fixed #C0C0C0;
+ color: black;
+ margin: 10px 88px 10px 88px;
+ font-family: "Helvetica", "Arial", sans-serif;
+}
+div.site {
+ background-image: none;
+ background-color: #DDDDDD;
+ color: black;
+ border: groove 2px;
+ margin: 2px 2px 2px 2px;
+ padding: 0.1em 0.5em 0.1em 0.5em;
+ width: 100%;
+}
+div.top {
+ text-align: center;
+ right: 0em;
+ left: 0em;
+}
+div.title img {
+ vertical-align: middle;
+}
+div.title {
+ text-align: center;
+ vertical-align: baseline;
+ border:none;
+ left: 1em;
+ right: 1em;
+}
+div.navi {
+ text-align: center;
+ background: none #CCCCCC;
+ color: black;
+ border: groove 1px;
+ margin-top: 0em;
+ margin-bottom: 1em;
+ left: 1em; right: 1em;
+}
+div.navi b {
+ font-style: italic;
+}
+img {
+ margin: 2px 2px 2px 2px;
+}
+h1 {
+ font-size: 1.5em;
+ font-weight: bold;
+ margin: 3px 1px 3px 1px;
+ text-align: center;
+}
+h2 {
+ font-size: 1.4em;
+ font-weight: bold;
+ margin: 3px 1px 3px 1px;
+ text-align: center
+}
+div.navi a {
+ font-weight: bold;
+ text-decoration: none;
+ font-style: normal;
+ color: black;
+ background: none;
+}
+div.navi a:hover {
+ font-weight: bold;
+ color: red;
+ background: none;
+ font-style: normal;
+ text-decoration: underline overline;
+}
+div.navi a:visited {
+ font-weight: bold;
+ color: black;
+ background: none;
+ font-style: italic;
+}
+a {
+ font-weight: bold;
+ color: blue;
+ text-decoration: none;
+}
+a:hover {
+ font-weight: bold;
+ color: red;
+ background: none;
+ font-style: normal;
+ text-decoration: underline overline;
+}
+a:visited {
+ font-weight: bold;
+ color: black;
+ background: none;
+ font-style: italic;
+}
+
+div.w3c {
+ text-align: right;
+ width: 100%;
+}
+tt {
+ font-size: 0.7em;
+}

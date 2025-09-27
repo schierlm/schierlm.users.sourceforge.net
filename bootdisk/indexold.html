@@ -1,0 +1,228 @@
+<html>
+<head><title>The All In One Boot Floppy</title>
+</head>
+<body>
+<center>
+<h1>The All In One Boot Floppy</h1>
+<i>&ldquo;The Only Boot Floppy You Ever Need&rdquo;</i>
+</center>
+
+<div style="border:2px solid black; background-color: yellow">This is about version 0.9. <a href="index.html">Jump to the latest version.</a></div>
+
+<h2>Why yet another boot floppy?</h2>
+
+There are several reasons why I created this floppy:<p>
+
+<ul><li> Floppies are dying -- the PC I created this floppy on does
+not even have a floppy drive. Soon most of the PCs will not have any
+floppy drives any more.  So development of floppy based software
+somehow stalled - one would cut off users that do not have a floppy
+drive. Today most bootable software is shipped on CDROM.
+</li><li> On the other hand, when helping people to "fix their PC",
+there are quite a lot of PCs in use whose BIOS does not support
+booting from CDROMs (Most pre-Pentium BIOSes do not support CDROM
+boot).  However, these PCs are still fast enough for web browsing or
+being used as X terminals or network routers.  So it should at least
+be possible to boot from this floppy and "chainload" a usual IDE
+cdrom.  A floppy containing only this would be enough for PCs like this.
+</li><li> Another quite new booting "method" is booting via
+network. Since many BIOSes support this, usual Linux live CDs tend to
+support a "terminal server" mode where one CD can boot lots of PCs via
+network. Older BIOSes (or, to be more precise, most BIOSes that are
+used today) do not support booting from network. So it would be great
+if you could boot from network with this floppy as well.  However,
+booting from PCMCIA network cards is impossible as far as I know, and
+booting PCI cards depends on its chipset. So I won't make promises
+here.
+</li><li> And last but not least, there are lots of "small floppies"
+flying around in my floppy box, containing stuff like CmosPWD (to
+decode BIOS passwords), Memtest (to test your PCs RAM) or a FreeDOS
+boot floppy with CDROM drivers (for accessing a DOS virus scanner
+stored on a CD).  And of course, a GRUB floppy to boot a Linux based
+system from hard disk when MBR and/or boot sectors are hosed (as long
+as you know where your kernel and initrd is stored). Of course, you
+could put all this onto a CDROM as well, but then you'd have to insert
+two disks (one floppy and one CDROM) to boot from it.
+</li></ul>
+
+<h2>What will never be on this floppy</h2>
+
+There will never be a "linux live system"
+like <a href="http://www.toms.net/rb/">tomsrtbt</a> on it. Those
+floppies all have a fundamental flaw: there is too much software
+needed to fit on a single floppy. Either there is no command
+completion, or no NTFS/SMB/ReiserFS/putyourfavouritefilesystemhere
+support, or there is no network driver for the PC you have to save
+your data from, ad infinitum. When you need a linux live system, use a
+CDROM based one like <a href="http://www.knoppix.org/">Knoppix</a>
+or <a href="http://www.grml.org/">grml</a>, and use this floppy to
+boot from your CDROM if your BIOS does not support it.<p>
+
+There will be no commercial software on this floppy (like MSCDEX.EXE
+from Microsoft) since putting it on would make distribution of the
+disk much harder, if not impossible. If you need those, customize the
+disk yourself (it uses a FAT12 filesystem that can be read by
+virtually every operating system). Proprietary freeware tools are no
+problem though.<p>
+
+<h2 id="download">Where can I download this floppy</h2>
+
+<a href="allinone09.img">Download the floppy image</a> (1440 KB).<p>
+
+<a href="grub.patch.gz">Download grub patch</a> (1 KB) and
+<a href="lstfiles09.tar.gz">all config files</a> (11 KB, kind of source code).<p>
+
+On Windows,
+use <a
+href="http://uranus.it.swin.edu.au/~jn/linux/rawwrite.htm">RawWriteWin</a>
+to write it to a floppy. Linux users will know themselves how to use
+dd <tt>:-)</tt><p>
+
+There is also a <a href="lite.img">lite version</a> (720 KB) available 
+which can be used by memdisk from a CDROM. (Memdisk is supported by 
+ISOLINUX and by CDShell). If you prefer to use GRUB as your CD boot loader
+(which is cool), you can use memdisk to load the 
+<a href="freedos.img">freedos-only version</a> (720 KB) and put all the other stuff 
+outside the image. Note that it is not possible to load memtest86 or an
+etherboot image from inside memdisk, so these have been removed. For building
+this floppy, <a href="grub-lite.patch.gz">another patch (on top of the patch 
+mentioned above)</a> is required since the grub+memdisk combination does not like 
+720K floppies. This patch is not minimal, but it works. (If you want to check
+which changes are really required in stage1, please tell me if you found it out.)<p>
+
+<h2>What does the floppy currently contain?</h2>
+
+The current version (Version 0.9) contains the following:
+
+<ul><li>
+<a href="http://www.gnu.org/software/grub/">GRUB boot loader</a> (the first you will see) with keyboard layouts
+for German, Spanish and French (English is supported by your BIOS anyway)
+and some boot templates
+</li><li>
+<a href="http://www.gnu.org/software/grub/">Smart Boot Manager</a> to boot from CDROM drives (<i>not on Lite version</i>)
+</li><li>
+Memory testers: <a href="http://www.memtest86.com/">Memtest86</a> and <a href="http://www.memtest.org">Memtest86+</a>
+(<i>not on Lite version</i>)
+</li><li>
+A bunch of <a href="http://www.etherboot.org">Etherboot</a> images to boot via network (<i>not on Lite version</i>)
+</li><li>
+A <a href="http://www.freedos.org/">FreeDOS</a> kernel with IDE CDROM support, and the following DOS utilities:
+<ul><li>
+<a href="http://www.drivesnapshot.de/freedos/mkeyb.htm">mKeyb</a> -- a very small international keyboard driver
+</li><li>
+<a href="http://www.cgsecurity.org/testdisk.html">TestDisk</a> -- recover partition layout when partition table is broken
+</li><li>
+<a href="http://www.cgsecurity.org/cmospwd.html">CmosPwd</a> -- decode BIOS passwords
+</li><li>
+<a href="http://www.11a.nu/">!BIOS 3.20</a> -- another BIOS password decoder
+</li><li>
+<a href="http://www.nu2.nu/utils/#pciscan">pciscan</a> -- detect PCI network cards (to know which etherboot module to load)
+(<i>not on Lite version</i>)
+</li><li>
+<a href="http://petertodd.ca/tech/lucifer/ ">lucifer</a> (download: <a href="ftp://ftp.simtel.net/pub/simtelnet/msdos/sysutl/lucifer.zip">DOS</a>/<a href="http://unix.freshmeat.net/redir/lucifer/6038/url_tgz/lucifer-1.0.tar.gz">UNIX</a>)-- simple CPU burn-in test
+</li><li>
+</li></ul>
+</li></ul>
+
+<h2>How was this floppy created?</h2>
+
+For creating floppies like this, it is very useful to have an I386
+emulator like <a href="http://fabrice.bellard.free.fr/qemu/">QEMU</a> handy.  This allows you to build floppy images on
+hard disk and test them without having to write them to slow floppies
+(and without having to reboot a lot).<p>
+
+If you don't have a physical floppy drive and are on a Windows system,
+having <a href="http://chitchat.at.infoseek.co.jp/vmware/vfd.html">VFD</a> is very useful since it allows you to create a virtual
+floppy drive that stores its data either in an image file.<p>
+
+For patching GRUB you will need a GNU/Linux or similar system, however
+if you don't need the eye candy on the splash screen, it should work
+with an unpatched GRUB as well.<p>
+
+Let's start with <a href="http://btmgr.sourceforge.net/3.7/">Smart
+Boot Manager</a>. Download the installer suitable for your system and
+use it to install SBM onto a floppy (image) that does not contain any
+important data. Boot it once, configure it and let it save its
+settings. Then grab the first 45 sectors (22.5KB) from the floppy and
+store it into a file somewhere (you will need this
+later). Download <a
+href="http://www.kernel.org/pub/linux/utils/boot/syslinux/">SYSLINUX</a>
+and store its MEMDISK binary somewhere as well. (The memdisk version
+on the floppy is quite old, you can use a more recent one if you
+prefer)</p>
+
+Next start with
+a <a href="http://www.freedos.org/freedos/files/">FreeDOS</a> boot
+floppy. Remove as much stuff as possible and put those tools onto it
+you want to have on the final floppy.  (For M$ addicts: this works as
+well with a MS-DOS floppy or Windows rescue disk, but will need more
+space than the FreeDOS version). You can find download links for those
+tools on the original floppy in the list above. Now grab the first
+sector (the boot sector) from this floppy and save it into a file as
+well. <p>
+
+Next download the <a href="ftp://alpha.gnu.org/gnu/grub/">GRUB
+0.9x</a> source code (GRUB 1.9x is still alpha). Patch it
+with <a href="grub.patch.gz">this patch</a> and apply it if you want to
+use a nice splash screen. You can as well use a vanilla GRUB (or even
+a precompiled one), just don't forget to remove all the "catf"
+commands from the config files if you use those. The only files from
+GRUB you need are stage1 and stage2<p>
+
+Now take your FreeDOS floppy, and make a new directory boot/grub on
+it. Put stage1 and stage2 in (and if you have any menu.lst, put it in
+as well).  Put your SBM image, your MEMDISK binary and your FreeDOS
+boot sector to /boot. (If you want to use the original config files,
+name them sbootmgr.dsk, memdisk.bin and bootsect.or). Mounting the
+floppy as msdos instead of vfat can safe disk space since vfat will
+have to store filenames twice (short and long). So I always use short
+filenames in my examples.  Add other stuff (memtest86 binaries,
+etherboot images, what you like), there is no real problem in adding
+them since GRUB can boot them directly.<p>
+
+What is still left is "installing" GRUB on the floppy. For that you
+need a running GRUB.  Take a second floppy and rawrite stage1 and
+stage2 (concatenated) onto it. This floppy will boot into console GRUB
+mode. Boot from this floppy, then swap floppies (in QEMU press
+Ctrl+Alt+2 and enter "<tt>change fda /new/filename</tt>" without
+quotes), and enter "<tt>root (fd0)</tt>" and "<tt>setup (fd0)</tt>" on
+the grub console. Voila -- reboot and your floppy should be working<p>
+
+For the lite version, you have to patch your GRUB a second time, but
+copy the stage1 before. Copy patched stage1 and stage2 onto the floppy
+and concat original stage1 and patched stage2 for the second floppy.<p>
+
+<h2>What is the format for the splash screen?</h2>
+
+Basically, it is a "text file" that uses the BIOS charset. Use your
+favourite DOS editor to create it first (remember, you can use
+Alt+Numpad for creating nice graphics tiles). Do not use TAB
+characters (and do not use NULs. BEL will be interpreted as a beep, so
+avoid it as well.<p>
+
+Then use a hex editor to add control codes to it. All control codes
+are two characters long and start with a TAB character
+(<tt>0x09</tt>). The following codes can be used:<p>
+
+<pre>
+0x09 0xXY (X!=Y)   Set color spec. X is background color, Y is foreground color. 
+                   Using background color 8-F creates blinking text instead.
+0x09 0x00          Reserved (contains NUL)
+0x09 0x11          Clear screen
+0x09 0x22          Wait for a key press (without a prompt since a 
+                   prompt would mangle the screen)
+0x09 0x33-0xFF     Reserved for future use
+</pre>
+
+Note that due to GRUB limitations, lines can only be 79 chars long,
+not 80.  Yes, this format is crude, but it was simple to implement and
+it worked for the splash screen (after uncountable tests it looked OK,
+yay!) and the GPL viewer.
+
+<h2>Contact me</h2>
+Send Feedback to <a href="mailto:schierlm@gmx.de">schierlm@gmx.de</a>.
+<hr>
+<center><font size=-1>Michael Schierl, Ignaz-Baldauf-Str. 5, D-86551
+Aichach, Germany</font></center>
+</body>
+</html>

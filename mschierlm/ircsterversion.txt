@@ -1,0 +1,12 @@
+IRCSTER OFFICIAL VERSION INFO
+
+###CURRENT###
+0630_ircster.zip
+59303
+48850
+###/CURRENT###
++++NOTES+++
+This version is only a minor upgrade.
++++/NOTES+++
+
+This file is intended to determine which IRCster version is the latest.

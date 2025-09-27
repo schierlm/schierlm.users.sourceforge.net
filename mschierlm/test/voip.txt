@@ -1,0 +1,50 @@
+
+
+==gizmo: 17472146768
+
+SIP Domain: proxy01.sipphone.com
+SIP Address: 198.65.166.131
+
+
+Andi: 17470079679
+Add AIM, MSN, Y: 17471476187@proxy01.sipphone.com
+PartyLine: 1222partyline@proxy01.sipphone.com
+
+sipbroker prefix: keines (*)
+
+
+==fwd: 847626
+
+Username: schierlm
+Domain: fwd.pulver.com
+SIP Proxy: fwd.pulver.com:5060
+STUN server: stun.fwdnet.net:3478 (Phone must be STUN enabled)
+OR
+Outbound Proxy: fwdnat.pulver.com:5082
+Listen RTP Port: 8000
+Listen SIP Port: 5060
+
+
+Andi: 17470079679@proxy01.sipphone.com
+buddyid=2:511@fwd.pulver.com:Conference Bridge
+buddyid=2:55555@fwd.pulver.com:Volunteer line
+buddyid=2:612@fwd.pulver.com:Automated Time
+buddyid=2:613@fwd.pulver.com:Echo Test
+buddyid=2:614@fwd.pulver.com:Milliwatt test
+buddyid=2:615@fwd.pulver.com:Voxeo Tone test
+buddyid=2:8502@fwd.pulver.com:Voicemail
+buddyid=2:958@fwd.pulver.com:Number Check 514
+
+sipbroker prefix: **275
+Andi: **275*747 17470079679
+
+
+==wengo: @voip.wengo.fr
+wengo.schierlm@safersignup.com
+
+
+
+==ahooly: 0042 3663 77 12 77 
+
+<<4juE8<<
+

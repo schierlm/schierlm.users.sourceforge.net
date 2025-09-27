@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script type="text/javascript">
+
+"use strict";
+
+const memory = new WebAssembly.Memory({initial:1024});
+
+function doReload() {
+	const cc = s => s.charCodeAt(0);
+	const arr = new Uint8Array(43);
+	arr.set([
+		0, cc("a"), cc("s"), cc("m"), // signature
+		1, 0, 0, 0,                   // version
+		1, 4, 1,                      // type section of size 4 containing 1 type
+		0x60, 0, 0,                   //     type 0: function (): void
+		2, 8, 1,                     // import section of size 19 containing 1 import
+		1, cc("x"), 1, cc("m"),       //     import 0: name "x.m"
+		2, 0, 1,                      //               memory with minimum size 1 page
+		3, 2, 1, 0,                   // function section of size 2 with 1 function of type 0
+	    7, 6, 1,                      // export section of size 6 containing 1 export
+		2, cc("g"), cc("o"), 0, 0,    //     export 0: name "go", function 0
+		10, 5, 1,                     // code section f size 5 containing 1 function body
+		3, 0, 0x0f, 0x0b              // length 3, 0 local variables, code 'RETURN'
+	], 0);
+	
+	let p = Promise.resolve(arr)
+	
+	for(let i=0; i<500; i++) {
+		p = p.then(arr => {
+			WebAssembly.compile(arr).then(mod => WebAssembly.instantiate(mod, {x: {m: memory }})).then(i => {
+				i.exports.go();
+				return i;
+			}).then(i => {
+				i.exports.go();
+				document.getElementById("done").innerText++;
+			}, e => {
+				console.error(e);
+				document.getElementById("fail").innerText++;
+			});		
+			return arr;
+		});
+	}
+}
+
+window.setInterval(doReload, 200);
+
+</script>
+<style type="text/css">
+body { font-family: Verdana, Arial, Helvetica, sans-serif; }
+</style>
+</head>
+<body>
+<h1>WebAssembly reload test (43 bytes per reload)</h1>
+<p>Firefox 119 will not survive 50000 reloads -> ~2 MiB of Wasm</p>
+<ul>
+<li><span id="done">0</span> successful reloads.</li>
+<li><span id="fail">0</span> failed reloads.</li>
+</body>
+</html>

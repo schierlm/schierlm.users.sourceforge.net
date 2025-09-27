@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif;  font-size: 10pt;}
+p {margin-left: 2em; margin-right: 2em;}
+</style>
+<title>Exploiting Type Confusion Vulnerabilities in Oracle JRE (CVE-2011-3521/CVE-2012-0507)</title>
+</head>
+<body>
+
+<h1>Exploiting Type Confusion Vulnerabilities in Oracle JRE (CVE-2011-3521/CVE-2012-0507)</h1>
+
+<p><i>by Michael 'mihi' Schierl, <a href="http://twitter.com/mihi42">@mihi42</a></i></p>
+
+<h2>Type Confusion Vulnerabilities</h2>
+
+<p>This article is about so-called "Type Confusion Vulnerabilities" in the Java Virtual 
+Machine. This type of vulnerabilitiy is 
+<a href="http://www.blackhat.com/presentations/bh-asia-02/LSD/bh-asia-02-lsd.pdf">quite old</a>, 
+in the beginning of Java there used to be lots of them in the Java bytecode verifier. Nowadays, 
+the bytecode verifier got most (or all) bugs fixed, but there are trusted methods in the Java 
+API that make it possible for trusted Java code to introduce type confusion flaws.</p>
+
+<p>Basically, a type confusion is a way to bypass the Java static type system. If you have a 
+variable of type A in Java, the bytecode verifier and the JVM will "do their best" to ensure 
+that an object stored there is really of type A. As a consequence, accessing objects of type 
+A do not require additional type checks if the accessed methods or fields are declared in class 
+A or a superclass. A type confusion makes it possible to assign a value of type B to this variable 
+of type A, although B is not a subtype of A (it might for example be a strict supertype of A; 
+more about this later).</p>
+
+
+<h2>Exploiting Them</h2>
+
+<p>This chapter is about exploiting type confusion vulnerabilities. Note that nothing in this chapter is a 
+vulnerability by itself &ndash; you will need a real type confusion vulnerability to use it.</p>
+
+<h3>Simulating Type Confusion With <tt>sun.misc.Unsafe</tt>.</h3>
+
+<p>If you just want to "have" a type confusion situation to test what you can do with it, this is 
+quite easy &ndash; assuming it is okay if you are running outside the sandbox. Note that it is also 
+possible in a standalone program to confuse a few types of variables before enabling the security 
+manager, so that you can test your type confusion exploits in real conditions.</p>
+
+<p>Probably the easiest way to do so is the 
+<a href="http://hg.openjdk.java.net/jdk7/jdk7/jdk/file/9b8c96f96a0f/src/share/classes/sun/misc/Unsafe.java"><tt>sun.misc.Unsafe</tt></a>
+class, which is quite an 
+interesting class introduced in Java 1.4 (in other words, these techniques will not work in 1.3 
+or older). Basically the idea behind this class is to reduce the amount of native methods needed 
+to implement the JVM. In 1.3, lots of code (like, for example, serialization) was implemented in 
+native code, which makes it harder to port the JVM to more architectures since more native code 
+needs to be ported. The reason for native code was that some small operations (like assigning 
+values directly to fields, allocating small chunks of native heap memory, doing atomic swaps of 
+memory locations, constructing objects without calling a public constructor) were not possible 
+in Java. The addition of the NIO (nonblocking IO) framework would have added a few more similar 
+native methods. Therefore, a new class was introduced that provides small unsafe methods that
+can do lots of funky things. To make this approach "secure", this class is in a package that cannot
+be accessed by untrusted code, and the only instance of it is in a private static field (that can
+be accessed by trusted code via <tt>setAccessible</tt>, but not by untrusted code).</p>
+
+<p>Interesting ways to introduce type confusion are for example the <tt>putObject</tt> or
+<tt>compareAndSwapObject</tt> methods, which both do not do any type checking but just put
+the given object (of type B) into the given field (of type A). Then load it back from that
+field and you have your B in an A variable.</p>
+
+<p>So, what can we do to exploit type confusion to get code execution?</p>
+
+<h3>Shadowing Types</h3>
+
+<p>The most obvious way of exploiting type confusion is shadowing types, i. e. generating types that have
+a similar memory layout to existing types, but expose some critical fields (like the accessible flag of a
+field) by shadowing the corresponding private fields with public fields. The main disadvantags of this
+approach is that it depends highly on the memory layout of the types, and therefore on the Java version
+(different versions add or remove fields), the architecture (word size) and even on VM options like 
+<a href="http://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html#compressedOop">Compressed Object Pointers</a>.</p>
+
+<h3>Calling Protected Methods On Supertypes</h3>
+
+<p>Another approach tries to avoid memory layout differences, and only depends on the fact that the method pointer
+for a method in a subclass will be at the same place as the method pointer for the base class. In other words, the
+native instructions to call Method <tt>foo</tt> in class <tt>Base</tt> is the same as to call the same method
+in a subclass <tt>Sub</tt>.</p>
+
+<p>We are especially interested in calling protected methods. Protected methods can be called from subclasses, even
+if they are in another package and loaded by a different class loader. However, when calling 
+protected methods in a superclass <tt>Base</tt> from a subclass <tt>Sub</tt>, the bytecode verifier requires that
+the instance on which the method is called is of type <tt>Sub</tt>, although from a technical perspective, every
+subclass of <tt>Base</tt> is able to perform that nonstatic method without errors or risk of memory corruption.</p>
+
+<p>In this situation it can be useful to store a <tt>Base</tt> class into a <tt>Sub</tt> variable via type confusion,
+so that you can call the protected method on the <tt>Base</tt> class.</p>
+
+<h3>The "Static ClassLoader Call" Exploit Technique</h3>
+
+<p>As most Java security researchers know (at least since 2008), the <tt>ClassLoader</tt> class contains a 
+method <tt>defineClass</tt> that can be used to define classes with arbitrary privileges. This method is protected
+so that it cannot be called from untrusted code. In addition, untrusted code cannot instantiate new ClassLoader
+instances, therefore making it impossible to call it from a subclass directly. However, there are several ClassLoader
+instances explosed (ClassLoader that loaded an applet, context class loader) to untrusted code, so you can
+create a subclass of ClassLoader called ConfusingClassLoader with a static method that takes an argument of
+type ConfusingClassLoader and calls defineClass however you like, use a type confusion vulnerability to confuse
+one of those ClassLoaders to ConfusingClassLoader and call your method on it. That way you can load a class with 
+<tt>AllPermission</tt> that in turn can disable the security manager or do whatever it likes.</p>
+
+<h2>Recent Type Confusion Vulnerabilities</h2>
+<h3>Oracle Java IIOP Deserialization Type Confusion Remote Code Execution Vulnerability (CVE-2011-3521/ZDI-11-306)</h3>
+
+<p>This vulnerability was found by Sami Koivu (who is now working for Oracle) and fixed in October 2011.
+Basically, when deserializing an object via CORBA IIOP, you can put arbitrary objects into the fields of 
+that object (because CORBA uses sun.misc.unsafe for implementing deserialization but did not do any type checking.</p>
+
+<p>To exploit without firing up the whole CORBA framework, you can create a subclass of ORBSingleton and 
+override its create_input_stream method so that it will change the serialized contents of its internal byte
+buffer before calling the superclass. The change is simple, just replace all occurrences of "ClassA" by "ClassB".</p>
+
+<p>Then create a new EncapsOutputStream from your ORBSingleton, and serialize a serializable object to it
+that contains only a field that points to ClassA containing a ClassA instance, using a new
+<tt>ValueHandlerImpl</tt>.</p>
+
+<p>Then create a new EncapsInputStream from your ORBSingleton and deserialize a value from it. Inside its
+ClassA field there will be a new ClassB instance. Note that for this to work, all fields of ClassA and ClassB should
+be transient (and matching pairs of fields can be used to confuse other types later), and both ClassA and ClassB
+should have the same serial version UID.</p>
+
+<p>There might be other ways (even simpler ones), but that one works and that is sufficient for me.</p>
+
+<h3>Oracle Java Applet java.util.concurrent Type Confusion Remote Code Execution Vulnerability (CVE-2012-0507)</h3>
+
+<p>That is the currently most hyped exploit. I doubt it is the most exploited one since the Rhino exploit still
+seems to be quite effective. Although both CVE-2011-3521 and this exploit are "better" than Rhino in the sense that
+they target more vulnerable JVM versions (Rhino does not work on OpenJDK or Java 1.5).</p>
+
+<p>The AtomicReferenceArray class contains an <tt>Object[]</tt> that can be manipulated with atomic operations, 
+which is implemented via <tt>sun.misc.Unsafe</tt>. Therefore, you can put any object in there. This is not a problem
+as long as the runtime type of the array is <tt>Object[]</tt>, but since you can store any array into an
+<tt>Object[]</tt> variable, you can store an <tt>A[]</tt> there. There are no methods to do so, and no methods
+to get the array out either, but AtomicReferenceArray is serializable. Therefore you can deserialize an
+AtomicReferenceArray that wraps any kind of array (which is not a bug by itself, although a class that depends
+on the type of the array should have checked it after deserialization and converted if it needed). Since the Java
+deserialization protocol detects if you serialize the same object more than once, you can also serialize the array
+separately into the same stream (or, as the now public exploit does it, serialize an array that contains both
+the array and the wrapping AtomicReferenceArray). That way you get access to both the AtomicReferenceArray and the
+A[] inside. Use AtomicReferenceArray's method to store a B into the array and then get it out of the A[] as type A.</p>
+
+<p>If you need sample code for this exploit, have a look at Metasploit or elsewhere.</p>
+
+</body>
+</html>

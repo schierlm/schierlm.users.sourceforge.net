@@ -1,0 +1,110 @@
+<html><head>
+<title>Rettungsssysteme und Windows-Software-Raid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<h1>Rettungsssysteme und Windows-Software-Raid</h1>
+
+<h2>Testumgebung</h2>
+
+<p>Zum Test dienten zwei virtuelle Festplatten für Virtual PC der
+  Größe 1GB. Diese wurden unter Windows 2000 Professional als
+  dynamische Datenträger formatiert und in je 2 Partitionen
+  eingeteilt, eines als Striped Volume, das andere als Spanned
+  Volume. Als kleine Gemeinheit wurden die Teile auf der 2. Festplatte
+  jeweils in 2 nichtzusammenhängende Festplattenregionen geschrieben
+  (sollte wegen des dynamischen Datenträgers kein Problem sein.</p>
+
+<p>Die Konfiguration sieht jetzt so aus:</p>
+
+<p><img src="winraid.png" width=812 height=671 /></p>
+
+<p>Auf jeder der Platten wurde dann eine einzige Datei (ein Bild) von
+  213 KB gespeichert. Für die <a href="raid.7z">fertigen Platten</a>
+  (.vhd, mit 7z komprimiert, 310 KB) wurden dann "differentielle
+  Disks" erzeugt, damit jedes Tool die gleichen Startbedingungen
+  hat. Diese differentiellen Disks wurden dann in einen neuen
+  virtuellen PC eingebaut. Als kleine Gemeinheit hab ich die Platte 3
+  als Primary Master und die Platte 2 als Primary Slave eingebaut,
+  also genau umgekehrt als unter Windows 2000. Ein virtuelles
+  CD-Laufwerk (das auf das physikaliche CD-Laufwerk meines PCs
+  zugreift) wurde auch noch eingebaut und als Startdatenträger
+  konfiguriert.</p>
+
+<h2>Ergebnisse</h2>
+
+<p>Ich habe 2 BartPE-basierte Systeme und 1 Linux-basiertes Systeme
+getestet.</p>
+
+<h3><a href="http://www.ubcd4win.com/">Ultimate Boot CD for
+    Windows</a>, Version 2.55</h3>
+
+<p>Wohl das bekannteste BartPE basierende System. Nach Aussage des
+Autors ist es für Diagnose- und Recovery-Aufgaben
+prädestiniert. Insbesondere ist eine Vielzahl von exotischen
+Festplatten- und Netzwerkkarten-Treibern dabei.</p>
+
+<p>Dieses System erkannte die Platten out-of-the-box
+nicht. <tt>diskpart.exe</tt> (was im Startmenü unter den Konsolentools
+verlinkt ist) erkannte die Platten als "Fremd". Ein
+beherztes <tt>diskpart import</tt> löste das Problem - die Platten
+konnten ohne Probleme gelesen werden. Allerdings hab ich nicht
+getestet, ob sie nachher im Original-Win2000 noch funktioniert hätten.</p>
+
+<h3><a href="http://winpe.sourceforge.net/">Windows XPE</a></h3>
+
+<p>Nicht zu verwechseln mit Microsofts Windows XPe (XP Embedded); Windows
+XPE ist ein BartPE-Plugin, das einen "echten Explorer"
+(inkl. Systemsteuerung etc.) unter BartPE zur Verfügung stellt. Das
+ist natürlich bequemer beim arbeiten (und auch DAU-kompatibler) als
+die BartPE-typische Kommandozeile, braucht aber auch ein Vielfaches
+länger zu starten. (die Zeit reichte locker, um die gesamte
+Website bis hierher zu schreiben...)</p>
+
+<p>Auch dieses System erkannte die Platten out-of-the-box nicht. Hier
+gibt es aber die Datenträgeverwaltung in der Systemsteuerung:</p>
+
+<p><img src="xpe1.png" width=812 height=671 /></p>
+
+<p>Ein beherzter Rechtsklick auf "Fremd" gefolgt von "Fremde Datenträger
+importieren" löste auch hier das Problem. Laufwerksbuchstaben zuweisen
+war dann noch nötig, aber auch kein wirkliches Problem. Allerdings
+weigert sich der Explorer standhaft, die neuen Laufwerksbuchstaben zu
+benutzen. Die DOS-Box hat damit aber keine Probleme.</p>
+
+<p>Ergebnis:</p>
+
+<p><img src="xpe2.png" width=812 height=671 /></p>
+
+<p>Aktiviert man in den Ordneroptionen, dass Ordnerfenster in eigenen
+Prozessen laufen sollen, dann klappts auch mit dem Explorer.<p>
+
+<p>><img src="xpe3.png" width=812 height=671 /></p>
+
+<p>Fazit: Es geht, wenn man weiß wie... Die lange Bootzeit ist aber
+  eher störend.</p>
+
+<h3><a href="www.grml.org">GRML</a> 0.6</h3>
+
+<p>GRML ist eine Linux-Live-CD, die auf grafischen Schnickschnack
+zugunsten von mehr Konsolentools (und Tools für Blinde, wie
+  Sprachausgabe) verzichtet. Man hat die Wahl zwischen
+Framebuffer oder nativer Konsole. Standardmäßig startet eine <tt>zsh</tt>
+in einem <tt>screen</tt>.</p>
+
+<p>GRML (bzw. sein Kernel) stellt die Einzelteile des dynamischen
+Datenträgers als einzelne Partitionen dar. <tt>/dev/hda</tt> hat also
+4 Partitionen, <tt>/dev/hdb</tt> derer zwei.</tt></p>
+
+<p>Und dabei ist dann auch schon Schluss. Es gibt zwar ne
+  Beschreibung, wie
+  man <a
+  href="http://lxr.linux.no/source/Documentation/filesystems/ntfs.txt">das
+  per Device-Mapper hinbiegen kann</a>, dafür hat aber anscheinend
+  selbst GRML nicht genügend Tools (<tt>ldminfo</tt> fehlt
+  beispielsweise).</p>
+<hr>
+&copy; 2006 Michael Schierl. Diese Seite darf gemäß GNU Free
+Documentation License frei weitergegeben werden.
+</body>
+</html>
