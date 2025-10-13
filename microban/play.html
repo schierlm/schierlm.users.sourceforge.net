@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>#LEVELNAME# &ndash; Microban online (JavaScript only)</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="playground.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript" src="microban.js"></script>
+</head>
+<body onload="loadField()">
+<h1><span id="levelname"></span> &ndash; Microban online (JavaScript only)</h1>
+<p>
+	Tile size: <a href="javascript:setSize(8)">small</a>
+	&ndash; <a href="javascript:setSize(16)">normal</a>
+	&ndash; <a href="javascript:setSize(24)">large</a>
+	&ndash; <a href="javascript:setSize(32)">huge</a>
+</p>
+<p>
+	<a href="javascript:doUndo()">Undo last push</a>
+	<span id="solved" style="display:none;"> &ndash; <b>Solved!</b></span>
+	&ndash; <a id="backlink" href="index.html" />Back to list</a>
+</p>
+<table id="playground" class="size16"><tr><th>Loading...</th></tr></table>
+</html>

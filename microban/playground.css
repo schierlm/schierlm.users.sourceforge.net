@@ -1,0 +1,148 @@
+
+table#playground {
+	border: 2px solid black;
+}
+
+table#playground, table#playground table {
+	border-collapse: collapse;
+}
+table#playground td, table#playground td table td {
+	padding: 0px;
+	border: none;
+	overflow: hidden;
+}
+
+/* generated styles */
+table#playground.size8 td.field { width: 8; height: 8; background-image: url(8x8.png); }
+table#playground.size8 td.field4 { background-image: none; }
+table#playground.size8 td.field0 { background-position: -0px -0px; }
+table#playground.size8 td.field1 { background-position: -8px -0px; }
+table#playground.size8 td.field2 { background-position: -0px -8px; }
+table#playground.size8 td.field3 { background-position: -8px -8px; }
+table#playground.size8 td.field6 { background-position: -0px -16px; }
+table#playground.size8 td.field7 { background-position: -8px -16px; }
+table#playground.size8 td.field4 td.wallcorner { width: 4; height: 4; background-image: url(8x8.png); }
+table#playground.size8 td.field4 td.platform0 { background-position: -16px -0px; }
+table#playground.size8 td.field4 td.platform1 { background-position: -20px -0px; }
+table#playground.size8 td.field4 td.platform2 { background-position: -16px -4px; }
+table#playground.size8 td.field4 td.platform3 { background-position: -20px -4px; }
+table#playground.size8 td.field4 td.vertical0 { background-position: -24px -0px; }
+table#playground.size8 td.field4 td.vertical1 { background-position: -28px -0px; }
+table#playground.size8 td.field4 td.vertical2 { background-position: -24px -4px; }
+table#playground.size8 td.field4 td.vertical3 { background-position: -28px -4px; }
+table#playground.size8 td.field4 td.horizontal0 { background-position: -16px -8px; }
+table#playground.size8 td.field4 td.horizontal1 { background-position: -20px -8px; }
+table#playground.size8 td.field4 td.horizontal2 { background-position: -16px -12px; }
+table#playground.size8 td.field4 td.horizontal3 { background-position: -20px -12px; }
+table#playground.size8 td.field4 td.cross0 { background-position: -24px -8px; }
+table#playground.size8 td.field4 td.cross1 { background-position: -28px -8px; }
+table#playground.size8 td.field4 td.cross2 { background-position: -24px -12px; }
+table#playground.size8 td.field4 td.cross3 { background-position: -28px -12px; }
+table#playground.size8 td.field4 td.isolated0 { background-position: -16px -16px; }
+table#playground.size8 td.field4 td.isolated1 { background-position: -20px -16px; }
+table#playground.size8 td.field4 td.isolated2 { background-position: -16px -20px; }
+table#playground.size8 td.field4 td.isolated3 { background-position: -20px -20px; }
+table#playground.size8 td.field4 td.0 { background-position: -24px -16px; }
+table#playground.size8 td.field4 td.1 { background-position: -28px -16px; }
+table#playground.size8 td.field4 td.2 { background-position: -24px -20px; }
+table#playground.size8 td.field4 td.3 { background-position: -28px -20px; }
+table#playground.size16 td.field { width: 16; height: 16; background-image: url(16x16.png); }
+table#playground.size16 td.field4 { background-image: none; }
+table#playground.size16 td.field0 { background-position: -0px -0px; }
+table#playground.size16 td.field1 { background-position: -16px -0px; }
+table#playground.size16 td.field2 { background-position: -0px -16px; }
+table#playground.size16 td.field3 { background-position: -16px -16px; }
+table#playground.size16 td.field6 { background-position: -0px -32px; }
+table#playground.size16 td.field7 { background-position: -16px -32px; }
+table#playground.size16 td.field4 td.wallcorner { width: 8; height: 8; background-image: url(16x16.png); }
+table#playground.size16 td.field4 td.platform0 { background-position: -32px -0px; }
+table#playground.size16 td.field4 td.platform1 { background-position: -40px -0px; }
+table#playground.size16 td.field4 td.platform2 { background-position: -32px -8px; }
+table#playground.size16 td.field4 td.platform3 { background-position: -40px -8px; }
+table#playground.size16 td.field4 td.vertical0 { background-position: -48px -0px; }
+table#playground.size16 td.field4 td.vertical1 { background-position: -56px -0px; }
+table#playground.size16 td.field4 td.vertical2 { background-position: -48px -8px; }
+table#playground.size16 td.field4 td.vertical3 { background-position: -56px -8px; }
+table#playground.size16 td.field4 td.horizontal0 { background-position: -32px -16px; }
+table#playground.size16 td.field4 td.horizontal1 { background-position: -40px -16px; }
+table#playground.size16 td.field4 td.horizontal2 { background-position: -32px -24px; }
+table#playground.size16 td.field4 td.horizontal3 { background-position: -40px -24px; }
+table#playground.size16 td.field4 td.cross0 { background-position: -48px -16px; }
+table#playground.size16 td.field4 td.cross1 { background-position: -56px -16px; }
+table#playground.size16 td.field4 td.cross2 { background-position: -48px -24px; }
+table#playground.size16 td.field4 td.cross3 { background-position: -56px -24px; }
+table#playground.size16 td.field4 td.isolated0 { background-position: -32px -32px; }
+table#playground.size16 td.field4 td.isolated1 { background-position: -40px -32px; }
+table#playground.size16 td.field4 td.isolated2 { background-position: -32px -40px; }
+table#playground.size16 td.field4 td.isolated3 { background-position: -40px -40px; }
+table#playground.size16 td.field4 td.0 { background-position: -48px -32px; }
+table#playground.size16 td.field4 td.1 { background-position: -56px -32px; }
+table#playground.size16 td.field4 td.2 { background-position: -48px -40px; }
+table#playground.size16 td.field4 td.3 { background-position: -56px -40px; }
+table#playground.size24 td.field { width: 24; height: 24; background-image: url(24x24.png); }
+table#playground.size24 td.field4 { background-image: none; }
+table#playground.size24 td.field0 { background-position: -0px -0px; }
+table#playground.size24 td.field1 { background-position: -24px -0px; }
+table#playground.size24 td.field2 { background-position: -0px -24px; }
+table#playground.size24 td.field3 { background-position: -24px -24px; }
+table#playground.size24 td.field6 { background-position: -0px -48px; }
+table#playground.size24 td.field7 { background-position: -24px -48px; }
+table#playground.size24 td.field4 td.wallcorner { width: 12; height: 12; background-image: url(24x24.png); }
+table#playground.size24 td.field4 td.platform0 { background-position: -48px -0px; }
+table#playground.size24 td.field4 td.platform1 { background-position: -60px -0px; }
+table#playground.size24 td.field4 td.platform2 { background-position: -48px -12px; }
+table#playground.size24 td.field4 td.platform3 { background-position: -60px -12px; }
+table#playground.size24 td.field4 td.vertical0 { background-position: -72px -0px; }
+table#playground.size24 td.field4 td.vertical1 { background-position: -84px -0px; }
+table#playground.size24 td.field4 td.vertical2 { background-position: -72px -12px; }
+table#playground.size24 td.field4 td.vertical3 { background-position: -84px -12px; }
+table#playground.size24 td.field4 td.horizontal0 { background-position: -48px -24px; }
+table#playground.size24 td.field4 td.horizontal1 { background-position: -60px -24px; }
+table#playground.size24 td.field4 td.horizontal2 { background-position: -48px -36px; }
+table#playground.size24 td.field4 td.horizontal3 { background-position: -60px -36px; }
+table#playground.size24 td.field4 td.cross0 { background-position: -72px -24px; }
+table#playground.size24 td.field4 td.cross1 { background-position: -84px -24px; }
+table#playground.size24 td.field4 td.cross2 { background-position: -72px -36px; }
+table#playground.size24 td.field4 td.cross3 { background-position: -84px -36px; }
+table#playground.size24 td.field4 td.isolated0 { background-position: -48px -48px; }
+table#playground.size24 td.field4 td.isolated1 { background-position: -60px -48px; }
+table#playground.size24 td.field4 td.isolated2 { background-position: -48px -60px; }
+table#playground.size24 td.field4 td.isolated3 { background-position: -60px -60px; }
+table#playground.size24 td.field4 td.0 { background-position: -72px -48px; }
+table#playground.size24 td.field4 td.1 { background-position: -84px -48px; }
+table#playground.size24 td.field4 td.2 { background-position: -72px -60px; }
+table#playground.size24 td.field4 td.3 { background-position: -84px -60px; }
+table#playground.size32 td.field { width: 32; height: 32; background-image: url(32x32.png); }
+table#playground.size32 td.field4 { background-image: none; }
+table#playground.size32 td.field0 { background-position: -0px -0px; }
+table#playground.size32 td.field1 { background-position: -32px -0px; }
+table#playground.size32 td.field2 { background-position: -0px -32px; }
+table#playground.size32 td.field3 { background-position: -32px -32px; }
+table#playground.size32 td.field6 { background-position: -0px -64px; }
+table#playground.size32 td.field7 { background-position: -32px -64px; }
+table#playground.size32 td.field4 td.wallcorner { width: 16; height: 16; background-image: url(32x32.png); }
+table#playground.size32 td.field4 td.platform0 { background-position: -64px -0px; }
+table#playground.size32 td.field4 td.platform1 { background-position: -80px -0px; }
+table#playground.size32 td.field4 td.platform2 { background-position: -64px -16px; }
+table#playground.size32 td.field4 td.platform3 { background-position: -80px -16px; }
+table#playground.size32 td.field4 td.vertical0 { background-position: -96px -0px; }
+table#playground.size32 td.field4 td.vertical1 { background-position: -112px -0px; }
+table#playground.size32 td.field4 td.vertical2 { background-position: -96px -16px; }
+table#playground.size32 td.field4 td.vertical3 { background-position: -112px -16px; }
+table#playground.size32 td.field4 td.horizontal0 { background-position: -64px -32px; }
+table#playground.size32 td.field4 td.horizontal1 { background-position: -80px -32px; }
+table#playground.size32 td.field4 td.horizontal2 { background-position: -64px -48px; }
+table#playground.size32 td.field4 td.horizontal3 { background-position: -80px -48px; }
+table#playground.size32 td.field4 td.cross0 { background-position: -96px -32px; }
+table#playground.size32 td.field4 td.cross1 { background-position: -112px -32px; }
+table#playground.size32 td.field4 td.cross2 { background-position: -96px -48px; }
+table#playground.size32 td.field4 td.cross3 { background-position: -112px -48px; }
+table#playground.size32 td.field4 td.isolated0 { background-position: -64px -64px; }
+table#playground.size32 td.field4 td.isolated1 { background-position: -80px -64px; }
+table#playground.size32 td.field4 td.isolated2 { background-position: -64px -80px; }
+table#playground.size32 td.field4 td.isolated3 { background-position: -80px -80px; }
+table#playground.size32 td.field4 td.0 { background-position: -96px -64px; }
+table#playground.size32 td.field4 td.1 { background-position: -112px -64px; }
+table#playground.size32 td.field4 td.2 { background-position: -96px -80px; }
+table#playground.size32 td.field4 td.3 { background-position: -112px -80px; }
+/* end generated styles */

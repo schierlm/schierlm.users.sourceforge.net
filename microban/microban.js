@@ -1,4 +1,4 @@
-var moveHistory = [];
+var moveHistory = [], playerx, playery, width, height, field, levelset, levelnum;
 
 function drawCorner(x, y, dx, dy, cls) {
 	var here = field.charAt(x + y * width) == '4';
@@ -18,6 +18,23 @@ function drawCorner(x, y, dx, dy, cls) {
 		kind = "platform";
 	}
 	return '<td class="wallcorner ' + kind + cls +'"></td>';
+}
+
+function loadField() {
+	var paramstring = location.hash.split("#", 2)[1];
+	var params = paramstring.split(",");
+	playerx = +params[0];
+	playery = +params[1];
+	width = +params[2];
+	field = params[3];
+	height = field.length / width;
+	levelset = +params[4];
+	levelnum = +params[5];
+	var levelname = unescape(location.hash.substring(paramstring.length + 2));
+	document.getElementById("levelname").innerText = levelname;
+	document.title = document.title.replace("#LEVELNAME#", levelname);
+	document.getElementById("backlink").href += "?" + params[4];
+	drawField();
 }
 
 function drawField() {
@@ -72,6 +89,12 @@ function doPush(ch, x, y, x2, y2) {
 		playery = y;
 		if (ch == '2' && ch2 == '1') {
 			if (field.indexOf('2') == -1 && field.indexOf('1') == -1) {
+				var solvedlevels = JSON.parse(window.localStorage["solvedlevels"] || "{}");
+				if (solvedlevels[levelset] == undefined)
+					solvedlevels[levelset] = [levelnum];
+				else
+					solvedlevels[levelset].push(levelnum);
+				window.localStorage["solvedlevels"] = JSON.stringify(solvedlevels);
 				document.getElementById("solved").style.display="inline";
 			}
 		}

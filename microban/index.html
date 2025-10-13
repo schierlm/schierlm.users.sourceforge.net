@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Microban online (JavaScript only)</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<h1>Microban online (JavaScript only)</h1>
+<div id="levelselect" style="display: none">
+<h2>Select level from levelset "<span id="levelsetname"></span>"</h2>
+<p style="border: 1px dashed gray; background-color: #ffffdd" id="levelsetdesc">
+</p>
+<table class="levellist" id="levels">
+<tr><th>Level</th><th>Name</th><th>Solved</th></tr>
+</table>
+</div>
+<h2>Select <span id="another" style="display: none">another</span> levelset</h2>
+<table class="levellist" id="levelsets">
+<tr><th>Levelset</th><th>Solved</th></tr>
+</table>
+<h2>Savegame handling</h2>
+<p><input type="button" id="saveexport" value="Export"><a id="localsaveanchor" href="" download="savegame.microban" style="display:none"></a>
+&ndash; <input type="button" id="saveimport" value="Import"><input type="file" id="saveimportsel" accept=".microban" style="display:none"></p>
+<hr>
+<p>&copy; 2009 Michael Schierl - <a href="source.zip">Licensed under GNU GPL v2 or later</a></p>
+<p>Updated 2025 to <a href="newsource.zip">not require PHP on the server</a></p>
+</html>
